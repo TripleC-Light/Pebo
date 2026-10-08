@@ -1,6 +1,6 @@
 # Pebo v0.1 — Hardware Pin Map / Codex Context
 
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 ## Source of truth
 - MCU: STM32L031G6U6TR, UFQFPN28
@@ -15,6 +15,7 @@ Last updated: 2026-10-08
 - LIS2DW12 output verified after enabling ODR; `STATUS=0x01` and X/Y/Z raw values are non-zero
 - ST25DV user/system I2C ACK verified at 0x53/0x57; user memory address 0x0000 read succeeded
 - ST-LINK firmware updated; previous USB reconnect issue resolved
+- Whole-board deep-sleep baseline measured at 2.8 V: **6.84 µA average** when ST25_LPD is actively driven High
 
 ## MCU pin allocation
 
@@ -29,7 +30,7 @@ Last updated: 2026-10-08
 | 7 | PA1 | PIEZO_B | Output | Optional differential piezo drive |
 | 8 | PA2 | TEST / RESERVED | GPIO | Test point |
 | 9 | PA3 | ST25_GPO | Input / EXTI | ST25DV GPO through R8 = 100 ohm |
-| 10 | PA4 | ST25_LPD | Output | ST25DV LPD through R9 = 0 ohm |
+| 10 | PA4 | ST25_LPD | Output | ST25DV LPD through R9 = 0 ohm; **must be driven High during deep sleep** |
 | 11 | PA5 | LED_BLUE_1 | Output | Blue LED 1 |
 | 12 | PA6 | LED_BLUE_2 | Output | Blue LED 2 |
 | 13 | PA7 | LED_BLUE_3 | Output | Blue LED 3 |
@@ -84,6 +85,18 @@ GPIO HIGH turns the LED on.
 - V_EH -> test point
 - AC0/AC1 -> NFC antenna matching network
 
+### Deep-sleep requirement for ST25_LPD
+Measured behavior on Pebo v0.1 at 2.8 V with ST-LINK disconnected:
+
+- ST25_LPD not actively held High: ~56.68 µA average, ~130 µA peak every ~40 ms
+- ST25_LPD actively driven High: **~6.84 µA average, ~16 µA peak every ~40 ms**
+
+This is a confirmed board-level requirement:
+
+- **Keep PA4 configured as GPIO output High before and during system deep sleep.**
+- **Do not include PA4 in a blanket Analog/No-Pull conversion for unused GPIOs.**
+- Any low-power helper that reconfigures GPIOA must explicitly exclude PA4 or restore PA4 High before entering STOP.
+
 ## Piezo
 - PA0 -> R20 100 ohm -> Piezo A
 - PA1 -> optional R18 0 ohm -> Piezo B
@@ -134,15 +147,16 @@ Completed:
 9. LIS2DW12 WHO_AM_I at I2C address 0x19
 10. LIS2DW12 raw X/Y/Z output after ODR initialization
 11. ST25DV I2C user/system address ACK and user memory read
+12. STOP-mode whole-board low-power baseline: **6.84 µA average at 2.8 V with ST25_LPD High**
 
 Next:
 1. Identify unexpected I2C address 0x2D seen during HardwareTest scan
 2. LIS2DW12 INT1 / INT2 behavior
-3. ST25DV GPO / LPD behavior
+3. Identify source of remaining ~40 ms / ~16 µA sleep peak
 4. LSE / RTC
 5. Piezo
-6. STOP mode wake-up
-7. PPK2 current profiling
+6. STOP mode wake-up behavior
+7. PPK2 subsystem-isolation profiling using R15/R16/R17
 
 ## Firmware pin constants suggestion
 
@@ -180,3 +194,4 @@ Treat this document as the current hardware source of truth for Pebo v0.1 firmwa
 
 Do not reassign GPIO pins unless the schematic is revised.
 If firmware behavior conflicts with this document, stop and report the conflict before changing pin assignments.
+For low-power firmware, preserve the confirmed ST25_LPD requirement: **PA4 must remain GPIO Output High during deep sleep.**

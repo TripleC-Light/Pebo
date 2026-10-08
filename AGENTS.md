@@ -8,6 +8,7 @@ Pebo (沛寶) is a small, CR2032-powered drinking reminder mounted on a child's 
 - Keep confirmed decisions separate from proposals and measurements still pending. If documents conflict with the actual board, report the conflict and update the documents after resolving it.
 - Target at least six months on a CR2032. Measure sleep, wake, NFC, buzzer, and average current; do not claim battery life from MCU sleep current alone.
 - Prefer interrupt or event driven operation and low power states. Check peripheral and GPIO states, pull-ups, and external debug equipment for unwanted current and back-power paths.
+- **Confirmed low-power rule:** on Pebo v0.1, PA4 / ST25_LPD must remain configured as GPIO Output High during deep sleep while ST25DV is powered. Do not include PA4 in generic Analog/No-Pull GPIO shutdown code. This requirement reduced measured whole-board sleep current at 2.8 V from about 56.68 µA to 6.84 µA.
 - Keep NFC data format versioned and document exact byte order, bounds, validity, and commit behavior before implementing it. Do not assume an NFC reader sees fresh MCU data without a measured update path.
 - For firmware changes, run the relevant build and automated checks. Run HIL checks when connected equipment is available; report skipped physical tests plainly.
 - Keep UART logs parseable in development builds and avoid leaving costly debug output enabled in the battery-life configuration.
@@ -18,7 +19,7 @@ Pebo (沛寶) is a small, CR2032-powered drinking reminder mounted on a child's 
 
 | Work | Reference |
 | --- | --- |
-| Components, schematic, pins | `docs/hardware.md` |
+| Components, schematic, pins | `docs/hardware.md` and `docs/hardware_pinmap.md` |
 | Firmware and timekeeping | `docs/firmware-architecture.md` |
 | NFC payload and interactions | `docs/nfc-protocol.md` |
 | Drinking event detection | `docs/motion-detection.md` |

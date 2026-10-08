@@ -2,28 +2,37 @@
 
 Pebo is a bottle-mounted reminder that detects likely drinking motions and gives a short sound reminder when a configured window passes without a detected drink. The first version uses NFC for phone interaction and time sync; BLE is outside the current v1 plan.
 
-This is a **project context starter**, not firmware or a verified schematic. It captures decisions from design discussions as of 2026-09-29. Add the actual schematic, BOM, pin map, board revision, datasheets, tool connection details, and measured results as they become available. No instrument or physical board has been tested in this package.
+This repository now contains verified Pebo v0.1 board bring-up firmware, measured low-power results, and focused functional tests. Treat the current schematic, `docs/hardware_pinmap.md`, measured board behavior, and the dedicated test sketches under `FW/` as the source of truth for implementation work.
 
-## Status
+## Current verified status
 
 | Topic | Current direction | Status |
 | --- | --- | --- |
-| MCU | STM32L031G6U6TR | Selected for current design |
-| Accelerometer | LIS2DW12TR | Selected for current design |
-| NFC | ST25DV04KC-JF6D3 target; ST25DV04K-JFR6D3 prototype substitution | Verify actual assembled BOM and variant differences |
-| Clock | ABS07-120-32.768KHZ-T external LSE for RTC | Selected for current design |
-| Power and sound | CR2032 and piezo | Selected; electrical behavior to measure |
-| Battery life | At least six months | Goal, unverified |
-| I²C pull-ups | Initial 10 kΩ; evaluate 22 kΩ after measurement | Experimental |
+| MCU | STM32L031G6U6TR | Programming, STOP mode, UART and GPIO verified |
+| Accelerometer | LIS2DW12TR | I2C, WHO_AM_I, sampling and INT1 STOP wake verified |
+| NFC | ST25DV04KC-JF6D3 | I2C, user memory read, LPD behavior and GPO STOP wake verified |
+| Clock | ABS07-120-32.768KHZ-T external LSE | LSE + RTC + 10 s RTC Wakeup Timer STOP wake verified |
+| Power and sound | CR2032 and piezo | Low-power board operation verified; piezo functional test pending |
+| Low-power idle | Whole board at 2.8 V | ~4.43 µA measured in current functional wake tests |
+| ST25 low-power rule | PA4 / ST25_LPD | Must remain GPIO Output High during STOP |
+| Battery life | At least six months | Goal; full event-based budget still pending |
+| I²C pull-ups | Initial 10 kΩ; evaluate 22 kΩ later | Experimental |
 | NFC antenna | About 34 mm PCB loop, ferrite near battery | Physical tuning pending |
-| Drink detection | Motion-based event detector | Algorithm and thresholds pending |
-| Mobile data | ID, battery, drinking information | Requirements; exact protocol pending |
+| Drink detection | Motion-based event detector | Wake path verified; algorithm/thresholds pending |
+| Mobile data | ID, battery, drinking information | Requirements defined; exact protocol pending |
 
-## How to use this folder
+## Verified wake paths
 
-1. Copy all contents into the root of the Pebo firmware repository. Keep `AGENTS.md` at that root.
-2. Add the current schematic/BOM and fill the verified pin table in `docs/hardware.md` before writing pin-specific firmware.
-3. Record any confirmed choices in the corresponding `docs/` file. Put measured values and test conditions alongside them.
-4. Ask Codex to implement a narrow task against a named document, then review its build and physical test results.
+- LIS2DW12 INT1 -> PB0 / EXTI -> STM32 STOP wake: **PASS**
+- RTC Wakeup Timer -> RTC_IRQn -> STM32 STOP wake: **PASS**
+- ST25DV GPO -> PA3 / EXTI -> STM32 STOP wake: **PASS**
 
-Suggested next task after the actual board information is added: “Compare the schematic and BOM with `docs/hardware.md`; update the verified pin map and flag any discrepancies without changing firmware.”
+## How to use this repository
+
+1. Read `AGENTS.md` and the relevant files under `docs/` before changing firmware.
+2. Use `docs/hardware_pinmap.md` for verified Pebo v0.1 pin assignments.
+3. Keep focused board-validation sketches under `FW/` separate from future integrated product firmware.
+4. Record measured values and test conditions in the corresponding `docs/` file.
+5. Preserve passed bring-up tests as regression references instead of overwriting them.
+
+Current next functional target: piezo buzzer verification, followed by NFC data exchange and multi-source wake integration.

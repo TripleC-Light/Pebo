@@ -1,0 +1,16 @@
+# Build outputs
+build/
+*.elf
+*.hex
+*.bin
+*.map
+
+# Python cache/test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environment files
+.env
+.venv/
+venv/

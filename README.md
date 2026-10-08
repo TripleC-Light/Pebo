@@ -1,4 +1,4 @@
-# Pebo 沛寶｜陪寶貝喝水的好朋友
+# Pebo
 
 Pebo is a bottle-mounted reminder that detects likely drinking motions and gives a short sound reminder when a configured window passes without a detected drink. The first version uses NFC for phone interaction and time sync; BLE is outside the current v1 plan.
 

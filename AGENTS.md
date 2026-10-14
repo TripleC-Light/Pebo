@@ -27,3 +27,11 @@ Pebo (沛寶) is a small, CR2032-powered drinking reminder mounted on a child's 
 | Instruments and automated checks | `docs/hil-test-plan.md` |
 
 Update the relevant document when a decision is confirmed or changed.
+
+## Cross-computer handoff
+
+- At the beginning of each session, read `docs/development-handoff.md` and verify current repository and machine state.
+- At the end of every session, update that file with completed work, changed files, branch/commit, validation results, blockers and concrete next steps, including blocked sessions.
+- Record relevant tool versions, build commands and instrument connections; machine paths and COM ports must be rediscovered on each computer.
+- Mark unverified facts clearly, retain a short dated history, and never include credentials.
+- Report whether the handoff was saved. If saving fails, include the pending handoff in the final response.

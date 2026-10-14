@@ -1,6 +1,7 @@
 // Pebo v0.1 standalone LED brightness test, STM32duino 3.0.0.
 #include <Arduino.h>
 #include <HardwareTimer.h>
+#include <HardwareSerial.h>
 
 #ifndef PEBO_LED_DEBUG
 #define PEBO_LED_DEBUG 1

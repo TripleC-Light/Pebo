@@ -35,7 +35,13 @@ ST datasheet fetch timed out: 未直接核對受限 PDF.
 PWM mapping verified in STM32duino 3.0.0 G-package PeripheralPins.c.
 Initial debug OFF CI passed: Flash 12264 bytes, static RAM 1044 bytes.
 Initial debug ON failed due to abstract HardwareSerial; fixed to Uart.
-Final debug ON/OFF CI verification pending at time of this entry.
+Final debug ON/OFF CI: PASS for implementation commit b40ae97e792f6d3f4492751225796445414f5a7d.
+Run: https://github.com/TripleC-Light/Pebo/actions/runs/38491916717
+Debug ON: Flash 18700 / 32768 bytes, static RAM 1920 / 8192 bytes.
+Debug OFF: Flash 12264 / 32768 bytes, static RAM 1044 / 8192 bytes.
+No claim about peak stack/heap RAM. Workflow retains build-log artifacts.
+CI report-write permission expansion was rejected by automatic review;
+workflow retains contents: read and results were read via job logs.
 Physical LED brightness/flicker/mixed/progress/STOP/PA4/current tests: NOT RUN.
 No board flashed, no power or NFC commands issued.
 

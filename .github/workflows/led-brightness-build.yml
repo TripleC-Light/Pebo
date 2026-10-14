@@ -1,0 +1,35 @@
+name: LED brightness build
+on:
+  pull_request:
+    paths:
+      - 'FW/LedBrightnessTest/**'
+      - '.github/workflows/led-brightness-build.yml'
+  push:
+    branches: ['codex/led-brightness-test']
+    paths:
+      - 'FW/LedBrightnessTest/**'
+      - '.github/workflows/led-brightness-build.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        debug: [0, 1]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Install STM32duino 3.0.0
+        run: |
+          arduino-cli core update-index --additional-urls https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+          arduino-cli core install STMicroelectronics:stm32@3.0.0 --additional-urls https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+      - name: Build and report Flash and RAM
+        run: |
+          set -o pipefail
+          arduino-cli compile --fqbn STMicroelectronics:stm32:GenL0:pnum=GENERIC_L031G6UX --build-property "build.extra_flags=-DPEBO_LED_DEBUG=${{ matrix.debug }}" FW/LedBrightnessTest 2>&1 | tee build-debug-${{ matrix.debug }}.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: led-build-debug-${{ matrix.debug }}
+          path: build-debug-${{ matrix.debug }}.log

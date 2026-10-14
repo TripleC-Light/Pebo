@@ -1,6 +1,6 @@
 # LED brightness validation (Pebo v0.1)
 
-Status: implemented, build and bench acceptance pending.
+Status: STM32duino 3.0.0 builds PASS in both debug modes; bench acceptance pending.
 Sketch: `FW/LedBrightnessTest/LedBrightnessTest.ino`.
 Target: STM32L031G6Ux (UFQFPN28), STM32duino 3.0.0.
 No product firmware or passed bring-up sketches are changed.
@@ -63,7 +63,15 @@ arduino-cli compile --fqbn STMicroelectronics:stm32:GenL0:pnum=GENERIC_L031G6UX 
 ```
 
 Workflow `.github/workflows/led-brightness-build.yml` builds both modes and retains logs.
-Flash/RAM usage must come from successful compile logs; currently not available.
+Verified CI run: https://github.com/TripleC-Light/Pebo/actions/runs/38491916717
+Implementation commit: b40ae97e792f6d3f4492751225796445414f5a7d.
+
+| Debug | Build | Flash bytes | Static RAM bytes |
+| --- | --- | ---: | ---: |
+| ON | PASS | 18700 | 1920 |
+| OFF | PASS | 12264 | 1044 |
+
+RAM figures are linked static allocation, not measured peak stack/heap use.
 Device limits are 32768 bytes Flash / 8192 bytes RAM, not measured usage.
 
 ## Bench acceptance (pending)

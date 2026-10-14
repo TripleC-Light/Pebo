@@ -1,7 +1,7 @@
 // Pebo v0.1 standalone LED brightness test, STM32duino 3.0.0.
 #include <Arduino.h>
 #include <HardwareTimer.h>
-#include <HardwareSerial.h>
+#include <Serial.h>
 
 #ifndef PEBO_LED_DEBUG
 #define PEBO_LED_DEBUG 1
@@ -42,7 +42,7 @@ static uint8_t phase = 0;
 static HardwareTimer pwmTimer(TIM21);
 
 #if PEBO_LED_DEBUG
-static HardwareSerial debugUart(PA10, PA9);
+static Uart debugUart(PA10, PA9);
 #define LOG_STATE(text) debugUart.println(text)
 #else
 #define LOG_STATE(text) do {} while (0)

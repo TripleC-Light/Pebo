@@ -1,5 +1,10 @@
 # Development machine registry
 
+2026-10-25 PC-02 / TripleC publication: local work committed in `b3adc7b`;
+remote updates through `c8dd924` integrated by `d6d9f2b`. Push is blocked by
+destination approval: explicitly confirm https://github.com/TripleC-Light/Pebo.
+No instrument, UART or power state changed in this Git session.
+
 Last updated: 2026-10-25 (Asia/Taipei).
 
 Use this file for per-computer environment state and `handoff.md` for the

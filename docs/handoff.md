@@ -2,6 +2,22 @@
 
 ## 2026-10-25: Full workspace Git publication authorized
 
+Push blocked by automated approval review: user must explicitly approve the
+destination https://github.com/TripleC-Light/Pebo for the selected source,
+documents, APK/ZIP and test evidence. No push executed. Next: obtain destination
+confirmation, normal push origin main, then verify remote main equals HEAD.
+
+Publication preparation completed: local content commit `b3adc7b` contains
+141 changed files; merge commit `d6d9f2b` integrates all five remote commits
+through `c8dd924`. README, NFC and power-budget conflicts were resolved by
+preserving both histories; older power measurements remain labeled historical.
+Source/document whitespace checks and conflict-marker scan passed. Archived
+Gradle logs/HTML retain original whitespace warnings as evidence, unchanged.
+Normal push is the remaining publication step; verify remote main equals HEAD
+before treating this handoff as synchronized. Git reported an existing
+packed-refs.lock during maintenance, but both commits completed successfully;
+no lock was deleted. No device, UART or power operation was performed.
+
 User explicitly requests committing and pushing all previously uncommitted
 project content, including Android/protocol drafts and bring-up/LED/UART work.
 Fetched origin successfully: main remote advanced5 commits from11e2f6e to c8dd924,

@@ -1,0 +1,20 @@
+{
+  "machine": "TripleC_AERO",
+  "date": "2026-10-15 Asia/Taipei",
+  "head": "11e2f6e8954aa45e373c615d853d323aac053979",
+  "project": "C:\\Users\\tripl\\AppData\\Local\\Temp\\PeboAndroid-PC01-fb4640f8\\PeboAndroid",
+  "gradleCache": "C:\\Users\\tripl\\AppData\\Local\\Temp\\PeboAndroid-PC01-fb4640f8\\gradle-cache",
+  "command": "gradlew.bat testDebugUnitTest assembleDebug --no-daemon --console=plain",
+  "result": "PASS",
+  "elapsed": "2m16s",
+  "executedTasks": 40,
+  "tests": 58,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "apkSha256": "C2129CD776F1E06CBDA9799F61A55809BB5BCB2E399A4A05EE612EC4AD98AD4C",
+  "apkBytes": 916855,
+  "signature": "PASS v1/v2",
+  "sourceManifest": "23 files unchanged",
+  "installed": false
+}

@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "level": 0,
+      "monotonic": 42652.171
+    },
+    {
+      "level": 1,
+      "monotonic": 42656.171
+    },
+    {
+      "level": 2,
+      "monotonic": 42660.171
+    },
+    {
+      "level": 3,
+      "monotonic": 42664.171
+    },
+    {
+      "level": 4,
+      "monotonic": 42668.171
+    },
+    {
+      "level": 5,
+      "monotonic": 42672.171
+    },
+    {
+      "level": 6,
+      "monotonic": 42676.171
+    },
+    {
+      "level": 7,
+      "monotonic": 42680.171
+    },
+    {
+      "level": 8,
+      "monotonic": 42684.171
+    }
+  ],
+  "off_sent": true,
+  "current_measurement": false,
+  "pc_uart_rx_verified": false
+}

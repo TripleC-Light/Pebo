@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pebo.nfcprobe20261015.protocol.ProtocolTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2026-10-15T05:03:36.387Z" hostname="LAPTOP-1JNDJFQA" time="0.159">
+  <properties/>
+  <testcase name="invalidPayloadLength" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.006"/>
+  <testcase name="oversizedPacket" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="statusRangesRejectMalformed" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.006"/>
+  <testcase name="unknownCommandWithValidCrc" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="configMaximum16AdjacentPeriods" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.009"/>
+  <testcase name="invalidRequestDoesNotCallTransport" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.002"/>
+  <testcase name="configRoundTripAndGetStatusPrefix" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="deviceInfoPayloadRoundTrip" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.002"/>
+  <testcase name="samplePagination85As40Plus40Plus5" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.006"/>
+  <testcase name="requestedPageCountAndEnd" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.002"/>
+  <testcase name="responseStatusErrorsNotMistakenForData" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="emptyTruncatedTrailingReplyRejected" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="setTimeRequest" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.003"/>
+  <testcase name="sampleConfigAndTimeAcksRoundTrip" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.003"/>
+  <testcase name="drinkRecordSixByteRoundTrip" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="sampleClearHistoryAndZeroPeriodConfig" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="crcStandardCheckVector" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="unboundRealTransportReturnsExplicitFailureNoRx" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="littleEndianUnsignedAndSigned" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="invalidVersion" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="configUniqueIdsZeroLengthAndBoundary" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="packetDecodeGolden" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="maximumPayload248Produces256BytePacket" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="clientRejectsMismatchedSequence" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="invalidMagic" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="truncatedPacket" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="packetRoundTripAllCommandsBothDirections" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="configMalformedCountEnableReservedTruncatedTrailing" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.002"/>
+  <testcase name="drinkRejectsReservedFlagsInvalidPeriodAndLengths" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="randomizedMalformedPacketsAndPayloadsDoNotThrow" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.09"/>
+  <testcase name="deviceStatusOffsetsAndDistinctCounts" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="wrongCommandDirectionAndSequence" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <testcase name="corruptCrc" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="malformedHistoryPageRejected" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="sequenceWrapsAt255" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.013"/>
+  <testcase name="packetEncodeGoldenIndependentPythonBinascii" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="allEmptyRequestsRejectTrailingData" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.0"/>
+  <testcase name="configRejectsTooManyOverlappingCrossMidnightAndBadMinutes" classname="com.pebo.nfcprobe20261015.protocol.ProtocolTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -27,3 +27,14 @@ Pebo (沛寶) is a small, CR2032-powered drinking reminder mounted on a child's 
 | Instruments and automated checks | `docs/hil-test-plan.md` |
 
 Update the relevant document when a decision is confirmed or changed.
+
+## Cross-computer development
+
+- Ignore MCP Bridge for routine development, environment readiness and handoff checks unless the user explicitly asks to work on it. Do not install, configure, launch or test it as a prerequisite for firmware work.
+
+- The user develops on three computers. At session start, read `docs/handoff.md` and `docs/development-machines.md`, identify the current computer, and verify its Git and tool state.
+- At every session end, including blocked sessions, update the handoff and current machine profile with completed work, changed files, branch/commit, validation, blockers and concrete next steps.
+- Keep other machines' dated observations intact. Unknown identity, tools, ports or connections must remain unverified until checked; never copy another machine's readiness or COM ports as current facts.
+- Preserve existing uncommitted work. Record whether changes were committed/pushed or only saved locally; do not claim synchronization from a matching cloud-folder path.
+- Use `docs/handoff.md` as the canonical task handoff. Reconcile alternate handoff files when integrating branches, preserving their history.
+- Record instrument/process state and report whether the handoff was saved. Never put credentials or secrets in these files.

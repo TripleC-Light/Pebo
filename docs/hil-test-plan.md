@@ -1,5 +1,25 @@
 # Bench automation plan
 
+2026-10-25 UART follow-up: user-controlled supply, no PPK/instrument access.
+ProlificCOM5/115200, LF resync then7/7 real PC RX replies PASS for help/8/off/
+showCRLF/invalid/overlong/off. Earlier RX blocker resolved, cause not established;
+run05 partial stays historical. Evidence new BlueLedProgressTest tests/results/
+uart-manual-power-20261025-02/session.json. No reflash/reset/full bench rerun.
+
+## 2026-10-25: Standalone eight-step blue LED display
+
+FW/BlueLedProgressTest: ARM compile/constexpr logic checks and flash verify PASS.
+User authorized PPK2 supply only (no current measurement), confirmed sole source,
+cell removed/common GND. Run05 uses SWD to verify GPIO/AF1..8, four25% low PWM
+routes, timeout off/TIM2+TIM22 stopped, command parser/retention and42 MCU replies.
+PC UART RX remains empty, so overall PARTIAL_PC_UART_RX_UNVERIFIED; never equate
+debugger TX-ring evidence with PC receipt. Source and all run logs retained under
+new tests/results. Human repeated playback confirms low/high,zero double flash,
+physical fill order PA5->PA6->PA7->PA8. Compiler covers millis wrap and exact
+sub120ms transitions/cancellation; no automated optical/waveform acceptance.
+PPK OFF sent and ports closed after each run, no independent physical OFF voltage.
+Next: resolve UART return path and rerun normal bench; details in canonical handoff.
+
 This is a test plan, not a claim that instrument control scripts, drivers, or test fixtures already exist.
 
 | Instrument | Intended role | Setup prerequisite |
@@ -37,3 +57,199 @@ Define numeric acceptance limits from datasheets, the schematic, and product req
 ## Implementation order
 
 Once the board and instrument interfaces are available: discover devices, make a manual known-good measurement, implement a minimal capture/read script, then add assertions and unattended regression. Keep real instrument commands in `tools/` and runnable test cases in `tests/` after their interfaces are confirmed.
+
+## Standalone battery-voltage sweep (2026-10-13)
+
+Implementation: `FW/BatteryVoltageTest/BatteryVoltageTest.ino` and
+`Software/PPK2Automation/battery_voltage_sweep.py`.
+Setup, build, API verification, CLI and troubleshooting:
+`Software/PPK2Automation/README.md`.
+
+Default source setpoints: 3000, 2900, 2800, 2700, 2600 mV; configurable
+within 2600..3000 mV. Acceptance: absolute MCU-to-source-setpoint error
+<=50 mV (inclusive, configurable). Timeout marks that point FAIL and
+continues. A completed point is preserved in CSV; an incomplete/aborted
+session returns RESULT FAIL. Error percentage uses the source setpoint
+as denominator. This is an accuracy test, not a battery-capacity estimate.
+
+Use PPK2 as the only supply, remove the cell, connect only UART RX-to-PA9
+and GND, disconnect adapter TX/VCC/control pins and ST-LINK, and confirm
+DUT VDD discharges while OFF. Measure actual VDDA with DMM/scope to
+separate source/wiring error from ADC error. Validate PA4 Output High and
+ADC/UART shutdown with current capture after the one-shot result.
+Never replace one of the passed bring-up sketches to perform this test.
+
+Software-only tests passed (13, including the current-stream cleanup regression).
+Firmware Debug ON/OFF builds passed with
+STM32duino 3.0.0 / LTO; see docs/handoff.md for memory usage and build
+path requirements. Flash/verify/start subsequently passed using ST-LINK;
+UART reported BATTERY_MV=2768 at a 2800 mV setpoint with ST-LINK attached.
+The full five-point sweep subsequently passed with --off-wait 15 --timeout 5
+(maximum setpoint error 26 mV); the 1 s OFF run had four UART timeouts.
+A post-measurement current capture gave approximately 3.16 uA mean, with
+PPK2 metadata Calibrated=0 and independent current calibration unverified.
+User DMM follow-up at the 2.8 V setpoint measured VDD and PA4/ST25_LPD
+both at 2.805 V during a controlled ON window (UART 2788 mV).
+PA4 physical High is confirmed for that post-measurement state. Independent
+five-point absolute rail accuracy, timed VDD decay, current calibration and
+Debug OFF physical execution remain pending. See docs/handoff.md for details.
+PPK2 OFF commands are issued from finally on exceptions/Ctrl+C and
+retried, but the API has no output-state acknowledgement. Verify physical
+OFF independently; a lost USB link cannot guarantee shutdown.
+
+## Piezo + LIS2 interaction current test (2026-10-14)
+
+Implementation added:
+
+- `FW/PiezoLIS2InteractionTest/PiezoLIS2InteractionTest.ino`
+- `Software/PPK2Automation/piezo_current_test.py`
+- `Software/PPK2Automation/tests/test_piezo_current_test.py`
+
+Purpose: verify single-ended piezo drive, 2/3/4 kHz playback, LIS2DW12 false
+motion interrupt behavior during and shortly after each beep, and automated
+PPK2 current/charge measurement without the Power Profiler GUI.
+
+Firmware behavior:
+
+- PA0 drives Piezo A through R20 as a 50 percent square wave.
+- PA1 stays safe LOW; no differential drive is used.
+- PA0 PWM uses TIM2 channel 1 on the STM32L031G6Ux generic variant.
+- Frequencies: 2000, 3000 and 4000 Hz.
+- Each frequency runs 3 repeats, 500 ms beep, 1500 ms gap.
+- LIS2DW12 configuration follows the passed LIS2 wake test: 12.5 Hz low-power,
+  wake-up detect, latched active-high INT1 on PB0.
+- Before each beep, old LIS2 interrupt sources are cleared. During the beep
+  and for a 300 ms post-beep observation window, firmware checks the PB0 ISR
+  flag, INT1 level, `WAKE_UP_SRC` and `ALL_INT_SRC`.
+- Any new LIS2 interrupt during either window is reported as a false trigger.
+- UART markers are machine-readable `PIEZO_EVENT_BEGIN`,
+  `PIEZO_EVENT_END`, and `PIEZO_TEST_SUMMARY` lines.
+- At test end: piezo off, LIS2 sources clear, UART/I2C shut down, PA4/ST25_LPD
+  restored Output High, unused peripherals/clocks quieted, then STOP.
+
+Automation behavior:
+
+- PPK2 sequence: DUT OFF, wait `--off-wait` (default 15 s), set voltage,
+  clear old stream and UART data, start acquisition, DUT ON, read all 9 UART
+  events, stop acquisition, DUT OFF in finally.
+- PPK2 current stream uses ppk2-api 0.9.2 `start_measuring()`, `get_data()`,
+  and `get_samples()`. The API does not provide per-sample timestamps or DUT
+  voltage waveform samples in this path, so sample timestamps are assigned
+  using PC monotonic receive time and the configured sample rate
+  (`--sample-rate-hz`, default 100000). UART markers use the same clock.
+- Event analysis uses 100 ms pre/post marker margins by default and attempts
+  current-edge alignment around the expected 500 ms active window. If edge
+  detection is not reliable, marker timing is retained and recorded.
+- Baseline is the 300 ms quiet window before each begin marker.
+- Charge is baseline-subtracted trapezoidal integration of
+  `max(I_uA - baseline_uA, 0) * dt_seconds`, reported as uC and uAh.
+- Peak is recorded both as raw single-sample peak and p99; automated current
+  sanity uses p99.
+- Voltage sag columns remain blank and console reports
+  `VOLTAGE_SAG=NOT_AVAILABLE_FROM_API`; use an oscilloscope for instantaneous
+  VDD sag.
+
+Software-only validation passed on this session: Python syntax and 12 unittest
+regressions covering parser, incomplete/missing/duplicate events, timeout,
+baseline/average/p99/charge/duration checks, LIS2 false-trigger FAIL, CSV, and
+Ctrl+C/exception cleanup. Firmware build passed with STM32duino 3.0.0 and LTO:
+25500 / 32768 bytes flash, 2160 / 8192 bytes static RAM.
+
+Initial HIL started on 2026-10-14. COM7 was identified as PPK2 control and
+COM8 as USB-UART. The first flashed firmware produced 9 UART events but the
+user heard only one beep; this exposed a PWM re-arm bug where PA0 was returned
+to GPIO LOW after the first beep and later `setPWM()` calls did not restore
+timer alternate function. Firmware was fixed to force TIM2_CH1 PWM mode on PA0
+for every beep.
+
+Post-fix HIL at 2.8 V produced 9/9 UART events and the user confirmed hearing
+9 beeps. The run still failed acceptance: LIS2 false triggers occurred on
+6 of 9 events, and current sanity failed on two 3000 Hz events because active
+average was not above baseline. CSV:
+`Software/PPK2Automation/results/piezo_current_20261014_164204.csv`.
+No oscilloscope VDD sag measurement was taken. Do not tune LIS2 thresholds from
+this result automatically; use it as evidence for the next controlled false-
+trigger investigation.
+
+## 2026-10-15: Minimal Android NFC-V discovery check
+
+Independent probe com.pebo.nfcprobe20261015 is installed on Sony XQ-DQ72.
+Keep phone unlocked, NFC enabled and probe Activity foreground. Remove other
+NFC tags; bring only Pebo antenna near phone, hold about 2 seconds, move away
+and retap. Preserve existing board supply/wiring; Codex does not operate power
+or flash MCU for this check. Record actual power/assembly/antenna geometry
+separately; none is inferred from historical PC test records.
+
+Software PASS: assembleDebug (34 tasks), APK signature check, install and
+Activity launch; initial private status READY/count=0. Physical PASS requires
+a current-session onTagDiscovered callback with NfcV and user attribution to
+the isolated Pebo target. Repeated callbacks are not by themselves proof of
+unique tags or quantified read-range/reliability. No callback during one short
+window is pending/not detected in those conditions, not a proven hardware fail.
+UI UID uses Android Tag.id byte order; host status omits full UID. No NDEF or
+memory reads/writes/custom RF commands. Pebo application data and MCU update
+path remain untested. See canonical handoff for current physical outcome and
+probe directory/logs. Manufacturer DS13519 Rev 8 pages 1/3 directly read.
+
+2026-10-15 physical result: PASS. Current-session NFC_V_DETECTED callback, 8-byte UID and NfcV technology recorded; user confirmed success on the selected Pebo target. Power/assembly conditions remain unverified; no data-memory operation. Evidence: temporary probe physical-detection.log; canonical details: docs/handoff.md.
+
+## 2026-10-15: ST25DV single-block engineering read checklist
+
+Same local project/App ID extended in place (versionCode 2), not a new project.
+20 unit tests PASS, debug build/signature/update install/launch PASS.
+Hardware reads remain pending until operator completes:
+
+1. Default block 0: Prepare, retap isolated Pebo, retain TX/RX and validated
+   4 data bytes. Record actual board/power/variant/antenna conditions separately.
+2. Remove and prepare/retap five times. Check one read per press; unarmed
+   rediscovery must not append read result or issue transceive.
+3. Remove phone during transfer: TagLost/I/O may depend on controller timing;
+   capture actual failure category, ensure no stale current success, reprepare
+   and verify recovery. Merely removing after success does not test interruption.
+4. Input -1, 128 and nonnumeric values; no arm/no TX; input error visible.
+5. Prepare, background, return: cancelled/no pending read; prepare again works.
+6. Copy/Clear logs and previous-success/history indication after failure.
+
+Command/parser/input and one-shot/pause gate unit tests do not prove physical
+I/O cancellation, RF read correctness or error recovery. Previous NFC-V discovery
+PASS remains valid; it is not substituted for these new memory-read checks.
+Canonical result/update evidence: docs/handoff.md. Source/range contract in
+nfc-protocol.md; no MCU/PPK2Automation/PeboBridge changes.
+
+Final offline update (2026-10-15): serialized cancellation/normal connection close;20 tests PASS,build PASS in29s,signature PASS. Final APK SHA256 BBEB950B61B57F83B02A1509330D4AB2AAC4A2352776948A6F3015FAE575E83E. Intermediate build installed before user disconnected phone; final build NOT installed. All five memory-read physical checks pending. See canonical handoff.
+
+
+2026-10-15 final-build physical Block0 PASS: final APK update install Success; user-operated read, session1792039552199; full RX00 00 00 00 00, four data bytes00 00 00 00. readBusy=false,armedBlock=-1 afterwards. Evidence in original TEMP project/single-block-physical-result.log. Five repeats/interruption/invalid UI/background and Copy-Clear UI remain unverified;see handoff.
+
+## 2026-10-15: Protocol v0.1 Android/Sample validation
+
+2026-10-25 Status fix update: source formatter repaired and4 regression tests added;
+62 JVM tests0 failures/errors/skips, debug build PASS on PC-02. No wire/model change.
+Fixed APK not installed because Sony/local debug signers differ; phone UI crash
+remains in installed originalv3. Instrumentation skipped(no runner; emulator lacks
+hypervisor). No new RF/HIL PASS. See handoff/evidence/pc02-20261025-status-fix and
+canonical handoff. Minimal v0.2 documents add proposals only, not tested firmware.
+
+2026-10-25 PC-02 physical update: Sony XQ-DQ72 Android15/v3 main launch,
+Sample labels/DeviceInfo PASS; Read Status FAIL, reproducible formatter crash at
+ProtocolActivity.kt188. Other full Sample flows remain pending. Engineering
+NfcV block0 user-retap PASS, full RX00 00 00 00 00, data00 00 00 00;
+does not prove real MCU protocol. Evidence under Android handoff/evidence/
+pc02-20261025-ui-nfc; canonical details in docs/handoff.md. Extended five-read,
+interruption/input/lifecycle/Copy-Clear checks not completed in this session.
+
+58 JUnit PASS: 38 protocol plus 20 existing engineering regressions; no failures,
+errors or skips. Covers the 12 requested groups, independent CRC fixture,
+LE/timestamps, validation, records, History40/40/5, all eight Sample commands,
+sequence checks, explicit unbound-real failure and 2000 malformed buffers.
+Protocol has no Android/ST imports. NFC permission only; no dependencies added.
+Debug build19s/40tasks and signature PASS; previous warnings non-blocking.
+No phone at install attempt: version3 NOT installed; no UI/RF validation.
+Previous discovery and Block0 PASS must not be counted as protocol HIL.
+
+Next: reconnect/authorize, update same App, open Protocol/Sample button; verify
+Sample banners, Info, Status3events/1completed, Config edit/readback, History
+40/40/5, Sync Time and Debug/invalid HEX. Switch real mode: old values cleared,
+explicit unavailable error, no packet traffic. Return engineering screen for
+separate discovery/Block0 regression. True MCU protocol writes require agreed
+firmware and atomic transport binding. See PROTOCOL-v0.1.md and handoff.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pebo.nfcprobe20261015.ReadGateTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T10:47:17.255Z" hostname="TRIPLEC_AERO" time="0.007">
+  <properties/>
+  <testcase name="staleCompletionCannotClearAnotherRequest" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.001"/>
+  <testcase name="pauseCancelsArmedAndDoesNotRearmOnResume" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.0"/>
+  <testcase name="cannotArmInBackgroundOrOutsideBounds" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.001"/>
+  <testcase name="pauseCancelsRunningAndKeepsBusyUntilWorkerReturns" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.0"/>
+  <testcase name="onePressOnlyOneRead" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.0"/>
+  <testcase name="idleDiscoveryDoesNotStartRead" classname="com.pebo.nfcprobe20261015.ReadGateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

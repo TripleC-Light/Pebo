@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pebo.nfcprobe20261015.SingleBlockTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-24T17:18:02.927Z" hostname="TRIPLEC" time="0.07">
+  <properties/>
+  <testcase name="successRequiresFlagsAndFourDataBytes" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.016"/>
+  <testcase name="emptyResponseIsMalformed" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.001"/>
+  <testcase name="addressedCommandKeepsRawUidAndOmitsCrc" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.001"/>
+  <testcase name="knownTagErrorsPreserveCode" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.029"/>
+  <testcase name="rejectsInvalidUidLengths" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.002"/>
+  <testcase name="unknownTagErrorRemainsTagError" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.0"/>
+  <testcase name="shortAndLongSuccessAreMalformed" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.002"/>
+  <testcase name="zeroAndFfDataRemainValid" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.0"/>
+  <testcase name="hexIsUnsignedAndDoesNotMutateUid" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.009"/>
+  <testcase name="unsupportedFlagsRejectedEvenWithValidLength" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.001"/>
+  <testcase name="rejectsInvalidBlockNumbers" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.002"/>
+  <testcase name="decimalInputValidation" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.004"/>
+  <testcase name="malformedErrorLengthsRejected" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.0"/>
+  <testcase name="upperBoundBlock127" classname="com.pebo.nfcprobe20261015.SingleBlockTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

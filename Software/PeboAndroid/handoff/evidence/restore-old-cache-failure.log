@@ -1,0 +1,857 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'PeboAndroidEnvironmentCheck'.
+> Multiple build operations failed.
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+  outputDirectory:
+   - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+  
+  resultsFile:
+   - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+  
+      ...and 100 more failures.
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+   > The contents of the immutable workspace 'C:\Users\echou\AppData\Local\Temp\Pebo-Android-EnvCheck-20261015\.gradle-user-home\caches\9.3.1\transforms\5df2e22b9c7cd9d281a58e930416985f\workspace' have been modified. These workspace directories are not supposed to be modified once they are created. The modification might have been caused by an external process, or could be the result of disk corruption.
+     outputDirectory:
+      - transformed (Missing, b2b4c679e0de9c339f26fecdcb3b8cd5)
+     
+     resultsFile:
+      - results.bin (RegularFile, f571933bb948577b1f9f3076fb8fc7c6)
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s

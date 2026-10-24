@@ -1,0 +1,45 @@
+--------- beginning of crash
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: FATAL EXCEPTION: main
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: Process: com.pebo.nfcprobe20261015, PID: 14657
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: java.util.UnknownFormatConversionException: Conversion = '
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: '
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifier.conversion(Formatter.java:3011)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifier.<init>(Formatter.java:3049)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifierParser.<init>(Formatter.java:2802)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter.parse(Formatter.java:2735)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter.format(Formatter.java:2684)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.util.Formatter.format(Formatter.java:2638)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.lang.String.format(String.java:4713)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity.showBody(ProtocolActivity.kt:188)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity.perform$lambda$32$lambda$31(ProtocolActivity.kt:170)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:317)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8751)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+10-25 01:04:29.498 14657 14657 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:892)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: FATAL EXCEPTION: main
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: Process: com.pebo.nfcprobe20261015, PID: 14988
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: java.util.UnknownFormatConversionException: Conversion = '
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: '
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifier.conversion(Formatter.java:3011)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifier.<init>(Formatter.java:3049)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter$FormatSpecifierParser.<init>(Formatter.java:2802)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter.parse(Formatter.java:2735)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter.format(Formatter.java:2684)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.util.Formatter.format(Formatter.java:2638)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.lang.String.format(String.java:4713)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity.showBody(ProtocolActivity.kt:188)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity.perform$lambda$32$lambda$31(ProtocolActivity.kt:170)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at com.pebo.nfcprobe20261015.ProtocolActivity$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:317)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8751)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+10-25 01:05:38.130 14988 14988 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:892)

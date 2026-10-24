@@ -21,15 +21,16 @@ Denied:
 
 ## Requirements
 
-Python 3.9+ and the official Python MCP SDK:
+Python 3.10+ and the official Python MCP SDK 1.x. The bridge currently uses
+`mcp.server.fastmcp.FastMCP`; SDK 2.x changes that API. Install the bounded
+requirements using the same interpreter that will launch the server:
 
 ```powershell
-python -m pip install mcp
+python -m pip install -r Software/PeboBridge/requirements.txt
 ```
 
-In this environment, pip install currently fails due local TLS/transfer issues,
-so the MCP server source is present but the stdio server cannot be launched
-until the SDK is installed.
+Use a machine-local virtual environment. Interpreter paths and installation
+status are recorded per computer in `docs/development-machines.md`.
 
 ## Stdio command
 

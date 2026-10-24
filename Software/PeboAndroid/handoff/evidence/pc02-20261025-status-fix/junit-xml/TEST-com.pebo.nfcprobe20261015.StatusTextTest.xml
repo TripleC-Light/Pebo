@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pebo.nfcprobe20261015.StatusTextTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T17:18:03.002Z" hostname="TRIPLEC" time="0.043">
+  <properties/>
+  <testcase name="dynamicTimeTextIsNeverTreatedAsFormatString" classname="com.pebo.nfcprobe20261015.StatusTextTest" time="0.007"/>
+  <testcase name="zeroAndFullBatteryKeepOneLiteralPercent" classname="com.pebo.nfcprobe20261015.StatusTextTest" time="0.009"/>
+  <testcase name="sampleReadStatusCanBeRenderedThroughProductionFormatter" classname="com.pebo.nfcprobe20261015.StatusTextTest" time="0.025"/>
+  <testcase name="rendersAllStatusFieldsWithoutFormattingLiteralPercent" classname="com.pebo.nfcprobe20261015.StatusTextTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

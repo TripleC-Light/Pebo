@@ -1,0 +1,19 @@
+{
+  "status": "FAIL",
+  "port": "COM5",
+  "vid": 1659,
+  "pid": 8963,
+  "baud": 115200,
+  "power": "user-controlled, not queried or changed",
+  "ppk_access": false,
+  "flash_or_reset": false,
+  "rows": [
+    {
+      "tx_hex": "68656c700a",
+      "rx_hex": "45525220746f6f5f6c6f6e670d0a",
+      "rx": "ERR too_long",
+      "expected": "OK help commands=0..8,show,off,help",
+      "passed": false
+    }
+  ]
+}

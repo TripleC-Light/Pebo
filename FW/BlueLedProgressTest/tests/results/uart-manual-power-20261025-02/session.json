@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "port": "COM5",
+  "baud": 115200,
+  "power": "user-controlled; unchanged",
+  "ppk_access": false,
+  "flash_or_reset": false,
+  "rows": [
+    {
+      "kind": "resync only, not a test",
+      "rx_hex": "45525220696e76616c69640d0a"
+    },
+    {
+      "tx_hex": "68656c700a",
+      "rx_hex": "4f4b2068656c7020636f6d6d616e64733d302e2e382c73686f772c6f66662c68656c700d0a",
+      "rx": "OK help commands=0..8,show,off,help",
+      "expected": "OK help commands=0..8,show,off,help",
+      "passed": true
+    },
+    {
+      "tx_hex": "380a",
+      "rx_hex": "4f4b206c6576656c206c6576656c3d38207061747465726e3d484848480d0a",
+      "rx": "OK level level=8 pattern=HHHH",
+      "expected": "OK level level=8 pattern=HHHH",
+      "passed": true
+    },
+    {
+      "tx_hex": "6f66660a",
+      "rx_hex": "4f4b206f6666206c6576656c3d38207061747465726e3d4f4f4f4f0d0a",
+      "rx": "OK off level=8 pattern=OOOO",
+      "expected": "OK off level=8 pattern=OOOO",
+      "passed": true
+    },
+    {
+      "tx_hex": "73686f770d0a",
+      "rx_hex": "4f4b2073686f77206c6576656c3d38207061747465726e3d484848480d0a",
+      "rx": "OK show level=8 pattern=HHHH",
+      "expected": "OK show level=8 pattern=HHHH",
+      "passed": true
+    },
+    {
+      "tx_hex": "390a",
+      "rx_hex": "45525220696e76616c69640d0a",
+      "rx": "ERR invalid",
+      "expected": "ERR invalid",
+      "passed": true
+    },
+    {
+      "tx_hex": "787878787878787878787878787878787878787878787878787878787878787878787878787878780a",
+      "rx_hex": "45525220746f6f5f6c6f6e670d0a",
+      "rx": "ERR too_long",
+      "expected": "ERR too_long",
+      "passed": true
+    },
+    {
+      "tx_hex": "6f66660a",
+      "rx_hex": "4f4b206f6666206c6576656c3d38207061747465726e3d4f4f4f4f0d0a",
+      "rx": "OK off level=8 pattern=OOOO",
+      "expected": "OK off level=8 pattern=OOOO",
+      "passed": true
+    }
+  ]
+}

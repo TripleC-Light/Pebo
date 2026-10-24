@@ -26,4 +26,27 @@ This is a **project context starter**, not firmware or a verified schematic. It 
 3. Record any confirmed choices in the corresponding `docs/` file. Put measured values and test conditions alongside them.
 4. Ask Codex to implement a narrow task against a named document, then review its build and physical test results.
 
+## Handoff
+
+When moving between development computers, start with `docs/handoff.md`. It
+records the current workspace path, confirmed board bring-up status, critical
+low-power rules, tool notes, and the next work queue.
+
+Per-computer environment and readiness for the three development computers
+are tracked in `docs/development-machines.md`. Identify the current computer
+and verify its dated profile at the beginning of each session; update both
+records before switching computers.
+
 Suggested next task after the actual board information is added: “Compare the schematic and BOM with `docs/hardware.md`; update the verified pin map and flag any discrepancies without changing firmware.”
+
+
+
+## Android development handoff
+
+The existing Android engineering App and its protocol/Sample implementation
+are saved under `Software/PeboAndroid`. Read that project's `README.md` for
+portable setup, `PROTOCOL-v0.1.md` for architecture and provisional decisions,
+and `docs/handoff.md` for canonical task status and cross-computer history.
+A portable archive and SHA256 sidecar are under `Software/` for transfer.
+Source is saved locally; verify cloud replication or file checksums before
+using another computer. No automatic Git commit/push was performed.

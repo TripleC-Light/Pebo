@@ -1,0 +1,22 @@
+{
+  "machine": "TripleC/PC-02",
+  "date": "2026-10-25",
+  "branch": "main",
+  "head": "11e2f6e8954aa45e373c615d853d323aac053979",
+  "core": "STMicroelectronics:stm32 3.0.0",
+  "compiler": "ARM GCC 14.2.1-1.1",
+  "fqbn": "STMicroelectronics:stm32:GenL0:pnum=GENERIC_L031G6UX,xserial=generic,usb=none,opt=oslto,dbg=none,rtlib=nano,upload_method=swdMethod",
+  "compile": "PASS",
+  "flash_reported": 17160,
+  "static_ram": 2352,
+  "binary_bytes": 17380,
+  "binary_sha256": "7B48732A6CA10BBF135DAE0B7F0635DE288D964077AB7A9BD53C3250AA913AC9",
+  "logic_checks": "PASS: GCC constexpr/static_assert, -Wall -Wextra -Werror",
+  "pwm_hz": 1000,
+  "low_duty_percent": 25,
+  "high_duty_percent": 100,
+  "fill_order": "PA5,PA6,PA7,PA8 - user authorized provisional",
+  "power": "PPK2 source 2800mV by explicit user authorization; no current measurement",
+  "visual_acceptance": "User confirmed zero double flash, brightness distinction and physical fill order all correct after second playback",
+  "hardware_result": "LED GPIO/PWM/timer and MCU command replies verified; PC UART RX unresolved; run05 partial"
+}

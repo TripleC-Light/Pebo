@@ -1,0 +1,8 @@
+Captured 2026-10-15T12:46:40.4017005+08:00
+App session 1792039552199
+本次 block：0
+結果：成功 [SUCCESS]
+原因：flags 與長度符合，取得 4 bytes
+TX HEX（已呼叫 transceive）：22 20 30 13 40 7F 66 52 02 E0 00
+完整 RX HEX：00 00 00 00 00
+本次 4-byte 資料：00 00 00 00

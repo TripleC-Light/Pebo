@@ -1,0 +1,104 @@
+{
+  "status": "FAIL",
+  "off_sent": true,
+  "records": [
+    {
+      "kind": "PPK metadata",
+      "monotonic": 42110.625,
+      "hardware": "1518",
+      "port": "COM7"
+    },
+    {
+      "kind": "POWER ON",
+      "monotonic": 42110.671,
+      "millivolts": 2800
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42111.343,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42114.937,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000",
+        "reset=HWrst",
+        "-w",
+        "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-BlueLedProgressTest-20261025\\BlueLedProgressTest.ino.bin",
+        "0x08000000",
+        "-v",
+        "-rst"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Under Reset\nReset mode  : Hardware reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\n\nMemory Programming ...\nOpening and parsing file: BlueLedProgressTest.ino.bin\n  File          : BlueLedProgressTest.ino.bin\n  Size          : 16.97 KB \n  Address       : 0x08000000 \n\n\nErasing memory corresponding to segment 0:\nErasing internal memory sectors [0 135]\nDownload in Progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\ufffd 26%\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\ufffd 53%\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\ufffd 79%\u8a57\u8a57\u8a57\u8a57\u8a57\ufffd 100%\n\nFile download complete\nTime elapsed during download operation: 00:00:03.105\n\n\n\nVerifying ...\n\n\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 50%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\n\nDownload verified successfully \n\n\n\nMCU Reset\n\nSoftware reset is performed\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42116.14,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x50000000",
+        "40",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-02\\registers-4-50000000.bin"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-02\\registers-4-50000000.bin\n  Size          : 40 Bytes\n  Address:      : 0x50000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.045\n"
+    },
+    {
+      "kind": "registers",
+      "monotonic": 42116.14,
+      "values": {
+        "0x50000000": "0xebe955ff",
+        "0x50000004": "0x0",
+        "0x50000008": "0xc3fff00",
+        "0x5000000c": "0x24140000",
+        "0x50000010": "0x4610",
+        "0x50000014": "0x10",
+        "0x50000018": "0x0",
+        "0x5000001c": "0x0",
+        "0x50000020": "0x0",
+        "0x50000024": "0x440"
+      }
+    },
+    {
+      "kind": "PASS GPIO",
+      "monotonic": 42116.14,
+      "pattern": "OOOO"
+    },
+    {
+      "kind": "UART",
+      "monotonic": 42118.171,
+      "tx": "68656c700a",
+      "rx": ""
+    },
+    {
+      "kind": "ERROR",
+      "monotonic": 42118.218,
+      "message": "AssertionError(('', 'OK help commands=0..8,show,off,help'))"
+    },
+    {
+      "kind": "POWER OFF sent",
+      "monotonic": 42118.218
+    }
+  ],
+  "physical_off_measured": false,
+  "current_measurement": false
+}

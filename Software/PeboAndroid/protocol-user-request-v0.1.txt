@@ -1,0 +1,438 @@
+請更新目前的 Pebo Android App，實作以下 NFC 通訊協定。
+
+專案背景：
+- 裝置名稱：Pebo
+- NFC Tag：目前樣品可能使用 ST25DV04K，量產目標為 ST25DV04KC
+- Android NFC transport：NFC-V / ISO15693
+- App 層的 protocol 不可以依賴 ST25DV04K / ST25DV04KC 的 register 差異
+- 請將 ST Tag 相關 transport implementation 與 Pebo protocol model 分離，未來更換 ST25DV04K → ST25DV04KC 時，不應影響 App 上層資料格式
+- 程式架構請保持模組化、可測試、可維護
+
+請將以下格式實作為：
+
+Pebo NFC Protocol v0.1
+
+一、Protocol 基本規格
+
+- Encoding：Binary
+- Byte order：Little-endian
+- Time format：Unix timestamp UTC，uint32
+- Protocol Version：0x01
+- 單一 packet 最大長度：256 bytes
+- CRC：CRC-16/CCITT
+- Pebo Device ID：8 bytes
+- NFC UID 與 Pebo Device ID 是不同的識別碼，不可混用
+
+二、Packet 格式
+
+Offset 0，Size 2：
+Magic = ASCII "PB"
+Bytes = 0x50 0x42
+
+Offset 2，Size 1：
+Protocol Version = 0x01
+
+Offset 3，Size 1：
+Command
+
+Offset 4，Size 1：
+Sequence
+
+Offset 5，Size 1：
+Payload Length
+
+Offset 6，Size N：
+Payload
+
+Offset 6+N，Size 2：
+CRC16
+
+三、Commands
+
+0x01 GET_DEVICE_INFO
+0x02 GET_STATUS
+0x03 SET_TIME
+0x04 GET_CONFIG
+0x05 SET_CONFIG
+0x06 GET_HISTORY
+0x07 CLEAR_HISTORY
+0x08 PING
+
+Response command 規則：
+
+responseCommand = requestCommand OR 0x80
+
+例如：
+
+GET_STATUS request = 0x02
+GET_STATUS response = 0x82
+
+四、Response Status Code
+
+0x00 OK
+0x01 INVALID_COMMAND
+0x02 INVALID_LENGTH
+0x03 INVALID_DATA
+0x04 BUSY
+0x05 CRC_ERROR
+0x06 INTERNAL_ERROR
+
+五、GET_DEVICE_INFO Response Payload
+
+byte 0：
+Status
+
+bytes 1–8：
+Pebo Device ID，8 bytes
+
+byte 9：
+HW Major
+
+byte 10：
+HW Minor
+
+byte 11：
+FW Major
+
+byte 12：
+FW Minor
+
+byte 13：
+FW Patch
+
+byte 14：
+NFC Protocol Version
+
+bytes 15–16：
+Capability Flags，uint16 little-endian
+
+六、GET_STATUS Response Payload
+
+byte 0：
+Status
+
+bytes 1–4：
+Device Unix Time，uint32 little-endian
+
+bytes 5–6：
+Battery Voltage，單位 mV，uint16 little-endian
+
+byte 7：
+Battery Percent，範圍 0–100
+
+byte 8：
+Battery Status
+
+byte 9：
+今日實際 Drink Event 總次數
+
+byte 10：
+今日已完成的 Reminder Period 數量
+
+byte 11：
+今日總 Reminder Period 數量
+
+byte 12：
+Daily Target
+
+byte 13：
+LED Progress，範圍 0–8
+
+bytes 14–17：
+Last Drink Unix Time，uint32 little-endian
+
+bytes 18–19：
+Device Status Flags，uint16 little-endian
+
+重要邏輯：
+
+- 每一個 Reminder Period 最多只能算一次「完成」
+- 同一個 Reminder Period 內如果喝水多次，仍然要逐次記錄 Drink Event
+- 因此「Drink Event Count」與「Completed Reminder Period Count」是兩個不同概念，不可混用
+
+例如：
+
+09:00–10:00 是同一個提醒時段
+
+09:12 喝水
+09:35 喝水
+09:48 喝水
+
+則：
+
+Drink Events = 3
+Period Completed = 1
+
+七、SET_TIME Request Payload
+
+bytes 0–3：
+Unix Timestamp UTC，uint32 little-endian
+
+bytes 4–5：
+Timezone Offset Minutes，int16 little-endian
+
+例如台灣：
+
+UTC+8 = +480 minutes
+
+App 顯示時間時可轉成本地時間，但裝置資料格式請維持明確、一致的 UTC timestamp。
+
+八、SET_CONFIG / GET_CONFIG
+
+Config Header：
+
+byte 0：
+Daily Target
+
+byte 1：
+Period Count
+
+byte 2：
+Reminder Enable
+
+byte 3：
+Reserved
+
+之後接 Period Count 個 Reminder Period。
+
+每個 Reminder Period 結構如下：
+
+byte 0：
+Period ID
+
+bytes 1–2：
+Start Minute of Day，uint16 little-endian
+
+bytes 3–4：
+End Minute of Day，uint16 little-endian
+
+byte 5：
+Flags
+
+時間不要存成字串，例如不要存 "08:30"。
+
+請使用 minute-of-day：
+
+08:30 = 8 × 60 + 30 = 510
+10:00 = 600
+
+Protocol 限制：
+
+Maximum Reminder Periods per day = 16
+
+Config Validation Rules：
+
+- period count <= 16
+- Start Minute 與 End Minute 必須在合法範圍
+- Reminder Period 不可互相重疊
+- Reminder Period 不可跨午夜
+- malformed payload 必須拒絕，不可造成 crash
+
+九、Drink History Record
+
+每一筆 Drink Record 固定為 6 bytes。
+
+bytes 0–3：
+Unix Timestamp UTC，uint32 little-endian
+
+byte 4：
+Period ID
+
+byte 5：
+Flags
+
+Period ID：
+
+0x00–0x0F = 對應的 Reminder Period
+0xFF = 不屬於任何 Reminder Period
+
+Drink Record Flags：
+
+bit 0 = Valid Drink
+bit 1 = Period Completion Event
+bit 2 = Reminder Was Active
+bit 3 = Manual/Test Event
+bits 4–7 = Reserved
+
+十、GET_HISTORY Pagination
+
+GET_HISTORY 必須支援分頁，不要假設所有 history 可以一次放進 256 bytes。
+
+建議 GET_HISTORY Request Payload：
+
+bytes 0–1：
+Start Index，uint16 little-endian
+
+byte 2：
+Requested Count
+
+Response 應在不超過 256-byte packet limit 的前提下，回傳盡可能多的 6-byte Drink Record。
+
+十一、Android 程式架構要求
+
+請建立獨立的 protocol module/package，不要把 protocol parsing 寫在 UI 裡。
+
+建立 typed Kotlin data classes：
+
+- DeviceInfo
+- DeviceStatus
+- PeboConfig
+- ReminderPeriod
+- DrinkRecord
+
+建立 enum 或 sealed class：
+
+- PeboCommand
+- PeboStatusCode
+
+建立 encoder / decoder：
+
+- Packet Header
+- Payload
+- CRC16
+- Little-endian integer conversion
+
+Parser 必須檢查：
+
+- Magic bytes
+- Protocol Version
+- Payload Length
+- CRC
+- Command / Response mapping
+
+錯誤資料處理要求：
+
+- malformed NFC packet 不可造成 App crash
+- 必須回傳明確 parse error
+- 不要 silent fail
+
+十二、NFC Transport
+
+NFC-V transport 必須與 Pebo Protocol parsing 分離。
+
+不要把 ISO15693 block read/write 細節直接寫進 protocol parser。
+
+請建立清楚的 transport interface，使未來：
+
+ST25DV04K
+→ ST25DV04KC
+
+或 transport 行為改變時，不需要修改 protocol data model。
+
+目前既有的 NFC detection 功能必須保留，不可破壞。
+
+十三、Android UI
+
+Device Info 區域顯示：
+
+- NFC UID
+- Pebo Device ID
+- HW Version
+- FW Version
+- Protocol Version
+
+Status 區域顯示：
+
+- Battery Voltage，mV
+- Battery Percent
+- Device Time
+- Today Drink Event Count
+- Completed Periods / Total Periods
+- Daily Target
+- LED Progress
+- Last Drink Time
+
+Config 區域：
+
+- Read Config
+- Edit Reminder Periods
+- Edit Daily Target
+- Enable / Disable Reminder
+- Write Config
+
+History 區域：
+
+- Read History
+- 顯示 timestamp
+- 顯示 Period ID
+- 顯示 Flags
+- 支援 pagination
+
+Time 區域：
+
+增加「Sync Time」按鈕。
+
+按下後：
+
+- 取得 Android 手機目前時間
+- 寫入 Unix UTC timestamp
+- 同時寫入 timezone offset
+
+十四、Debug Page
+
+Debug 頁面請顯示：
+
+- NFC UID
+- Tag Technologies
+- Raw TX Packet Hex
+- Raw RX Packet Hex
+- Parsed Command
+- Parsed Status
+- CRC Result
+
+十五、測試要求
+
+請加入 unit tests：
+
+1. CRC16 test
+2. Packet encode test
+3. Packet decode test
+4. Encode → Decode round-trip test
+5. Invalid Magic test
+6. Invalid Version test
+7. Invalid Payload Length test
+8. CRC Error test
+9. Truncated Packet test
+10. Oversized Packet test
+11. Reminder Period validation test
+12. Drink Record encode/decode test
+
+十六、目前 STM32 Firmware 尚未完成 Protocol
+
+請特別注意：
+
+目前不要假設真實 STM32 firmware 已經實作這套 protocol。
+
+現階段請：
+
+- 完成 Android protocol layer
+- 完成 parser / encoder / decoder
+- 完成 NFC transport interface
+- 完成 UI
+- 完成 unit tests
+- 如有需要，可以加入 Mock / Sample Packet 來測試 UI 與 parser
+- Mock 行為必須清楚標示
+- 不可假裝已經成功從真實裝置取得 Pebo protocol data
+
+十七、實作原則
+
+- Kotlin
+- 優先簡單、可讀、易維護
+- 避免不必要 dependencies
+- Protocol offset 附近請保留清楚註解，因為未來 STM32 firmware 會實作完全相同格式
+- 不要破壞目前已經可以使用的 NFC-V detection
+- 不要修改與本任務無關的功能
+
+完成後請回報：
+
+1. 新增與修改了哪些檔案
+2. Protocol architecture
+3. Packet encoder / decoder 架構
+4. NFC transport 架構
+5. UI 修改內容
+6. Unit test 結果
+7. 哪些功能仍受限於 STM32 firmware 尚未完成
+8. 你做了哪些假設
+9. 是否有發現目前 protocol 定義存在衝突、不清楚或不利於後續 firmware 實作的地方
+
+如果你發現 protocol 本身有問題，請不要自行大幅改動格式；先在回報中指出問題與建議。

@@ -1,0 +1,23 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/C:/Users/tripl/AppData/Local/Android/Sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: 080ad20bed8f84ed2e9ae80b300bb60a6b19ac1e5990302026ab733e20a7012b
+Signer #1 certificate SHA-1 digest: d60d62cf7764c798d4d157d5342a159ccb145782
+Signer #1 certificate MD5 digest: 30aeb27db9471196e8ba7f9a37d32e01
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 1c96a3eabce5ac4b6be43d6aff8892b46481bf1b35960364a6c70aaa300e7f3b
+Signer #1 public key SHA-1 digest: bef7a0f59ba20959a0a8bf6f0fcd7e272f0b9e92
+Signer #1 public key MD5 digest: dc30f80b565a8dc19e5b4e78c8724509
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.

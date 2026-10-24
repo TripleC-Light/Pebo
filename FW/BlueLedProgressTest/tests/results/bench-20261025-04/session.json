@@ -1,0 +1,120 @@
+{
+  "status": "FAIL",
+  "off_sent": true,
+  "records": [
+    {
+      "kind": "PPK metadata",
+      "monotonic": 42397.218,
+      "hardware": "1518",
+      "port": "COM7"
+    },
+    {
+      "kind": "POWER ON",
+      "monotonic": 42397.265,
+      "millivolts": 2800
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42397.906,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42398.171,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "17380",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-04\\existing-firmware.bin"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-04\\existing-firmware.bin\n  Size          : 17380 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.106\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42398.578,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-rst",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nMCU Reset\n\nSoftware reset is performed\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 42399.656,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x50000000",
+        "40",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-04\\registers-5-50000000.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.72V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\BlueLedProgressTest\\tests\\results\\bench-20261025-04\\registers-5-50000000.bin\n  Size          : 40 Bytes\n  Address:      : 0x50000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.023\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "registers",
+      "monotonic": 42399.656,
+      "values": {
+        "0x50000000": "0xebe955ff",
+        "0x50000004": "0x0",
+        "0x50000008": "0xc3fff00",
+        "0x5000000c": "0x24140000",
+        "0x50000010": "0x4610",
+        "0x50000014": "0x10",
+        "0x50000018": "0x0",
+        "0x5000001c": "0x0",
+        "0x50000020": "0x0",
+        "0x50000024": "0x440"
+      }
+    },
+    {
+      "kind": "PASS GPIO",
+      "monotonic": 42399.656,
+      "pattern": "OOOO"
+    },
+    {
+      "kind": "UART",
+      "monotonic": 42401.703,
+      "tx": "68656c700a",
+      "rx": ""
+    },
+    {
+      "kind": "ERROR",
+      "monotonic": 42401.75,
+      "message": "AssertionError(('', 'OK help commands=0..8,show,off,help'))"
+    },
+    {
+      "kind": "POWER OFF sent",
+      "monotonic": 42401.75
+    }
+  ],
+  "physical_off_measured": false,
+  "current_measurement": false
+}

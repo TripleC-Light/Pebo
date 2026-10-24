@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "machine": "TripleC/PC-02",
+  "branch": "main",
+  "head": "11e2f6e8954aa45e373c615d853d323aac053979",
+  "tests": 62,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "newStatusTests": 4,
+  "debugBuild": "PASS",
+  "instrumentation": "NOT RUN: no configured runner; emulator lacks hypervisor",
+  "deviceUpdate": "NOT INSTALLED: signing mismatch; no uninstall/clear-data",
+  "localSignerSHA256": "ff119e3ef72af127c3ca71da7c2cbf7023f0c75a44647b03e40a598d878ede4a",
+  "installedSignerSHA256": "e559eb3dd75ea241b28726488f7069c3abc3f93169eedba7c219f32007da0bb5",
+  "apkSHA256": "CDD03A63757B32B8BF859432F11968B95F175DF67B77650817E790D8949220F0",
+  "sourceFiles": 25,
+  "sourceCopyMismatches": 0,
+  "trust": "isolated JBR cacerts copy plus existing Windows AVG root; process-only JAVA_TOOL_OPTIONS; TLS validation enabled"
+}

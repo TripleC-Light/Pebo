@@ -53,6 +53,22 @@ Last updated: 2026-10-09
 ## LED mapping
 GPIO HIGH turns the LED on.
 
+2026-10-25 standalone BlueLedProgressTest: user authorizes provisional fill order
+PA5 -> PA6 -> PA7 -> PA8. This is a test order, not yet confirmation of the
+physical water-drop empty-to-full geometry. Installed STM32duino3.0.0 Generic
+L031G6Ux PinMap_PWM: PA5/PA8=TIM2_CH1 AF5, PA6=TIM22_CH1 AF5,
+PA7=TIM22_CH2 AF5. For this pattern only, at most one LED needs low-duty PWM;
+all high LEDs are GPIO High(100%), so shared TIM2_CH1 does not prevent the
+requested independent eight-step patterns. Arbitrary independent partial-duty
+brightness on all four LEDs still cannot use these channels independently.
+
+Follow-up 2026-10-25: after the second explicit UART-driven0..8 playback, the
+user visually confirmed zero double-flash, dim/bright distinction and water-drop
+fill direction were all correct. PA5 -> PA6 -> PA7 -> PA8 is now user-verified
+empty-to-full order for this board; 25%/100% brightness accepted visually, not
+an optical/electrical waveform measurement. The provisional note above records
+the initial choice before this observation.
+
 | LED | MCU GPIO | Series resistor |
 |---|---|---:|
 | Blue 1 | PA5 | 330 ohm |

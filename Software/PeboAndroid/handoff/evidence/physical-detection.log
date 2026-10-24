@@ -1,0 +1,8 @@
+{"session":1792033259057,"state":"NFC_V_DETECTED","count":1}
+{"session":1792033259057,"count":1,"timestampMs":1792033350815,"nfcV":true,"uidLength":8,"tech":"NfcV"}
+--------- beginning of main
+10-15 11:00:59.082 10206 10206 I PeboNfcProbe: NFC_STATE session=1792033259057 state=CREATED count=0
+10-15 11:00:59.107 10206 10206 I PeboNfcProbe: NFC_STATE session=1792033259057 state=READY count=0
+10-15 11:02:28.453 10206 10206 I PeboNfcProbe: NFC_STATE session=1792033259057 state=READY count=0
+10-15 11:02:30.815 10206 10206 I PeboNfcProbe: NFC_DETECTED session=1792033259057 count=1 nfcV=true uidLength=8 tech=NfcV
+10-15 11:02:30.817 10206 10206 I PeboNfcProbe: NFC_STATE session=1792033259057 state=NFC_V_DETECTED count=1

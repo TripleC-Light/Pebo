@@ -1,0 +1,438 @@
+[
+  {
+    "path": "Core/LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  {
+    "path": "Core/Include/cmsis_compiler.h",
+    "sha256": "8932e7ac5c9a13b199c64f25b3dc67ebf0a877b33dbcf434d4e1b78e625f57c5"
+  },
+  {
+    "path": "Core/Include/cmsis_gcc.h",
+    "sha256": "7c34c8eb47e78acc8da3122fd27fc912b653b14817a2e1fb55ed41fb55c54281"
+  },
+  {
+    "path": "Core/Include/cmsis_version.h",
+    "sha256": "3b9195c5373a2a4dbfd968b083b3d7f5f446f9ec2e126f75928ac1ff4356b91e"
+  },
+  {
+    "path": "Core/Include/core_cm0plus.h",
+    "sha256": "3a01ca99a202b3c2acf476e9523181c9f6ddb027fa8e097c0be0037b213c8f23"
+  },
+  {
+    "path": "Core/Include/m-profile/cmsis_gcc_m.h",
+    "sha256": "56241ce5b4798048f84429e28c1949d30bb907155f0b8351cb36aaaa9cbbeabb"
+  },
+  {
+    "path": "Device/LICENSE.md",
+    "sha256": "dadb755f51d36614173b28c5790cb4a991e8f4cc822e5b634fd66a4f4145824d"
+  },
+  {
+    "path": "Device/Include/stm32l031xx.h",
+    "sha256": "e6245a7b167daa06488923271106e20d1b328906812baeddeebaa1d128b36b4f"
+  },
+  {
+    "path": "Device/Include/stm32l0xx.h",
+    "sha256": "675d0a6bf4fa4202932dcfd57fe9b73aa20334f4bb4d96f7495e07c61cb8efc9"
+  },
+  {
+    "path": "Device/Include/system_stm32l0xx.h",
+    "sha256": "17040a3a3cbaf4137ad61746a01a7ecef59a140efad5ea942ad04844c1466b3b"
+  },
+  {
+    "path": "Device/Source/startup_stm32l031xx.s",
+    "sha256": "0b512ae13f71f6f83d64930381fee40e0c2699f3acf48722c8d93881c44a93e3"
+  },
+  {
+    "path": "Device/Source/system_stm32l0xx.c",
+    "sha256": "23875505e774343df1ec9bc5496284d9afe9b69810989d8c689624e9ce7be7a9"
+  },
+  {
+    "path": "HAL/LICENSE.md",
+    "sha256": "376c82bcef0be563bf59b93d05cfdd4b6295e4660b55b31dd8a883bf1d6637f7"
+  },
+  {
+    "path": "HAL/Inc/stm32_assert_template.h",
+    "sha256": "df61411a92384f355abd36887b2769536dba735046d988b1afb0f8ec0881841f"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_adc_ex.h",
+    "sha256": "a781e720db66eb7a3b7d5eb9ea2cd6f839c7ad84a10674c3b722e1eceec498cc"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_adc.h",
+    "sha256": "35570c809dac0b2b241a29665619b39d91061bae1adb34ea3e733be38b096bcd"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_comp_ex.h",
+    "sha256": "627129dc4932aad870e5038b660b6a6f7753d08c4e3e22b2a46d9c4185dd74d8"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_comp.h",
+    "sha256": "13edbcaa68c42982d1282b26bdf44f814000b7db3544db45faaa36b93359553c"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_conf_template.h",
+    "sha256": "3e29f5da96eccbf2ebe6fda1b13b4d81641693e25827aa9e786cbc9c028e9225"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_cortex.h",
+    "sha256": "d73758a3058a72d5d98902a484bdcb5e581e1840bb75e97a32d0d234175200e6"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_crc_ex.h",
+    "sha256": "d4d29691e654f231e76b5ab07c1139552b3f7efceecec7536ff7e03c5dceee07"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_crc.h",
+    "sha256": "5073c3d91de3154513d15a428afa50d1182612beabc75dc384c9f99e92da85bf"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_cryp_ex.h",
+    "sha256": "88ecfc2a1073ca7f5e87b50b70a570f4f3f4b56f6c43a71c94840941c32b9aff"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_cryp.h",
+    "sha256": "e752e9c2fc7546bf2919bb28d6e2099b9cc9ba3d7295dbd1b87ca88e45b614aa"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_dac_ex.h",
+    "sha256": "7dbdafe26a4454340b37aed49b8a8d5875b297436bfa1da90507312a27a8486f"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_dac.h",
+    "sha256": "1a40790fa4f689793db07dfed5c1bb8c753dca8e20cf263de6cdcea685d3a4db"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_def.h",
+    "sha256": "094ff937f8f46a3388b77f8c36fede3dac74a696adb842f333b893ce701e16e8"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_dma.h",
+    "sha256": "b84e34f367e2b31214a75b1f976696dd6fe12a6e016a6bdc9d04bc8d46bc8529"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_exti.h",
+    "sha256": "654dbaf445373f010f2b8ea999b4f7c0782f1730eb3e7fbfbe052fe0841d2b03"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_firewall.h",
+    "sha256": "c6bf2f1a64490a3d5a9a8b702e30d75e47ad4dee023e8e0e29d31410eb1993e0"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_flash_ex.h",
+    "sha256": "6d3ae2f95bf3c1b19569c3d60df78ae003777566f81481606f664781dbb86a4c"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_flash_ramfunc.h",
+    "sha256": "d7764a63fd2296b28d0387a419bfb4fa52673a863c517163afbc7ee16e0c33e6"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_flash.h",
+    "sha256": "493b376f0a3973a482c03630e1ddfcf0e987b37a32fa7bafbbcc5869ed75549e"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_gpio_ex.h",
+    "sha256": "56dc8870a6e2ae3df3faa70abae0ad011983e3505228650807703ecd7eef0355"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_gpio.h",
+    "sha256": "5f45259ba4321106b206f0c14ff8fd8691e3fb0cd2bb001c46e62a3a16ea7a1a"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_i2c_ex.h",
+    "sha256": "ca4b2eb03029c16d8f8e5dd747e7014df1fb4cc637fd8bd5af4d66005e9753e0"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_i2c.h",
+    "sha256": "231842578039538c172bf0b585303fceeaccf29aac72780a9cf3137006e4b8ad"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_i2s.h",
+    "sha256": "9586f43db386671998e054aa2412c61e06351ccfcc32e3a4d3868164c3b618f9"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_irda_ex.h",
+    "sha256": "56cb5c2acf4e907a7cb6a621cb300606b3916fb3821de41df1ef1336e37ffe98"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_irda.h",
+    "sha256": "3af3c5d5d7157e9cb9f843bb2791ba08f24da266ac5453282ffd36b6a511211c"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_iwdg.h",
+    "sha256": "79a743f5880791af073cc942f58af5af6bb89fbc65cf863f491a44baa4109db1"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_lcd.h",
+    "sha256": "4f0d1f689bbcdf34c321dddfe32f4bf82a4da3cf0360cd04f790b509b4f3904a"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_lptim.h",
+    "sha256": "bf1f70950395b96cd25c358d7af9cda649339e426512fb3b18380dbd91e02f5f"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_pcd_ex.h",
+    "sha256": "8d06992282991ebfb4b62822a51d73c3141284cc72f362ef1e92048a1c3ab2a0"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_pcd.h",
+    "sha256": "ed697c88303da023a4a40d3258037d9091eedbca06f3d79a1fdac38bf17d66e5"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_pwr_ex.h",
+    "sha256": "8a1419707b68f12edf67c488d03fefca64a635dfd24186db19974a115e3e42df"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_pwr.h",
+    "sha256": "80f87f47975c019b678e6c70ed53874807120c9b7041bb317656180ccb93bab7"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_rcc_ex.h",
+    "sha256": "0e95ffe2e7f2375c40fae316c1120674b22324077b0215b5d79b88195de06255"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_rcc.h",
+    "sha256": "4b3d1e6608fa571e387976318129f331012e1e0883ad9b64715e5388578ecd05"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_rng.h",
+    "sha256": "49a8a1344c208313c80baffaa3d29a71a2b71c61bc84a1c1dae3877ba8f81409"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_rtc_ex.h",
+    "sha256": "7687e9a07d49bf5b9d9d891ac93f2bb3c3982527eb42c36476a376993477f9fa"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_rtc.h",
+    "sha256": "4b02c5a9f372260e248cd2458f020f8bf264741e2c817793d38ca3901b968296"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_smartcard_ex.h",
+    "sha256": "9a59a9e5446115274d054ade2e8dfa9ca3d37d689b4a1cb4f557cbbc80ff5450"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_smartcard.h",
+    "sha256": "d6d3c96af420c6d3db62ef3b4a04c05a4f4030a70b47a6a90885d2c27ed19f0d"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_smbus_ex.h",
+    "sha256": "ef253d80eacc6bdbb8663665a66b21768b851054c19fa96e68cbc0007414a2f5"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_smbus.h",
+    "sha256": "9485c812815535b1a037a3d8a3c9e00fa7b0279020a962a89f1b0a393ef8313b"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_spi.h",
+    "sha256": "dd5468bfad640dc01c5abb8e074c03019eb48a6f9a2ae2e2641d61f42d1e4098"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_tim_ex.h",
+    "sha256": "0128f038dc9844c4c1c66eee44ccaee5e8a754b94369c3819069e84d8b933e91"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_tim.h",
+    "sha256": "6f5364e5d7918a320d8a011bc3183ef9a9a7e5e45e2883493beaa317f2eb16af"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_tsc.h",
+    "sha256": "131c727dd89f75403988d8baec0b7db398a421f2452f066daaf69e05c77e5708"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_uart_ex.h",
+    "sha256": "fc369f170a534981ba748d0139ec0133bfb0fae4c17000ade4b0313d27967e2b"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_uart.h",
+    "sha256": "4568c13c1fa5af2f2aad63d2162bbc96671396caac1526e9edca79d14e83aabc"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_usart_ex.h",
+    "sha256": "77d8d5b1b15ccdeb8949998aaf85b5dfcc7372082c7b706cd6caeff5a302a979"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_usart.h",
+    "sha256": "fcbf6b24077cb699102730b7df01b75cc728faabbf49bc9285ef6b82f5629efd"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal_wwdg.h",
+    "sha256": "ce6e7c9d0e926b56e6c29b0431419203c1b9368d7201c6e5e974332f09cca779"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_hal.h",
+    "sha256": "cffb03281a9f87d92c1682d4b85d1790b62a039f28e5e3f0dec4a064bb7f7d54"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_adc.h",
+    "sha256": "e1d2ccfaa7f1eeadb92bd29974d01352e1c99dc389e7b15fa8f65813242ef7bb"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_bus.h",
+    "sha256": "637b0faf111da2388a8391813899c5ab8fd2e9d9391da7f531c543eecc71a6bf"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_comp.h",
+    "sha256": "701b236daba3884560d2a74da2f88f1eedd07c699d73efd323c57b52ed78a832"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_cortex.h",
+    "sha256": "504a2d78cc4f20f5137f2583ada12817acd3902e757db7d2b046d786828bd6d7"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_crc.h",
+    "sha256": "4eb2fe7e386a08591eab22471f82722d44d6a5490ca18cda50362afc844a3f38"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_crs.h",
+    "sha256": "b6fca14521b489703fb11b3d9dd5a3d3e350ff5f1edadf723ea0d55897f89cb0"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_dac.h",
+    "sha256": "22a763ad13497308e3ad115e7208d5c047e431c09925a0f0cd445f214f2f9589"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_dma.h",
+    "sha256": "32fcd9cf2503ac2410643ad3df913d48fd274d5bf6f74f716e2acd63c51f8347"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_exti.h",
+    "sha256": "7e4d6c444850a6cc244e5417a7ec89427d24581dbe4423b077d37cd5eeed9530"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_gpio.h",
+    "sha256": "c12da8824d37d28d94beede317a091c5a50968b0bd30ab42cac279b76a046685"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_i2c.h",
+    "sha256": "12df44d05b6af60751f357c4ab037132f62d820e6c5a383e18997bade8084df7"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_iwdg.h",
+    "sha256": "fbdcb51a662e6d9dc12302c4a8280d48b4d1aa5e19cea082e82e0cfaeb05ce5f"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_lptim.h",
+    "sha256": "2943d745e7a3edb0a77dcaa4d59c2672258c6b8ad42ce304f805a7433ac24ace"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_lpuart.h",
+    "sha256": "00990de827d114f9ea82f97d92b51eaeb5aabae4e6d26b9e366a3310599651ec"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_pwr.h",
+    "sha256": "81cdb8aa4c464bd83b0fd48274f9bd35807bd3f1cbd0c3217dee2c80dcbe8abf"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_rcc.h",
+    "sha256": "c174f8a530a01fab2d51f209e9f79524fd556b3914ccf7550063436a933faf9c"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_rng.h",
+    "sha256": "c49591fb994dfe20366bf0af7fc08821a8fcfae76c242e5b515d59c4077bf002"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_rtc.h",
+    "sha256": "13a3a7a971ca77d50be5d757a06cfc4dec19e095b153e34528d31dd54ceab8be"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_spi.h",
+    "sha256": "96c917e190bb85f160aa94717d7e7146a1fc843711512d8ce74c170b96598d5a"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_system.h",
+    "sha256": "152f476309e2f07842249993a247766d3d130b6f5fd2a578fdd623b49f86b499"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_tim.h",
+    "sha256": "43f45185ace1a96331c03f9b240ce7867c454c14b955e4d744d6442a3ef59443"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_usart.h",
+    "sha256": "5e7c2fdf3778d0ce26208ad0acd4aa9d0b99f3c036af7a0eac0f2701d1209ea8"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_usb.h",
+    "sha256": "1b82e41abd0bfff9703c026f906f8837d04baced9cf114c6a46955ba2d0a11ae"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_utils.h",
+    "sha256": "b458242e43c608d74389a10c7c038a49e0ea7ba8246f01e35cd83adfa3e5f4fb"
+  },
+  {
+    "path": "HAL/Inc/stm32l0xx_ll_wwdg.h",
+    "sha256": "2f3ef8b3b2d6f8469840122551b03551fcd8367ba0b4064be953c71d5b58d032"
+  },
+  {
+    "path": "HAL/Inc/Legacy/stm32_hal_legacy.h",
+    "sha256": "378546b9f51a1af2913940a9a08fb0703c5547da31a1551ed2cb47d78a947c35"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_cortex.c",
+    "sha256": "706a06e76d794bbbe9ae2f55270d098d895e4956f80da7bdc674bea799e51fde"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_dma.c",
+    "sha256": "c62da17980363626d4d986a0c233864958720313c2cf60dda09d6cfcd510e818"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_flash_ex.c",
+    "sha256": "8064b75f1fc5c1de421530c66da0c45187cc76ad93f436587036bc02de8f01f5"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_flash_ramfunc.c",
+    "sha256": "b0fe4c37ec3998a2f7aff28d54cd8a27a221cfa8bc87428855e2680b2af69247"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_flash.c",
+    "sha256": "a3c923116c686c25b66281db5b97f1df3ba2c750fec563b56c67168c40af4e20"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_gpio.c",
+    "sha256": "95d08a6228d1fc1e3898097b4d10edd2c9a8112fadb5d70bf9593ce8f50be3e8"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_i2c_ex.c",
+    "sha256": "35298767245214855761a0ea7de969d629162d5a37510652410d84598c548cdb"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_i2c.c",
+    "sha256": "2d1844f0ee687d327f865047e0a97570488ca9181cfc89628145bf22608dfec0"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_pwr_ex.c",
+    "sha256": "ebec7b760604f06000228309c4325399d7af417d78abafe3cfc0097699fef19e"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_pwr.c",
+    "sha256": "9331be6ee11f2474c654895fa40fa01eb2f23bddac36590c195e9214c4a54ef4"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_rcc_ex.c",
+    "sha256": "89544479d071870a30947bbec923ad872bb330e10dfabd733c128f2cfef7b9fc"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_rcc.c",
+    "sha256": "58bd19301721cab94cea8a3dc505423a104e20c695bd88a05a9b8116f13fe9c0"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_rtc_ex.c",
+    "sha256": "c5fee0602a5f5ecdcf3b5741ecb5353dece2303fe4cbf65357218a4de5340e83"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_rtc.c",
+    "sha256": "cf0f2075bebdca1787375af09b44088a86c6ceb0c42f7fe79c0793b498218229"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_uart_ex.c",
+    "sha256": "b2c299d77d14600d77714826dcaaf148d0bb1207fe1167cf3ddc3a9e7fc64a75"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal_uart.c",
+    "sha256": "e4eaa4e94f47cc05a321ee113a8b0f9e8660bb1574edf4ce8f1a4a8ad8dba557"
+  },
+  {
+    "path": "HAL/Src/stm32l0xx_hal.c",
+    "sha256": "7b7269fc38cd94e1f1c5dc31d06c11448d3ba32dbfa472017bbd2f1787dfde20"
+  }
+]

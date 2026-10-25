@@ -1,0 +1,228 @@
+{
+  "result": "FAIL",
+  "records": [
+    {
+      "kind": "identity",
+      "monotonic": 1412.968,
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "image_sha256": "b46ceb38a80acb7a56402f56afc5677d0e5e3dfc7b08fba574f8ece137c2c927",
+      "power": "USER_CONTROLLED_2.8V",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 1413.109,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 1413.468,
+      "arguments": [
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "31004",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\EventLoopStopTest\\tests\\results\\rf-20261025-01\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\EventLoopStopTest\\tests\\results\\rf-20261025-01\\readback.bin\n  Size          : 31004 Bytes\n  Address:      : 0x8000000\nRead progress:\n控控控控控控控控控控控控控控控控控控控控控控控控控 0%\n詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.191\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1413.812,
+      "data": "b'status'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1413.828,
+      "text": "OK mode=debug rtc=0/0 lis=0/1 st=0/0 pins=0,0 lpd=1 timeValid=0 stops=21 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=lis_fault_or_budget"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1413.828,
+      "data": "b'help'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1413.843,
+      "text": "OK help commands=status,counters,counters clear,mode debug,run 1..60,off,help"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1413.843,
+      "data": "b'off'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1413.859,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1413.859,
+      "data": "b'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1413.859,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1413.859,
+      "data": "b'run 20'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1413.875,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1414.093,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "STIMULUS WINDOW READY",
+      "monotonic": 1414.093,
+      "stimulus": "rf",
+      "seconds": 20
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.093,
+      "text": "RUN_END reason=deadline requested=20 elapsed=20 stops=20 unknownWake=0 lastLis=09 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.109,
+      "text": "COUNT source=rtc isr=21 wake=20 confirmed=21 handled=21 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.109,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.109,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.109,
+      "text": "END counters"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1434.125,
+      "data": "b'status'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.125,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=0 stops=20 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "PASS run",
+      "monotonic": 1434.125,
+      "seconds": 20,
+      "summary": {
+        "reason": "deadline",
+        "requested": "20",
+        "elapsed": "20",
+        "stops": "20",
+        "unknownWake": "0",
+        "lastLis": "09",
+        "lastSt": "00"
+      },
+      "counts": {
+        "rtc": {
+          "source": "rtc",
+          "isr": "21",
+          "wake": "20",
+          "confirmed": "21",
+          "handled": "21",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "motion": {
+          "source": "motion",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "gpo": {
+          "source": "gpo",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        }
+      },
+      "state": {
+        "mode": "debug",
+        "rtc": "0/0",
+        "lis": "1/0",
+        "st": "1/0",
+        "pins": "0,0",
+        "lpd": "1",
+        "timeValid": "0",
+        "stops": "20",
+        "aborted": "0",
+        "field": "-1",
+        "fieldOn": "0",
+        "fieldOff": "0",
+        "error": "none"
+      }
+    },
+    {
+      "kind": "ERROR",
+      "monotonic": 1434.14,
+      "error": "AssertionError(('gpo', {'rtc': {'source': 'rtc', 'isr': '21', 'wake': '20', 'confirmed': '21', 'handled': '21', 'errors': '0', 'unknown': '0'}, 'motion': {'source': 'motion', 'isr': '0', 'wake': '0', 'confirmed': '0', 'handled': '0', 'errors': '0', 'unknown': '0'}, 'gpo': {'source': 'gpo', 'isr': '0', 'wake': '0', 'confirmed': '0', 'handled': '0', 'errors': '0', 'unknown': '0'}}))"
+    },
+    {
+      "kind": "TX",
+      "monotonic": 1434.14,
+      "data": "b'off'"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 1434.14,
+      "text": "OK off"
+    }
+  ],
+  "power": "unchanged, user controlled",
+  "stimulus": "rf"
+}

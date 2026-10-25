@@ -4,6 +4,21 @@ This document defines desired phone-visible information, **not yet a final byte 
 
 ## Verified board behavior
 
+2026-10-25 follow-up: historical independent source11e2f6e passed three new RF
+windows; unchanged integrated a5cd6df4 reproduced awake ISR/confirmed2 and STOP
+RF ISR/wake/confirmed2, then mixed motion14/GPO2 with deadline/UART recovery.
+No application NFC exchange or power claim. Earlier non-reproduction note
+below is retained history; no hardware non-support inference or proven firmware
+root cause. Full differences/evidence: FW/EventLoopStopTest/RF_REGRESSION.md.
+
+2026-10-25 regression qualification: the success bullets below are historical
+bring-up observations, not a new stage4 acceptance. EventLoopStopTest RF/mixed
+tests observed no PA3 GPO ISR/wake despite phone tag detection and debug FIELD1.
+MCU EXTI3/PA3/rising/NVIC routing checks passed, but physical GPO/VDCG path and
+LPDHigh behavior remain unresolved. Actual KC-JF6D3 CMOS requires powered VDCG;
+LPDHigh field-falling is not guaranteed. Do not equate FIELD1 or RF detection
+with NFC data exchange or STOP wake. See stage4 README/results and pinmap.
+
 - ST25DV user/system I2C access is working.
 - PA4 / ST25_LPD must remain GPIO Output High during STOP for low current.
 - ST25DV GPO has been configured for an RF field-change bring-up event.

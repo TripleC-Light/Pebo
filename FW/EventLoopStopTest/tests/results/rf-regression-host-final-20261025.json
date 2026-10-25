@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "command": [
+    "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-g++.exe",
+    "-std=gnu++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsyntax-only",
+    "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\EventLoopStopTest\\tests\\LogicChecks.cpp"
+  ],
+  "output": "",
+  "coverage": [
+    "49 old/new mailbox interleavings in pure model",
+    "all 1..60 deadlines at midnight",
+    "saturation",
+    "retry wrap and exhaustion",
+    "20 valid held-source checks",
+    "128 service cap",
+    "repeated lifecycle",
+    "partial/range/NUL/overflow input",
+    "Python syntax"
+  ],
+  "limitations": "Compiler-host evaluated models/policies; PRIMASK/NVIC timing and exact physical race not injected"
+}

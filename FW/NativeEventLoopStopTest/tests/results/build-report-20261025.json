@@ -1,0 +1,1561 @@
+{
+  "compiler": "arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119",
+  "commands": [
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_cortex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_cortex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_dma.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_dma.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_flash.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_flash_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_flash_ramfunc.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash_ramfunc.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_gpio.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_gpio.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_i2c.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_i2c.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_i2c_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_i2c_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_pwr.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_pwr.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_pwr_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_pwr_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_rcc.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rcc.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_rcc_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rcc_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_rtc.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rtc.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_rtc_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rtc_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_uart.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_uart.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Src\\stm32l0xx_hal_uart_ex.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_uart_ex.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu11",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Source\\system_stm32l0xx.c",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\system_stm32l0xx.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-gcc.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-x",
+      "assembler-with-cpp",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Source\\startup_stm32l031xx.s",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\startup_stm32l031xx.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-g++.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu++17",
+      "-fno-exceptions",
+      "-fno-rtti",
+      "-fno-threadsafe-statics",
+      "-fno-use-cxa-atexit",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\src\\Board.cpp",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\Board.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-g++.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "-std=gnu++17",
+      "-fno-exceptions",
+      "-fno-rtti",
+      "-fno-threadsafe-statics",
+      "-fno-use-cxa-atexit",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\HAL\\Inc",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Device\\Include",
+      "-I",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\vendor\\Core\\Include",
+      "-c",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\src\\main.cpp",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\main.o"
+    ],
+    [
+      "C:\\Users\\Edward\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\14.2.1-1.1\\bin\\arm-none-eabi-g++.exe",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-mfloat-abi=soft",
+      "-Os",
+      "-flto",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-g3",
+      "-DSTM32L031xx",
+      "-DUSE_HAL_DRIVER",
+      "-DUSER_VECT_TAB_ADDRESS",
+      "-Wall",
+      "-Wextra",
+      "--specs=nano.specs",
+      "--specs=nosys.specs",
+      "-nostartfiles",
+      "-T",
+      "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeEventLoopStopTest\\stm32l031.ld",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_cortex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_dma.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_flash_ramfunc.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_gpio.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_i2c.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_i2c_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_pwr.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_pwr_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rcc.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rcc_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rtc.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_rtc_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_uart.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\stm32l0xx_hal_uart_ex.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\system_stm32l0xx.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\startup_stm32l031xx.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\Board.o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\main.o",
+      "-Wl,--gc-sections,--cref",
+      "-Wl,-Map=C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\NativeEventLoopStopTest.map",
+      "-Wl,--print-memory-usage",
+      "-Wl,--start-group",
+      "-lc",
+      "-lm",
+      "-Wl,--end-group",
+      "-o",
+      "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\NativeEventLoopStopTest.elf"
+    ]
+  ],
+  "native": {
+    "elf": "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeEventLoopStopTest-20261025\\NativeEventLoopStopTest.elf",
+    "sections": [
+      {
+        "name": ".isr_vector",
+        "size": 192,
+        "vma": 134217728,
+        "lma": 134217728,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".text",
+        "size": 16656,
+        "vma": 134217920,
+        "lma": 134217920,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, CODE"
+      },
+      {
+        "name": ".rodata",
+        "size": 1208,
+        "vma": 134234576,
+        "lma": 134234576,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 8,
+        "vma": 134235784,
+        "lma": 134235784,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".data",
+        "size": 100,
+        "vma": 536870912,
+        "lma": 134235792,
+        "flags": "CONTENTS, ALLOC, LOAD, DATA"
+      },
+      {
+        "name": ".bss",
+        "size": 1252,
+        "vma": 536871012,
+        "lma": 134235892,
+        "flags": "ALLOC"
+      },
+      {
+        "name": ".heap_stack",
+        "size": 1024,
+        "vma": 536872264,
+        "lma": 134235892,
+        "flags": "ALLOC"
+      },
+      {
+        "name": ".debug_info",
+        "size": 70112,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_abbrev",
+        "size": 9147,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_loclists",
+        "size": 13427,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_aranges",
+        "size": 824,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_rnglists",
+        "size": 2487,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_line",
+        "size": 28187,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_str",
+        "size": 458491,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".comment",
+        "size": 57,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY"
+      },
+      {
+        "name": ".ARM.attributes",
+        "size": 42,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY"
+      },
+      {
+        "name": ".debug_frame",
+        "size": 1668,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_macro",
+        "size": 78248,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_line_str",
+        "size": 4026,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      }
+    ],
+    "flash_bytes": 18164,
+    "text_output": 16656,
+    "rodata_output": 1208,
+    "rodata_merged_input": 0,
+    "text_excluding_merged_rodata": 16656,
+    "data": 100,
+    "bss": 1252,
+    "static_ram": 1352,
+    "ram_after_static": 6840,
+    "largest_functions": [
+      {
+        "bytes": 4220,
+        "type": "T",
+        "name": "main"
+      },
+      {
+        "bytes": 1076,
+        "type": "t",
+        "name": "Board::Console::begin(unsigned long) [clone .constprop.0]"
+      },
+      {
+        "bytes": 840,
+        "type": "T",
+        "name": "USART2_IRQHandler"
+      },
+      {
+        "bytes": 664,
+        "type": "t",
+        "name": "status()"
+      },
+      {
+        "bytes": 536,
+        "type": "T",
+        "name": "_printf_i"
+      },
+      {
+        "bytes": 520,
+        "type": "T",
+        "name": "_svfiprintf_r"
+      },
+      {
+        "bytes": 520,
+        "type": "T",
+        "name": "_svfprintf_r"
+      },
+      {
+        "bytes": 492,
+        "type": "t",
+        "name": "SystemClock_Config"
+      },
+      {
+        "bytes": 460,
+        "type": "T",
+        "name": "__divsi3"
+      },
+      {
+        "bytes": 408,
+        "type": "T",
+        "name": "__udivmoddi4"
+      },
+      {
+        "bytes": 404,
+        "type": "t",
+        "name": "Board::read(unsigned char, unsigned short, bool, unsigned char&)"
+      },
+      {
+        "bytes": 396,
+        "type": "t",
+        "name": "Board::write(unsigned char, unsigned short, bool, unsigned char)"
+      },
+      {
+        "bytes": 328,
+        "type": "t",
+        "name": "Board::beginBus()"
+      },
+      {
+        "bytes": 308,
+        "type": "t",
+        "name": "HAL_UART_Receive_IT.constprop.0"
+      },
+      {
+        "bytes": 272,
+        "type": "t",
+        "name": "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)"
+      },
+      {
+        "bytes": 272,
+        "type": "t",
+        "name": "I2C_IsErrorOccurred.constprop.0"
+      },
+      {
+        "bytes": 266,
+        "type": "T",
+        "name": "__udivsi3"
+      },
+      {
+        "bytes": 256,
+        "type": "T",
+        "name": "_malloc_r"
+      },
+      {
+        "bytes": 224,
+        "type": "t",
+        "name": "UART_RxISR_8BIT"
+      },
+      {
+        "bytes": 222,
+        "type": "T",
+        "name": "_printf_common"
+      }
+    ],
+    "largest_objects": [
+      {
+        "bytes": 640,
+        "type": "b",
+        "name": "tx"
+      },
+      {
+        "bytes": 136,
+        "type": "b",
+        "name": "(anonymous namespace)::uart"
+      },
+      {
+        "bytes": 84,
+        "type": "b",
+        "name": "sources"
+      },
+      {
+        "bytes": 84,
+        "type": "b",
+        "name": "(anonymous namespace)::i2c"
+      },
+      {
+        "bytes": 76,
+        "type": "D",
+        "name": "_impure_data"
+      },
+      {
+        "bytes": 64,
+        "type": "b",
+        "name": "(anonymous namespace)::rx"
+      },
+      {
+        "bytes": 64,
+        "type": "b",
+        "name": "(anonymous namespace)::tx"
+      },
+      {
+        "bytes": 36,
+        "type": "b",
+        "name": "DeadlineRtc::handle"
+      },
+      {
+        "bytes": 35,
+        "type": "b",
+        "name": "parser"
+      },
+      {
+        "bytes": 16,
+        "type": "r",
+        "name": "AHBPrescTable"
+      },
+      {
+        "bytes": 12,
+        "type": "b",
+        "name": "wakeWindow"
+      },
+      {
+        "bytes": 12,
+        "type": "b",
+        "name": "observed"
+      },
+      {
+        "bytes": 9,
+        "type": "r",
+        "name": "PLLMulTable"
+      },
+      {
+        "bytes": 8,
+        "type": "b",
+        "name": "runState"
+      },
+      {
+        "bytes": 8,
+        "type": "r",
+        "name": "APBPrescTable"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_free_list"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_sbrk_start"
+      },
+      {
+        "bytes": 4,
+        "type": "D",
+        "name": "_impure_ptr"
+      },
+      {
+        "bytes": 4,
+        "type": "b",
+        "name": "runElapsed"
+      },
+      {
+        "bytes": 4,
+        "type": "b",
+        "name": "probeMillis"
+      }
+    ],
+    "allocation_symbols": [
+      {
+        "bytes": 1,
+        "type": "B",
+        "name": "__lock___malloc_recursive_mutex"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_free_list"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_sbrk_start"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "__malloc_lock"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "__malloc_unlock"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "_malloc_usable_size_r"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "_sbrk"
+      },
+      {
+        "bytes": 36,
+        "type": "T",
+        "name": "_sbrk_r"
+      },
+      {
+        "bytes": 96,
+        "type": "T",
+        "name": "_realloc_r"
+      },
+      {
+        "bytes": 256,
+        "type": "T",
+        "name": "_malloc_r"
+      }
+    ],
+    "unresolved": ""
+  },
+  "host_checks": "PASS; compile-time policy models, not physical races",
+  "vector_checks": "PASS: stack/reset/SysTick/RTC/EXTI0/EXTI3/USART2, no weak IRQ fallback",
+  "c_library": "newlib-nano4.4.0, integer snprintf; no forced printf_float; nosys; _sbrk rejects allocation",
+  "image_sha256": "e7e4e403763de5e1175f6b891f278817262aa5712ac69deb7c38a43426a367c0",
+  "heap_bytes": 0,
+  "minimum_stack_bytes": 1024,
+  "peak_stack": "NOT_MEASURED",
+  "vendor_files": 109,
+  "arduino": {
+    "elf": "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-EventLoopStopTest-20261025\\EventLoopStopTest.ino.elf",
+    "sections": [
+      {
+        "name": ".isr_vector",
+        "size": 192,
+        "vma": 134217728,
+        "lma": 134217728,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".text",
+        "size": 28716,
+        "vma": 134217920,
+        "lma": 134217920,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, CODE"
+      },
+      {
+        "name": ".rodata",
+        "size": 2220,
+        "vma": 134246636,
+        "lma": 134246636,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "vma": 134248856,
+        "lma": 134248856,
+        "flags": "CONTENTS, READONLY"
+      },
+      {
+        "name": ".ARM",
+        "size": 8,
+        "vma": 134248856,
+        "lma": 134248856,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".preinit_array",
+        "size": 0,
+        "vma": 134248864,
+        "lma": 134248864,
+        "flags": "CONTENTS, ALLOC, LOAD, DATA"
+      },
+      {
+        "name": ".init_array",
+        "size": 12,
+        "vma": 134248864,
+        "lma": 134248864,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".fini_array",
+        "size": 8,
+        "vma": 134248876,
+        "lma": 134248876,
+        "flags": "CONTENTS, ALLOC, LOAD, READONLY, DATA"
+      },
+      {
+        "name": ".data",
+        "size": 324,
+        "vma": 536870912,
+        "lma": 134248884,
+        "flags": "CONTENTS, ALLOC, LOAD, DATA"
+      },
+      {
+        "name": ".bss",
+        "size": 2536,
+        "vma": 536871236,
+        "lma": 134249208,
+        "flags": "ALLOC"
+      },
+      {
+        "name": ".noinit",
+        "size": 0,
+        "vma": 536873772,
+        "lma": 134251744,
+        "flags": "ALLOC"
+      },
+      {
+        "name": "._user_heap_stack",
+        "size": 1540,
+        "vma": 536873772,
+        "lma": 536873772,
+        "flags": "ALLOC"
+      },
+      {
+        "name": ".ARM.attributes",
+        "size": 40,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY"
+      },
+      {
+        "name": ".comment",
+        "size": 57,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY"
+      },
+      {
+        "name": ".debug_line",
+        "size": 1284,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_line_str",
+        "size": 312,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_info",
+        "size": 1410,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_abbrev",
+        "size": 626,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_aranges",
+        "size": 320,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_str",
+        "size": 2170,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_frame",
+        "size": 124,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_loclists",
+        "size": 732,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      },
+      {
+        "name": ".debug_rnglists",
+        "size": 20,
+        "vma": 0,
+        "lma": 0,
+        "flags": "CONTENTS, READONLY, DEBUGGING, OCTETS"
+      }
+    ],
+    "flash_bytes": 31480,
+    "text_output": 28716,
+    "rodata_output": 2220,
+    "rodata_merged_input": 0,
+    "text_excluding_merged_rodata": 28716,
+    "data": 324,
+    "bss": 2536,
+    "static_ram": 2860,
+    "ram_after_static": 5332,
+    "largest_functions": [
+      {
+        "bytes": 3780,
+        "type": "T",
+        "name": "main"
+      },
+      {
+        "bytes": 924,
+        "type": "t",
+        "name": "uart_init"
+      },
+      {
+        "bytes": 784,
+        "type": "t",
+        "name": "TwoWire::begin(unsigned char, bool, bool) [clone .constprop.0]"
+      },
+      {
+        "bytes": 752,
+        "type": "t",
+        "name": "HAL_UART_IRQHandler"
+      },
+      {
+        "bytes": 702,
+        "type": "t",
+        "name": "pinMode"
+      },
+      {
+        "bytes": 640,
+        "type": "t",
+        "name": "status()"
+      },
+      {
+        "bytes": 618,
+        "type": "t",
+        "name": "TwoWire::endTransmission(bool)"
+      },
+      {
+        "bytes": 566,
+        "type": "t",
+        "name": "i2c_computeTiming"
+      },
+      {
+        "bytes": 536,
+        "type": "T",
+        "name": "_printf_i"
+      },
+      {
+        "bytes": 520,
+        "type": "T",
+        "name": "_svfiprintf_r"
+      },
+      {
+        "bytes": 520,
+        "type": "T",
+        "name": "_svfprintf_r"
+      },
+      {
+        "bytes": 496,
+        "type": "t",
+        "name": "_sub_I_65535_0.0"
+      },
+      {
+        "bytes": 460,
+        "type": "T",
+        "name": "__divsi3"
+      },
+      {
+        "bytes": 460,
+        "type": "t",
+        "name": "SystemClock_Config"
+      },
+      {
+        "bytes": 456,
+        "type": "t",
+        "name": "I2C_ITSlaveCplt"
+      },
+      {
+        "bytes": 440,
+        "type": "t",
+        "name": "UART_SetConfig"
+      },
+      {
+        "bytes": 428,
+        "type": "T",
+        "name": "_write"
+      },
+      {
+        "bytes": 416,
+        "type": "t",
+        "name": "attachInterrupt.constprop.0"
+      },
+      {
+        "bytes": 408,
+        "type": "T",
+        "name": "__udivmoddi4"
+      },
+      {
+        "bytes": 368,
+        "type": "t",
+        "name": "TwoWire::requestFrom(unsigned char, unsigned int, bool)"
+      }
+    ],
+    "largest_objects": [
+      {
+        "bytes": 640,
+        "type": "b",
+        "name": "tx"
+      },
+      {
+        "bytes": 344,
+        "type": "b",
+        "name": "DebugUart"
+      },
+      {
+        "bytes": 344,
+        "type": "b",
+        "name": "SerialLP1"
+      },
+      {
+        "bytes": 320,
+        "type": "b",
+        "name": "gpio_irq_conf"
+      },
+      {
+        "bytes": 312,
+        "type": "B",
+        "name": "__sf"
+      },
+      {
+        "bytes": 228,
+        "type": "b",
+        "name": "Wire"
+      },
+      {
+        "bytes": 216,
+        "type": "r",
+        "name": "PinMap_TIM"
+      },
+      {
+        "bytes": 188,
+        "type": "d",
+        "name": "serial_debug"
+      },
+      {
+        "bytes": 84,
+        "type": "b",
+        "name": "sources"
+      },
+      {
+        "bytes": 84,
+        "type": "r",
+        "name": "digitalPin"
+      },
+      {
+        "bytes": 84,
+        "type": "r",
+        "name": "I2C_Charac"
+      },
+      {
+        "bytes": 84,
+        "type": "r",
+        "name": "PinMap_UART_RX"
+      },
+      {
+        "bytes": 84,
+        "type": "r",
+        "name": "PinMap_UART_TX"
+      },
+      {
+        "bytes": 80,
+        "type": "r",
+        "name": "vtable for TwoWire"
+      },
+      {
+        "bytes": 76,
+        "type": "D",
+        "name": "_impure_data"
+      },
+      {
+        "bytes": 64,
+        "type": "r",
+        "name": "ll_exti_lines"
+      },
+      {
+        "bytes": 64,
+        "type": "r",
+        "name": "pin_map_ll"
+      },
+      {
+        "bytes": 52,
+        "type": "r",
+        "name": "vtable for Uart"
+      },
+      {
+        "bytes": 48,
+        "type": "r",
+        "name": "PinMap_UART_CTS"
+      },
+      {
+        "bytes": 48,
+        "type": "r",
+        "name": "PinMap_UART_RTS"
+      }
+    ],
+    "allocation_symbols": [
+      {
+        "bytes": 1,
+        "type": "B",
+        "name": "__lock___malloc_recursive_mutex"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_free_list"
+      },
+      {
+        "bytes": 4,
+        "type": "B",
+        "name": "__malloc_sbrk_start"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "__malloc_lock"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "__malloc_unlock"
+      },
+      {
+        "bytes": 16,
+        "type": "T",
+        "name": "_malloc_usable_size_r"
+      },
+      {
+        "bytes": 20,
+        "type": "T",
+        "name": "malloc"
+      },
+      {
+        "bytes": 20,
+        "type": "T",
+        "name": "realloc"
+      },
+      {
+        "bytes": 36,
+        "type": "T",
+        "name": "_sbrk_r"
+      },
+      {
+        "bytes": 60,
+        "type": "T",
+        "name": "_sbrk"
+      },
+      {
+        "bytes": 96,
+        "type": "T",
+        "name": "_realloc_r"
+      },
+      {
+        "bytes": 256,
+        "type": "T",
+        "name": "_malloc_r"
+      }
+    ],
+    "unresolved": ""
+  },
+  "arduino_image_sha256": "a5cd6df49ec35dc828d850e359cafa633734b47ac5a61496e80ef83516e1accc",
+  "savings": {
+    "flash_bytes": {
+      "bytes": 13316,
+      "percent": 42.3
+    },
+    "static_ram": {
+      "bytes": 1508,
+      "percent": 52.73
+    }
+  }
+}

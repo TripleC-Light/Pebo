@@ -1,0 +1,30 @@
+{
+  "scope": "debug samples only, not IRQ/STOP proof",
+  "rows": [
+    {
+      "command": "status",
+      "rx": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=0 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none",
+      "monotonic": 1796.5
+    },
+    {
+      "command": "probe",
+      "rx": "PROBE ok=1 static=11 gate=01 rf=00 eh=08 field=0 pa3=0 pull=0 imr=3F840000 rising=00000000",
+      "monotonic": 1796.609
+    },
+    {
+      "command": "probe",
+      "rx": "PROBE ok=1 static=11 gate=01 rf=00 eh=08 field=0 pa3=0 pull=0 imr=3F840000 rising=00000000",
+      "monotonic": 1796.734
+    },
+    {
+      "command": "probe",
+      "rx": "PROBE ok=1 static=11 gate=01 rf=00 eh=08 field=0 pa3=0 pull=0 imr=3F840000 rising=00000000",
+      "monotonic": 1796.843
+    },
+    {
+      "command": "status",
+      "rx": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=0 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none",
+      "monotonic": 1796.968
+    }
+  ]
+}

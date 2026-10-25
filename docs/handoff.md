@@ -1,5 +1,200 @@
 # Pebo handoff log
 
+## 2026-10-25: Native B local annotated recovery baseline
+
+User explicitly authorizes one scoped baseline commit and a new annotated tag
+baseline/native-hal-eventloop-v1; no push. Include native B/vendored licenses/
+hash manifest/evidence, full stage4 A reference/test tooling, pure TimeLogic.h
+dependency and relevant native/stage4 handoff/HIL/hardware notes only. Stage2
+FeedbackTest, remaining stage3 files and their unrelated dated document entries
+stay uncommitted. Baseline instructions: FW/NativeEventLoopStopTest/BASELINE.md.
+Vendor text conversion disabled to preserve SHA256 across OS checkouts. Validate
+build from staged-only export before saving; tag annotation lists PASS/limits.
+Resolve commit from the immutable tag instead of embedding a circular self SHA.
+Current board remains native e7e4e403... off/debug, UART closed, instruments and
+power untouched; this Git-only capture does not add new HIL claims.
+
+Next user-authorized scope after capture: independent NativeShakeProgressTest,
+first valid RTC/reset retention, then native blue8-step UART display and bounded
+real-sample shake observation; no drinking recognition/sound/NFC app protocol.
+No stage5 commit/push authorized. Do not start feature edits until tag saved.
+
+## 2026-10-25: Native HAL feasibility B implemented; functional comparison PASS
+
+PC-02 TripleC, main fdacaf6/cached origin ahead3, no fetch/commit/push. All prior
+uncommitted stages preserved; no changes to successful Arduino sketches/modules
+or shared pure EventLogic/TimeLogic/bench scripts. New FW/NativeEventLoopStopTest
+contains native main/Board/RTC/source wrappers, HAL config, linker, Python GCC
+builder, vendored manufacturer files/licenses/SHA256 manifest, README, state
+inspector and actual result JSON. Relevant HIL/machine/handoff updated only.
+
+Read AGENTS/README/handoff/machine/HIL/pinmap, stage4/RF_REGRESSION/time modules,
+installed clock/pinmaps/HAL/CMSIS and linker/build flags. Actual L031G6U6TR32KB/
+8KB; USART2 PA9TX/PA10RX AF4/115200 (notUSART1), I2C1PB6/7@100kHz, PB0EXTI0
+and PA3EXTI3 rising/noPull, fitted KC-JF6D3 GPO via100ohm/noexternalpull unchanged.
+PA4 OutputHigh STOP/temporaryLow I2C startup policy retained. HSI16PLLx4/2=32MHz,
+LSE32768, RTC127/255/WUT1Hz. No date/backup reset/newBKP; readsBKP2/3 only.
+ST startup/vector/data/bss/MSP/SysTick/IRQ explicit. Same PRIMASK pending check/
+WFI, snapshot dispatch/saturation/retry/fault budget, run1..60 preflight/deadline.
+HAL UART IT fixed64RX/64TX plus640appTX; no application allocation/usableheap.
+
+No CMake/Ninja onPATH: existing Python+GCC command-line builder needs no new
+software/download/GUI. GCC14.2.1-1.1/newlib-nano4.4.0, Os/LTO/sections/GC,
+integer snprintf/no forced float formatter. HAL1.10.7 BSD3, Device1.9.4 and
+Core(M)6.1/distribution6.3 Apache2 sources locally vendored unchanged (109
+manifest entries), no Arduino core/library wrapper link or personal SDK paths.
+Full commands/versions/sections/largest symbols in tests/results/build-report-
+20261025.json; build twice produced identical native SHA256 below. CLI accepts
+PATH/ARM_GCC_BIN/explicit--toolchain-bin. All pure policy checks/vector checks PASS.
+
+A Arduino re-created a5cd6df4..., Flash31480/staticRAM2860 unchanged. B native
+image e7e4e403763de5e1175f6b891f278817262aa5712ac69deb7c38a43426a367c0:
+text16656/rodata1208/data100/bss1252/vector192/unwind8, Flash18164 (-13316,
+42.30%), staticRAM1352 (-1508,52.73%). Flashspare14604; RAMafterstatic6840;
+minimumstack1024/heap0 leaves5816 unreserved, NOT measured safe-stack budget.
+Largest Bmain4220 afterLTO, consolebegin1076, USART2IRQ840; appTX640/uart136/
+sources84/I2C84/RX64/TX64 dominate RAM. No slim diagnostic C: retained same
+commands/status/counterstrings/buffers; fixedI2C timing removes runtime search,
+explicit callbacks/selected HAL remove generic maps/globals/wrappers. Savings
+are this implementation/configuration, not all uniquely attributable to Arduino.
+Generic bus recovery differs (not ported), HAL_Delay startup1..2ms vs1ms, UART
+flush now bounded100ms. No exact power/electrical equivalence claimed.
+
+Fresh STLINK56FF6C066688555210351387/ID425/32KB/Cube2.11.0/SWD4MHz, Prolific
+COM5/115200. Existing normal under-reset per-image flash/verify PASS; fullreadback
+before each later session PASS; no optionbyte/RDP/mass erase. Tests/results:
+native-baseline01/02 PASS10/60/off/re-run1/parser, no external ISR/storm even
+after stimuli; motion01 PASS30s, ISR/wake/confirmed26/STOP53/errors0; awakeRF01
+PASS45s ISR/confirmed1,wake0; stopRF01 PASS60s ISR/wake/confirmed2,IT10/STOP62;
+mixed01 PASS60s motion31/GPO1 ISR/wake/confirmed,STOP89/errors0. Every timedrun
+RTCdeadline/debug/UART recovery, nounknownWake/quarantine. External RF tests
+pre-armFIELD0, no ITdiagnostic polling/softwareIRQ injection/debugduringSTOP.
+Original scripts reused without adaptation. Actual stimuli are operator-assisted.
+
+Before/after/final RTC state inspectors PASS: fiveBKPwords0 remain0, PRERsame,
+LSEsource/ready, PA4High,WUTstopped. CurrentUTCinvalid/timeValid0; nonzero valid
+schema retention not physically tested this round. No clock/calibration writes.
+Stack peaks unmeasured; GCC .su main304 is only a local frame, not wholechain/
+libc/ISR bound. Native _sbrk rejects requests; printf still links allocator
+branches, no usable dynamic heap. No clock/I2C-fault/precise race/simultaneous/
+long-run/electrical waveform/power tests. Historical RF non-reproduction cause
+still OPEN; native success is not a root-cause finding.
+
+Recommendation: meaningful resource headroom makes native HAL a staged migration
+candidate; NOT an approved wholesale migration. Keep Arduino references; decide
+after stress/peakstack/fault/power and maintenance review. No fifth-stage work.
+CURRENT BOARD: native B e7e4e403..., off/debug/all sourcesdisabled, UARTclosed,
+no helpers left running. User2.8V unchanged (STLINK2.70..2.71V), no PPK2/other
+instrument handles or COM6/7 opened. Handoff saved locally; next step is review
+comparison and choose migration scope, not automatic feature development.
+
+## 2026-10-25: RF historical regression and integrated revalidation PASS; cause OPEN
+
+PC-02 TripleC, main fdacaf6, cached origin ahead3; no fetch/commit/push. Preserved
+all prior uncommitted work. Snapshot EventLoopStopTest +tracked diff/status at
+%TEMP%/Pebo-RFRegression-20261025. Read AGENTS/README/hardware/pinmap/HIL/handoff,
+both tests/modules, installed core APIs and official KC DS13519Rev8 directly.
+No power/instrument operation; user supply only, freshSTLINK56FF6C066688555210351387
+ID425/32KB/Cube2.11.0/SWD4MHz, COM5Prolific067B:2303/115200.
+
+Historical source11e2f6e/ST25GpoWakeTest blob0efdbd2... and included driver blobs
+match current files. c8dd924 records phone GPO success;8bd77d1 records historical
+4.43uA, NOT current power. Exact old ELF/UART/tool manifest unavailable; cannot
+prove same old machine image. Current unchanged original build PASS24512B
+reported/24732B actual/staticRAM2000; image dc875a43... . Three35s windows
+rf-history01..03 observed WAKE+IT10/EH0C/gate1/clearPin0 thenSTOP, counts1..5;
+rounds2/3 no reset/SWD. Same-print GPO0 implies old ISR boolean true; not a
+separate numeric ISR counter. No FIELD_FALLING08 claim. Original disables RTC
+clock in STOP, may pause calendar; no date/backup reset/calibration performed.
+
+Restored/rebuilt original integrated a5cd6df49ec35dc828d850e359cafa633734b47ac5a61496e80ef83516e1accc,
+all four sketch/module hashes unchanged. Flash/verify/readback PASS31480B,
+staticRAM2860B, Flash spare1288B; no slimming/new stage/no pull/edge/LPD/priority
+or concurrency changes. First restore HOTPLUG failed while original asleep,
+retained as awake01 tool failure; under-reset flash identification fixed that
+tool path only. Existing-image checks still readback without reset.
+
+New evidence tests/results: rf-integrated-awake02 PASS45s ISR2/confirmed2/wake0;
+rf-integrated-stop01 PASS60s STOP62,GPO ISR/wake/confirmed2,IT10/errors0;
+rf-regression-baseline01 PASS10/60/off/re-run1/parser/UART; motion01 PASS30s,
+STOP55,motion27 ISR/wake/confirmed/errors0; mixed01 PASS60s,STOP75,motion14,
+GPO2 ISR/wake/confirmed,RTCdeadline/debug/UART recovery, no errors/quarantine/
+unknownWake. Pre-arm FIELD0 verified; noIT diagnostic polling or software IRQ
+injection. Host constexpr/policy/AST PASS. These are finite functional results,
+not precise simultaneous/race or reliability/power qualification.
+
+No reproduced firmware root cause: prior failedRF used b46.../mixed eb8...,
+current final a5cd... works unchanged. Short20s human windows/RF-at-start/phone
+polling/contact/supply are hypotheses, NOT established causes. No inference of
+hardware damage/non-support. VDCG voltage/waveform and RF removal remain pending;
+no hardware changes indicated by current tests. Full comparison/limits in
+FW/EventLoopStopTest/RF_REGRESSION.md. Only bench script, new historical capture,
+README/report/JSON and relevant docs changed. Previous failed evidence preserved.
+
+Final off/debug, sources0/0, UART closed, no helper left running; user supply
+unchanged (STLINK2.70..2.71V); COM6/7/PPK2/instruments not opened. timeValid0
+explicit, no UTC accuracy claim. Handoff saved locally. Next: retain these as
+regression baseline; if intermittent RF failure recurs capture exact operation
+times/config/power, compare before changing firmware. Flash headroom remains a
+future-integration risk, deliberately no large optimization this round.
+
+## 2026-10-25: EventLoopStopTest stage 4; RTC/motion PASS, RF wake unresolved
+
+PC-02 TripleC, main fdacaf6; local only, no commit/push/fetch. Previous
+FeedbackTest/TimeManagementTest and dated observations preserved. Added
+FW/EventLoopStopTest sketch, EventLogic/DeadlineRtc/WakeSources modules, README,
+constexpr checks, UART bench/probe/route scripts and actual JSON evidence.
+Updated pinmap, HIL, machine profile and NFC regression note.
+
+User confirms ST25DV04KC-JF6D3, GPO via100ohm toPA3, no external pulls.
+Directly checked ST DS13519 Rev8: this package CMOS activeHigh/idleLow needs
+VDCG powered; PA3 NOPULL is conditional on that supply, not an all-power-state
+guarantee. VDCG-off signal undefined; LPDHigh field-falling wake not guaranteed.
+No hardware change justified yet; actual VDCG voltage/GPO waveform unmeasured.
+PA4 remains outputHigh in STOP; temporary foreground I2C access restores it.
+
+Minimal ISR records under PRIMASK (including nested ISR RMW), foreground atomic
+snapshot dispatches all sources. Masked final pending/pin recheck plus WFI
+closes check/sleep race without clearing unrelated pending IRQs. RTC 1Hz LSE
+deadline is preflight checked; no RTC date/backup reset or new BKP allocation.
+BKP2/3 validity only read, core BKP1/HID4 untouched. Failed sources bounded by
+3 real consecutive failures or128 service attempts; valid held motion retried
+after100ms, not falsely called I2C failure. Debug boot; off/re-run supported.
+
+Final image SHA256 a5cd6df49ec35dc828d850e359cafa633734b47ac5a61496e80ef83516e1accc.
+STM32duino3.0.0/GCC14.2.1/LTO build PASS: Arduino31260B, actual31480B/32768
+(1288B spare); data324+bss2536=2860B. Heap512/stack1024 minimum reservation
+plus4B alignment leaves3792B unreserved, NOT measured safe stack. Wire allocates
+at least64B heap; stack/heap peaks unmeasured. Flash headroom is a major
+integration risk; do not sum independent test memory totals.
+
+STLINK56FF6C066688555210351387, ID425/32KB, Cube2.11.0/SWD4MHz; flash/verify
+and final byte-for-byte31480B readback PASS. ProlificCOM5/115200 actual RX:
+bench-20261025-02 PASS run10/run60/off/re-run1/parser boundaries; RTC elapsed
+10/60, STOP10/60, returns debug. Host constexpr/policies PASS, not NVIC emulator.
+Final motion-20261025-03 PASS: elapsed20, STOP35, motion ISR/wake/confirmed17,
+handled34, errors0, no quarantine; ends off/debug. Unknown17 are extra service
+checks without a fresh latched cause, not17 additional physical events.
+routes-20261025 PASS_MCU_ROUTES_ONLY: PA3 input/NOPULL, PB0 input, EXTI3 PA,
+EXTI0 PB, rising/mask9, IRQ5/6 enabled, PA4High. No debugger during timed STOP.
+
+RF/mixed HIL NOT PASSED: rf01 and mixed01 contain zero GPO ISR/wake despite
+user-confirmed phone detection. Debug present probe observed EH=0C/FIELD1 twice
+(one failed I2C sample), absent/removal EH08/FIELD0; static11/gate01/RF00.
+These prove sampled RF presence/config, NOT physical GPO or STOP wake. Mixed01
+also hit older64-service cap; final128 policy passed motion retest, combined RF
+acceptance still pending. Earlier no-power and old20ms guard failures retained.
+Do not overwrite historic GPO success with an invented current PASS.
+
+Current timeValid=0 after supply interruption; RTC deadline works without valid
+calendar. No calibration/date write performed. Long-term accuracy, exact race,
+precise simultaneous stimulus, fault injection, stack peaks and power numbers
+unverified. Supply remained user-controlled2.8V (STLINK2.71V); PPK2/instruments
+and COM6/7 never opened. Final off, UART closed, no helper remains; supply not
+switched. Handoff saved. Next: resolve powered VDCG/physical GPO route versus
+LPD strategy with user-approved electrical checks, then repeat RF/mixed HIL;
+reduce Flash before integrating other stages. No battery-life claim.
+
 ## 2026-10-25: Full workspace Git publication authorized
 
 Push blocked by automated approval review: user must explicitly approve the

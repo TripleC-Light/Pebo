@@ -1,0 +1,120 @@
+{
+  "result": "CAPTURE_ONLY",
+  "records": [
+    {
+      "kind": "identity",
+      "monotonic": 3011.031,
+      "source_commit": "11e2f6e",
+      "source_blob": "0efdbd2be75b99bfcf87d0d1c2cf6bf2d6da1cd5",
+      "image_sha256": "dc875a43b064cbbed1f8d6059903ec8c51763085e345b54282a16061c297aa75",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_CONTROLLED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 3011.218,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Under Reset\nReset mode  : Hardware reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "monotonic": 3015.375,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000",
+        "-w",
+        "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-ST25GpoWakeTest-regression-20261025\\ST25GpoWakeTest.ino.bin",
+        "0x08000000",
+        "-v",
+        "-rst",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Under Reset\nReset mode  : Hardware reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\n\nMemory Programming ...\nOpening and parsing file: ST25GpoWakeTest.ino.bin\n  File          : ST25GpoWakeTest.ino.bin\n  Size          : 24.15 KB \n  Address       : 0x08000000 \n\n\nErasing memory corresponding to segment 0:\nErasing internal memory sectors [0 193]\nDownload in Progress:\n控控控控控控控控控控控控控控控控控控控控控控控控控 0%\n詗詗詗詗� 18%詗詗詗詗� 37%詗詗詗詗� 55%詗詗詗詗詗 74%詗詗詗詗� 93%詗詗 100%\n\nFile download complete\nTime elapsed during download operation: 00:00:03.643\n\n\n\nVerifying ...\n\n\nRead progress:\n控控控控控控控控控控控控控控控控控控控控控控控控控 50%\n詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗詗 100%\n\nDownload verified successfully \n\n\n\nMCU Reset\n\nSoftware reset is performed\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "WINDOW",
+      "monotonic": 3015.375,
+      "seconds": 35,
+      "action": "approach_then_remove_on_operator_prompt"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.75,
+      "text": "BOOT ST25GpoWakeTest"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.765,
+      "text": "ST25 user_ack=YES system_ack=YES"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.765,
+      "text": "ST25 GPO1=0x11 MEM_SIZE_L=0x7F UID=3013407F665202E0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.781,
+      "text": "ST25 GPO_CTRL_DYN=0x01 RF_MNGT_DYN=0x00 EH_CTRL_DYN=0x08 IT_STATUS_CLEAR=0x00"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.781,
+      "text": "GPO idle=0 active=HIGH exti_edge=RISING"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3015.781,
+      "text": "ENTER STOP"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3038.625,
+      "text": "WAKE: ST25 GPO"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3038.64,
+      "text": "COUNT=1 GPO=0 IT_STATUS=0x10 RF_STATUS=0x00 EH_STATUS=0x0C GPO_CTRL_DYN=0x01 GPO_AFTER_CLEAR=0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3038.64,
+      "text": "ENTER STOP"
+    },
+    {
+      "kind": "WINDOW_END",
+      "monotonic": 3050.453,
+      "note": "No software interrupt injected; no status reads outside sketch"
+    }
+  ],
+  "limitations": "Original WAKE line combines ISR flag with pin level; no explicit ISR count. No UART command parser. Absence of UART wake is not hardware failure proof.",
+  "power": "unchanged, user controlled"
+}

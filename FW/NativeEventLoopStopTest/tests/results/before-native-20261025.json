@@ -1,0 +1,113 @@
+{
+  "result": "PASS",
+  "registers": {
+    "0x40021050": "0xc050300",
+    "0x40002800": "0x10538",
+    "0x40002804": "0x2101",
+    "0x40002808": "0x4",
+    "0x4000280c": "0x27",
+    "0x40002810": "0x7f00ff",
+    "0x40002814": "0x0",
+    "0x40002818": "0x0",
+    "0x4000281c": "0x0",
+    "0x40002820": "0x0",
+    "0x40002824": "0x0",
+    "0x40002828": "0x13",
+    "0x4000282c": "0x0",
+    "0x40002830": "0x0",
+    "0x40002834": "0x0",
+    "0x40002838": "0x0",
+    "0x4000283c": "0x0",
+    "0x40002840": "0x0",
+    "0x40002844": "0x0",
+    "0x40002848": "0x0",
+    "0x4000284c": "0x0",
+    "0x40002850": "0x0",
+    "0x40002854": "0x0",
+    "0x40002858": "0x0",
+    "0x4000285c": "0x0",
+    "0x40002860": "0x0",
+    "0x50000000": "0xebebfd3f",
+    "0x50000004": "0x0",
+    "0x50000008": "0xc3c03c0",
+    "0x5000000c": "0x24140000",
+    "0x50000010": "0x4610",
+    "0x50000014": "0x10",
+    "0x50000018": "0x0",
+    "0x5000001c": "0x0",
+    "0x50000020": "0x0",
+    "0x50000024": "0x440",
+    "0x40010008": "0x1"
+  },
+  "rows": [
+    {
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-r32",
+        "0x40021050",
+        "4",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nReading 32-bit memory content\n  Size          : 4 Bytes\n  Address:      : 0x40021050\n\n0x40021050 : 0C050300\n\n\nCore is running\nCore run\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-r32",
+        "0x40002800",
+        "100",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nReading 32-bit memory content\n  Size          : 100 Bytes\n  Address:      : 0x40002800\n\n0x40002800 : 00010538 00002101 00000004 00000027\n0x40002810 : 007F00FF 00000000 00000000 00000000\n0x40002820 : 00000000 00000000 00000013 00000000\n0x40002830 : 00000000 00000000 00000000 00000000\n0x40002840 : 00000000 00000000 00000000 00000000\n0x40002850 : 00000000 00000000 00000000 00000000\n0x40002860 : 00000000\n\n\nCore is running\nCore run\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-r32",
+        "0x50000000",
+        "40",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nReading 32-bit memory content\n  Size          : 40 Bytes\n  Address:      : 0x50000000\n\n0x50000000 : EBEBFD3F 00000000 0C3C03C0 24140000\n0x50000010 : 00004610 00000010 00000000 00000000\n0x50000020 : 00000000 00000440\n\n\nCore is running\nCore run\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-r32",
+        "0x40010008",
+        "4",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nReading 32-bit memory content\n  Size          : 4 Bytes\n  Address:      : 0x40010008\n\n0x40010008 : 00000001\n\n\nCore is running\nCore run\n"
+    }
+  ],
+  "limits": "No valid-time assertion; backup equality plus source audit, not power-loss retention"
+}

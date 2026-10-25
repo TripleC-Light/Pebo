@@ -1,5 +1,51 @@
 # Development machine registry
 
+2026-10-25 PC-02/TripleC native B recovery capture: user authorizes scoped commit
+and annotated baseline/native-hal-eventloop-v1 only, no push. Preserve unrelated
+FeedbackTest/stage3 work; vendor byte hashes protected against line conversion.
+Resolve baseline commit through tag; build instructions in native BASELINE.md.
+No board/UART/instrument/power operations in capture. Stage5 follows only after
+baseline save, no further commit/push. Existing source/HIL results unchanged.
+
+2026-10-25 PC-02/TripleC NativeEventLoopStopTest: main fdacaf6/cached ahead3,
+local only/no fetch/commit/push. GCC14.2.1-1.1/newlibnano4.4, HAL1.10.7/CMSIS
+Device1.9.4/Core6.1(distribution6.3) vendored+license+hash checked; no Arduino
+link. Python CLI build (CMake/Ninja absentPATH) reproducible twice e7e4e403...,
+ELF/vector/sharedhostlogic PASS. A re-created31480/2860; B18164/1352 (-42.30%/
+52.73%). Same diagnostics; fixed-board wrappers/timing differ, no slimC.
+STLINK56FF6C066688555210351387/ID425/32KB/Cube2.11.0/SWD4MHz flash/verify/readback
+PASS. COM5Prolific115200 baseline10/60 twice,off/re-run1/parser, motion26,
+awakeRF1,STOPRF2,mixedmotion31/GPO1 PASS; backup/prescaler comparisonPASS(all0
+marks, valid/nonzero retention pending). Current board nativeB off/debug,
+UARTclosed/no helper; manual2.8V unchanged, instruments/COM6/7 not opened.
+Sources/ports are dated current checks, no copy of other PC readiness. Source,
+build-report/README/HIL and canonical handoff saved; no formal migration yet.
+
+2026-10-25 PC-02/TripleC RF historical regression: main fdacaf6/cached ahead3,
+local only/no fetch/commit/push. Existing STM32duino3.0.0/GCC14.2.1 tools verified.
+Unchanged historical11e2f6e build/flash/verify PASS; threeRF windows PASS. Exact
+old binary/tool manifest unavailable. Restored integrated a5cd6df4... unchanged:
+awake RF45s PASS;STOP RF60s PASS2;baseline10/60/restart PASS;motion30 PASS27;
+mixed60 PASSmotion14/GPO2,STOP75/no error. COM5Prolific115200 fullRX, STLINK
+56FF6C066688555210351387/ID425/32KB/Cube2.11.0/SWD4MHz. Initial original-STOP
+HOTPLUG tool failure recovered via under-reset flash, not RF failure. Host PASS.
+Firmware Flash31480/staticRAM2860 unchanged; no source fix justified, prior
+failure root cause OPEN. Supply user-controlled2.8V unchanged, no instruments/
+COM6/7 opened, final off/debug/UARTclosed/no helper. Handoff/report/HIL saved.
+See FW/EventLoopStopTest/RF_REGRESSION.md for differences, evidence and next step.
+
+2026-10-25 PC-02 / TripleC EventLoopStopTest: main fdacaf6, saved locally only,
+no commit/push. STM32duino3.0.0/GCC14.2.1/LTO build and host checks PASS.
+Actual image31480B (Arduino31260), staticRAM2860B, Flash spare1288B; stack/heap
+peaks unknown. STLINK56FF6C066688555210351387/ID425/32KB/Cube2.11.0 SWD4MHz
+flash/verify/final readback PASS. COM5 Prolific115200 baseline10/60/off/re-run1
+and final motion20 PASS; MCU EXTI route inspection PASS only. RF/mixed failed
+to observe GPO IRQ; debug FIELD1 is not wake evidence. See canonical handoff
+and FW/EventLoopStopTest/tests/results. User supply2.8V unchanged; no PPK2 or
+other instruments opened, final off/debug, UART closed, no helper running.
+RTC timeValid0 correctly reported; no calendar/backup reset or calibration.
+Next resolve RF physical wake path and Flash headroom, then RF/mixed retest.
+
 2026-10-25 PC-02 / TripleC publication: local work committed in `b3adc7b`;
 remote updates through `c8dd924` integrated by `d6d9f2b`. Push is blocked by
 destination approval: explicitly confirm https://github.com/TripleC-Light/Pebo.

@@ -1,0 +1,55 @@
+{
+  "result": "CAPTURE_ONLY",
+  "records": [
+    {
+      "kind": "identity",
+      "monotonic": 3141.593,
+      "source_commit": "11e2f6e",
+      "source_blob": "0efdbd2be75b99bfcf87d0d1c2cf6bf2d6da1cd5",
+      "image_sha256": "dc875a43b064cbbed1f8d6059903ec8c51763085e345b54282a16061c297aa75",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_CONTROLLED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "WINDOW",
+      "monotonic": 3141.625,
+      "seconds": 35,
+      "action": "approach_then_remove_on_operator_prompt"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3164.562,
+      "text": "WAKE: ST25 GPO"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3164.578,
+      "text": "COUNT=5 GPO=0 IT_STATUS=0x10 RF_STATUS=0x00 EH_STATUS=0x0C GPO_CTRL_DYN=0x01 GPO_AFTER_CLEAR=0"
+    },
+    {
+      "kind": "RX",
+      "monotonic": 3164.578,
+      "text": "ENTER STOP"
+    },
+    {
+      "kind": "WINDOW_END",
+      "monotonic": 3176.703,
+      "note": "No software interrupt injected; no status reads outside sketch"
+    }
+  ],
+  "limitations": "Original WAKE line combines ISR flag with pin level; no explicit ISR count. No UART command parser. Absence of UART wake is not hardware failure proof.",
+  "power": "unchanged, user controlled"
+}

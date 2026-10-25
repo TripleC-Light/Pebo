@@ -1,5 +1,69 @@
 # Bench automation plan
 
+## 2026-10-25: Native HAL feasibility comparison, finite HIL PASS
+
+Independent FW/NativeEventLoopStopTest B, no Arduino core link/RTOS; old A
+unchanged/rebuilt SHAa5cd6df4...31480Flash/2860RAM. B retains diagnostics and
+640appTX/64RX/64TX; GCC14.2.1/newlibnano4.4/HAL1.10.7/Os/LTO/GC. B18164Flash/
+1352RAM; no slimC. Command/section/largest-symbol report under tests/results/
+build-report-20261025.json. Build twice same e7e4e403...; purelogic+strongvector
+checksPASS, no backup-reset/date writes. All raw PC RX evidence in native tests/results.
+
+Existing bench_verify.py reused unchanged: flash/verify/readback/UART PASS,
+baseline01/02 run10/60/off/re-run1/parser PASS before/after actual stimuli,
+motion01 30s ISR/wake/confirmed26,STOP53; awakeRF01 45s ISR/confirmed1,wake0;
+STOPRF01 60s ISR/wake/confirmed2,IT10,STOP62; mixed01 60s motion31/GPO1,
+STOP89. Errors/unknownWake0,no quarantine; RTCdeadline/debug/UART restored.
+Pre-armFIELD0 forRF, no softwareIRQ injection or debugger during timedSTOP.
+Source counts merge events; motion extra unknown servicechecks not extra events.
+
+Read-only before/after/final snapshots: LSEready/source,PRER007F00FF,PA4High,
+WUT off, all5BKP words0 unchanged. Nonzero valid-schema retention, RTCaccuracy,
+stackpeak/libc/IRQ depth, clock/I2C fault injection, precise race/simultaneous,
+waveforms and power NOT tested. Minimumstack1024 is not peak safety proof.
+User supplies2.8V, no instruments/PPK2/COM6/7 opened, optionbytes/RDP/mass erase
+untouched. Currentboard nativeB e7e4e403... off/debug/UARTclosed. Historical RF
+failure cause stillOPEN. See nativeREADME for limitations/commands/recommendation;
+this is feasibility evidence, not formal product migration or battery acceptance.
+
+## 2026-10-25 follow-up: historical and integrated RF regression PASS
+
+This supersedes earlier stage4 RF non-reproduction as current functional status,
+not as a deletion/reclassification of failed evidence. Unchanged ST25GpoWakeTest
+source11e2f6e compiled/flashed/verified, three35s windows WAKE/IT10/EH0C/clear0
+thenSTOP. Original ISR is boolean; GPO0 in same print implies flag branch true.
+Unchanged integrated a5cd6df4... awake45 ISR2/confirm2/wake0; RF60 ISR/wake/
+confirm2,STOP62; baseline10/60/off/re-run1/parser PASS; motion30 ISR/wake/confirm27;
+mixed60 motion14/GPO2 ISR/wake/confirm,STOP75, noerrors/unknownWake/quarantine.
+All windows finite; integrated RF/baseline/motion/mixed pre-arm FIELD0 checked,
+original first boot EH08 (later original rounds operator-kept-away, not fresh
+field samples). No debug during STOP; fullRX/readback saved
+under FW/EventLoopStopTest/tests/results/rf-*. Host checks PASS. One first
+HOTPLUG restore failed (tool only), under-reset flash used; retained original log.
+No firmware changes or proven old root cause; only tool/capture/docs changes.
+Phone detection/FIELD are not substituted for actual IRQ counts. RF removal,
+VDCG waveform, exact race/simultaneous faults, power and long-run qualification
+remain unverified. Historical4.43uA not current integrated power. Finaloff/debug,
+UARTclosed, user supply unchanged, instruments not opened. Full differences and
+source provenance: FW/EventLoopStopTest/RF_REGRESSION.md; canonical handoff updated.
+
+## 2026-10-25: Event loop STOP stage 4 partial acceptance
+
+Evidence: FW/EventLoopStopTest/tests/results. Final image a5cd6df4...:
+bench-20261025-02 PASS baseline run10/60, deadline, UART recovery, parser,
+off/restart; motion-20261025-03 PASS20s,35STOP,17 motion ISR/wake/confirmed,
+34 service checks/errors0/no isolation. Host checks PASS interleaving model,
+saturation, retry bounds/wrap, lifecycle, parser, midnight deadlines.
+routes-20261025 PASS MCU GPIO/EXTI/NVIC only, not electrical GPO proof.
+RF01/mixed01 NOT PASSED: GPO ISR0/wake0. User phone detected tag; debug FIELD1
+twice (one I2C failure) does not satisfy RF interrupt acceptance. Mixed01 used
+older64-service cap; final128 policy retested motion only. Retain all failures.
+Exact simultaneous/race injection, sensor/I2C faults, VDCG-off signal, field
+falling withLPDHigh, waveform and current unverified. No measurement equipment
+opened; user supply only. Final off/debug, UART closed. RTC calendar invalid
+explicitly, periodic deadline functional; no backup/date reset. No whole-stage
+PASS until RF and combined stimuli succeed. Flash31480B/RAM2860B; see README.
+
 2026-10-25 UART follow-up: user-controlled supply, no PPK/instrument access.
 ProlificCOM5/115200, LF resync then7/7 real PC RX replies PASS for help/8/off/
 showCRLF/invalid/overlong/off. Earlier RX blocker resolved, cause not established;

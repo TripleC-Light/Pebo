@@ -1,0 +1,2 @@
+# Manufacturer byte hashes must survive checkout on every OS.
+vendor/** -text

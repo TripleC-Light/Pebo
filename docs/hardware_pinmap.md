@@ -2,6 +2,19 @@
 
 Last updated: 2026-10-09
 
+2026-10-25 RF follow-up: original independent source11e2f6e passed three windows;
+unchanged integrated a5cd6df4 also passed awake RF and protected STOP RF/mixed
+regression. No hardware/pull/edge/LPD change. Earlier zero-IRQ note below is
+the initial attempt, not current proof of non-support. VDCG actual voltage and
+waveform still unmeasured; positive pulse functionality does not establish all
+supply-state behavior. See FW/EventLoopStopTest/RF_REGRESSION.md for evidence.
+
+2026-10-25 stage4 HIL qualification: PA3 input/NOPULL, EXTI3 PA/rising and NVIC
+verified by read-only MCU registers; PB0 EXTI0 separate. RF/mixed tests still
+show zero GPO IRQ while debug EH confirms FIELD1. Actual VDCG/GPO waveform
+not measured. NOPULL remains conditional on powered CMOS VDCG, not proof of
+all supply/LPD states; no hardware modification made. See handoff/results.
+
 ## Source of truth
 - MCU: STM32L031G6U6TR, UFQFPN28
 - BOOT0 = Pin 27
@@ -93,6 +106,39 @@ the initial choice before this observation.
 - R3/R4 are optional 0 ohm links to LIS2_VDD, not pull-downs
 
 ## ST25DV04KC-JF6D3
+
+2026-10-25 stage4 physical confirmation by user: fitted part is
+ST25DV04KC-JF6D3; GPO -> 100 ohm series resistor -> PA3; no external pull-up
+or pull-down. This resolves older Android notes' K/KC uncertainty for this
+board only. Those dated observations remain historical, not current identity.
+
+Directly checked ST DS13519 Rev8 sections2.4.1/2.4.2 and table29 (pp8/44):
+https://www.st.com/resource/en/datasheet/st25dv04kc.pdf . The VDCG-equipped
+10-ball/12-pin variants use CMOS GPO, active High/positive pulses, idle Low.
+No external pull-up is required (unlike 8-pin open-drain variants).
+With VCC/VDCG supplied from ST25_VDD as mapped below, stage4 selects PA3
+Input/GPIO_NOPULL based on driven CMOS levels, not on an assumed resistor.
+MCU PUPDR/idle state is checked separately; no new analog voltage measurement.
+
+| VDCG | VCC / LPD / RF | GPO / PA3 expectation |
+| --- | --- | --- |
+| Powered | VCC on, LPD Low, RF absent | Idle Low unless configured I2C event |
+| Powered | VCC on, LPD Low, RF present | Configured RF/I2C positive event pulses |
+| Powered | VCC on, LPD High, RF absent | Low (CMOS), not floating |
+| Powered | VCC on, LPD High, RF present | Configured RF events; field-falling exception |
+| Powered | VCC off, RF absent/present | Low / RF events respectively; field-falling unavailable |
+| Off/floating | Any | GPO information not guaranteed; GPIO_NOPULL cannot guarantee PA3 |
+
+LPD High keeps the required low-current board state; RF field disappearance
+cannot be assumed to generate GPO in this mode. FIELD_ON is EH_CTRL_Dyn b2,
+not RF_MNGT_Dyn; KC IT_STS_Dyn FIELD_FALLING/RISING are b3/b4. Field readings
+are samples, not proof of NFC transactions or a count of physical changes.
+No independent ST25 supply switch is mapped: R17 supplies ST25_VDD, VDCG is
+not software-switched here. If future hardware removes VDCG while MCU remains
+on, this NOPULL/wake contract no longer applies; establish safe bias/isolation
+and verify the electrical state before supporting that mode. No hardware
+change is required for the currently mapped common-powered configuration.
+
 - SDA -> PB7
 - SCL -> PB6
 - GPO -> PA3 through 100 ohm

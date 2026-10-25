@@ -1,5 +1,17 @@
 # Development machine registry
 
+## 2026-10-25: Commit saved; push blocked by GitHub authentication
+
+Stage5 commit128d941f0c81c40e1cb0ad388f8817f40f65c13d saved on main.
+Normal HTTPS push waited in git-credential-manager, cancelled without changing
+remote. Noninteractive retry explicitly failed: no usable GitHub username/
+credential, terminal prompts disabled. Remote main last checked remains
+c8dd924bc6a022979da2a70315cf8ee1f48b7b6b. NOT synchronized/pushed.
+Next: user completes GitHub authentication, then retry git push origin main
+and verify remote SHA. Baseline tag remains local (not pushed). Existing
+packed-refs.lock maintenance warning did not prevent commit; left untouched.
+No UART, target board or instrument operations. Unrelated files preserved.
+
 ## 2026-10-25: Stage5 publication checkpoint
 
 User authorizes commit/push. PC-02 TripleC, branch main; fetched origin and

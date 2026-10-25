@@ -13,7 +13,9 @@ Stage5 commit128d941f0c81c40e1cb0ad388f8817f40f65c13d, image
 2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2.
 Annotated checkpoint/native-shake-progress-v1 points to that commit, not stage6.
 Verified baseline/native-hal-eventloop-v1 resolves820ecb3f2b9fb199ddf5cf95246698d4648b73b1.
-Both tags explicitly pushed to origin2026-10-25, no force/update. Stage6 NOT committed.
+Both tags explicitly pushed to origin2026-10-25, no force/update. At validation
+time stage6 was uncommitted; user subsequently authorized publication2026-10-26.
+Stage6 commit 3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf is now published on origin/main.
 
 ```powershell
 $env:ARM_GCC_BIN = '<installed arm-none-eabi GCC14.2.1-1.1 bin directory>'

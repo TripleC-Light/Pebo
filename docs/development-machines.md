@@ -1,5 +1,19 @@
 # Development machine registry
 
+## 2026-10-26: Stage6 committed and published
+
+User explicitly authorizes commit/push after prototype validation. Scoped
+stage6 commit 3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf successfully pushed to origin/main;
+earlier local-only notes below are historical validation-time state.
+Includes native source/settings/vendor licenses/scripts/raw evidence and related
+status corrections/handoff. Evidence audit PASS; no new firmware or physical
+tests during publication. Last board09cdb9cc... off/debug/COM13 closed.
+Existing untracked FeedbackTest/TimeManagementTest and conflicted HIL copy
+excluded/preserved; build binaries/secrets not included. Existing maintenance
+packed-refs.lock warning left untouched; commit and push succeeded.
+Next: extended independent single-event/final pickup cohorts, real-water/fault/
+stack/power tests as listed in stage6 VALIDATION; no claim of production accuracy.
+
 ## 2026-10-26: Stage6 prototype and bounded HIL complete; extended acceptance OPEN
 
 PC-02 TripleC, main HEADa7c03e78c0a5e2c45d6b3c0e98d0c37e1e459304.

@@ -18,8 +18,9 @@ were verified and explicitly pushed without force:
 - baseline/native-hal-eventloop-v1 ->820ecb3f2b9fb199ddf5cf95246698d4648b73b1.
 - checkpoint/native-shake-progress-v1 ->128d941f0c81c40e1cb0ad388f8817f40f65c13d.
 
-Stage5 image2ae93c94... unchanged. Stage6 source/docs/scripts/evidence only local,
-NOT committed/pushed. Existing unrelated FeedbackTest/TimeManagementTest and
+Stage5 image2ae93c94... unchanged. At validation time stage6 was local only.
+Subsequently published2026-10-26 as 3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf on origin/main.
+Existing unrelated FeedbackTest/TimeManagementTest and
 conflicted HIL file preserved. No instruments, option bytes or backup reset.
 
 Stage6 training seed dca5abb3... (27924Flash/4696RAM). First frozen validation
@@ -141,5 +142,6 @@ use unused result directories and explicit currently verified UART/target IDs.
 Source uses no Arduino core; pins/timers/RTC ownership retained from stage5.
 Return stability edge fix and matching C++ assertion are stage6 only. Earlier
 false positives, failed replay trials and invalid operator attempts remain.
-No stage6 commit/push. Only explicitly authorized historic checkpoint tags
-were published. Handoff/HIL/machine notes saved locally with current state.
+Validation preceded stage6 publication. User subsequently authorized its commit
+and push (SHA above); no tags were moved. Handoff/HIL/machine records retain
+historical observations and the publication follow-up.

@@ -1,0 +1,114 @@
+{
+  "result": "PASS",
+  "samples": 746,
+  "reference": [
+    43,
+    -1012,
+    -95
+  ],
+  "expected_candidates": 1,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\evidence\\20261026-supplement-cancel-debug\\raw.json",
+  "compiler_output": "",
+  "method": "Actual shared C++ constexpr coordinate/detectors; extracted compiled state transitions, not intake proof",
+  "source_sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+  "raw_sha256": "ff1404209b724c934bba367cbcba4d89e8e97826d066d80fc7880f812acb378e",
+  "transitions": [
+    {
+      "ms": 3485,
+      "phase": "Tilt",
+      "event": 0
+    },
+    {
+      "ms": 4688,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 5989,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6079,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6161,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6270,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6536,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6547,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6567,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6575,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6625,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6684,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6766,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6817,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6825,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 6883,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 6914,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7422,
+      "phase": "Idle",
+      "event": 4
+    }
+  ],
+  "quality": {
+    "first_ms": 24,
+    "last_ms": 7430,
+    "max_gap_ms": 12,
+    "range_endpoint_axes": 0
+  }
+}

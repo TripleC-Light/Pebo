@@ -1,5 +1,64 @@
 # Pebo handoff log
 
+## 2026-10-26: Stage6 supplement ended; water deferred (PC-02)
+
+SESSION END: user explicitly says no water this session. Actual drinking and
+water pickup/confusing scenarios remain untested, not failed or passed. Empty
+cohorts complete10single/10pickup with exact C++ replay; off/debug cancellation
+confirmed, deadline automatedPASS with gesture confirmation still pending.
+No stage7 work. Frozen09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293
+last off/debug, COM13closed, no session helper active; instrument processes
+not inspected or controlled. main HEAD
+ebe7c06380fb9a3d59bd1441c1fe30e9cac0c1b5 unchanged. Host scripts/evidence/docs
+saved locally only, no commit/push/tag, unrelated/conflicted files preserved.
+Next: reconfirm hardware/port, arrange optional small water batch with amount
+and mounting labels; freeze parameters first. See supplemental report.
+
+Current snapshot supersedes progress notes below:10 empty singles confirmed,
+10 candidates/10events, no misses/duplicates/errors;10 final-version pickups
+confirmed,0candidates/events/shakes/errors. Full RAW/exact C++ replay preserved.
+off/debug pending-merge cancellation PASS and operator-confirmed; deadline
+run15 cancellation automatedPASS, gesture confirmation pending. All3 no stale
+event across11s +restart run1 +11s, RTC/BKP unchanged, PWM released. Deadline
+only decimated trace, not full RAW replay. Water amount/real drinking pending.
+Board fullSHA09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293,
+off/debug, COM13closed. No flashing,reset,instruments,firmware/parameter edits,
+commit/push/tag. Local host-tool/evidence/docs only, unrelated files preserved.
+
+Latest: ten valid independent empty singles operator-confirmed, each1/1,
+10000ms merge, exact C++ detailed replayPASS3015, no errors/drops/shakes.
+All ten max samplegap12ms, no 12-bit endpoints. pickup5a zero candidates/events,
+full3015RAW and C++ replayPASS; operator confirms five gestures. pickup5b also
+zero candidates/events and C++ replayPASS3015, human five-gesture confirmation
+pending. Next: pending-merge off test after readiness reply, then debug/deadline.
+Board09cdb9cc...3293 off/debug, UARTclosed. No helper running at this checkpoint.
+One original fourth trial excluded for capture busy; retained. Host-only finite
+cancellation/water metadata/multi-cue extensions syntax checked, physical
+acceptance pending. Firmware unchanged09cdb9cc...3293. Compiler largest .su
+frame448B, not peak measurement. See supplemental report for remaining work.
+
+HEAD/origin main ebe7c06380fb9a3d59bd1441c1fe30e9cac0c1b5 verified.
+Unchanged rebuild and actual board readback match SHA256
+09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293.
+COM13 Prolific verified, user supplies power, no instruments or flashing/reset.
+Fresh upright RAM reference43,-1012,-95; RTC valid. First two independent
+empty singles each operator-confirmed, 1 candidate/1 event/10000ms merge,
+0 errors/drops/shakes, exact C++ replay PASS each3015 samples. Third also
+operator-confirmed with identical counts/delay and C++ replay PASS3015.
+Fourth original trial INVALID_TOOL_START: capture rejected while setup motion
+Observation active; raw incomplete, excluded. bench.py host-only ordering fix
+requires CAPTURE_BEGIN before cue; syntax PASS. Retry operator-confirmed1/1,
+10000ms, C++ replay PASS3015; fourth valid trial. Fifth collecting. Firmware unchanged.
+Trials01..03 max samplegap12ms, no 12-bit endpoint saturation. README links
+supplemental record. All changes saved locally; no commit/push/tag.
+See FW/NativeDrinkDetectionTest/SUPPLEMENTAL_VALIDATION.md and new evidence.
+No firmware/parameter changes; unrelated untracked/conflicted files preserved.
+Local records only, no commit/push/tag. Helpers always off/debug and close UART;
+an active finite helper may be collecting the next trial, no power control.
+Next: finish independent10, final pickups10, cancellation3semantics, optional
+real-water small batch after water amount confirmation. No stage7 work.
+
+
 ## 2026-10-26: Stage6 committed and published
 
 User explicitly authorizes commit/push after prototype validation. Scoped

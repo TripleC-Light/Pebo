@@ -1,5 +1,48 @@
 # Bench automation plan
 
+## 2026-10-26: Stage6 supplemental cohort; session ended
+
+SESSION END: user declines water. Final supplement10independent empty singles
+->10candidates/10events,0miss/duplicate/error;10pickups->0candidate/0event,
+all operator-confirmed and exact C++ replayed. off/debug cancellationPASS,
+deadline automaticPASS with operator gesture confirmation pending. Actual
+drinking/water negatives/confusing gestures DEFERRED or NOT_TESTED, no invented
+denominator. Firmware frozen; no power measurement, peak stack NOT_MEASURED.
+Last off/debug, COM13closed. Full conditions/evidence/limitations in
+FW/NativeDrinkDetectionTest/SUPPLEMENTAL_VALIDATION.md. Do not pool historical
+or incomplete capture with this cohort; no new full RF regression claimed.
+
+Current supersedes progress below:10/10 empty singles (10candidate/10event),
+10 final pickups (0candidate/0event), all operator-confirmed and C++ replayed.
+off/debug cancellation real candidate then0events, RTC/BKP/PWM/source cleanup
+and restartPASS. Deadline run15 cancels real candidate after STOPcount1->9,
+automatedPASS, human confirmation pending. Deadline trace only118 decimated
+rows, no full RAW/replay claim. Water/optional confusing motions still pending.
+Board unchanged09cdb9cc...3293 off/debug COM13closed. No instrument operations.
+
+Latest: valid singles01..10 (04-retry replaces excluded failed tool start):
+each operator-confirmed1candidate/1event/10000ms, C++ replayPASS3015, zero
+errors/drops/shakes. All ten maxgap12ms/no range endpoints. pickup5a zero
+candidates/events, detailed C++ replayPASS3015; five gestures human-confirmed.
+pickup5b zero candidates/events, detailed C++ replayPASS3015; confirmation pending.
+Board off/debug, COM13 closed. Final pickups/water/cancellation still in progress.
+
+Frozen board/readback SHA09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293.
+New independent empty singles01/02: user confirms each one gesture; each1
+candidate/1event/10000ms merge, zeroerrors/drops/shakes;3015RAW rows each,
+actual C++ replay PASS. Third also operator-confirmed1/1/10000ms, replayPASS.
+Fourth original INVALID_TOOL_START, capture busy after setup motion; no complete
+RAW, excluded. Host-only bench.py start-order fix verified capture accepted
+before cue on fourth retry; operator-confirmed1/1/10000ms, C++ replayPASS3015.
+Four valid singles complete; fifth collecting. Firstthree max samplegap12ms,
+no 12-bit range endpoint saturation. Remaining cohorts not yet passed.
+Fresh calibration43,-1012,-95; user-powered board, COM13, no instruments,
+flash, reset, backup writes or firmware changes. Helpers clean up off/debug
+and close UART. Full conditions, cancellation semantics and outstanding work:
+FW/NativeDrinkDetectionTest/SUPPLEMENTAL_VALIDATION.md. Prior release PASSes
+remain historical, not pooled with this supplemental acceptance.
+
+
 ## 2026-10-26: Stage6 prototype and bounded HIL complete; extended acceptance OPEN
 
 PC-02 TripleC, main HEADa7c03e78c0a5e2c45d6b3c0e98d0c37e1e459304.

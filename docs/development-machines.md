@@ -1,5 +1,43 @@
 # Development machine registry
 
+## 2026-10-26: PC-02 TripleC supplement ended; water deferred
+
+SESSION END: water tests explicitly deferred by user; empty cohorts complete,
+deadline operator confirmation pending. Board09cdb9cc...3293 last off/debug,
+COM13closed, no session helper active; instrument processes not inspected or
+controlled. main ebe7c063 unchanged;
+local tools/evidence/docs only, no commit/push/tag. Unrelated files preserved.
+Next hardware session must reconfirm power/port/mount and water conditions;
+no automatic stage7. Handoff saved; no cloud synchronization claim.
+
+Current supersedes progress below:10 empty singles/10 final pickups human
+confirmed, exact C++ replaysPASS. off/debug cancellationPASS; deadline run15
+automatedPASS, human confirmation pending. RTC/BKP stable, no stale events,
+PWM clocks off, restartPASS. Board09cdb9cc...3293 off/debug COM13closed.
+No instruments/flash/reset or firmware changes; local tools/evidence/docs only,
+no commit/push/tag. Water drinking conditions pending user reply.
+
+Latest:10 valid empty singles operator-confirmed and detailed C++ replayPASS;
+pickup5a zero candidates/events with full RAW/replay, five gestures confirmed.
+pickup5b also zero candidates/events/full RAW/replay, human confirmation pending.
+Board unchanged09cdb9cc...3293 off/debug, COM13 closed; no active helper.
+Host-only bench/replay extensions tested; firmware unchanged.
+Compiler per-frame .su max448B; peak stack remains NOT_MEASURED.
+
+main ebe7c06380fb9a3d59bd1441c1fe30e9cac0c1b5 matches origin read-only check.
+GCC14.2.1 rebuild09cdb9cc...38c3293 matches board readback; Flash28228,
+static RAM4704, stack minimum1024/heap0, peak NOT_MEASURED. Prolific COM13
+enumerated; Nordic COM6/COM7 not opened. User power, no instruments operated.
+Fresh calibration43,-1012,-95, valid RTC. Two independent empty singles and
+exact C++ replays passed; third subsequently confirmed and replayed identically.
+Fourth original capture rejected as busy, evidence preserved/excluded; host-only
+bench.py now requires capture acceptance before cue; retry confirmed1/1,
+10000ms, C++ replayPASS3015. Four valid singles completed; fifth collecting.
+Extended acceptance remains in progress, not complete.
+New local supplemental evidence/notes; no commit/push/tag or firmware changes.
+Helpers finish off/debug with UART closed; see canonical handoff for next steps.
+
+
 ## 2026-10-26: Stage6 committed and published
 
 User explicitly authorizes commit/push after prototype validation. Scoped

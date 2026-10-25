@@ -1,5 +1,10 @@
 # Stage6 validation log (2026-10-25/26)
 
+Supplemental session ended; see [separate cohort and remaining work](SUPPLEMENTAL_VALIDATION.md).
+Session ended with empty-bottle cohorts complete and real-water tests explicitly
+deferred by the user. Firmware unchanged. Cancellation automated checks pass;
+deadline gesture confirmation remains pending. No stage7 work.
+
 Final status: prototype implemented, build/replay/HIL evidence audit PASS.
 Limited EMPTY-bottle acceptance only; expanded single-event cohort and fault/
 power/stack tests remain pending below. Board off/debug/UART closed.

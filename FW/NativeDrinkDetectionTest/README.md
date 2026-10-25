@@ -1,5 +1,13 @@
 # NativeDrinkDetectionTest - stage6 engineering prototype
 
+Current supplemental acceptance (separate from original empty-bottle release):
+[SUPPLEMENTAL_VALIDATION.md](SUPPLEMENTAL_VALIDATION.md). Firmware/parameters
+remain frozen; host capture now requires CAPTURE_BEGIN before the visual cue.
+This session completed ten independent empty single gestures and ten pickup
+negatives, plus cancellation checks. Real-water testing deferred by the user;
+no real-drinking acceptance or production accuracy claim. See report for
+deadline operator-confirmation and trace-completeness limitations.
+
 Independent native STM32L031G6U6TR, 32KB Flash / 8KB SRAM. No Arduino core,
 RTOS, heap allocation, application NFC protocol, storage, task scoring, sound
 or automatic progress increment. SHAKE displays the manually configured level;

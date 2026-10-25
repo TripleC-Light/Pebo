@@ -16,7 +16,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--image',type=Path,required=True)
     ap.add_argument('--results',type=Path,required=True)
-    ap.add_argument('--test',choices=['flash','calibration','capture','auto','run','awake','controls'],required=True)
+    ap.add_argument('--test',choices=['flash','calibration','capture','auto','run','awake','controls','cancel-off','cancel-debug','cancel-deadline'],required=True)
     ap.add_argument('--seconds',type=int,default=15)
     ap.add_argument('--label',default='unlabelled')
     ap.add_argument('--split',choices=['training','validation','engineering'],default='training')
@@ -24,11 +24,17 @@ def main():
     ap.add_argument('--progress',type=int,choices=range(9))
     ap.add_argument('--uart-port',default='COM5',help='Explicit Prolific UART, VID/PID checked')
     ap.add_argument('--cue',action='store_true',help='Manual progress0 double flash at debug capture/awake start')
+    ap.add_argument('--cue-count',type=int,choices=range(1,6),default=1,help='Capture-only cues at 5-second intervals; each is manual, not recognition')
+    ap.add_argument('--bottle-state',choices=['empty','water'],default='empty')
+    ap.add_argument('--water-ml',type=int,default=0,help='Operator-estimated initial water volume, not inferred intake')
+    ap.add_argument('--mount',default='stage5 mounting retained; direct-drink bottle')
     a=ap.parse_args()
     assert a.image.is_file() and 0<a.image.stat().st_size<=32768
     assert 1<=a.seconds<=150
+    assert a.water_ml>=0 and ((a.bottle_state=='empty' and a.water_ml==0) or (a.bottle_state=='water' and a.water_ml>0))
     if a.test=='run':assert a.seconds<=60
     if a.test=='capture':assert 5<=a.seconds<=30
+    if a.cue_count>1:assert a.test=='capture' and a.cue and a.seconds>=a.cue_count*5
     if a.test=='awake':assert a.seconds<=150
     port=next((p for p in list_ports.comports() if p.device==a.uart_port),None)
     assert port and (port.vid,port.pid)==(0x067b,0x2303),'Expected explicitly selected Prolific UART'
@@ -64,9 +70,14 @@ def main():
         return receive(seconds)
     def fields(line):return dict(re.findall(r'(\w+)=(\S+)',line))
     def find(lines,prefix):return next(s for s in lines if s.startswith(prefix))
-    def run(n,stimulus):
+    def run(n,stimulus,cue=False):
         nonlocal runUntil
-        lines=send(f'run {n}',0)+receive(3,'RUN_READY')
+        command=f'run {n}'
+        if cue:
+            # Queue cue AFTER run initialization, during awake RTC preflight.
+            command+='\nprogress 0'
+            log('OPERATOR_CUE',command='progress 0 queued after run; manual cue, not recognition')
+        lines=send(command,0)+receive(3,'RUN_READY')
         assert 'RUN_READY rtc_probe=1' in lines,lines
         runUntil=time.monotonic()+n+3
         log('WINDOW_READY',label=stimulus,seconds=n)
@@ -110,11 +121,19 @@ def main():
         elif a.test=='capture':
             before=fields(find(send('drink status'),'DRINK '))
             assert before['calibration']=='1','Calibrate upright first'
+            # Setup can wake motion observation; arm RAW before cueing the operator.
+            send('mode debug')
+            lines=send(f'capture {a.seconds}',.2)
+            assert any(s.startswith('CAPTURE_BEGIN ') for s in lines),lines
             log('WINDOW_READY',label=a.label,seconds=a.seconds)
             if a.cue:
                 log('OPERATOR_CUE',command='progress 0; existing manual LED double flash, not recognition')
                 send('progress 0',.05)
-            lines=send(f'capture {a.seconds}',0)+receive(a.seconds+2,'CAPTURE_END')
+                for cue_index in range(1,a.cue_count):
+                    lines+=receive(5)
+                    log('OPERATOR_CUE',index=cue_index+1,command='progress 0; manual cue, not recognition')
+                    lines+=send('progress 0',.05)
+            lines+=receive(a.seconds+2,'CAPTURE_END')
             assert 'CAPTURE_END' in lines and len(samples)>=a.seconds*80
             assert samples[0][0]<=100 and all(b[0]>x[0] for x,b in zip(samples,samples[1:]))
             lines+=receive(10.5)
@@ -167,6 +186,51 @@ def main():
             regs=fields(find(send('lisregs'),'LISREG '))
             assert regs['ctrl1']==regs['ctrl4']=='00'
             run(1,'controls_restart')
+        elif a.test.startswith('cancel-'):
+            initial=fields(find(send('clock'),'CLOCK '))
+            assert initial['valid']=='1','Cancellation acceptance requires valid RTC'
+            assert fields(find(send('drink status'),'DRINK '))['calibration']=='1'
+            if a.test=='cancel-deadline':
+                assert 5<=a.seconds<=30
+                lines=run(a.seconds,'candidate_before_deadline',cue=a.cue)
+                assert any(s.startswith('DRINK_CANDIDATE ') for s in lines),'INVALID: no candidate before deadline'
+                assert 'DRINK_CANCELLED reason=context_or_off' in lines,'INVALID: no pending merge at deadline'
+                log('RAW_SCOPE',scope='Automatic motion window; only decimated last-window SAMPLE trace, not full RAW stream')
+                send('trace',2)
+            else:
+                send('mode debug')
+                lines=send('capture 30',.2)
+                assert any(s.startswith('CAPTURE_BEGIN ') for s in lines),lines
+                log('WINDOW_READY',label=a.label,seconds=25,cancel=a.test)
+                if a.cue:send('progress 0',.05)
+                lines+=receive(25,'DRINK_CANDIDATE ')
+                assert any(s.startswith('DRINK_CANDIDATE ') for s in lines),'INVALID: candidate not received'
+                lines+=send('off' if a.test=='cancel-off' else 'mode debug',.2)
+                assert 'DRINK_CANCELLED reason=context_or_off' in lines
+                log('RAW_SCOPE',scope='Full stream until explicit cancellation; intentionally not a complete 30-second capture')
+            assert not any(s.startswith('DRINK_CONFIRMED ') for s in lines),'Event already confirmed; cancellation trial invalid'
+            after=send('status')
+            state=fields(find(after,'OK mode='));app=fields(find(after,'APP '));drink=fields(find(after,'DRINK '))
+            assert state['mode']=='debug' and app['display']==app['pwm']==app['sampling']=='0'
+            assert drink['merge']=='0'
+            expected='0/0' if a.test=='cancel-off' else '1/0'
+            assert state['lis']==state['st']==expected
+            regs=fields(find(send('lisregs'),'LISREG '))
+            assert regs['ok']=='1' and regs['ctrl1']==('00' if a.test=='cancel-off' else '20')
+            assert regs['ctrl4']==('00' if a.test=='cancel-off' else '20')
+            led=fields(find(send('ledregs'),'LEDREG '))
+            # STM32L031 CMSIS: TIM2EN bit0, TIM22EN bit5; PA5..8 are active high.
+            assert int(led['apb1'],16)&1==0 and int(led['apb2'],16)&32==0
+            assert int(led['odr'],16)&0x1e0==0
+            quiet=receive(11)
+            assert not any(s.startswith(('DRINK_CANDIDATE ','DRINK_CONFIRMED ')) for s in quiet),'Unexpected activity after cancellation; inspect trial'
+            run(1,'cancel_restart')
+            quiet=receive(11)
+            assert not any(s.startswith(('DRINK_CANDIDATE ','DRINK_CONFIRMED ')) for s in quiet),'Old/new candidate after restart; inspect trial'
+            clock=fields(find(send('clock'),'CLOCK '))
+            assert clock['valid']=='1' and int(clock['utc'])>=int(initial['utc'])
+            for key in ('bkp0','bkp1','bkp2','bkp3','bkp4'):assert clock[key]==initial[key],key
+            assert fields(find(send('drink status'),'DRINK '))['merge']=='0'
         log('EVIDENCE',status=send('status'),counters=send('counters'))
         result='PASS'
     except Exception as exc:log('ERROR',error=repr(exc))
@@ -177,7 +241,8 @@ def main():
                 send('off');send('status')
             except Exception as exc:log('CLEANUP_ERROR',error=repr(exc));result='FAIL'
             uart.close()
-        report=dict(result=result,label=a.label,split=a.split,uart_port=a.uart_port,bottle='empty direct-drink; stage5 mounting retained',
+        report=dict(result=result,label=a.label,split=a.split,uart_port=a.uart_port,
+                    bottle=dict(state=a.bottle_state,initial_water_ml=a.water_ml,mount=a.mount),
                     image_sha256=hashlib.sha256(a.image.read_bytes()).hexdigest(),records=rows,
                     limits='Transport/acquisition PASS is not recognition acceptance; operator confirmation required')
         (a.results/'result.json').write_text(json.dumps(report,indent=2),encoding='utf-8')

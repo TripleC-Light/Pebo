@@ -1,0 +1,4159 @@
+{
+  "result": "PASS",
+  "label": "empty_pending_merge_cancel_debug",
+  "split": "validation",
+  "uart_port": "COM13",
+  "bottle": {
+    "state": "empty",
+    "initial_water_ml": 0,
+    "mount": "stage5 mounting retained; direct-drink bottle"
+  },
+  "image_sha256": "09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293",
+  "records": [
+    {
+      "kind": "cube",
+      "time": 30156.359,
+      "command": [
+        "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.72V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "time": 30156.734,
+      "command": [
+        "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "28228",
+        "FW\\NativeDrinkDetectionTest\\evidence\\20261026-supplement-cancel-debug\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : FW\\NativeDrinkDetectionTest\\evidence\\20261026-supplement-cancel-debug\\readback.bin\n  Size          : 28228 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.197\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 30157.093,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 30157.125,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 30157.125,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=131"
+    },
+    {
+      "kind": "RX",
+      "time": 30157.156,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=3936777 last=3940957 output=3362840 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 30157.296,
+      "command": "mode debug"
+    },
+    {
+      "kind": "RX",
+      "time": 30157.328,
+      "text": "OK debug"
+    },
+    {
+      "kind": "TX",
+      "time": 30157.515,
+      "command": "run 1"
+    },
+    {
+      "kind": "RX",
+      "time": 30157.546,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 30158.546,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 30158.546,
+      "label": "setup",
+      "seconds": 1
+    },
+    {
+      "kind": "RX",
+      "time": 30159.562,
+      "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=2 unknownWake=0 lastLis=0A lastSt=10"
+    },
+    {
+      "kind": "RX",
+      "time": 30159.562,
+      "text": "COUNT source=rtc isr=4 wake=2 confirmed=4 handled=4 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30159.562,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30159.593,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30159.593,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 30159.593,
+      "text": "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=115 reversals=0 peak2=114107"
+    },
+    {
+      "kind": "TX",
+      "time": 30160.078,
+      "command": "counters clear"
+    },
+    {
+      "kind": "RX",
+      "time": 30160.109,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "time": 30160.296,
+      "command": "clock"
+    },
+    {
+      "kind": "RX",
+      "time": 30160.328,
+      "text": "CLOCK valid=1 utc=1792951129 lse=1 bkp2=544D0101 bkp3=6ADE33A9 monotonicMs=4015211 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 30160.515,
+      "command": "drink status"
+    },
+    {
+      "kind": "RX",
+      "time": 30160.546,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=3936777 last=3940957 output=3362840 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 30160.734,
+      "command": "mode debug"
+    },
+    {
+      "kind": "RX",
+      "time": 30160.765,
+      "text": "OK debug"
+    },
+    {
+      "kind": "TX",
+      "time": 30160.953,
+      "command": "capture 30"
+    },
+    {
+      "kind": "RX",
+      "time": 30160.984,
+      "text": "CAPTURE_BEGIN units=LP1_counts odr=100 max_seconds=30"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.0,
+      "text": "RAW 24 31 -1002 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.0,
+      "text": "RAW 32 32 -1006 -82"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.0,
+      "text": "RAW 43 28 -1011 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.031,
+      "text": "RAW 55 39 -1013 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.031,
+      "text": "RAW 63 25 -1016 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.031,
+      "text": "RAW 75 40 -1008 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.031,
+      "text": "RAW 82 34 -1017 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.062,
+      "text": "RAW 94 35 -1015 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.062,
+      "text": "RAW 102 23 -1015 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.062,
+      "text": "RAW 114 33 -1009 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.093,
+      "text": "RAW 121 34 -1008 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.093,
+      "text": "RAW 133 38 -1016 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.093,
+      "text": "RAW 145 34 -1004 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.125,
+      "text": "RAW 153 33 -1023 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.125,
+      "text": "RAW 161 25 -1006 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.125,
+      "text": "RAW 172 36 -1006 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.156,
+      "text": "RAW 184 26 -1021 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.156,
+      "text": "RAW 192 27 -1014 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.156,
+      "text": "RAW 204 22 -1009 -83"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 30161.156,
+      "label": "empty_pending_merge_cancel_debug",
+      "seconds": 25,
+      "cancel": "cancel-debug"
+    },
+    {
+      "kind": "TX",
+      "time": 30161.156,
+      "command": "progress 0"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.187,
+      "text": "RAW 211 33 -1017 -98"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.187,
+      "text": "OK display"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.187,
+      "text": "RAW 223 33 -1012 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.187,
+      "text": "RAW 231 38 -1016 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.218,
+      "text": "RAW 243 21 -1005 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.218,
+      "text": "RAW 250 30 -1019 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.218,
+      "text": "RAW 262 29 -1013 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.25,
+      "text": "RAW 274 43 -1016 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.25,
+      "text": "RAW 282 39 -1013 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.25,
+      "text": "RAW 293 29 -1013 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.281,
+      "text": "RAW 301 28 -1013 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.281,
+      "text": "RAW 313 33 -1013 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.281,
+      "text": "RAW 321 35 -1009 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.312,
+      "text": "RAW 332 27 -1015 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.312,
+      "text": "RAW 340 28 -1004 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.312,
+      "text": "RAW 352 33 -1007 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.312,
+      "text": "RAW 360 26 -1019 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.343,
+      "text": "RAW 371 41 -1016 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.343,
+      "text": "RAW 383 38 -1018 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.375,
+      "text": "RAW 391 24 -1009 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.375,
+      "text": "RAW 403 38 -1007 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.375,
+      "text": "RAW 411 34 -1011 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.406,
+      "text": "RAW 422 38 -1015 -78"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.406,
+      "text": "RAW 430 38 -1008 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.406,
+      "text": "RAW 442 24 -1010 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.406,
+      "text": "RAW 450 27 -1013 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.437,
+      "text": "RAW 461 33 -1010 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.437,
+      "text": "RAW 473 29 -1022 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.437,
+      "text": "RAW 481 39 -1009 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.468,
+      "text": "RAW 493 37 -1019 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.468,
+      "text": "RAW 500 31 -1008 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.468,
+      "text": "RAW 512 28 -1022 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.5,
+      "text": "RAW 520 27 -1019 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.5,
+      "text": "RAW 532 24 -1015 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.5,
+      "text": "RAW 539 35 -1005 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.531,
+      "text": "RAW 551 24 -1005 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.531,
+      "text": "RAW 559 29 -1012 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.531,
+      "text": "RAW 571 33 -1017 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.562,
+      "text": "RAW 579 33 -1014 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.562,
+      "text": "RAW 590 29 -1005 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.562,
+      "text": "RAW 602 35 -1009 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.593,
+      "text": "RAW 610 28 -1018 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.593,
+      "text": "RAW 621 37 -1026 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.593,
+      "text": "RAW 629 30 -1015 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.625,
+      "text": "RAW 641 33 -1013 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.625,
+      "text": "RAW 649 35 -1020 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.625,
+      "text": "RAW 661 42 -1005 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.656,
+      "text": "RAW 668 34 -1016 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.656,
+      "text": "RAW 680 35 -1001 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.656,
+      "text": "RAW 688 30 -1006 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.687,
+      "text": "RAW 700 42 -1012 -83"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.687,
+      "text": "RAW 707 28 -1012 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.687,
+      "text": "RAW 719 37 -1014 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.718,
+      "text": "RAW 731 30 -1015 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.718,
+      "text": "RAW 739 36 -1014 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.718,
+      "text": "RAW 750 34 -1014 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.718,
+      "text": "RAW 758 32 -1021 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.75,
+      "text": "RAW 770 36 -1008 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.75,
+      "text": "RAW 778 31 -1013 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.75,
+      "text": "RAW 789 33 -1015 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.781,
+      "text": "RAW 801 29 -1011 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.781,
+      "text": "RAW 809 31 -1015 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.781,
+      "text": "RAW 821 38 -1008 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.812,
+      "text": "RAW 829 34 -1012 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.812,
+      "text": "RAW 840 32 -1008 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.812,
+      "text": "RAW 848 34 -1003 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.843,
+      "text": "RAW 860 27 -1017 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.843,
+      "text": "RAW 868 26 -1006 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.843,
+      "text": "RAW 879 40 -1014 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.875,
+      "text": "RAW 887 27 -1014 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.875,
+      "text": "RAW 899 37 -1020 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.875,
+      "text": "RAW 907 38 -1012 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.906,
+      "text": "RAW 918 40 -1017 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.906,
+      "text": "RAW 930 38 -1016 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.906,
+      "text": "RAW 938 37 -1013 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.937,
+      "text": "RAW 950 36 -1014 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.937,
+      "text": "RAW 957 26 -1016 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.937,
+      "text": "RAW 969 33 -1011 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.937,
+      "text": "RAW 977 33 -1015 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.968,
+      "text": "RAW 989 35 -1017 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.968,
+      "text": "RAW 996 35 -1017 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30161.968,
+      "text": "RAW 1008 29 -1018 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.0,
+      "text": "RAW 1016 35 -1013 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.0,
+      "text": "RAW 1028 34 -1011 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.0,
+      "text": "RAW 1036 25 -1022 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.015,
+      "text": "RAW 1047 37 -1014 -79"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.015,
+      "text": "RAW 1059 41 -1005 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.015,
+      "text": "RAW 1067 29 -1004 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.046,
+      "text": "RAW 1079 34 -1001 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.046,
+      "text": "RAW 1086 33 -1018 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.046,
+      "text": "RAW 1098 33 -1012 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.078,
+      "text": "RAW 1106 29 -1006 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.078,
+      "text": "RAW 1118 25 -1014 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.078,
+      "text": "RAW 1129 40 -1026 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.109,
+      "text": "RAW 1137 35 -1018 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.109,
+      "text": "RAW 1149 40 -1029 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.109,
+      "text": "RAW 1157 33 -1021 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.14,
+      "text": "RAW 1168 39 -1014 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.14,
+      "text": "RAW 1176 39 -1017 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.14,
+      "text": "RAW 1188 37 -1013 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.171,
+      "text": "RAW 1196 24 -1010 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.171,
+      "text": "RAW 1207 32 -1015 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.171,
+      "text": "RAW 1215 33 -1021 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.203,
+      "text": "RAW 1227 37 -1012 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.203,
+      "text": "RAW 1235 40 -1016 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.203,
+      "text": "RAW 1246 35 -1012 -80"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.234,
+      "text": "RAW 1258 37 -1014 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.234,
+      "text": "RAW 1266 40 -1017 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.234,
+      "text": "RAW 1278 27 -1013 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.265,
+      "text": "RAW 1286 29 -1025 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.265,
+      "text": "RAW 1297 32 -1016 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.265,
+      "text": "RAW 1305 29 -1004 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.296,
+      "text": "RAW 1317 31 -1001 -104"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.296,
+      "text": "RAW 1325 35 -1002 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.296,
+      "text": "RAW 1336 36 -1009 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.296,
+      "text": "RAW 1344 28 -1007 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.328,
+      "text": "RAW 1356 35 -1011 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.328,
+      "text": "RAW 1364 31 -1004 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.328,
+      "text": "RAW 1375 28 -1014 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.359,
+      "text": "RAW 1387 35 -1013 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.359,
+      "text": "RAW 1395 32 -1017 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.359,
+      "text": "RAW 1407 33 -1019 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.39,
+      "text": "RAW 1414 31 -1007 -99"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.39,
+      "text": "RAW 1426 37 -1013 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.39,
+      "text": "RAW 1434 32 -1012 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.421,
+      "text": "RAW 1446 24 -1012 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.421,
+      "text": "RAW 1457 32 -1019 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.421,
+      "text": "RAW 1465 40 -1014 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.453,
+      "text": "RAW 1473 35 -1012 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.453,
+      "text": "RAW 1485 34 -1009 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.453,
+      "text": "RAW 1496 35 -1011 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.484,
+      "text": "RAW 1504 33 -1015 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.484,
+      "text": "RAW 1516 36 -1011 -88"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.484,
+      "text": "RAW 1524 30 -1011 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.515,
+      "text": "RAW 1536 34 -1011 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.515,
+      "text": "RAW 1543 35 -1007 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.515,
+      "text": "RAW 1555 40 -1012 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.546,
+      "text": "RAW 1563 27 -1011 -102"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.546,
+      "text": "RAW 1575 29 -1015 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.546,
+      "text": "RAW 1586 29 -1012 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.578,
+      "text": "RAW 1594 42 -1007 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.578,
+      "text": "RAW 1606 31 -1009 -99"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.578,
+      "text": "RAW 1614 37 -1015 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.609,
+      "text": "RAW 1625 30 -1012 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.609,
+      "text": "RAW 1633 38 -1009 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.609,
+      "text": "RAW 1645 25 -1022 -99"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.64,
+      "text": "RAW 1653 35 -1006 -102"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.64,
+      "text": "RAW 1664 39 -1009 -112"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.64,
+      "text": "RAW 1672 27 -1033 -45"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.671,
+      "text": "RAW 1684 35 -1037 -63"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.671,
+      "text": "RAW 1696 43 -1006 -99"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.671,
+      "text": "RAW 1704 37 -998 -118"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.703,
+      "text": "RAW 1715 39 -1013 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.703,
+      "text": "RAW 1723 25 -1004 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.703,
+      "text": "RAW 1735 27 -1008 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.703,
+      "text": "RAW 1743 56 -1018 -124"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.734,
+      "text": "RAW 1754 132 -1029 -190"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.734,
+      "text": "RAW 1762 65 -1063 -233"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.765,
+      "text": "RAW 1774 -67 -1065 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.765,
+      "text": "RAW 1786 -51 -1001 30"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.765,
+      "text": "RAW 1793 -60 -1007 73"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.765,
+      "text": "RAW 1801 -1 -1061 71"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.781,
+      "text": "RAW 1813 -46 -1075 44"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.781,
+      "text": "RAW 1825 8 -1076 -6"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.781,
+      "text": "RAW 1832 10 -1103 -50"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.812,
+      "text": "RAW 1844 -19 -1118 1"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.812,
+      "text": "RAW 1852 -58 -1152 4"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.812,
+      "text": "RAW 1864 -106 -1426 -282"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.843,
+      "text": "RAW 1871 -32 -1181 8"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.843,
+      "text": "RAW 1883 -171 -1169 25"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.843,
+      "text": "RAW 1891 -134 -1157 31"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.875,
+      "text": "RAW 1903 -103 -1194 212"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.875,
+      "text": "RAW 1914 -126 -1066 52"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.875,
+      "text": "RAW 1922 -129 -1136 82"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.906,
+      "text": "RAW 1934 -57 -1141 96"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.906,
+      "text": "RAW 1942 -35 -1051 92"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.906,
+      "text": "RAW 1954 -96 -1059 93"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.937,
+      "text": "RAW 1961 -109 -1065 55"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.937,
+      "text": "RAW 1973 -105 -1088 20"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.937,
+      "text": "RAW 1981 -84 -1107 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.968,
+      "text": "RAW 1993 -27 -1109 -49"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.968,
+      "text": "RAW 2000 8 -1118 -37"
+    },
+    {
+      "kind": "RX",
+      "time": 30162.968,
+      "text": "RAW 2012 -11 -1129 -61"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.0,
+      "text": "RAW 2024 -40 -1149 -69"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.0,
+      "text": "RAW 2032 -4 -1185 -71"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.0,
+      "text": "RAW 2043 44 -1129 -67"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.031,
+      "text": "RAW 2051 -58 -1097 -76"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.031,
+      "text": "RAW 2063 3 -1215 -74"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.031,
+      "text": "RAW 2071 20 -1087 -56"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.062,
+      "text": "RAW 2082 2 -1089 -67"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.062,
+      "text": "RAW 2090 41 -1071 -69"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.062,
+      "text": "RAW 2102 -4 -1001 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.093,
+      "text": "RAW 2110 -23 -971 -123"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.093,
+      "text": "RAW 2121 -56 -1010 -112"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.093,
+      "text": "RAW 2129 67 -995 -98"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.125,
+      "text": "RAW 2141 59 -911 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.125,
+      "text": "RAW 2153 64 -933 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.125,
+      "text": "RAW 2161 2 -950 -142"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.156,
+      "text": "RAW 2172 33 -983 -155"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.156,
+      "text": "RAW 2180 90 -992 -162"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.156,
+      "text": "RAW 2192 34 -977 -169"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.187,
+      "text": "RAW 2200 5 -1013 -203"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.187,
+      "text": "RAW 2211 -4 -1006 -203"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.187,
+      "text": "RAW 2223 39 -983 -202"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.218,
+      "text": "RAW 2231 167 -954 -169"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.218,
+      "text": "RAW 2243 165 -870 -173"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.218,
+      "text": "RAW 2250 117 -877 -177"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.218,
+      "text": "RAW 2258 32 -912 -190"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.25,
+      "text": "RAW 2270 2 -957 -216"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.25,
+      "text": "RAW 2282 8 -962 -245"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.265,
+      "text": "RAW 2289 92 -993 -195"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.265,
+      "text": "RAW 2301 156 -942 -178"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.265,
+      "text": "RAW 2309 135 -903 -192"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.312,
+      "text": "RAW 2321 40 -953 -207"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.312,
+      "text": "RAW 2329 44 -964 -210"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.312,
+      "text": "RAW 2340 102 -953 -173"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.343,
+      "text": "RAW 2352 52 -871 -164"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.343,
+      "text": "RAW 2360 31 -899 -192"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.343,
+      "text": "RAW 2371 49 -903 -194"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.343,
+      "text": "RAW 2379 97 -908 -204"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.359,
+      "text": "RAW 2391 130 -925 -210"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.359,
+      "text": "RAW 2399 124 -925 -213"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.359,
+      "text": "RAW 2411 85 -944 -187"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.39,
+      "text": "RAW 2418 107 -947 -214"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.39,
+      "text": "RAW 2430 154 -954 -231"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.39,
+      "text": "RAW 2438 172 -978 -243"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.421,
+      "text": "RAW 2450 167 -1001 -239"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.421,
+      "text": "RAW 2457 195 -1002 -237"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.421,
+      "text": "RAW 2469 209 -1010 -241"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.453,
+      "text": "RAW 2481 222 -986 -257"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.453,
+      "text": "RAW 2489 213 -971 -254"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.453,
+      "text": "RAW 2500 211 -939 -248"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.484,
+      "text": "RAW 2508 221 -989 -217"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.484,
+      "text": "RAW 2520 245 -936 -249"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.484,
+      "text": "RAW 2528 289 -937 -265"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.515,
+      "text": "RAW 2539 336 -962 -286"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.515,
+      "text": "RAW 2547 361 -936 -282"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.515,
+      "text": "RAW 2559 357 -965 -309"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.546,
+      "text": "RAW 2571 320 -983 -303"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.546,
+      "text": "RAW 2579 331 -971 -313"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.546,
+      "text": "RAW 2586 355 -976 -324"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.578,
+      "text": "RAW 2598 358 -966 -318"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.578,
+      "text": "RAW 2610 375 -920 -348"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.578,
+      "text": "RAW 2618 399 -938 -335"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.609,
+      "text": "RAW 2629 413 -924 -351"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.609,
+      "text": "RAW 2637 409 -937 -349"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.609,
+      "text": "RAW 2649 382 -929 -352"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.609,
+      "text": "RAW 2657 382 -893 -345"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.64,
+      "text": "RAW 2668 349 -903 -362"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.64,
+      "text": "RAW 2680 345 -895 -362"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.64,
+      "text": "RAW 2688 356 -883 -359"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.671,
+      "text": "RAW 2700 381 -918 -382"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.671,
+      "text": "RAW 2707 377 -916 -401"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.703,
+      "text": "RAW 2719 372 -934 -388"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.703,
+      "text": "RAW 2727 408 -899 -394"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.703,
+      "text": "RAW 2739 416 -861 -397"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.703,
+      "text": "RAW 2746 464 -851 -389"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.734,
+      "text": "RAW 2758 426 -827 -391"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.734,
+      "text": "RAW 2766 437 -833 -405"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.734,
+      "text": "RAW 2778 440 -817 -419"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.765,
+      "text": "RAW 2786 443 -836 -433"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.765,
+      "text": "RAW 2797 460 -862 -437"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.765,
+      "text": "RAW 2809 476 -853 -424"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.796,
+      "text": "RAW 2817 489 -841 -423"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.796,
+      "text": "RAW 2829 471 -779 -419"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.796,
+      "text": "RAW 2836 442 -759 -432"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.828,
+      "text": "RAW 2848 404 -744 -437"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.828,
+      "text": "RAW 2856 410 -733 -465"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.828,
+      "text": "RAW 2868 432 -774 -479"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.859,
+      "text": "RAW 2875 469 -734 -501"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.859,
+      "text": "RAW 2887 464 -702 -530"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.859,
+      "text": "RAW 2899 478 -710 -554"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.89,
+      "text": "RAW 2907 502 -691 -574"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.89,
+      "text": "RAW 2914 515 -688 -565"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.89,
+      "text": "RAW 2926 543 -665 -566"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.921,
+      "text": "RAW 2938 551 -691 -558"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.921,
+      "text": "RAW 2946 590 -652 -551"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.921,
+      "text": "RAW 2957 620 -607 -529"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.921,
+      "text": "RAW 2965 630 -585 -520"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.953,
+      "text": "RAW 2977 631 -573 -512"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.953,
+      "text": "RAW 2985 636 -589 -517"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.984,
+      "text": "RAW 2996 658 -634 -529"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.984,
+      "text": "RAW 3008 632 -657 -550"
+    },
+    {
+      "kind": "RX",
+      "time": 30163.984,
+      "text": "RAW 3016 727 -648 -548"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.015,
+      "text": "RAW 3028 865 -675 -559"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.015,
+      "text": "RAW 3036 775 -609 -463"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.015,
+      "text": "RAW 3047 782 -556 -478"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.015,
+      "text": "RAW 3055 784 -558 -468"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.046,
+      "text": "RAW 3067 769 -537 -457"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.046,
+      "text": "RAW 3075 721 -519 -469"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.046,
+      "text": "RAW 3086 725 -498 -477"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.078,
+      "text": "RAW 3094 707 -499 -521"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.078,
+      "text": "RAW 3106 693 -520 -505"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.078,
+      "text": "RAW 3114 682 -507 -502"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.109,
+      "text": "RAW 3125 662 -496 -507"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.109,
+      "text": "RAW 3137 652 -506 -529"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.109,
+      "text": "RAW 3145 629 -524 -525"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.14,
+      "text": "RAW 3157 650 -555 -515"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.14,
+      "text": "RAW 3164 630 -550 -526"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.14,
+      "text": "RAW 3176 630 -509 -508"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.171,
+      "text": "RAW 3184 664 -501 -488"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.171,
+      "text": "RAW 3196 680 -503 -501"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.171,
+      "text": "RAW 3204 682 -506 -511"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.203,
+      "text": "RAW 3215 680 -526 -515"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.203,
+      "text": "RAW 3227 686 -559 -530"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.203,
+      "text": "RAW 3235 666 -562 -530"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.203,
+      "text": "RAW 3243 664 -569 -533"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.234,
+      "text": "RAW 3254 698 -545 -527"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.234,
+      "text": "RAW 3266 713 -538 -519"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.234,
+      "text": "RAW 3274 720 -528 -512"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.265,
+      "text": "RAW 3286 702 -525 -517"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.265,
+      "text": "RAW 3293 726 -527 -510"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.265,
+      "text": "RAW 3305 703 -506 -515"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.296,
+      "text": "RAW 3313 685 -517 -521"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.296,
+      "text": "RAW 3325 693 -519 -526"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.296,
+      "text": "RAW 3336 709 -512 -554"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.328,
+      "text": "RAW 3344 689 -505 -550"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.328,
+      "text": "RAW 3356 709 -467 -566"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.328,
+      "text": "RAW 3364 697 -460 -566"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.359,
+      "text": "RAW 3375 716 -459 -583"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.359,
+      "text": "RAW 3383 731 -466 -588"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.359,
+      "text": "RAW 3395 752 -476 -598"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.39,
+      "text": "RAW 3403 784 -427 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.39,
+      "text": "RAW 3414 805 -396 -595"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.39,
+      "text": "RAW 3422 808 -393 -589"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.406,
+      "text": "RAW 3434 790 -398 -588"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.406,
+      "text": "RAW 3442 767 -423 -589"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.406,
+      "text": "RAW 3454 755 -408 -600"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.437,
+      "text": "RAW 3465 734 -386 -585"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.437,
+      "text": "RAW 3473 747 -385 -587"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.437,
+      "text": "RAW 3485 764 -399 -605"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.468,
+      "text": "RAW 3493 779 -397 -610"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.468,
+      "text": "RAW 3504 775 -388 -605"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.468,
+      "text": "RAW 3512 791 -381 -616"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.5,
+      "text": "RAW 3524 772 -388 -600"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.5,
+      "text": "RAW 3532 782 -404 -611"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.5,
+      "text": "RAW 3543 784 -393 -611"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.531,
+      "text": "RAW 3555 783 -376 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.531,
+      "text": "RAW 3563 784 -364 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.531,
+      "text": "RAW 3571 788 -377 -609"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.562,
+      "text": "RAW 3582 790 -362 -599"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.562,
+      "text": "RAW 3594 815 -366 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.562,
+      "text": "RAW 3602 806 -340 -595"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.593,
+      "text": "RAW 3614 788 -353 -599"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.593,
+      "text": "RAW 3621 786 -348 -609"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.593,
+      "text": "RAW 3633 772 -337 -603"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.593,
+      "text": "RAW 3641 779 -335 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.625,
+      "text": "RAW 3653 790 -336 -608"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.625,
+      "text": "RAW 3664 773 -322 -613"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.625,
+      "text": "RAW 3672 784 -323 -622"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.656,
+      "text": "RAW 3684 786 -325 -610"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.656,
+      "text": "RAW 3692 785 -318 -630"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.656,
+      "text": "RAW 3704 799 -323 -623"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.687,
+      "text": "RAW 3711 811 -327 -613"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.687,
+      "text": "RAW 3723 805 -306 -617"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.687,
+      "text": "RAW 3731 817 -303 -618"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.718,
+      "text": "RAW 3743 815 -326 -614"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.718,
+      "text": "RAW 3750 797 -319 -602"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.718,
+      "text": "RAW 3762 801 -320 -598"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.75,
+      "text": "RAW 3770 800 -317 -586"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.75,
+      "text": "RAW 3782 796 -302 -571"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.75,
+      "text": "RAW 3793 780 -289 -583"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.781,
+      "text": "RAW 3801 794 -283 -596"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.781,
+      "text": "RAW 3813 787 -281 -597"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.781,
+      "text": "RAW 3821 805 -291 -596"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.812,
+      "text": "RAW 3832 790 -316 -604"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.812,
+      "text": "RAW 3840 801 -315 -606"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.812,
+      "text": "RAW 3852 780 -306 -607"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.843,
+      "text": "RAW 3860 802 -298 -609"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.843,
+      "text": "RAW 3871 791 -317 -615"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.843,
+      "text": "RAW 3883 804 -311 -616"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.875,
+      "text": "RAW 3891 798 -296 -628"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.875,
+      "text": "RAW 3899 805 -283 -605"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.875,
+      "text": "RAW 3911 800 -302 -612"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.906,
+      "text": "RAW 3922 792 -300 -626"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.906,
+      "text": "RAW 3930 783 -302 -620"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.906,
+      "text": "RAW 3942 782 -279 -620"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.906,
+      "text": "RAW 3950 779 -270 -628"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.937,
+      "text": "RAW 3961 769 -286 -639"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.937,
+      "text": "RAW 3969 772 -284 -649"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.968,
+      "text": "RAW 3981 776 -285 -664"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.968,
+      "text": "RAW 3993 781 -291 -670"
+    },
+    {
+      "kind": "RX",
+      "time": 30164.968,
+      "text": "RAW 4000 782 -290 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.0,
+      "text": "RAW 4012 766 -276 -663"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.0,
+      "text": "RAW 4020 770 -280 -664"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.0,
+      "text": "RAW 4032 759 -278 -649"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.0,
+      "text": "RAW 4039 758 -263 -652"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.031,
+      "text": "RAW 4051 741 -254 -653"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.031,
+      "text": "RAW 4059 727 -273 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.031,
+      "text": "RAW 4071 734 -289 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.062,
+      "text": "RAW 4079 743 -286 -662"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.062,
+      "text": "RAW 4090 740 -270 -649"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.062,
+      "text": "RAW 4098 752 -265 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.093,
+      "text": "RAW 4110 746 -285 -656"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.093,
+      "text": "RAW 4121 752 -295 -659"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.093,
+      "text": "RAW 4129 759 -304 -668"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.125,
+      "text": "RAW 4141 764 -312 -662"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.125,
+      "text": "RAW 4149 770 -310 -663"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.125,
+      "text": "RAW 4161 770 -291 -652"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.156,
+      "text": "RAW 4168 772 -279 -640"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.156,
+      "text": "RAW 4180 784 -293 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.156,
+      "text": "RAW 4188 799 -303 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.187,
+      "text": "RAW 4200 799 -301 -645"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.187,
+      "text": "RAW 4211 809 -303 -647"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.187,
+      "text": "RAW 4219 810 -284 -643"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.187,
+      "text": "RAW 4227 794 -298 -642"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.218,
+      "text": "RAW 4239 806 -297 -643"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.218,
+      "text": "RAW 4250 808 -291 -640"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.218,
+      "text": "RAW 4258 802 -290 -638"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.25,
+      "text": "RAW 4270 807 -294 -647"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.25,
+      "text": "RAW 4278 812 -291 -633"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.25,
+      "text": "RAW 4289 817 -294 -638"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.281,
+      "text": "RAW 4297 828 -290 -646"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.281,
+      "text": "RAW 4309 822 -294 -636"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.281,
+      "text": "RAW 4321 822 -298 -638"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.312,
+      "text": "RAW 4329 813 -290 -637"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.312,
+      "text": "RAW 4340 808 -284 -633"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.312,
+      "text": "RAW 4348 809 -279 -647"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.343,
+      "text": "RAW 4360 798 -283 -640"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.343,
+      "text": "RAW 4368 794 -291 -646"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.343,
+      "text": "RAW 4379 798 -289 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.375,
+      "text": "RAW 4387 782 -288 -640"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.375,
+      "text": "RAW 4399 785 -294 -644"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.375,
+      "text": "RAW 4407 785 -279 -630"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.406,
+      "text": "RAW 4418 789 -273 -645"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.406,
+      "text": "RAW 4426 784 -265 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.406,
+      "text": "RAW 4438 788 -274 -650"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.437,
+      "text": "RAW 4450 774 -265 -650"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.437,
+      "text": "RAW 4457 776 -259 -644"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.437,
+      "text": "RAW 4469 766 -265 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.468,
+      "text": "RAW 4477 760 -278 -659"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.468,
+      "text": "RAW 4489 752 -273 -652"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.468,
+      "text": "RAW 4496 746 -272 -647"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.5,
+      "text": "RAW 4508 744 -272 -639"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.5,
+      "text": "RAW 4516 744 -270 -648"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.5,
+      "text": "RAW 4528 762 -267 -643"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.531,
+      "text": "RAW 4539 760 -262 -645"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.531,
+      "text": "RAW 4547 761 -269 -642"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.531,
+      "text": "RAW 4555 762 -251 -645"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.531,
+      "text": "RAW 4567 763 -271 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.546,
+      "text": "RAW 4579 770 -272 -668"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.546,
+      "text": "RAW 4586 770 -280 -656"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.546,
+      "text": "RAW 4598 773 -270 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.578,
+      "text": "RAW 4606 785 -271 -654"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.578,
+      "text": "RAW 4618 770 -270 -654"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.578,
+      "text": "RAW 4625 774 -270 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.609,
+      "text": "RAW 4637 777 -273 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.609,
+      "text": "RAW 4649 775 -270 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.609,
+      "text": "RAW 4657 785 -281 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.64,
+      "text": "RAW 4668 780 -290 -661"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.64,
+      "text": "RAW 4676 778 -289 -655"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.64,
+      "text": "RAW 4688 780 -273 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.671,
+      "text": "RAW 4696 787 -279 -653"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.671,
+      "text": "RAW 4707 784 -281 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.671,
+      "text": "RAW 4715 781 -263 -661"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.703,
+      "text": "RAW 4727 800 -277 -660"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.703,
+      "text": "RAW 4735 789 -292 -659"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.703,
+      "text": "RAW 4746 793 -294 -665"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.734,
+      "text": "RAW 4754 798 -275 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.734,
+      "text": "RAW 4766 786 -280 -649"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.734,
+      "text": "RAW 4778 788 -283 -662"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.765,
+      "text": "RAW 4786 788 -270 -650"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.765,
+      "text": "RAW 4797 791 -279 -657"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.765,
+      "text": "RAW 4805 784 -274 -656"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.796,
+      "text": "RAW 4817 796 -280 -652"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.796,
+      "text": "RAW 4825 786 -271 -666"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.796,
+      "text": "RAW 4836 789 -273 -673"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.828,
+      "text": "RAW 4844 810 -248 -658"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.828,
+      "text": "RAW 4856 818 -246 -669"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.828,
+      "text": "RAW 4868 804 -256 -663"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.859,
+      "text": "RAW 4875 801 -251 -659"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.859,
+      "text": "RAW 4887 812 -237 -655"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.859,
+      "text": "RAW 4895 805 -221 -648"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.89,
+      "text": "RAW 4907 801 -207 -651"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.89,
+      "text": "RAW 4914 793 -219 -654"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.89,
+      "text": "RAW 4926 787 -221 -654"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.89,
+      "text": "RAW 4934 792 -203 -654"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.921,
+      "text": "RAW 4946 783 -218 -668"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.921,
+      "text": "RAW 4954 788 -209 -664"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.921,
+      "text": "RAW 4965 776 -199 -665"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.953,
+      "text": "RAW 4977 772 -204 -668"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.953,
+      "text": "RAW 4985 771 -196 -663"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.953,
+      "text": "RAW 4996 774 -180 -669"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.984,
+      "text": "RAW 5004 766 -195 -661"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.984,
+      "text": "RAW 5016 766 -186 -666"
+    },
+    {
+      "kind": "RX",
+      "time": 30165.984,
+      "text": "RAW 5024 766 -183 -674"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.015,
+      "text": "RAW 5036 762 -179 -668"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.015,
+      "text": "RAW 5043 755 -183 -677"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.015,
+      "text": "RAW 5055 755 -187 -667"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.046,
+      "text": "RAW 5067 764 -184 -664"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.046,
+      "text": "RAW 5075 769 -190 -665"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.046,
+      "text": "RAW 5082 763 -184 -663"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.078,
+      "text": "RAW 5094 768 -194 -664"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.078,
+      "text": "RAW 5106 771 -189 -675"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.078,
+      "text": "RAW 5114 769 -200 -677"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.109,
+      "text": "RAW 5125 770 -223 -669"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.109,
+      "text": "RAW 5133 764 -216 -675"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.109,
+      "text": "RAW 5145 769 -231 -675"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.109,
+      "text": "RAW 5153 759 -229 -669"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.14,
+      "text": "RAW 5164 780 -224 -672"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.14,
+      "text": "RAW 5172 785 -228 -666"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.14,
+      "text": "RAW 5184 787 -223 -666"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.171,
+      "text": "RAW 5196 782 -222 -682"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.171,
+      "text": "RAW 5204 795 -230 -678"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.171,
+      "text": "RAW 5215 825 -214 -673"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.203,
+      "text": "RAW 5223 813 -220 -679"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.203,
+      "text": "RAW 5235 812 -229 -688"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.203,
+      "text": "RAW 5243 822 -207 -677"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.234,
+      "text": "RAW 5254 816 -197 -665"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.234,
+      "text": "RAW 5262 810 -185 -674"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.234,
+      "text": "RAW 5274 790 -202 -650"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.265,
+      "text": "RAW 5282 799 -193 -627"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.265,
+      "text": "RAW 5293 787 -190 -599"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.265,
+      "text": "RAW 5301 783 -174 -584"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.296,
+      "text": "RAW 5313 790 -155 -582"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.296,
+      "text": "RAW 5325 785 -149 -576"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.296,
+      "text": "RAW 5332 780 -141 -549"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.328,
+      "text": "RAW 5344 778 -149 -574"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.328,
+      "text": "RAW 5352 782 -157 -583"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.328,
+      "text": "RAW 5364 774 -176 -593"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.359,
+      "text": "RAW 5371 772 -195 -596"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.359,
+      "text": "RAW 5383 759 -190 -606"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.359,
+      "text": "RAW 5395 738 -175 -591"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.39,
+      "text": "RAW 5403 747 -174 -579"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.39,
+      "text": "RAW 5414 752 -173 -593"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.39,
+      "text": "RAW 5422 760 -177 -566"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.421,
+      "text": "RAW 5434 757 -220 -558"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.421,
+      "text": "RAW 5442 749 -210 -565"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.421,
+      "text": "RAW 5454 760 -217 -537"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.421,
+      "text": "RAW 5461 733 -248 -528"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.453,
+      "text": "RAW 5473 700 -298 -531"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.453,
+      "text": "RAW 5481 697 -306 -534"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.453,
+      "text": "RAW 5493 687 -331 -535"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.484,
+      "text": "RAW 5500 710 -330 -557"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.484,
+      "text": "RAW 5512 655 -350 -528"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.484,
+      "text": "RAW 5524 605 -340 -499"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.515,
+      "text": "RAW 5532 564 -362 -501"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.515,
+      "text": "RAW 5543 589 -388 -500"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.515,
+      "text": "RAW 5551 623 -445 -496"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.546,
+      "text": "RAW 5563 631 -479 -501"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.546,
+      "text": "RAW 5571 646 -513 -522"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.546,
+      "text": "RAW 5582 623 -544 -525"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.578,
+      "text": "RAW 5590 606 -569 -510"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.578,
+      "text": "RAW 5602 615 -582 -492"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.578,
+      "text": "RAW 5614 605 -624 -486"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.609,
+      "text": "RAW 5621 571 -614 -487"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.609,
+      "text": "RAW 5629 505 -634 -443"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.609,
+      "text": "RAW 5641 474 -607 -395"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.64,
+      "text": "RAW 5653 466 -504 -490"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.64,
+      "text": "RAW 5661 431 -688 -363"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.64,
+      "text": "RAW 5672 391 -692 -339"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.671,
+      "text": "RAW 5680 407 -743 -375"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.671,
+      "text": "RAW 5692 478 -805 -422"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.671,
+      "text": "RAW 5700 482 -882 -437"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.703,
+      "text": "RAW 5711 447 -880 -442"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.703,
+      "text": "RAW 5719 429 -833 -402"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.703,
+      "text": "RAW 5731 360 -804 -368"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.718,
+      "text": "RAW 5743 434 -809 -373"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.718,
+      "text": "RAW 5750 448 -836 -403"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.718,
+      "text": "RAW 5762 547 -883 -446"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.718,
+      "text": "RAW 5770 543 -934 -461"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.75,
+      "text": "RAW 5782 565 -1007 -505"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.75,
+      "text": "RAW 5789 508 -1038 -538"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.75,
+      "text": "RAW 5801 521 -1042 -567"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.781,
+      "text": "RAW 5809 567 -976 -533"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.781,
+      "text": "RAW 5821 539 -913 -434"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.781,
+      "text": "RAW 5829 490 -904 -409"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.812,
+      "text": "RAW 5840 437 -919 -410"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.812,
+      "text": "RAW 5848 415 -955 -413"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.812,
+      "text": "RAW 5860 437 -971 -419"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.843,
+      "text": "RAW 5871 437 -981 -448"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.843,
+      "text": "RAW 5879 392 -997 -470"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.843,
+      "text": "RAW 5891 378 -974 -452"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.875,
+      "text": "RAW 5899 356 -954 -455"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.875,
+      "text": "RAW 5911 345 -970 -469"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.875,
+      "text": "RAW 5918 346 -1001 -459"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.906,
+      "text": "RAW 5930 348 -1024 -468"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.906,
+      "text": "RAW 5942 350 -1041 -481"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.906,
+      "text": "RAW 5950 337 -1051 -454"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.937,
+      "text": "RAW 5961 338 -1031 -438"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.937,
+      "text": "RAW 5969 329 -980 -427"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.937,
+      "text": "RAW 5981 326 -983 -380"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.968,
+      "text": "RAW 5989 319 -960 -409"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.968,
+      "text": "RAW 6000 309 -989 -411"
+    },
+    {
+      "kind": "RX",
+      "time": 30166.968,
+      "text": "RAW 6008 324 -960 -420"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.0,
+      "text": "RAW 6020 318 -910 -433"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.0,
+      "text": "RAW 6028 327 -970 -441"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.0,
+      "text": "RAW 6039 338 -1020 -441"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.0,
+      "text": "RAW 6047 305 -1011 -428"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.031,
+      "text": "RAW 6059 264 -1003 -402"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.031,
+      "text": "RAW 6071 247 -1021 -394"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.031,
+      "text": "RAW 6079 343 -1139 -418"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.062,
+      "text": "RAW 6090 408 -1379 -485"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.062,
+      "text": "RAW 6098 347 -1375 -436"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.062,
+      "text": "RAW 6110 298 -1172 -398"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.093,
+      "text": "RAW 6118 336 -1051 -268"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.093,
+      "text": "RAW 6129 196 -868 -150"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.093,
+      "text": "RAW 6137 155 -819 -136"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.125,
+      "text": "RAW 6149 210 -782 -214"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.125,
+      "text": "RAW 6161 304 -860 -294"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.125,
+      "text": "RAW 6168 327 -938 -339"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.156,
+      "text": "RAW 6176 334 -1008 -384"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.156,
+      "text": "RAW 6188 310 -989 -369"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.156,
+      "text": "RAW 6200 317 -949 -339"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.187,
+      "text": "RAW 6207 322 -938 -310"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.187,
+      "text": "RAW 6219 319 -911 -290"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.187,
+      "text": "RAW 6227 317 -911 -281"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.218,
+      "text": "RAW 6239 320 -890 -278"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.218,
+      "text": "RAW 6246 331 -916 -278"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.218,
+      "text": "RAW 6258 322 -934 -272"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.25,
+      "text": "RAW 6270 -151 -831 320"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.25,
+      "text": "RAW 6278 170 -735 -51"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.25,
+      "text": "RAW 6289 -5 -1003 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.281,
+      "text": "RAW 6297 228 -939 -134"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.281,
+      "text": "RAW 6309 148 -1212 -83"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.281,
+      "text": "RAW 6317 212 -1143 -247"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.312,
+      "text": "RAW 6329 166 -1245 -282"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.312,
+      "text": "RAW 6336 64 -952 -315"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.312,
+      "text": "RAW 6348 156 -872 -298"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.343,
+      "text": "RAW 6356 153 -1187 -202"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.343,
+      "text": "RAW 6368 236 -708 -383"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.343,
+      "text": "RAW 6375 240 -846 -229"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.375,
+      "text": "RAW 6387 220 -1024 -184"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.375,
+      "text": "RAW 6399 150 -1138 -202"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.375,
+      "text": "RAW 6407 80 -1002 -323"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.39,
+      "text": "RAW 6418 -37 -1090 -164"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.39,
+      "text": "RAW 6426 83 -1030 -145"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.39,
+      "text": "RAW 6438 3 -980 -11"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.421,
+      "text": "RAW 6446 24 -960 -12"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.421,
+      "text": "RAW 6457 118 -772 -170"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.421,
+      "text": "RAW 6465 30 -1187 21"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.453,
+      "text": "RAW 6477 146 -958 -180"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.453,
+      "text": "RAW 6489 27 -1169 -133"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.453,
+      "text": "RAW 6496 -29 -994 -247"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.453,
+      "text": "RAW 6504 48 -896 -125"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.484,
+      "text": "RAW 6516 -45 -1021 -227"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.484,
+      "text": "RAW 6528 55 -994 -258"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.484,
+      "text": "RAW 6536 94 -977 -252"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.515,
+      "text": "RAW 6547 26 -1036 -180"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.515,
+      "text": "RAW 6555 -54 -999 -149"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.515,
+      "text": "RAW 6567 55 -1015 -131"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.546,
+      "text": "RAW 6575 14 -1006 -73"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.546,
+      "text": "RAW 6586 12 -1008 -76"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.578,
+      "text": "RAW 6598 -100 -1047 -69"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.578,
+      "text": "RAW 6606 -58 -987 -79"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.578,
+      "text": "RAW 6618 -61 -993 -100"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.578,
+      "text": "RAW 6625 -65 -1007 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.609,
+      "text": "RAW 6637 -59 -1014 -109"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.609,
+      "text": "RAW 6645 -54 -1009 -144"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.609,
+      "text": "RAW 6657 -63 -1020 -152"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.64,
+      "text": "RAW 6664 -34 -1019 -164"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.64,
+      "text": "RAW 6676 -2 -1015 -176"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.64,
+      "text": "RAW 6684 175 -1068 -209"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.671,
+      "text": "RAW 6696 153 -1091 -117"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.671,
+      "text": "RAW 6704 239 -994 -129"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.671,
+      "text": "RAW 6715 347 -784 55"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.703,
+      "text": "RAW 6727 92 -909 226"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.703,
+      "text": "RAW 6735 -72 -1177 -223"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.703,
+      "text": "RAW 6746 226 -997 -24"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.734,
+      "text": "RAW 6754 178 -991 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.734,
+      "text": "RAW 6766 26 -1017 -152"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.734,
+      "text": "RAW 6774 103 -994 -65"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.765,
+      "text": "RAW 6786 12 -1027 -152"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.765,
+      "text": "RAW 6793 18 -1039 -70"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.765,
+      "text": "RAW 6805 -53 -1019 -109"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.796,
+      "text": "RAW 6817 -3 -975 -1"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.796,
+      "text": "RAW 6825 -23 -987 -58"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.796,
+      "text": "RAW 6832 -36 -986 -63"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.828,
+      "text": "RAW 6844 18 -1016 -69"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.828,
+      "text": "RAW 6856 7 -1002 -70"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.828,
+      "text": "RAW 6864 24 -1011 -83"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.859,
+      "text": "RAW 6875 19 -999 -82"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.859,
+      "text": "RAW 6883 785 -1235 48"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.859,
+      "text": "RAW 6895 70 -1013 -113"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.89,
+      "text": "RAW 6903 139 -1109 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.89,
+      "text": "RAW 6914 50 -1021 -131"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.89,
+      "text": "RAW 6926 27 -989 -129"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.921,
+      "text": "RAW 6934 10 -1006 -134"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.921,
+      "text": "RAW 6946 42 -985 -120"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.921,
+      "text": "RAW 6954 -1 -1010 -128"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.953,
+      "text": "RAW 6965 3 -1024 -107"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.953,
+      "text": "RAW 6973 8 -1016 -124"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.953,
+      "text": "RAW 6985 16 -1026 -123"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.953,
+      "text": "RAW 6993 45 -1025 -109"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.984,
+      "text": "RAW 7004 69 -1024 -102"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.984,
+      "text": "RAW 7012 54 -1011 -99"
+    },
+    {
+      "kind": "RX",
+      "time": 30167.984,
+      "text": "RAW 7024 50 -1015 -104"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.015,
+      "text": "RAW 7032 45 -1019 -103"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.015,
+      "text": "RAW 7043 43 -1009 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.015,
+      "text": "RAW 7055 38 -1001 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.046,
+      "text": "RAW 7063 33 -1012 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.046,
+      "text": "RAW 7075 38 -1012 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.046,
+      "text": "RAW 7082 34 -1018 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.078,
+      "text": "RAW 7094 32 -1014 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.078,
+      "text": "RAW 7102 25 -1017 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.078,
+      "text": "RAW 7114 21 -1020 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.109,
+      "text": "RAW 7121 34 -1011 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.109,
+      "text": "RAW 7133 38 -1012 -80"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.109,
+      "text": "RAW 7145 26 -1013 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.14,
+      "text": "RAW 7153 31 -1010 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.14,
+      "text": "RAW 7161 29 -1010 -79"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.14,
+      "text": "RAW 7172 37 -1005 -85"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.171,
+      "text": "RAW 7184 24 -1012 -82"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.171,
+      "text": "RAW 7192 15 -1005 -83"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.171,
+      "text": "RAW 7204 23 -1010 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.171,
+      "text": "RAW 7211 20 -1013 -87"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.203,
+      "text": "RAW 7223 32 -996 -82"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.203,
+      "text": "RAW 7231 34 -1012 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.203,
+      "text": "RAW 7243 33 -1005 -84"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.234,
+      "text": "RAW 7254 35 -1014 -86"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.234,
+      "text": "RAW 7262 41 -1012 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.234,
+      "text": "RAW 7274 38 -1008 -89"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.265,
+      "text": "RAW 7282 38 -1000 -98"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.265,
+      "text": "RAW 7293 36 -1010 -97"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.265,
+      "text": "RAW 7301 33 -1012 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.296,
+      "text": "RAW 7313 32 -1012 -102"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.296,
+      "text": "RAW 7321 36 -1002 -101"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.296,
+      "text": "RAW 7332 30 -1018 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.328,
+      "text": "RAW 7340 44 -1016 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.328,
+      "text": "RAW 7352 36 -1017 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.328,
+      "text": "RAW 7360 43 -1019 -102"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.359,
+      "text": "RAW 7371 29 -1015 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.359,
+      "text": "RAW 7383 40 -1020 -91"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.359,
+      "text": "RAW 7391 46 -1011 -96"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.39,
+      "text": "RAW 7403 40 -1010 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.39,
+      "text": "RAW 7411 38 -1021 -93"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.39,
+      "text": "RAW 7422 40 -1010 -92"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.39,
+      "text": "DRINK_CANDIDATE time=4023285 stops=0 intake_unproven=1"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.39,
+      "text": "RAW 7430 37 -1020 -104"
+    },
+    {
+      "kind": "TX",
+      "time": 30168.39,
+      "command": "mode debug"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.421,
+      "text": "DRINK_CANCELLED reason=context_or_off"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.421,
+      "text": "OK debug"
+    },
+    {
+      "kind": "RAW_SCOPE",
+      "time": 30168.609,
+      "scope": "Full stream until explicit cancellation; intentionally not a complete 30-second capture"
+    },
+    {
+      "kind": "TX",
+      "time": 30168.609,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.64,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.64,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=136"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.656,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=4019348 last=4023285 output=3362840 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 30168.812,
+      "command": "lisregs"
+    },
+    {
+      "kind": "RX",
+      "time": 30168.843,
+      "text": "LISREG ok=1 ctrl1=20 ctrl2=0C ctrl3=10 ctrl4=20 ctrl5=00 ctrl6=00"
+    },
+    {
+      "kind": "TX",
+      "time": 30169.031,
+      "command": "ledregs"
+    },
+    {
+      "kind": "RX",
+      "time": 30169.062,
+      "text": "LEDREG apb1=10220000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 30180.265,
+      "command": "run 1"
+    },
+    {
+      "kind": "RX",
+      "time": 30180.296,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 30180.531,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 30180.531,
+      "label": "cancel_restart",
+      "seconds": 1
+    },
+    {
+      "kind": "RX",
+      "time": 30181.546,
+      "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=1 unknownWake=0 lastLis=0A lastSt=10"
+    },
+    {
+      "kind": "RX",
+      "time": 30181.546,
+      "text": "COUNT source=rtc isr=2 wake=1 confirmed=2 handled=2 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30181.546,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30181.578,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30181.578,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 30181.578,
+      "text": "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=144 reversals=0 peak2=748363"
+    },
+    {
+      "kind": "TX",
+      "time": 30193.062,
+      "command": "clock"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.093,
+      "text": "CLOCK valid=1 utc=1792951162 lse=1 bkp2=544D0101 bkp3=6ADE33A9 monotonicMs=4047973 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 30193.281,
+      "command": "drink status"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.312,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=4019348 last=4023285 output=3362840 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 30193.484,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.515,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.515,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=136"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.546,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=4019348 last=4023285 output=3362840 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 30193.703,
+      "command": "counters"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.734,
+      "text": "COUNT source=rtc isr=2 wake=1 confirmed=2 handled=2 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.734,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.734,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.734,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.765,
+      "text": "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=144 reversals=0 peak2=748363"
+    },
+    {
+      "kind": "EVIDENCE",
+      "time": 30193.921,
+      "status": [
+        "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=1 fieldOn=0 fieldOff=0 error=none",
+        "APP version=NativeDrinkDetectionTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=136",
+        "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=4019348 last=4023285 output=3362840 limits=motion_not_intake"
+      ],
+      "counters": [
+        "COUNT source=rtc isr=2 wake=1 confirmed=2 handled=2 errors=0 unknown=0",
+        "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "END counters",
+        "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=144 reversals=0 peak2=748363"
+      ]
+    },
+    {
+      "kind": "TX",
+      "time": 30193.921,
+      "command": "off"
+    },
+    {
+      "kind": "RX",
+      "time": 30193.953,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 30194.14,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 30194.171,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 30194.171,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=136"
+    },
+    {
+      "kind": "RX",
+      "time": 30194.203,
+      "text": "DRINK calibration=1 ref=43,-1012,-95 phase=0 merge=0 candidates=1 events=0 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=4019348 last=4023285 output=3362840 limits=motion_not_intake"
+    }
+  ],
+  "limits": "Transport/acquisition PASS is not recognition acceptance; operator confirmation required"
+}

@@ -5,7 +5,10 @@
 Final image SHA256: `2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2`.
 UART identity: `NativeShakeProgressTest-v1`.
 Baseline commit: `820ecb3f2b9fb199ddf5cf95246698d4648b73b1`;
-annotated tag: `baseline/native-hal-eventloop-v1`. No stage5 commit or push.
+annotated tag: `baseline/native-hal-eventloop-v1`. At validation time there was
+no stage5 commit/push. Subsequently published as128d941f0c81c40e1cb0ad388f8817f40f65c13d
+(documentation a7c03e7). Both native baseline and checkpoint/native-shake-progress-v1
+tags were explicitly pushed2026-10-25; checkpoint points to128d941, not stage6.
 Repeat build matches the final image: results/build-final-repeat-20261025.json.
 Build instructions, source versions and timer ownership are in README.md.
 

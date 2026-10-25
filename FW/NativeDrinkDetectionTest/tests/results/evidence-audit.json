@@ -1,0 +1,78 @@
+{
+  "result": "PASS",
+  "image_sha256": "09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293",
+  "checks": [
+    {
+      "test": "20261026-returnfix-flash",
+      "result": "PASS transport and cleanup"
+    },
+    {
+      "test": "20261026-auto",
+      "result": "PASS transport and cleanup"
+    },
+    {
+      "test": "20261026-calibration",
+      "result": "PASS transport and cleanup"
+    },
+    {
+      "test": "20261026-controls",
+      "result": "PASS transport and cleanup"
+    },
+    {
+      "test": "20261026-shake5a",
+      "result": "PASS five shake outputs/no drink",
+      "operator": "See operator-notes.md for optics/trial confirmation"
+    },
+    {
+      "test": "20261026-shake5b",
+      "result": "PASS five shake outputs/no drink",
+      "operator": "See operator-notes.md for optics/trial confirmation"
+    },
+    {
+      "test": "20261026-three1-retry",
+      "result": "PASS three candidates/one deferred output/exact C++ replay",
+      "samples": 3015
+    },
+    {
+      "test": "20261026-three2",
+      "result": "PASS three candidates/one deferred output/exact C++ replay",
+      "samples": 3015
+    },
+    {
+      "test": "20261026-three3",
+      "result": "PASS three candidates/one deferred output/exact C++ replay",
+      "samples": 3015
+    },
+    {
+      "test": "20261026-awake-rf",
+      "result": "PASS actual GPO evidence",
+      "gpo": {
+        "source": "gpo",
+        "isr": "4",
+        "wake": "0",
+        "confirmed": "3",
+        "handled": "4",
+        "errors": "0",
+        "unknown": "1"
+      }
+    },
+    {
+      "test": "20261026-stop-rf",
+      "result": "PASS actual GPO evidence",
+      "gpo": {
+        "source": "gpo",
+        "isr": "1",
+        "wake": "1",
+        "confirmed": "1",
+        "handled": "1",
+        "errors": "0",
+        "unknown": "0"
+      }
+    },
+    {
+      "test": "20261026-mixed",
+      "result": "PASS motion/GPO STOP wake, deferred merge across STOP and RTC deadline"
+    }
+  ],
+  "limits": "Audits actual logs, not optics/trial execution/population accuracy. Operator confirmation separately recorded. No power/stack proof."
+}

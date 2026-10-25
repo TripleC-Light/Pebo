@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "samples": 3015,
+  "reference": [
+    21,
+    -1013,
+    -109
+  ],
+  "expected_candidates": 3,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\tests\\results\\20261026-three1-retry\\raw.json",
+  "compiler_output": "",
+  "method": "Actual shared C++ coordinate and detectors; measured empty-bottle data, not intake proof"
+}

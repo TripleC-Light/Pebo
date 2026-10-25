@@ -1,0 +1,263 @@
+{
+  "result": "PASS",
+  "label": "unlabelled",
+  "split": "engineering",
+  "uart_port": "COM13",
+  "bottle": "empty direct-drink; stage5 mounting retained",
+  "image_sha256": "09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293",
+  "records": [
+    {
+      "kind": "cube",
+      "time": 26277.343,
+      "command": [
+        "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "time": 26281.156,
+      "command": [
+        "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "28228",
+        "FW\\NativeDrinkDetectionTest\\tests\\results\\20261026-calibration\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.72V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : FW\\NativeDrinkDetectionTest\\tests\\results\\20261026-calibration\\readback.bin\n  Size          : 28228 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:02.589\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 26281.546,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 26281.578,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=71 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 26281.578,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26281.609,
+      "text": "DRINK calibration=0 ref=0,0,0 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 26281.765,
+      "command": "mode debug"
+    },
+    {
+      "kind": "RX",
+      "time": 26281.781,
+      "text": "OK debug"
+    },
+    {
+      "kind": "TX",
+      "time": 26281.968,
+      "command": "run 1"
+    },
+    {
+      "kind": "RX",
+      "time": 26282.0,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 26282.718,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 26282.718,
+      "label": "setup",
+      "seconds": 1
+    },
+    {
+      "kind": "RX",
+      "time": 26283.734,
+      "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=72 unknownWake=0 lastLis=00 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "time": 26283.734,
+      "text": "COUNT source=rtc isr=105 wake=72 confirmed=105 handled=105 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26283.765,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26283.765,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26283.765,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 26283.765,
+      "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+    },
+    {
+      "kind": "TX",
+      "time": 26284.25,
+      "command": "counters clear"
+    },
+    {
+      "kind": "RX",
+      "time": 26284.281,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 26284.468,
+      "label": "upright_still",
+      "seconds": 3
+    },
+    {
+      "kind": "TX",
+      "time": 26284.468,
+      "command": "calibration start"
+    },
+    {
+      "kind": "RX",
+      "time": 26284.5,
+      "text": "CALIBRATION_BEGIN keep_upright_still"
+    },
+    {
+      "kind": "RX",
+      "time": 26286.687,
+      "text": "CALIBRATION_OK ram_only=1"
+    },
+    {
+      "kind": "TX",
+      "time": 26288.484,
+      "command": "calibration status"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.515,
+      "text": "DRINK calibration=1 ref=21,-1013,-109 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 26288.703,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.734,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.734,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=40"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.765,
+      "text": "DRINK calibration=1 ref=21,-1013,-109 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+    },
+    {
+      "kind": "TX",
+      "time": 26288.921,
+      "command": "counters"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.953,
+      "text": "COUNT source=rtc isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.953,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.953,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.953,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 26288.984,
+      "text": "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+    },
+    {
+      "kind": "EVIDENCE",
+      "time": 26289.14,
+      "status": [
+        "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none",
+        "APP version=NativeDrinkDetectionTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=40",
+        "DRINK calibration=1 ref=21,-1013,-109 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+      ],
+      "counters": [
+        "COUNT source=rtc isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "END counters",
+        "SHAKE entries=0 windows=1 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+      ]
+    },
+    {
+      "kind": "TX",
+      "time": 26289.14,
+      "command": "off"
+    },
+    {
+      "kind": "RX",
+      "time": 26289.171,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 26289.359,
+      "command": "status"
+    },
+    {
+      "kind": "RX",
+      "time": 26289.39,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 26289.39,
+      "text": "APP version=NativeDrinkDetectionTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=40"
+    },
+    {
+      "kind": "RX",
+      "time": 26289.421,
+      "text": "DRINK calibration=1 ref=21,-1013,-109 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+    }
+  ],
+  "limits": "Transport/acquisition PASS is not recognition acceptance; operator confirmation required"
+}

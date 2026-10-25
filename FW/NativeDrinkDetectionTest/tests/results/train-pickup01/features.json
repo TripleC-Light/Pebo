@@ -1,0 +1,249 @@
+{
+  "source": "FW\\NativeDrinkDetectionTest\\tests\\results\\train-pickup01\\raw.json",
+  "samples": 1507,
+  "first_ms": 23,
+  "last_ms": 14992,
+  "bins": [
+    {
+      "start_ms": 0,
+      "samples": 48,
+      "min_norm": 969.2,
+      "max_norm": 1117.6,
+      "max_tilt_degrees": 14.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 500,
+      "samples": 50,
+      "min_norm": 999.6,
+      "max_norm": 1173.0,
+      "max_tilt_degrees": 3.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 1000,
+      "samples": 51,
+      "min_norm": 951.5,
+      "max_norm": 1072.8,
+      "max_tilt_degrees": 7.4,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 1500,
+      "samples": 50,
+      "min_norm": 951.5,
+      "max_norm": 1052.6,
+      "max_tilt_degrees": 7.4,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 2000,
+      "samples": 50,
+      "min_norm": 950.9,
+      "max_norm": 1038.1,
+      "max_tilt_degrees": 5.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 2500,
+      "samples": 51,
+      "min_norm": 994.2,
+      "max_norm": 1051.4,
+      "max_tilt_degrees": 6.3,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 3000,
+      "samples": 50,
+      "min_norm": 1006.0,
+      "max_norm": 1047.4,
+      "max_tilt_degrees": 5.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 3500,
+      "samples": 50,
+      "min_norm": 988.8,
+      "max_norm": 1050.4,
+      "max_tilt_degrees": 5.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 4000,
+      "samples": 51,
+      "min_norm": 984.8,
+      "max_norm": 1049.4,
+      "max_tilt_degrees": 5.4,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 4500,
+      "samples": 50,
+      "min_norm": 995.0,
+      "max_norm": 1052.1,
+      "max_tilt_degrees": 4.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 5000,
+      "samples": 50,
+      "min_norm": 926.0,
+      "max_norm": 1063.3,
+      "max_tilt_degrees": 4.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 5500,
+      "samples": 51,
+      "min_norm": 914.0,
+      "max_norm": 1098.0,
+      "max_tilt_degrees": 6.3,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 6000,
+      "samples": 50,
+      "min_norm": 1010.1,
+      "max_norm": 1131.9,
+      "max_tilt_degrees": 10.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 6500,
+      "samples": 50,
+      "min_norm": 840.7,
+      "max_norm": 1330.0,
+      "max_tilt_degrees": 19.7,
+      "dynamic_samples": 1
+    },
+    {
+      "start_ms": 7000,
+      "samples": 50,
+      "min_norm": 978.1,
+      "max_norm": 1044.7,
+      "max_tilt_degrees": 2.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 7500,
+      "samples": 51,
+      "min_norm": 1001.4,
+      "max_norm": 1029.6,
+      "max_tilt_degrees": 0.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 8000,
+      "samples": 50,
+      "min_norm": 1003.3,
+      "max_norm": 1033.8,
+      "max_tilt_degrees": 0.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 8500,
+      "samples": 50,
+      "min_norm": 1001.5,
+      "max_norm": 1028.7,
+      "max_tilt_degrees": 1.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 9000,
+      "samples": 51,
+      "min_norm": 998.7,
+      "max_norm": 1028.5,
+      "max_tilt_degrees": 0.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 9500,
+      "samples": 50,
+      "min_norm": 1007.4,
+      "max_norm": 1026.5,
+      "max_tilt_degrees": 0.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 10000,
+      "samples": 50,
+      "min_norm": 1004.6,
+      "max_norm": 1030.4,
+      "max_tilt_degrees": 0.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 10500,
+      "samples": 51,
+      "min_norm": 1004.4,
+      "max_norm": 1031.8,
+      "max_tilt_degrees": 0.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 11000,
+      "samples": 50,
+      "min_norm": 1008.7,
+      "max_norm": 1030.6,
+      "max_tilt_degrees": 0.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 11500,
+      "samples": 50,
+      "min_norm": 1008.4,
+      "max_norm": 1031.6,
+      "max_tilt_degrees": 0.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 12000,
+      "samples": 51,
+      "min_norm": 1004.7,
+      "max_norm": 1023.7,
+      "max_tilt_degrees": 0.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 12500,
+      "samples": 50,
+      "min_norm": 1005.5,
+      "max_norm": 1030.7,
+      "max_tilt_degrees": 1.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 13000,
+      "samples": 50,
+      "min_norm": 1003.0,
+      "max_norm": 1026.7,
+      "max_tilt_degrees": 0.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 13500,
+      "samples": 50,
+      "min_norm": 1004.7,
+      "max_norm": 1026.9,
+      "max_tilt_degrees": 0.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 14000,
+      "samples": 51,
+      "min_norm": 1003.7,
+      "max_norm": 1026.6,
+      "max_tilt_degrees": 1.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 14500,
+      "samples": 50,
+      "min_norm": 1005.7,
+      "max_norm": 1033.4,
+      "max_tilt_degrees": 0.9,
+      "dynamic_samples": 0
+    }
+  ],
+  "limits": "Raw acceleration angles during dynamics are NOT reliable gravity estimates; descriptive training data only"
+}

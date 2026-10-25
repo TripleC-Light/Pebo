@@ -15,4 +15,17 @@ Collect labeled use cases across bottle shapes and mounting positions: normal dr
 
 ## Decisions pending
 
+### Stage6 prototype evidence (2026-10-26)
+
+Implemented independently in FW/NativeDrinkDetectionTest, native HAL only;
+see [validation](../FW/NativeDrinkDetectionTest/VALIDATION.md). RAM upright
+calibration, shared motion sampling, integer tilt/hold/return, shake exclusion
+and10s deferred sip merging are engineering prototype behavior, not confirmed
+product thresholds. First cohort uses EMPTY direct-drink bottle simulations.
+Three independently confirmed three-sip groups each produced3 candidates/1
+event;10 shakes produced no drink candidates. Actual C++ measured-data replay
+and STOP merge/RF/RTC regressions are recorded. Do not infer actual intake,
+volume, pour rejection or upright straw detection. Single-event10-trial cohort,
+real-water/population/fill/mount robustness and power remain pending.
+
 Sampling rate, interrupt configuration, classifier thresholds, reminder suppression, confidence representation, and how straw use affects product claims all require prototype data.

@@ -1,5 +1,83 @@
 # Pebo handoff log
 
+## 2026-10-26: Stage6 prototype and bounded HIL complete; extended acceptance OPEN
+
+PC-02 TripleC, main HEADa7c03e78c0a5e2c45d6b3c0e98d0c37e1e459304.
+New FW/NativeDrinkDetectionTest source/build/scripts/README/VALIDATION/results
+saved locally, NO stage6 commit/push. Stage5 README/VALIDATION historical
+uncommitted wording corrected only. Native baseline tag820ecb3 and stage5
+checkpoint/native-shake-progress-v1 ->128d941 were verified/explicitly pushed
+to origin without force2026-10-25. No baseline code or unrelated work removed.
+See [stage6 report](../FW/NativeDrinkDetectionTest/VALIDATION.md) for versions,
+failed/invalid training attempts, raw XYZ/replay and exact per-image evidence.
+
+Final image09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293,
+two independent builds identical; Flash28228/staticRAM4704 (.data104/.bss4600),
+Flash spare4540, RAM after static3488, minstack1024/heap0; peak NOT_MEASURED.
+Same HAL/startup/linker/RTC/STOP/pins. Adds RAM-only stationary calibration,
+one shared100Hz LP1 sampler, integer tilt/hold/return FSM, shake exclusion/rearm,
+10s deferred merge using RTC elapsed, bounded raw capture5..30s. Return stability
+after unreliable acceleration fixed and regression-tested. No drink scoring,
+progress increments, audio, NFC app data or NVM writes.
+
+Only EMPTY direct-drink bottle simulations, same mounting per user; no real
+intake/volume/pouring/straw accuracy claim. Final-image10 shakes user confirms
+correct level5/about3s off,0 drink. Three independent user-confirmed3-sip groups
+each3 candidates ->1 event exactly10s after last, raw3015 rows/group and exact
+C++ replay PASS. Prior-image a17... pickups10/no false display retained as
+prior-version evidence, not silently promoted to final image. One invalid
+three-sip attempt and one late-prompt attempt excluded by operator confirmation.
+
+Final flash/verify/full readback, COM13 UART, explicit Windows PC UTC/NTP
+unverified, ordinary reset preserves valid RTC/BKP0..4, run10/60/off/restart,
+LED0..8 timeout/parser/elapsed anchor, controls/cleanup PASS. Awake RF ISR4/
+confirmed3/unknown1/errors0; STOP RF ISR/wake/confirmed1, STOP47/unknownWake0
+(motion1 also observed). Mixed user confirms single then phone:1 candidate/
+event,10.489s defer, stops9->20 during merge, motion/GPO wake1 each, STOP54,
+RTC60/debug recovery/zero errors. Saved evidence audit12 result sets PASS.
+
+Current UART reconfigured from historical COM5 to single Prolific COM13
+(067B:2303),1152008N1; selected explicitly and identity checked. Nordic COM6/7
+not opened. STLINK56FF6C066688555210351387, MCU425/RevX, VTref2.72..2.73V.
+User provides2.8V; no PPK2/measurement/power/option-byte/backup-reset operations.
+Last observed board final image, off/debug, all sources/display/PWM/sampling
+off, RTC valid, RAM reference21,-1013,-109, progress0 manual start cue; UART
+closed, no active helper. Physical axes/spout direction not independently mapped.
+
+Remaining: independent10 separate single events (final only1, prior image1),
+repeat10 pickup cohort on final image, pending-group physical off/deadline
+cancel, continuous motion/pouring/confusion/fill variants, RF exact-overlap/
+fault/race stress, peak stack, power and long-term accuracy. Pure cancellation/
+timeout boundaries tested, not equivalent to unexecuted physical cases. Historic
+RF root cause OPEN. Next session recheck supply/ports/image, recalibrate after
+reset, use visible double-flash capture cue and confirm actual trial count;
+do not guess timing or pool training with validation. Handoff saved locally.
+
+## 2026-10-26: Stage6 resumed after usage-limit interruption
+
+PC-02 TripleC/main HEADa7c03e7. Stage6 FW/NativeDrinkDetectionTest is local,
+uncommitted. Stage5 status documentation corrected, sources preserved.
+Both annotated tags verified/pushed2026-10-25: native baseline820ecb3 and
+checkpoint/native-shake-progress-v1 ->128d941. No stage6 commit/push.
+Last verified stage6 image a17fc14b825531e0b9d2639c492f66162bf59f5a9fc0b68691c8ddd9ac54072b,
+Flash28228/staticRAM4704, minstack1024/heap0, peak unmeasured. Last HIL helper
+finished off/debug/closed UART; current power/live state awaiting user check.
+User selected EMPTY direct-drink bottle simulation, same stage5 mounting.
+Training single/pickup/shake/tilt collected; initial sip falsely classified as
+shake, preserved. Dynamic-norm shake qualifier fixes training replay. First
+three-sip attempt operator says not executed correctly: exclude from accuracy.
+Retry train-three02:3 candidates merged into1 event10s after last, user confirms.
+Independent validate-single-stop01:1 candidate/event,10.129s defer, stops2->13,
+motion ISR/wake1, deadline40/debug/UART PASS. User confirms action.
+Independent pickup5a+5b: user confirms10 pickups/no LED; candidates/shakes/errors0.
+validate-shake5a:1 preliminary gesture before run +3 formal gestures,4 confirms
+total,0 drink. User confirms counts; final display truncated by deadline, NOT
+full3s optics acceptance. Long debug shake window NOT started: approval review
+failed on usage limit before patch/execution. No instruments operated.
+Next: recheck board/image/calibration; finish bounded shake, separate three-sip
+validation, RF awake/STOP/mixed, auto10/60/LED/cleanup; report missing scenarios
+plainly. Power/stack/fault/race/real-water acceptance remain unverified.
+
 ## 2026-10-25: GitHub authentication resolved; main published
 
 User completed device login. Normal git push origin main succeeded:

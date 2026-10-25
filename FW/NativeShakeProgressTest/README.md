@@ -8,10 +8,14 @@ volatile UART test value, initially zero. Boot is debug, never automatic STOP.
 ## Recovery baseline and scope
 
 Baseline commit: 820ecb3f2b9fb199ddf5cf95246698d4648b73b1.
-Annotated tag: baseline/native-hal-eventloop-v1 (not pushed).
+Annotated tag: baseline/native-hal-eventloop-v1 (pushed2026-10-25).
 Native B image SHA256:
 e7e4e403763de5e1175f6b891f278817262aa5712ac69deb7c38a43426a367c0.
-Existing tests and baseline sources are unchanged. Stage5 is uncommitted.
+Existing tests and baseline sources are unchanged. At physical validation time
+stage5 was uncommitted; it is now committed as128d941f0c81c40e1cb0ad388f8817f40f65c13d
+and published on origin/main (documentation follow-up a7c03e7).
+Annotated checkpoint/native-shake-progress-v1 points to that validated commit;
+both checkpoint and native baseline tags were explicitly pushed2026-10-25.
 Keep the entire repository: this project references sibling vendor and pure
 policy headers; copying just this directory is not a standalone distribution.
 
@@ -48,7 +52,7 @@ are referenced at build time. No new download or software installation.
   Backup domain is never reset. Existing BKP2 signature544D0101/BKP3 UTC floor
   are used only on explicit setutc; BKP0/1/4 untouched.
 - LED1..4 PA5/PA6/PA7/PA8, High-on, cumulative order confirmed by prior user
-  visual tests. No claim that this native port has already been visually accepted.
+  visual tests, including final native stage5 playback accepted by the user.
 - Low: 1000Hz /25%, TIM2_CH1 AF5 for PA5 OR PA8, TIM22_CH1 AF5 PA6,
   TIM22_CH2 AF5 PA7. Prescaler31, ARR999, CCR250 at32MHz. High is GPIO High.
   At most one low LED; shared PA5/PA8 channel cannot create arbitrary patterns.

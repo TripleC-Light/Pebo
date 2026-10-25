@@ -1,0 +1,14 @@
+{
+  "result": "FAIL",
+  "samples": 1507,
+  "reference": [
+    15,
+    -1017,
+    -32
+  ],
+  "expected_candidates": 0,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\tests\\results\\train-tilt01\\raw.json",
+  "compiler_output": "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-drink-replay-vwss3w5h\\replay.cpp:5:63: error: static assertion failed: candidate mismatch\n    5 | constexpr auto result=replay();static_assert(result.candidates==0,\"candidate mismatch\");static_assert(result.shakes==0,\"shake mismatch\");\n      |                                              ~~~~~~~~~~~~~~~~~^~~\nC:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-drink-replay-vwss3w5h\\replay.cpp:5:63: note: the comparison reduces to '(1 == 0)'\n",
+  "method": "Actual shared C++ coordinate and detectors; measured empty-bottle data, not intake proof"
+}

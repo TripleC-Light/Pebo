@@ -1,0 +1,489 @@
+{
+  "source": "FW\\NativeDrinkDetectionTest\\tests\\results\\20261026-three1\\raw.json",
+  "samples": 3015,
+  "first_ms": 24,
+  "last_ms": 29993,
+  "bins": [
+    {
+      "start_ms": 0,
+      "samples": 48,
+      "min_norm": 996.7,
+      "max_norm": 1025.4,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 500,
+      "samples": 50,
+      "min_norm": 1009.4,
+      "max_norm": 1030.7,
+      "max_tilt_degrees": 1.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 1000,
+      "samples": 51,
+      "min_norm": 1007.2,
+      "max_norm": 1028.7,
+      "max_tilt_degrees": 1.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 1500,
+      "samples": 50,
+      "min_norm": 1009.7,
+      "max_norm": 1031.3,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 2000,
+      "samples": 50,
+      "min_norm": 1008.6,
+      "max_norm": 1035.1,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 2500,
+      "samples": 51,
+      "min_norm": 1002.6,
+      "max_norm": 1031.0,
+      "max_tilt_degrees": 1.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 3000,
+      "samples": 50,
+      "min_norm": 1005.6,
+      "max_norm": 1030.0,
+      "max_tilt_degrees": 1.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 3500,
+      "samples": 50,
+      "min_norm": 1004.4,
+      "max_norm": 1029.0,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 4000,
+      "samples": 51,
+      "min_norm": 1011.9,
+      "max_norm": 1029.7,
+      "max_tilt_degrees": 1.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 4500,
+      "samples": 50,
+      "min_norm": 1007.4,
+      "max_norm": 1032.3,
+      "max_tilt_degrees": 1.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 5000,
+      "samples": 50,
+      "min_norm": 1006.1,
+      "max_norm": 1032.8,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 5500,
+      "samples": 50,
+      "min_norm": 1002.4,
+      "max_norm": 1030.4,
+      "max_tilt_degrees": 1.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 6000,
+      "samples": 51,
+      "min_norm": 1008.0,
+      "max_norm": 1026.3,
+      "max_tilt_degrees": 1.9,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 6500,
+      "samples": 50,
+      "min_norm": 1007.9,
+      "max_norm": 1034.5,
+      "max_tilt_degrees": 1.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 7000,
+      "samples": 50,
+      "min_norm": 964.3,
+      "max_norm": 1144.5,
+      "max_tilt_degrees": 19.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 7500,
+      "samples": 51,
+      "min_norm": 873.5,
+      "max_norm": 1220.1,
+      "max_tilt_degrees": 19.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 8000,
+      "samples": 50,
+      "min_norm": 773.1,
+      "max_norm": 1256.6,
+      "max_tilt_degrees": 34.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 8500,
+      "samples": 50,
+      "min_norm": 925.4,
+      "max_norm": 1130.2,
+      "max_tilt_degrees": 21.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 9000,
+      "samples": 50,
+      "min_norm": 931.9,
+      "max_norm": 1135.9,
+      "max_tilt_degrees": 46.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 9500,
+      "samples": 51,
+      "min_norm": 1028.5,
+      "max_norm": 1090.0,
+      "max_tilt_degrees": 48.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 10000,
+      "samples": 50,
+      "min_norm": 1027.2,
+      "max_norm": 1088.4,
+      "max_tilt_degrees": 49.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 10500,
+      "samples": 50,
+      "min_norm": 1033.7,
+      "max_norm": 1084.4,
+      "max_tilt_degrees": 50.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 11000,
+      "samples": 51,
+      "min_norm": 978.8,
+      "max_norm": 1142.7,
+      "max_tilt_degrees": 51.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 11500,
+      "samples": 50,
+      "min_norm": 990.3,
+      "max_norm": 1082.8,
+      "max_tilt_degrees": 15.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 12000,
+      "samples": 50,
+      "min_norm": 983.7,
+      "max_norm": 1066.7,
+      "max_tilt_degrees": 4.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 12500,
+      "samples": 50,
+      "min_norm": 954.7,
+      "max_norm": 1639.6,
+      "max_tilt_degrees": 21.2,
+      "dynamic_samples": 1
+    },
+    {
+      "start_ms": 13000,
+      "samples": 51,
+      "min_norm": 1001.9,
+      "max_norm": 1075.2,
+      "max_tilt_degrees": 3.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 13500,
+      "samples": 50,
+      "min_norm": 1001.0,
+      "max_norm": 1028.9,
+      "max_tilt_degrees": 2.4,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 14000,
+      "samples": 50,
+      "min_norm": 1005.7,
+      "max_norm": 1028.4,
+      "max_tilt_degrees": 2.3,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 14500,
+      "samples": 51,
+      "min_norm": 1009.1,
+      "max_norm": 1031.3,
+      "max_tilt_degrees": 2.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 15000,
+      "samples": 50,
+      "min_norm": 1004.3,
+      "max_norm": 1031.3,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 15500,
+      "samples": 50,
+      "min_norm": 998.2,
+      "max_norm": 1031.6,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 16000,
+      "samples": 50,
+      "min_norm": 996.2,
+      "max_norm": 1070.8,
+      "max_tilt_degrees": 13.3,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 16500,
+      "samples": 51,
+      "min_norm": 995.8,
+      "max_norm": 1031.0,
+      "max_tilt_degrees": 2.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 17000,
+      "samples": 50,
+      "min_norm": 1001.0,
+      "max_norm": 1034.1,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 17500,
+      "samples": 50,
+      "min_norm": 1005.2,
+      "max_norm": 1031.7,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 18000,
+      "samples": 51,
+      "min_norm": 1006.2,
+      "max_norm": 1026.0,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 18500,
+      "samples": 50,
+      "min_norm": 1004.4,
+      "max_norm": 1028.0,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 19000,
+      "samples": 50,
+      "min_norm": 1005.4,
+      "max_norm": 1026.4,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 19500,
+      "samples": 50,
+      "min_norm": 1006.8,
+      "max_norm": 1028.0,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 20000,
+      "samples": 51,
+      "min_norm": 1006.9,
+      "max_norm": 1029.4,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 20500,
+      "samples": 50,
+      "min_norm": 1008.4,
+      "max_norm": 1026.3,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 21000,
+      "samples": 50,
+      "min_norm": 1007.5,
+      "max_norm": 1029.6,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 21500,
+      "samples": 51,
+      "min_norm": 1004.1,
+      "max_norm": 1030.3,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 22000,
+      "samples": 50,
+      "min_norm": 1003.3,
+      "max_norm": 1036.9,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 22500,
+      "samples": 50,
+      "min_norm": 1006.5,
+      "max_norm": 1030.1,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 23000,
+      "samples": 50,
+      "min_norm": 1007.0,
+      "max_norm": 1033.4,
+      "max_tilt_degrees": 2.1,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 23500,
+      "samples": 51,
+      "min_norm": 1007.8,
+      "max_norm": 1029.6,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 24000,
+      "samples": 50,
+      "min_norm": 1005.9,
+      "max_norm": 1027.9,
+      "max_tilt_degrees": 2.0,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 24500,
+      "samples": 50,
+      "min_norm": 1000.3,
+      "max_norm": 1029.4,
+      "max_tilt_degrees": 2.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 25000,
+      "samples": 50,
+      "min_norm": 999.1,
+      "max_norm": 1045.0,
+      "max_tilt_degrees": 5.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 25500,
+      "samples": 51,
+      "min_norm": 970.1,
+      "max_norm": 1251.5,
+      "max_tilt_degrees": 11.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 26000,
+      "samples": 50,
+      "min_norm": 845.7,
+      "max_norm": 1155.0,
+      "max_tilt_degrees": 39.5,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 26500,
+      "samples": 50,
+      "min_norm": 1003.0,
+      "max_norm": 1140.8,
+      "max_tilt_degrees": 53.6,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 27000,
+      "samples": 51,
+      "min_norm": 1040.1,
+      "max_norm": 1098.4,
+      "max_tilt_degrees": 53.3,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 27500,
+      "samples": 50,
+      "min_norm": 1049.5,
+      "max_norm": 1089.4,
+      "max_tilt_degrees": 53.2,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 28000,
+      "samples": 50,
+      "min_norm": 1043.4,
+      "max_norm": 1079.6,
+      "max_tilt_degrees": 52.8,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 28500,
+      "samples": 50,
+      "min_norm": 989.3,
+      "max_norm": 1112.0,
+      "max_tilt_degrees": 52.4,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 29000,
+      "samples": 51,
+      "min_norm": 972.8,
+      "max_norm": 1153.2,
+      "max_tilt_degrees": 51.7,
+      "dynamic_samples": 0
+    },
+    {
+      "start_ms": 29500,
+      "samples": 50,
+      "min_norm": 978.8,
+      "max_norm": 1070.9,
+      "max_tilt_degrees": 14.6,
+      "dynamic_samples": 0
+    }
+  ],
+  "limits": "Raw acceleration angles during dynamics are NOT reliable gravity estimates; descriptive training data only"
+}

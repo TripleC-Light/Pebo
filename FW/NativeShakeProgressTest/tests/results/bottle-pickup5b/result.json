@@ -1,0 +1,1167 @@
+{
+  "result": "PASS",
+  "records": [
+    {
+      "kind": "identity",
+      "time": 2361.531,
+      "image_sha256": "2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_SUPPLIED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "time": 2361.671,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "time": 2361.968,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "23996",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\bottle-pickup5b\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\bottle-pickup5b\\readback.bin\n  Size          : 23996 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.145\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 2362.328,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 2362.343,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=0 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 2362.359,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=149"
+    },
+    {
+      "kind": "TX",
+      "time": 2362.609,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 2362.609,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 2362.859,
+      "command": "'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "time": 2362.875,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "time": 2363.109,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 2363.125,
+      "text": "CLOCK valid=0 utc=0 lse=1 bkp2=00000000 bkp3=00000000 monotonicMs=192289 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 2363.359,
+      "command": "'run 1'"
+    },
+    {
+      "kind": "RX",
+      "time": 2363.375,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 2363.828,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 2363.828,
+      "stimulus": "preflight",
+      "seconds": 1
+    },
+    {
+      "kind": "RX",
+      "time": 2364.828,
+      "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=1 unknownWake=0 lastLis=09 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "time": 2364.843,
+      "text": "COUNT source=rtc isr=2 wake=1 confirmed=2 handled=2 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 2364.843,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 2364.859,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 2364.859,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 2364.875,
+      "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=149 reversals=0 peak2=2243105"
+    },
+    {
+      "kind": "TX",
+      "time": 2365.437,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 2365.453,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=0 stops=1 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 2365.468,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=149"
+    },
+    {
+      "kind": "TX",
+      "time": 2365.687,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 2365.703,
+      "text": "CLOCK valid=0 utc=0 lse=1 bkp2=00000000 bkp3=00000000 monotonicMs=194863 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "RUN_RESULT",
+      "time": 2365.953,
+      "summary": {
+        "reason": "deadline",
+        "requested": "1",
+        "elapsed": "1",
+        "stops": "1",
+        "unknownWake": "0",
+        "lastLis": "09",
+        "lastSt": "00"
+      },
+      "counts": {
+        "rtc": {
+          "source": "rtc",
+          "isr": "2",
+          "wake": "1",
+          "confirmed": "2",
+          "handled": "2",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "motion": {
+          "source": "motion",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "gpo": {
+          "source": "gpo",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        }
+      },
+      "shake": {
+        "entries": "0",
+        "windows": "0",
+        "confirmed": "0",
+        "rejected": "0",
+        "errors": "0",
+        "samples": "149",
+        "reversals": "0",
+        "peak2": "2243105"
+      }
+    },
+    {
+      "kind": "TX",
+      "time": 2365.953,
+      "command": "'probe'"
+    },
+    {
+      "kind": "RX",
+      "time": 2365.968,
+      "text": "PROBE ok=1 static=11 gate=01 rf=00 eh=08 field=0 pa3=0 pull=0 imr=3F940009 rising=00100009"
+    },
+    {
+      "kind": "TX",
+      "time": 2366.218,
+      "command": "'progress 5'"
+    },
+    {
+      "kind": "RX",
+      "time": 2366.234,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 2369.687,
+      "command": "'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "time": 2369.687,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 2369.953,
+      "stimulus": "awake-pickup",
+      "seconds": 90
+    },
+    {
+      "kind": "RX",
+      "time": 2380.687,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2382.359,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2395.14,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2396.812,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2406.171,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2407.843,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2415.218,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2416.968,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2425.375,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "RX",
+      "time": 2427.203,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "TX",
+      "time": 2459.953,
+      "command": "'counters'"
+    },
+    {
+      "kind": "RX",
+      "time": 2459.968,
+      "text": "COUNT source=rtc isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 2459.984,
+      "text": "COUNT source=motion isr=10 wake=0 confirmed=10 handled=11 errors=0 unknown=1"
+    },
+    {
+      "kind": "RX",
+      "time": 2459.984,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 2459.984,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.0,
+      "text": "SHAKE entries=10 windows=10 confirmed=0 rejected=10 errors=0 samples=149 reversals=0 peak2=245222"
+    },
+    {
+      "kind": "TX",
+      "time": 2460.203,
+      "command": "'trace'"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.203,
+      "text": "TRACE_BEGIN units=LP1_counts time=observation_ms"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 24 -23 -1051 -95"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 32 -16 -1000 -115"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 43 74 -1067 -94"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 51 -25 -982 -80"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 63 -118 -1039 -106"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 75 -29 -600 -152"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.218,
+      "text": "SAMPLE 82 -123 -915 -90"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.234,
+      "text": "SAMPLE 94 3 -1018 -68"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.234,
+      "text": "SAMPLE 102 33 -1079 6"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.234,
+      "text": "SAMPLE 114 -100 -790 -81"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.234,
+      "text": "SAMPLE 122 138 -1058 -65"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 133 -66 -950 -71"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 141 59 -1171 116"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 153 -141 -965 -8"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 164 -28 -1072 -13"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 172 -48 -1059 -206"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.25,
+      "text": "SAMPLE 180 -14 -935 -25"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 192 -20 -1027 -100"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 204 82 -1021 5"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 211 -8 -1003 2"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 223 34 -997 5"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 231 32 -996 -16"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.265,
+      "text": "SAMPLE 243 9 -957 -126"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.281,
+      "text": "SAMPLE 250 129 -993 52"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.281,
+      "text": "SAMPLE 262 127 -964 80"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.281,
+      "text": "SAMPLE 274 58 -884 287"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.281,
+      "text": "SAMPLE 282 153 -1028 271"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.296,
+      "text": "SAMPLE 293 83 -1131 -3"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.296,
+      "text": "SAMPLE 301 156 -1064 89"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.296,
+      "text": "SAMPLE 313 43 -991 168"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.296,
+      "text": "SAMPLE 321 -10 -992 76"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.562,
+      "text": "SAMPLE 332 -50 -1046 120"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.687,
+      "text": "SAMPLE 340 -167 -1041 71"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.968,
+      "text": "SAMPLE 352 -5 -1030 -59"
+    },
+    {
+      "kind": "RX",
+      "time": 2460.984,
+      "text": "SAMPLE 360 17 -1029 -21"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.0,
+      "text": "SAMPLE 372 32 -1006 -22"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 379 -1 -1029 -46"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 391 12 -1009 -21"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 403 37 -1017 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 411 -4 -1019 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 422 31 -1021 -40"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 430 17 -1009 -13"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 442 10 -1027 -39"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.015,
+      "text": "SAMPLE 450 15 -1003 -22"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.031,
+      "text": "SAMPLE 461 22 -1025 -43"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.031,
+      "text": "SAMPLE 469 9 -1013 -24"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.031,
+      "text": "SAMPLE 481 26 -1008 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.031,
+      "text": "SAMPLE 489 -9 -1019 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.046,
+      "text": "SAMPLE 500 10 -1023 -39"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.046,
+      "text": "SAMPLE 508 8 -1007 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.046,
+      "text": "SAMPLE 520 4 -1017 -44"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.046,
+      "text": "SAMPLE 532 16 -1010 -24"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.046,
+      "text": "SAMPLE 539 28 -1032 -37"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.062,
+      "text": "SAMPLE 551 6 -1012 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.062,
+      "text": "SAMPLE 559 26 -1017 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.062,
+      "text": "SAMPLE 571 14 -1020 -24"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.078,
+      "text": "SAMPLE 579 20 -1026 -36"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.078,
+      "text": "SAMPLE 590 21 -1020 -23"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.078,
+      "text": "SAMPLE 598 17 -1029 -48"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.078,
+      "text": "SAMPLE 610 20 -1021 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.093,
+      "text": "SAMPLE 622 23 -1031 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.093,
+      "text": "SAMPLE 629 3 -1022 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.093,
+      "text": "SAMPLE 637 14 -1017 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.109,
+      "text": "SAMPLE 649 7 -1012 -20"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.109,
+      "text": "SAMPLE 661 21 -1025 -37"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.109,
+      "text": "SAMPLE 668 21 -1009 -23"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.109,
+      "text": "SAMPLE 680 26 -1022 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.109,
+      "text": "SAMPLE 688 20 -1009 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 700 12 -1025 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 707 10 -1009 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 719 16 -1018 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 727 5 -1025 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 739 2 -1018 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 750 12 -1011 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.125,
+      "text": "SAMPLE 758 13 -1013 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.171,
+      "text": "SAMPLE 770 19 -1008 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.187,
+      "text": "SAMPLE 778 24 -1019 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.187,
+      "text": "SAMPLE 789 20 -1013 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.203,
+      "text": "SAMPLE 797 15 -1017 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.281,
+      "text": "SAMPLE 809 17 -1015 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.281,
+      "text": "SAMPLE 817 20 -1012 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.312,
+      "text": "SAMPLE 829 17 -1017 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.328,
+      "text": "SAMPLE 836 16 -1014 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.343,
+      "text": "SAMPLE 848 24 -1024 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.343,
+      "text": "SAMPLE 860 14 -1022 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.343,
+      "text": "SAMPLE 868 17 -1014 -22"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.343,
+      "text": "SAMPLE 879 20 -1034 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.406,
+      "text": "SAMPLE 887 20 -1022 -19"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.5,
+      "text": "SAMPLE 899 16 -1024 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.515,
+      "text": "SAMPLE 907 23 -1018 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.531,
+      "text": "SAMPLE 918 20 -1025 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.546,
+      "text": "SAMPLE 926 21 -1016 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.562,
+      "text": "SAMPLE 938 24 -1009 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.562,
+      "text": "SAMPLE 946 8 -1017 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.578,
+      "text": "SAMPLE 957 13 -1015 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.578,
+      "text": "SAMPLE 965 14 -1027 -37"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.578,
+      "text": "SAMPLE 977 5 -1011 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.593,
+      "text": "SAMPLE 989 19 -1017 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.593,
+      "text": "SAMPLE 997 18 -1006 -25"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.593,
+      "text": "SAMPLE 1008 18 -1018 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.609,
+      "text": "SAMPLE 1016 17 -1014 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.609,
+      "text": "SAMPLE 1028 21 -1030 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.609,
+      "text": "SAMPLE 1036 25 -1010 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.609,
+      "text": "SAMPLE 1047 13 -1006 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.625,
+      "text": "SAMPLE 1055 24 -1015 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.656,
+      "text": "SAMPLE 1067 5 -1012 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.671,
+      "text": "SAMPLE 1079 19 -1019 -40"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.734,
+      "text": "SAMPLE 1086 9 -1027 -25"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.75,
+      "text": "SAMPLE 1094 5 -1023 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.75,
+      "text": "SAMPLE 1106 11 -1026 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.765,
+      "text": "SAMPLE 1118 17 -1020 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.812,
+      "text": "SAMPLE 1125 13 -1017 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.812,
+      "text": "SAMPLE 1137 16 -1017 -22"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.828,
+      "text": "SAMPLE 1145 15 -1021 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.843,
+      "text": "SAMPLE 1157 18 -1015 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1164 5 -1012 -35"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1176 15 -1012 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1184 7 -1020 -44"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1196 14 -1009 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1207 25 -1017 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.875,
+      "text": "SAMPLE 1215 16 -1012 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.89,
+      "text": "SAMPLE 1227 19 -1014 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.89,
+      "text": "SAMPLE 1235 17 -1023 -36"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.906,
+      "text": "SAMPLE 1247 7 -1014 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.921,
+      "text": "SAMPLE 1254 17 -1019 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.921,
+      "text": "SAMPLE 1266 18 -1018 -18"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.921,
+      "text": "SAMPLE 1274 17 -1019 -20"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.937,
+      "text": "SAMPLE 1286 15 -1013 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.937,
+      "text": "SAMPLE 1293 16 -1020 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.937,
+      "text": "SAMPLE 1305 14 -1022 -28"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.937,
+      "text": "SAMPLE 1313 13 -1014 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.937,
+      "text": "SAMPLE 1325 11 -1008 -27"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.953,
+      "text": "SAMPLE 1336 14 -1022 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.953,
+      "text": "SAMPLE 1344 21 -1012 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.953,
+      "text": "SAMPLE 1356 17 -1015 -38"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.968,
+      "text": "SAMPLE 1364 24 -1016 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.968,
+      "text": "SAMPLE 1375 17 -1019 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.968,
+      "text": "SAMPLE 1383 16 -1008 -30"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.968,
+      "text": "SAMPLE 1395 20 -1016 -29"
+    },
+    {
+      "kind": "RX",
+      "time": 2461.984,
+      "text": "SAMPLE 1403 16 -1038 -39"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.0,
+      "text": "SAMPLE 1414 14 -1013 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.015,
+      "text": "SAMPLE 1422 10 -1021 -33"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.015,
+      "text": "SAMPLE 1434 9 -1015 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.015,
+      "text": "SAMPLE 1442 15 -1009 -31"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "SAMPLE 1454 8 -1024 -26"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "SAMPLE 1465 15 -1018 -34"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "SAMPLE 1473 19 -1021 -24"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "SAMPLE 1485 19 -1017 -32"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "SAMPLE 1493 12 -1014 -25"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.031,
+      "text": "TRACE_END"
+    },
+    {
+      "kind": "STIMULUS_EVIDENCE",
+      "time": 2462.046,
+      "test": "awake-pickup",
+      "lines": [
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "SHAKE_NOT_CONFIRMED",
+        "COUNT source=rtc isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "COUNT source=motion isr=10 wake=0 confirmed=10 handled=11 errors=0 unknown=1",
+        "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0",
+        "END counters",
+        "SHAKE entries=10 windows=10 confirmed=0 rejected=10 errors=0 samples=149 reversals=0 peak2=245222"
+      ],
+      "samples": 149,
+      "limits": "Operator category/trial count must be confirmed; trace is measured, not synthesized"
+    },
+    {
+      "kind": "TX",
+      "time": 2462.046,
+      "command": "'lisregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.062,
+      "text": "LISREG ok=1 ctrl1=20 ctrl2=0C ctrl3=10 ctrl4=20 ctrl5=00 ctrl6=00"
+    },
+    {
+      "kind": "TX",
+      "time": 2462.312,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.312,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 2462.578,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.609,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=0 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 2462.609,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=149"
+    }
+  ]
+}

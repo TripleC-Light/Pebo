@@ -1,0 +1,44 @@
+{
+  "result": "FAIL",
+  "records": [
+    {
+      "kind": "identity",
+      "time": 1958.359,
+      "image_sha256": "2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_SUPPLIED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "time": 1958.468,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000"
+      ],
+      "exit": 1,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 0.00V\nError: No STM32 target found!\n"
+    },
+    {
+      "kind": "ERROR",
+      "time": 1958.468,
+      "error": "AssertionError()"
+    }
+  ]
+}

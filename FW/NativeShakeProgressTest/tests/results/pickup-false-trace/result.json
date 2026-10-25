@@ -1,0 +1,355 @@
+{
+  "result": "PASS",
+  "records": [
+    {
+      "kind": "identity",
+      "time": 1659.984,
+      "image_sha256": "16272d9cc50a77a87f89d39b06282db575233de76aaceeb58793d0f228d25c6a",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_SUPPLIED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "time": 1660.437,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "time": 1662.078,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "23900",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\pickup-false-trace\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\pickup-false-trace\\readback.bin\n  Size          : 23900 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.492\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 1662.453,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 1662.468,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=48 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 1662.484,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=45"
+    },
+    {
+      "kind": "TX",
+      "time": 1662.718,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 1662.734,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 1663.0,
+      "command": "'trace'"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.015,
+      "text": "TRACE_BEGIN units=LP1_counts time=observation_ms"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.015,
+      "text": "SAMPLE 27 -1 -153 972"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.015,
+      "text": "SAMPLE 35 7 -143 961"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.015,
+      "text": "SAMPLE 46 -9 -185 947"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.015,
+      "text": "SAMPLE 54 -103 -116 1098"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 66 683 -643 894"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 74 -730 18 -362"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 86 376 -111 1203"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 93 -20 -145 972"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 105 2046 -732 2046"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.031,
+      "text": "SAMPLE 113 2046 -385 2046"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 125 -115 233 1231"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 136 60 -510 351"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 144 323 -180 1277"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 156 -1129 469 879"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 164 -1188 -154 386"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.046,
+      "text": "SAMPLE 175 -301 -143 167"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 183 -122 -130 570"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 195 -259 -268 762"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 203 304 -296 1133"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 214 920 -516 1351"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 226 80 -149 1142"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 234 222 -122 1028"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.062,
+      "text": "SAMPLE 242 -30 -246 1140"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.078,
+      "text": "SAMPLE 253 -215 -177 1022"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.078,
+      "text": "SAMPLE 265 -52 -91 1015"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.078,
+      "text": "SAMPLE 273 32 -103 1043"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.078,
+      "text": "SAMPLE 285 -40 -88 999"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.078,
+      "text": "SAMPLE 293 -85 -152 1005"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 304 16 -78 1043"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 312 287 46 1085"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 324 408 106 1162"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 336 171 4 1222"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 343 155 26 1130"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 355 152 79 1053"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.093,
+      "text": "SAMPLE 363 125 15 1070"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 375 138 -13 864"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 382 170 -78 668"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 394 122 3 741"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 402 143 29 868"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 414 154 116 800"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.109,
+      "text": "SAMPLE 421 166 153 694"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.125,
+      "text": "SAMPLE 433 209 169 978"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.125,
+      "text": "SAMPLE 441 227 218 742"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.125,
+      "text": "SAMPLE 453 280 240 875"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.125,
+      "text": "SAMPLE 464 430 336 1162"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.125,
+      "text": "TRACE_END"
+    },
+    {
+      "kind": "CAPTURE_ONLY",
+      "time": 1663.125,
+      "samples": 45,
+      "limits": "Read-only stored trace; not new stimulus or wake evidence"
+    },
+    {
+      "kind": "TX",
+      "time": 1663.125,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.14,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 1663.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.39,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=48 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 1663.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=45"
+    }
+  ]
+}

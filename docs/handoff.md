@@ -1,5 +1,141 @@
 # Pebo handoff log
 
+## 2026-10-25: Stage5 publication checkpoint
+
+User authorizes commit/push. PC-02 TripleC, branch main; fetched origin and
+confirmed remote main is an ancestor (no force push needed). Scoped publication
+contains NativeShakeProgressTest source, ST timer sources/licenses, reproducible
+build settings, host/HIL scripts and actual evidence, plus related handoff/HIL
+records. Existing FeedbackTest/TimeManagementTest untracked work and conflicted
+HIL copy are excluded and preserved. Earlier local baseline/history will also
+be published by the normal main push. Final push result is verified against
+remote HEAD and reported in chat; this entry records publication scope.
+No firmware edits or new physical tests during publication; prior validated
+image2ae93c94... and off/debug/UART-closed state are last observed, not freshly
+measured. No instruments operated. Next steps remain prototype robustness,
+stack/fault/race/power validation, not additional functionality.
+
+## 2026-10-25: Stage5 final validation complete (PC-02 TripleC)
+
+Final image2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2.
+See [stage5 final report](../FW/NativeShakeProgressTest/VALIDATION.md) for exact
+evidence, resource analysis, historical failures and remaining limits. This
+completed entry supersedes the in-progress status below, preserved as history.
+Bottle cohort: intentional shakes10/10, normal pickup false displays0/10,
+slow tilt false displays0/3; continuous shaking one non-extended display.
+User confirms final0..8 LED ordering/brightness/zero double flash correct.
+Flash/verify/readback/UART/parser, RTC valid ordinary-reset retention,
+run10/60, RF awake/STOP, sequential motion+RF, off/restart and cleanup PASS.
+Flash23996/staticRAM3256; minstack1024/heap0, peak stack NOT_MEASURED.
+Final board off/debug, sources/display/PWM/sampling off, RTC valid, progress7;
+UART closed. User2.8V supply unchanged; no instruments or power measurement.
+Branch main, baseline820ecb3f2b9fb199ddf5cf95246698d4648b73b1/tag
+baseline/native-hal-eventloop-v1 retained. Stage5 only saved locally, no new
+commit/push; unrelated dirty files and conflicted HIL file preserved.
+Next: review prototype across bottle/fill/mount variants, clipping and stack;
+fault/race stress, exact overlapping events and power remain unverified.
+Earlier power loss invalidated RTC markers; final explicit PC UTC/reset PASS
+does not establish power-off retention. Historical RF root cause remains OPEN.
+
+## 2026-10-25: Supply restored, sustain revision on target; bottle tests ongoing
+
+User restores2.8V and confirms STLINK/COM5/common ground. Fresh STLINK2.73V,
+same target. User now fixes Pebo to the water bottle in intended product
+orientation; exact XYZ-to-bottle mapping not independently measured. Prior
+unmounted/unspecified fixture data must not be pooled as bottle sensitivity.
+Mounting and detector both changed: do not attribute all improvement to code.
+
+2ae93c94... flashed/verified/full readback PASS (controls-sustain02), UART and
+awake sampling/invalid-command noninterference/off/debug cancellation/idle
+restore/PWM stop/repeated run1 PASS. No instruments/optionbytes/backup reset.
+After the supply interruption actual RTC markers0/timeValid0; invalidity is
+correctly exposed, not treated as valid default date. Final auto test will set
+correct PC UTC and repeat valid reset retention. Earlier powered-reset PASS
+does not imply power-off retention. Current bottle-pickup5a90s debug window
+running; helper temporarily owns COM5, finally off/debug/closed.
+Fresh classification/positive/RF/STOP/mixed/complete regressions still pending.
+No further commit/push; baseline820ecb3/tag preserved. New source build23996/
+3256staticRAM, stack peak unmeasured. Follow results/operator-notes for outcomes.
+
+## 2026-10-25: Stage5 earlier pickup failures and supply interruption (historical)
+
+Historical status at supply interruption, superseded by subsequent records. Baseline commit
+820ecb3f2b9fb199ddf5cf95246698d4648b73b1/tag baseline/native-hal-eventloop-v1
+remain unchanged/local/no push. No stage5 commit or unrelated changes reverted.
+
+Stage5 files: FW/NativeShakeProgressTest/{src,include,vendor,build.py,linker,
+README,tests/results}; actual result JSON plus operator-notes-20261025.md.
+Native stages preserve existing tests and shared source. User-supplied2.8V only,
+no PPK2/instruments, no option bytes/backup reset/mass erase. COM5 Prolific,
+same STLINK serial56FF6C066688555210351387; last successful measured2.71..2.73V.
+
+Fixed RTC backward24h accumulation and stale pre-STOP observation origin:
+consistent bounded SSR reread per ES0322, backward guard, forced elapsed refresh
+after STOP/before observation; pure boundary tests and PC elapsed anchor.
+auto04 b2ad... and auto05 16272d9c... passed flash/verify/full readback, valid
+nonzero RTC/reset retention (BKP0/1/4 unchanged), UTC from PC clock (NTP accuracy
+unverified), LED0..8/timeouts/PWM clocks/GPIO low, parser, run10/60/off/re-run1,
+149 fresh real diagnostic samples/idle register restore/replay. Peakstack NOT
+MEASURED. Diagnostic observe is not motion ISR/STOP wake proof.
+
+Physical: b2ad motion01 ISR18/wake6/one shake accepted, user confirms native
+level5 appearance and ~3s off. Original10-operation timed60s captured7 accepts;
+user10 with LEDs absent from8th; late actions may exceed deadline, NOT a clean
+7/10 recognition rate. On16272d9c pickup5a user explicitly normal pickup/place,
+first4 lit:4 FALSE POSITIVES, FAIL; fifth may be outside deadline. Captured45
+samples by read-only trace after off. Bottle-relative sensor orientation remains
+explicitly unknown. No production accuracy/cheating prevention/power claim.
+
+New ShakeLogic requires20ms sustained qualified direction +600ms repeated span,
+same300-count amplitude/80ms reverse/100Hz LP1/1500ms window. Old false prefix
+replays rejected; prefix ended at old early acceptance, so not complete-window
+physical proof. Positive/negative fresh windows MUST be re-collected.
+New image2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2
+build PASS: Flash23996, text21484/rodata2204/data104/bss3152/staticRAM3256,
+minstack1024/heap0, after-static4936 not safe-stack proof. Trace1280/appTX1024
+dominate RAM. Last controls-sustain flash attempt: STLINK0.00V/no target, no
+flash performed. User asked to restore supply/VTref/common ground. Do not open
+instruments or infer hardware failure. Last verified board image16272d9c...;
+last successful command off/debug/UARTclosed, live state now UNVERIFIED at0V.
+
+Next steps after user supply confirmation: flash2ae... with controls test; fresh
+awake-motion/awake-pickup --seconds90,5 trials each (twice for10), actual counts
+and complete fresh trace replay; run-mode shake->LED->STOP; tilt/continuous,
+RF awake/STOP/mixed, final auto regression and off/debug/UARTclose. RF historical
+root cause remains OPEN. Script supports bounded awake windows without changing
+run1..60 semantics. Existing pickup fail JSON preserved, never relabel as PASS.
+Handoff/machine/HIL saved locally. No active helper/UART/measurement handles.
+
+## 2026-10-25: Stage5 NativeShakeProgressTest in progress (resume after quota)
+
+PC-02 TripleC/main; baseline commit820ecb3f2b9fb199ddf5cf95246698d4648b73b1
+and annotated baseline/native-hal-eventloop-v1 saved locally, no push. Stage5
+is a separate uncommitted FW/NativeShakeProgressTest; previous stage2/stage3
+and Google Drive conflicted HIL file preserved. No further commit authorized.
+
+Native HAL LED/PWM, bounded XYZ observation/integer reversal detector, UART
+progress/show/status/counters/trace, existing three-source protected STOP and
+RTC marker-preserving explicit UTC setter implemented. Hardware unchanged.
+User re-confirms external2.8V/STLINK/COM5, allows flash and ordinary MCU reset;
+LIS2 bottle-relative axes explicitly UNCONFIRMED. No PPK2/COM6/7/instruments.
+
+Initial auto01/02 passed UART/LED patterns/timeouts/off, RTC valid nonzero marker
+retention across ordinary reset and run10/60/restart. auto03 also collected148
+fresh measured XYZ samples, restored idle CTRL1..6, rejected/replayed PASS;
+BUT total elapsed had spurious24h jump before run, not caught by per-run checks.
+Its PASS must NOT be interpreted as accepted cooldown/total-time behavior.
+New TimeSupport applies ST ES0322 Rev5 2.9.2 bounded SSR recheck, once/tick read
+and pure ElapsedClock backward rejection. Added PC elapsed anchor regression.
+
+Fixed image b2ad066ff19d387164e3ea7b9ad788188aad6eb0b31fe98c308c15ef39892efd
+build twice identically: Flash23888, data104/bss3136/staticRAM3240, stackmin1024,
+heap0, peakstack NOT_MEASURED. auto04 currently running; reset validity retained,
+markers2/3 nonzero unchanged and0/1/4 unchanged; PC UTC source, NTP not verified.
+Board currently fixed stage5, automated test owns COM5 temporarily; test finally
+off/debug/closes UART. Physical gesture/RF/visual/10+10 trials still pending.
+No physical wake/recognition acceptance is claimed from diagnostic observe.
+Next: finish auto04/replay, finite operator motion/RF windows, then final logs.
+
 ## 2026-10-25: Native B local annotated recovery baseline
 
 User explicitly authorizes one scoped baseline commit and a new annotated tag
@@ -194,6 +330,113 @@ and COM6/7 never opened. Final off, UART closed, no helper remains; supply not
 switched. Handoff saved. Next: resolve powered VDCG/physical GPO route versus
 LPD strategy with user-approved electrical checks, then repeat RF/mixed HIL;
 reduce Flash before integrating other stages. No battery-life claim.
+
+## 2026-10-25: TimeManagementTest stage 3 implemented; software/HIL PASS
+
+PC-02 / TripleC, main fdacaf6. Prior FeedbackTest/uncommitted docs preserved.
+Added FW/TimeManagementTest: .ino, pure TimeLogic.h, HAL RtcClock.h, README,
+host oracle/constexpr tests, UART bench script, read-only state inspector and
+JSON evidence. Only relevant HIL/handoff/machine notes updated; no commit/push.
+Read AGENTS, hardware/pinmap, RTCStopWakeTest, low-power baseline/deep-sleep
+tests, architecture and installed core/HAL/backup/clock APIs before changes.
+
+Installed STM32duino3.0.0 HAL RTC, LSE32768 PC14/PC15, 127/255 prescalers,
+ck_spre1Hz WUT reloadN-1, existing Generic L031G6Ux LTO FQBN. Preserve normal
+reset calendar; no backup reset or default date write. Existing old RTC test's
+unconditional backup reset is NOT reused. BKP2 schema/valid signature and BKP3
+UTC floor avoid core RTC index1/optional HID index4. Reject foreign clock,
+configuration/features or slot contents without destructive recovery. LSE wait
+5s timeout, no LSI fallback. Date/BCD/weekday/config/marker all checked; invalid
+UTC explicitly shown, app interface returns false. Supported UTC2000..2099;
+zone +/-14:00, default+08, noDST. Volatile manual sim mode never writes RTC.
+Time adjustment/context changes rebase dates; natural/advanced multi-day events
+report once with interval/days. No task/history mutation. Awake millis separate
+from RTC wall clock and excludes STOP; no millis-based sleep duration proof.
+
+Build PASS: Arduino Flash21220B, actual image21440B incl omitted vector sections,
+staticRAM2880B (336data+2544bss), minimum heap/stack reserve1536B, peak unknown.
+SHA25688be62f1084a44c1ccf6b21aacd1a82aa95117ef6ae32a674b7a793e01c1e058.
+Local build C:/Users/Edward/AppData/Local/Temp/Pebo-TimeManagementTest-20261025.
+Host PASS: Python datetime/calendar2400 vectors,7200 C++ constexpr assertions
+plus parser/date/context/overflow cases (-Wall/-Wextra/-Werror). Compiler host
+evaluation, not native MCU emulator. No new dependencies/frameworks.
+
+User confirmed manual2.8V, same Pebo/common GND/COM5 free, and explicitly allowed
+flash and ordinary MCU reset. Fresh STLINK56FF6C066688555210351387, ID0x425/32KB,
+Cube2.11.0 SWD4MHz; both flash/verify/reset/run PASS. ProlificCOM5/115200 actual
+RX66 lines run01,71 run02 PASS. Initial UTCinvalid correctly handled; set/tick,
+sim isolation/leap/year/month/zone/multi-day/events/bad input PASS. Natural real
+midnight exactly once; reset preserves RTC, run02 fromsim/-03:30 resets volatile
+context toreal/+08 and rejects simadvance. No backup reset performed.
+Both runs sleep10/60: RTCelapsed10/60, RTC_WUT, STOP entered, WUT stopped,
+UART recovered. Run02 hostwall~9.297/59.813s (1Hz edge-phase uncertainty, not
+minimum wall duration guarantee). No debugger commands during timed sleeps.
+Read-only end probe validates RCC_CSR1C050300, PRER007F00FF, CR4/ISR37 (WUT
+and WUTF off), BKP2signature/BKP3UTCfloor, other BKPs0. Cube-r32 length uses
+bytes; initial run02 partial RTCdump supplemented by full100B inspector PASS.
+
+Final UTC restored from Windows PC clock to2026-10-24T18:47:07Z, localOct25
+02:47:07/+08; hostdifference~0.086s at check. W32Time service not running:
+source explicitly recorded, NTP/absolute UTC accuracy and long-term drift NOT
+verified. Complete power-loss retention not tested, no independent VBAT path
+documented in this package pinmap. Fault injection (LSE/foreign source/backup),
+forced early/unknown wake, current and battery-life checks deferred, not PASS.
+
+Evidence FW/TimeManagementTest/tests/results: host/build JSON, two full UART
+sessions, read-only register JSON. Instrument/power state unchanged, NO PPK2
+or other measurement instrument opened, COM6/7 untouched. UART closed, target
+left running real UTC with+08 context; no helper running. Next: optional user
+terminal status/sim/sleep acceptance per README; future bring-up may reuse
+getApplicationTime. No known stage3 failures/blocker; retain source and use
+fresh supply/port confirmation on another computer. Handoff saved locally.
+
+
+## 2026-10-25: FeedbackTest stage 2 implemented and accepted
+
+PC-02 / TripleC, main at fdacaf6, existing clean baseline preserved. Added only
+FW/FeedbackTest (sketch, pure logic, README, constexpr checks, bench script and
+JSON evidence) plus this handoff, machine profile and HIL notes. No commit/push;
+user's earlier publication cancellation remains in effect. Old tests unchanged.
+
+PA15 red active High; single-ended passive piezo PA0/R20 to A, B/R19 grounded,
+PA1 Low, 2kHz/50% TIM2_CH1 AF2 from existing successful piezo test. User freshly
+confirmed same board/single-ended wiring. Hardware summary's old pending rows
+are historical, not evidence against detailed prior HIL. Blue PA5/PA8 share
+TIM2_CH1 and cannot concurrently use 1kHz PWM with this 2kHz carrier; future
+single-owner arbitration required. TIM22 red-independent; no blue retest here.
+
+Implements red/success/nfc/remind/error/off/status/help, fixed parser/TX queue,
+nonblocking rhythm/carrier, millis rollover, replacement/restart/cancel and
+informational/error input preservation. Only owned CH1 is stopped; base paused
+only without other channels/DIER users. TIM2 clock stays enabled, STOP deferred.
+Read README for exact durations and TIM2 idle/reservation integration limits.
+
+Build/constexpr PASS, STM32duino3.0.0 + ARM GCC14.2.1, existing Generic L031G6Ux
+LTO FQBN. Arduino Flash17012B/staticRAM2184B; actual binary17232B including
+sections omitted by Arduino regex. Minimum heap/stack reserve1536B, peak unknown.
+SHA256598bfce9ce2acd17a7fd34c6882ab08f266c719896e0463eb55bdd99c0c5df5e.
+Local build C:/Users/Edward/AppData/Local/Temp/Pebo-FeedbackTest-20261025.
+
+Fresh STLINK56FF6C066688555210351387, target0x425/32KB, Cube2.11.0/SWD4MHz:
+flash/verify/reset/run PASS. ProlificCOM5/115200: bench01 553 and bench02 539
+real PC UART round trips PASS; patterns/counts/timing (host-sampled tolerance),
+replacement/restart/off/help/status/error/overflow/NUL/CRLF verified. Second
+run strengthens unchanged quiet-phase check. No MCU TX-buffer proxy used.
+SWD end states in all runs: PA0/PA1/PA15 Output Low, PA4 High, TIM2 CEN/CCER/
+DIER all off. Visual01 ends naturally after error before register check.
+User responded "沒問題, 目前可以接受" to all red/count/sync/volume/tone questions.
+Human acceptance separate JSON preserves original automated logs unchanged.
+
+User superseded no-PPK request with explicit supply permission, confirmed
+CR2032 removed/sole PPK source/common GND. COM7/HW1518 set2800mV; no current
+measurement started. Every run finally sent OFF, UART/PPK handles closed;
+physical OFF voltage unmeasured, no helper process left. Not a power budget.
+Evidence FW/FeedbackTest/tests/results (3 session JSONs/build/human acceptance).
+Raw register bins/build images remain ignored/local, decoded words in JSON.
+Next: no further acoustic acceptance needed for this initial test; future
+integration must arbitrate TIM2, then separately validate STOP and LIS2
+interference/pulse loads. No outstanding stage2 test failures or firmware blocker.
+
 
 ## 2026-10-25: Full workspace Git publication authorized
 

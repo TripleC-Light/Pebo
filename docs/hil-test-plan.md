@@ -1,5 +1,61 @@
 # Bench automation plan
 
+## 2026-10-25: Stage5 final validation complete (PC-02 TripleC)
+
+Final image2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2.
+See [stage5 final report](../FW/NativeShakeProgressTest/VALIDATION.md) for exact
+evidence, resource analysis, historical failures and remaining limits. This
+completed entry supersedes the in-progress status below, preserved as history.
+Bottle cohort: intentional shakes10/10, normal pickup false displays0/10,
+slow tilt false displays0/3; continuous shaking one non-extended display.
+User confirms final0..8 LED ordering/brightness/zero double flash correct.
+Flash/verify/readback/UART/parser, RTC valid ordinary-reset retention,
+run10/60, RF awake/STOP, sequential motion+RF, off/restart and cleanup PASS.
+Flash23996/staticRAM3256; minstack1024/heap0, peak stack NOT_MEASURED.
+Final board off/debug, sources/display/PWM/sampling off, RTC valid, progress7;
+UART closed. User2.8V supply unchanged; no instruments or power measurement.
+Branch main, baseline820ecb3f2b9fb199ddf5cf95246698d4648b73b1/tag
+baseline/native-hal-eventloop-v1 retained. Stage5 only saved locally, no new
+commit/push; unrelated dirty files and conflicted HIL file preserved.
+Next: review prototype across bottle/fill/mount variants, clipping and stack;
+fault/race stress, exact overlapping events and power remain unverified.
+Earlier power loss invalidated RTC markers; final explicit PC UTC/reset PASS
+does not establish power-off retention. Historical RF root cause remains OPEN.
+
+2026-10-25 supply restored:2ae93c94... controls-sustain02 flash/verify/full
+readback/UART/sample cancellation/invalid noninterference/off/debug/re-run PASS.
+Bottle now physically mounted in intended product direction (user says);
+mount+algorithm changed, separate cohort. RTC marker0/timeValid0 after supply
+interruption honestly reported; final valid UTC/reset repeat pending. New90s
+awake-pickup window running. No power/instrument action or new commit/push.
+
+## 2026-10-25: Stage5 latest - pickup recognition FAIL, new revision not flashed
+
+auto05/16272d9c PASS RTC valid reset retention, LED/UART/STOP10/60/restart and
+fresh149 diagnostic samples. Physical pickup5a: user normal pickup/place,
+first4 LEDs lit,4 false accepts, FAIL (fifth possibly after cutoff). Read-only
+45-sample prefix preserved. New20ms sustain/600ms span prefix-replay rejection
+is NOT fresh full-window physical proof. New2ae93c94... compiled23996Flash/
+3256staticRAM, minstack1024/heap0/peakunmeasured. controls-sustain flashing
+blocked by STLINK0.00V/no target; user asked to restore external supply. Board
+last verified16272d9c... off/debug, live state now unverified, UARTclosed.
+No instruments/optionbytes/backup reset. Next fresh positive/negative/tilt/
+continuous/RF/mixed tests after target restored. Failed JSON stays FAIL.
+
+## 2026-10-25: Stage5 native shake/progress, validation ongoing
+
+Independent FW/NativeShakeProgressTest/tests/results. auto01/02 passed initial
+UART/LED/RTC reset/run10/60 checks. auto03 diagnostic148 measured fresh XYZ +
+replay rejected PASS and idle restore PASS; total elapsed spuriously jumped24h,
+so NOT accepted cooldown evidence even though its original script said PASS.
+Fixed b2ad066f... applies ES0322 bounded SSR recheck/backward rejection and PC
+elapsed-anchor regression. auto04 PASS: flash/verify/readback, valid nonzero
+RTC reset retention with other backup markers unchanged, native LED states/
+timeouts/clocks off/GPIO low, parser, run10/60/off/restart,149 fresh diagnostic
+samples and idle CTRL1..6 restore. Physical motion/RF/mixed/visual10+10 trials
+still ongoing/pending; diagnostic observe is not motion/STOP wake evidence.
+User2.8V supply only; no instruments/power/optionbyte/backup-domain-reset.
+
 ## 2026-10-25: Native HAL feasibility comparison, finite HIL PASS
 
 Independent FW/NativeEventLoopStopTest B, no Arduino core link/RTOS; old A
@@ -63,6 +119,43 @@ falling withLPDHigh, waveform and current unverified. No measurement equipment
 opened; user supply only. Final off/debug, UART closed. RTC calendar invalid
 explicitly, periodic deadline functional; no backup/date reset. No whole-stage
 PASS until RF and combined stimuli succeed. Flash31480B/RAM2860B; see README.
+
+## 2026-10-25: Independent RTC / time management
+
+FW/TimeManagementTest stage3 build/host/HIL PASS on PC-02. HAL shipped with
+STM32duino3.0.0, LSE PC14/15, 127/255, WUT ck_spre. No backup reset/default
+valid date; BKP2/3 schema/floor allocation avoids core index1/HID4. First boot
+properly invalid until setutc. Host datetime oracle2400 vectors/7200 asserts
+plus input/range/context checks PASS (constexpr evaluated by host compiler).
+COM5 Prolific115200 RX66/71 lines; STLINK56FF6C066688555210351387 target0x425
+flash/verify/reset PASS. Date/weekday/leap/year/zone, sim isolation/multi-day,
+natural midnight once, no adjustment fake-day, invalid/overflow/partial/CRLF
+PASS. Ordinary reset retains RTC and resets volatile sim/zone context.
+sleep10/60 twice: RTCelapsed10/60, RTC_WUT evidence, UART restored/WUT disabled;
+real wall phase may be up to1s shorter, millis explicitly excludes STOP.
+End-of-test full100B RTC/register inspector PASS, no SWD during timed STOP.
+Final real UTC restored from PC Windows clock (+08 context), W32Time not
+running, no absolute UTC/drift claim. User manual2.8V; no PPK2/instrument
+control/current capture, supply unchanged, UART closed. No complete power-off
+retention, LSE/source/backup fault injection or forced early-wake test done.
+Evidence under new tests/results; existing bring-up tests preserved.
+
+## 2026-10-25: Independent red LED / piezo FeedbackTest
+
+FW/FeedbackTest build/constexpr/flash/verify PASS on PC-02. Existing toolchain,
+STLINK56FF6C066688555210351387, ProlificCOM5/115200. bench01 553 and strengthened
+bench02 539 actual UART round trips PASS: all effects, sampled timings/counts,
+switch/restart/off, help/status preservation, invalid/overlong/NUL/CRLF. Exact
+software boundaries/rollover checked by compiler; UART timing tolerates host
+latency and is not an electrical waveform measurement. SWD end states confirm
+PA0/PA1/PA15 Low and TIM2 CEN/CCER/DIER off, PA4 High; visual run ends naturally.
+User accepted red/sound counts/synchronization and current tone/volume. Evidence
+in new tests/results; prior sketches/evidence unchanged. Future blue/Piezo
+TIM2_CH1 conflicts require arbitration, not currently integrated.
+PPK2 initial prohibition was superseded by explicit user supply authorization
+and battery removal/sole source/common-GND confirmation. COM7/HW1518 source
+2800mV only, no current measurement started. OFF sent/ports closed after all
+runs; physical OFF voltage unmeasured. STOP/LIS2 interference/power deferred.
 
 2026-10-25 UART follow-up: user-controlled supply, no PPK/instrument access.
 ProlificCOM5/115200, LF resync then7/7 real PC RX replies PASS for help/8/off/

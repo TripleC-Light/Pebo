@@ -1,0 +1,2150 @@
+{
+  "result": "PASS",
+  "records": [
+    {
+      "kind": "identity",
+      "time": 7601.796,
+      "image_sha256": "104d8cd9e9f294541e40f3162392f2848d709119b9036975cbbd89f0bded3acf",
+      "port": {
+        "device": "COM5",
+        "name": "COM5",
+        "description": "Prolific USB-to-Serial Comm Port (COM5)",
+        "hwid": "USB VID:PID=067B:2303 SER= LOCATION=1-4.1:x.3",
+        "vid": 1659,
+        "pid": 8963,
+        "serial_number": "",
+        "location": "1-4.1:x.3",
+        "manufacturer": "Prolific",
+        "product": null,
+        "interface": null
+      },
+      "power": "USER_SUPPLIED",
+      "instruments": "NOT_OPENED"
+    },
+    {
+      "kind": "cube",
+      "time": 7601.937,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Under Reset\nReset mode  : Hardware reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n"
+    },
+    {
+      "kind": "cube",
+      "time": 7604.546,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=UR",
+        "freq=4000",
+        "reset=HWrst",
+        "-w",
+        "C:\\Users\\Edward\\AppData\\Local\\Temp\\Pebo-NativeShakeProgressTest-final-20261025\\NativeShakeProgressTest.bin",
+        "0x08000000",
+        "-v",
+        "-rst",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Under Reset\nReset mode  : Hardware reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\n\nMemory Programming ...\nOpening and parsing file: NativeShakeProgressTest.bin\n  File          : NativeShakeProgressTest.bin\n  Size          : 23.26 KB \n  Address       : 0x08000000 \n\n\nErasing memory corresponding to segment 0:\nErasing internal memory sectors [0 186]\nDownload in Progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\ufffd 19%\u8a57\u8a57\u8a57\u8a57\u8a57 38%\u8a57\u8a57\u8a57\u8a57\u8a57 58%\u8a57\u8a57\u8a57\u8a57\ufffd 77%\u8a57\u8a57\u8a57\u8a57\u8a57 96%\u8a57 100%\n\nFile download complete\nTime elapsed during download operation: 00:00:02.267\n\n\n\nVerifying ...\n\n\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 50%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\n\nDownload verified successfully \n\n\n\nMCU Reset\n\nSoftware reset is performed\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "cube",
+      "time": 7604.89,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-u",
+        "0x08000000",
+        "23816",
+        "G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\auto03\\readback.bin",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : G:\\Google Drive\\Application\\Project\\Pebo\\FW\\NativeShakeProgressTest\\tests\\results\\auto03\\readback.bin\n  Size          : 23816 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.146\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 7605.234,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7605.25,
+      "text": "OK mode=debug rtc=1/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7605.265,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7605.484,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7605.5,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7605.75,
+      "command": "'setutc 2026-10-25 04:04:25'"
+    },
+    {
+      "kind": "RX",
+      "time": 7605.765,
+      "text": "OK setutc"
+    },
+    {
+      "kind": "RX",
+      "time": 7605.765,
+      "text": "CLOCK valid=1 utc=1792901065 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=1231 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 7606.0,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7606.015,
+      "text": "CLOCK valid=1 utc=1792901065 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=1473 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "cube",
+      "time": 7606.468,
+      "command": [
+        "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+        "-c",
+        "port=SWD",
+        "sn=56FF6C066688555210351387",
+        "mode=HOTPLUG",
+        "freq=4000",
+        "-rst",
+        "-score",
+        "-run"
+      ],
+      "exit": 0,
+      "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.71V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nMCU Reset\n\nSoftware reset is performed\nCore is running\nCore run\n"
+    },
+    {
+      "kind": "TX",
+      "time": 7607.14,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7607.156,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7607.421,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7607.437,
+      "text": "CLOCK valid=1 utc=1792901066 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=960 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "PASS reset_retention",
+      "time": 7607.671,
+      "before": {
+        "valid": "1",
+        "utc": "1792901065",
+        "lse": "1",
+        "bkp2": "544D0101",
+        "bkp3": "6ADD7FC9",
+        "monotonicMs": "1473",
+        "bkp0": "00000000",
+        "bkp1": "00000000",
+        "bkp4": "00000000"
+      },
+      "after": {
+        "valid": "1",
+        "utc": "1792901066",
+        "lse": "1",
+        "bkp2": "544D0101",
+        "bkp3": "6ADD7FC9",
+        "monotonicMs": "960",
+        "bkp0": "00000000",
+        "bkp1": "00000000",
+        "bkp4": "00000000"
+      },
+      "utc_source": "PC UTC clock; NTP accuracy not verified"
+    },
+    {
+      "kind": "TX",
+      "time": 7607.671,
+      "command": "'progress 0'"
+    },
+    {
+      "kind": "RX",
+      "time": 7607.687,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7607.921,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7607.937,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7607.953,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=0 display=1 pattern=01 pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7608.687,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7608.703,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7608.718,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7608.937,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7608.937,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7609.187,
+      "command": "'progress 1'"
+    },
+    {
+      "kind": "RX",
+      "time": 7609.203,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7609.453,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7609.468,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7609.484,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=1 display=1 pattern=01 pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7612.812,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7612.828,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7612.843,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=1 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7613.078,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7613.093,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7613.343,
+      "command": "'progress 2'"
+    },
+    {
+      "kind": "RX",
+      "time": 7613.343,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7613.609,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7613.625,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7613.64,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=2 display=1 pattern=02 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7616.953,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7616.968,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7616.984,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=2 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7617.218,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7617.234,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7617.468,
+      "command": "'progress 3'"
+    },
+    {
+      "kind": "RX",
+      "time": 7617.468,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7617.734,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7617.75,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7617.765,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=3 display=1 pattern=06 pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7621.093,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.109,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.125,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=3 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7621.343,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.359,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7621.609,
+      "command": "'progress 4'"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.609,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7621.875,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.89,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7621.906,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=4 display=1 pattern=0A pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7625.234,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7625.25,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7625.265,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=4 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7625.484,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7625.5,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7625.75,
+      "command": "'progress 5'"
+    },
+    {
+      "kind": "RX",
+      "time": 7625.75,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7626.015,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7626.031,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7626.046,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7629.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7629.39,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7629.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7629.625,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7629.64,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7629.89,
+      "command": "'progress 6'"
+    },
+    {
+      "kind": "RX",
+      "time": 7629.89,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7630.156,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7630.171,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7630.187,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=6 display=1 pattern=2A pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7633.515,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7633.531,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7633.546,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=6 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7633.781,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7633.796,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7634.046,
+      "command": "'progress 7'"
+    },
+    {
+      "kind": "RX",
+      "time": 7634.062,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7634.328,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7634.343,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7634.359,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=1 pattern=6A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7637.687,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7637.703,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7637.718,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7637.937,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7637.953,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7638.203,
+      "command": "'progress 8'"
+    },
+    {
+      "kind": "RX",
+      "time": 7638.203,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7638.453,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7638.468,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7638.484,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=8 display=1 pattern=AA pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7641.828,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7641.843,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7641.859,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=8 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7642.093,
+      "command": "'ledregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7642.109,
+      "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+    },
+    {
+      "kind": "TX",
+      "time": 7642.343,
+      "command": "'progress 5'"
+    },
+    {
+      "kind": "RX",
+      "time": 7642.343,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7643.109,
+      "command": "'show'"
+    },
+    {
+      "kind": "RX",
+      "time": 7643.109,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7643.859,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7643.875,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7643.89,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7644.109,
+      "command": "'progress 9'"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.125,
+      "text": "ERR invalid"
+    },
+    {
+      "kind": "TX",
+      "time": 7644.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.39,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7644.625,
+      "command": "'progress -1'"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.64,
+      "text": "ERR invalid"
+    },
+    {
+      "kind": "TX",
+      "time": 7644.89,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.906,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7644.921,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7645.156,
+      "command": "'progress 00'"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.156,
+      "text": "ERR invalid"
+    },
+    {
+      "kind": "TX",
+      "time": 7645.421,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.437,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.453,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7645.671,
+      "command": "'bad'"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.671,
+      "text": "ERR invalid"
+    },
+    {
+      "kind": "TX",
+      "time": 7645.937,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.953,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7645.968,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=1 pattern=1A pwm=1 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7646.218,
+      "command": "'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'"
+    },
+    {
+      "kind": "RX",
+      "time": 7646.218,
+      "text": "ERR too_long"
+    },
+    {
+      "kind": "TX",
+      "time": 7646.468,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7646.484,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7646.5,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7646.718,
+      "command": "b'show\\x00'"
+    },
+    {
+      "kind": "RX",
+      "time": 7646.734,
+      "text": "ERR invalid"
+    },
+    {
+      "kind": "TX",
+      "time": 7646.984,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.0,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.015,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=5 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.281,
+      "text": "OK display"
+    },
+    {
+      "kind": "TX",
+      "time": 7647.562,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.562,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7647.812,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.828,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=0 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7647.843,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7648.062,
+      "command": "'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "time": 7648.078,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "time": 7648.328,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7648.343,
+      "text": "CLOCK valid=1 utc=1792901107 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86441871 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 7648.578,
+      "command": "'run 10'"
+    },
+    {
+      "kind": "RX",
+      "time": 7648.593,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 7648.75,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 7648.75,
+      "stimulus": "none",
+      "seconds": 10
+    },
+    {
+      "kind": "RX",
+      "time": 7658.765,
+      "text": "RUN_END reason=deadline requested=10 elapsed=10 stops=10 unknownWake=0 lastLis=00 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "time": 7658.765,
+      "text": "COUNT source=rtc isr=11 wake=10 confirmed=11 handled=11 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7658.781,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7658.781,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7658.781,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 7658.796,
+      "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7659.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7659.39,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=10 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7659.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7659.625,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7659.64,
+      "text": "CLOCK valid=1 utc=1792901118 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86453175 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "RUN_RESULT",
+      "time": 7659.875,
+      "summary": {
+        "reason": "deadline",
+        "requested": "10",
+        "elapsed": "10",
+        "stops": "10",
+        "unknownWake": "0",
+        "lastLis": "00",
+        "lastSt": "00"
+      },
+      "counts": {
+        "rtc": {
+          "source": "rtc",
+          "isr": "11",
+          "wake": "10",
+          "confirmed": "11",
+          "handled": "11",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "motion": {
+          "source": "motion",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "gpo": {
+          "source": "gpo",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        }
+      },
+      "shake": {
+        "entries": "0",
+        "windows": "0",
+        "confirmed": "0",
+        "rejected": "0",
+        "errors": "0",
+        "samples": "0",
+        "reversals": "0",
+        "peak2": "0"
+      }
+    },
+    {
+      "kind": "TX",
+      "time": 7659.875,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7659.875,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7660.125,
+      "command": "'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "time": 7660.125,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "time": 7660.39,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7660.406,
+      "text": "CLOCK valid=1 utc=1792901119 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86453929 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 7660.64,
+      "command": "'run 60'"
+    },
+    {
+      "kind": "RX",
+      "time": 7660.671,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 7660.75,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 7660.75,
+      "stimulus": "none",
+      "seconds": 60
+    },
+    {
+      "kind": "RX",
+      "time": 7720.765,
+      "text": "RUN_END reason=deadline requested=60 elapsed=60 stops=60 unknownWake=0 lastLis=00 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "time": 7720.765,
+      "text": "COUNT source=rtc isr=61 wake=60 confirmed=61 handled=61 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7720.781,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7720.781,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7720.781,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 7720.796,
+      "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7721.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7721.39,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=60 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7721.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7721.625,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7721.64,
+      "text": "CLOCK valid=1 utc=1792901180 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86515164 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "RUN_RESULT",
+      "time": 7721.875,
+      "summary": {
+        "reason": "deadline",
+        "requested": "60",
+        "elapsed": "60",
+        "stops": "60",
+        "unknownWake": "0",
+        "lastLis": "00",
+        "lastSt": "00"
+      },
+      "counts": {
+        "rtc": {
+          "source": "rtc",
+          "isr": "61",
+          "wake": "60",
+          "confirmed": "61",
+          "handled": "61",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "motion": {
+          "source": "motion",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "gpo": {
+          "source": "gpo",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        }
+      },
+      "shake": {
+        "entries": "0",
+        "windows": "0",
+        "confirmed": "0",
+        "rejected": "0",
+        "errors": "0",
+        "samples": "0",
+        "reversals": "0",
+        "peak2": "0"
+      }
+    },
+    {
+      "kind": "TX",
+      "time": 7721.875,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7721.89,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7722.14,
+      "command": "'counters clear'"
+    },
+    {
+      "kind": "RX",
+      "time": 7722.156,
+      "text": "OK counters_clear"
+    },
+    {
+      "kind": "TX",
+      "time": 7722.406,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7722.421,
+      "text": "CLOCK valid=1 utc=1792901181 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86515953 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "TX",
+      "time": 7722.687,
+      "command": "'run 1'"
+    },
+    {
+      "kind": "RX",
+      "time": 7722.703,
+      "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+    },
+    {
+      "kind": "RX",
+      "time": 7722.75,
+      "text": "RUN_READY rtc_probe=1"
+    },
+    {
+      "kind": "WINDOW_READY",
+      "time": 7722.75,
+      "stimulus": "none",
+      "seconds": 1
+    },
+    {
+      "kind": "RX",
+      "time": 7723.765,
+      "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=1 unknownWake=0 lastLis=00 lastSt=00"
+    },
+    {
+      "kind": "RX",
+      "time": 7723.765,
+      "text": "COUNT source=rtc isr=2 wake=1 confirmed=2 handled=2 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7723.765,
+      "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7723.781,
+      "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+    },
+    {
+      "kind": "RX",
+      "time": 7723.781,
+      "text": "END counters"
+    },
+    {
+      "kind": "RX",
+      "time": 7723.796,
+      "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7724.375,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7724.39,
+      "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7724.406,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+    },
+    {
+      "kind": "TX",
+      "time": 7724.656,
+      "command": "'clock'"
+    },
+    {
+      "kind": "RX",
+      "time": 7724.671,
+      "text": "CLOCK valid=1 utc=1792901183 lse=1 bkp2=544D0101 bkp3=6ADD7FC9 monotonicMs=86518203 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+    },
+    {
+      "kind": "RUN_RESULT",
+      "time": 7724.906,
+      "summary": {
+        "reason": "deadline",
+        "requested": "1",
+        "elapsed": "1",
+        "stops": "1",
+        "unknownWake": "0",
+        "lastLis": "00",
+        "lastSt": "00"
+      },
+      "counts": {
+        "rtc": {
+          "source": "rtc",
+          "isr": "2",
+          "wake": "1",
+          "confirmed": "2",
+          "handled": "2",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "motion": {
+          "source": "motion",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        },
+        "gpo": {
+          "source": "gpo",
+          "isr": "0",
+          "wake": "0",
+          "confirmed": "0",
+          "handled": "0",
+          "errors": "0",
+          "unknown": "0"
+        }
+      },
+      "shake": {
+        "entries": "0",
+        "windows": "0",
+        "confirmed": "0",
+        "rejected": "0",
+        "errors": "0",
+        "samples": "0",
+        "reversals": "0",
+        "peak2": "0"
+      }
+    },
+    {
+      "kind": "TX",
+      "time": 7724.906,
+      "command": "'observe'"
+    },
+    {
+      "kind": "RX",
+      "time": 7724.906,
+      "text": "OK observe diagnostic_not_motion_wake"
+    },
+    {
+      "kind": "RX",
+      "time": 7726.406,
+      "text": "SHAKE_NOT_CONFIRMED"
+    },
+    {
+      "kind": "TX",
+      "time": 7727.187,
+      "command": "'lisregs'"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.203,
+      "text": "LISREG ok=1 ctrl1=20 ctrl2=0C ctrl3=10 ctrl4=20 ctrl5=00 ctrl6=00"
+    },
+    {
+      "kind": "TX",
+      "time": 7727.453,
+      "command": "'trace'"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.453,
+      "text": "TRACE_BEGIN units=LP1_counts time=observation_ms"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 27 -4 -126 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 35 0 -140 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 47 -8 -126 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 54 5 -126 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 66 2 -141 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.468,
+      "text": "SAMPLE 74 -3 -123 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 86 -1 -126 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 97 4 -138 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 105 -1 -131 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 117 1 -127 963"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 125 -7 -139 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 136 -2 -134 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 144 6 -124 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.484,
+      "text": "SAMPLE 156 -1 -133 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.5,
+      "text": "SAMPLE 164 3 -130 952"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.5,
+      "text": "SAMPLE 176 -1 -130 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.5,
+      "text": "SAMPLE 183 1 -130 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.5,
+      "text": "SAMPLE 195 -10 -129 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.5,
+      "text": "SAMPLE 207 -6 -132 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 215 -2 -130 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 226 -4 -135 963"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 234 1 -128 947"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 246 -5 -124 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 254 -2 -138 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 265 2 -130 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 273 -4 -127 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.515,
+      "text": "SAMPLE 285 3 -140 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 293 4 -138 947"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 304 -6 -130 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 316 -1 -129 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 324 0 -136 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 336 5 -125 951"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 344 5 -131 964"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.531,
+      "text": "SAMPLE 355 -7 -139 967"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 363 0 -132 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 375 -1 -138 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 383 -1 -139 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 394 9 -127 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 406 1 -131 966"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.546,
+      "text": "SAMPLE 414 -8 -129 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 426 -2 -131 965"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 433 5 -137 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 445 -4 -123 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 453 4 -140 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 465 3 -129 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 472 0 -136 966"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.562,
+      "text": "SAMPLE 484 2 -132 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 492 0 -137 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 504 9 -128 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 515 -2 -133 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 523 1 -138 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 535 -3 -120 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.578,
+      "text": "SAMPLE 543 -10 -132 952"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 554 -7 -127 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 562 8 -127 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 574 6 -132 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 582 -1 -136 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 594 -3 -127 964"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 601 -3 -129 965"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 613 2 -133 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.593,
+      "text": "SAMPLE 625 -10 -140 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 633 3 -132 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 644 3 -128 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 652 2 -125 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 664 -1 -131 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 672 1 -126 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.609,
+      "text": "SAMPLE 683 -1 -125 951"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 691 8 -133 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 703 -1 -132 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 715 2 -136 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 722 -1 -129 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 734 -4 -130 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 742 -9 -127 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.625,
+      "text": "SAMPLE 754 -3 -121 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 761 2 -134 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 773 -2 -133 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 781 -4 -124 963"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 793 0 -140 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 801 10 -128 947"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 812 5 -131 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.64,
+      "text": "SAMPLE 824 -1 -141 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 832 4 -127 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 844 7 -132 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 851 -5 -133 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 863 3 -135 964"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 871 4 -128 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.656,
+      "text": "SAMPLE 883 -5 -133 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 890 3 -139 952"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 902 -2 -122 951"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 910 4 -122 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 922 -7 -143 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 933 0 -125 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 941 -5 -127 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 953 -7 -124 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.671,
+      "text": "SAMPLE 961 3 -128 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.687,
+      "text": "SAMPLE 972 11 -130 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.687,
+      "text": "SAMPLE 980 -3 -125 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.687,
+      "text": "SAMPLE 992 4 -129 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.687,
+      "text": "SAMPLE 1000 -3 -134 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.687,
+      "text": "SAMPLE 1011 3 -127 966"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1023 -1 -134 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1031 6 -130 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1043 1 -126 963"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1051 -5 -136 951"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1062 -3 -132 952"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1070 11 -131 964"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1082 -3 -124 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.703,
+      "text": "SAMPLE 1090 8 -139 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.718,
+      "text": "SAMPLE 1101 -4 -135 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.718,
+      "text": "SAMPLE 1109 1 -135 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.718,
+      "text": "SAMPLE 1121 -5 -133 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.718,
+      "text": "SAMPLE 1133 -1 -135 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.718,
+      "text": "SAMPLE 1140 -9 -125 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1152 -1 -126 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1160 -3 -128 953"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1172 5 -129 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1179 0 -141 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1191 3 -133 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1199 0 -135 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.734,
+      "text": "SAMPLE 1211 -2 -137 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1219 -5 -143 967"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1230 5 -136 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1242 2 -126 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1250 -8 -133 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1261 9 -133 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1269 -1 -132 964"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.75,
+      "text": "SAMPLE 1281 1 -134 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1289 -1 -128 950"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1301 3 -131 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1308 -9 -129 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1320 -1 -130 949"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1328 4 -120 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.765,
+      "text": "SAMPLE 1340 6 -125 956"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1351 3 -116 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1359 8 -120 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1371 5 -125 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1379 -1 -128 955"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1390 -7 -132 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1398 -11 -131 957"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.781,
+      "text": "SAMPLE 1410 0 -139 958"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1418 1 -129 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1429 -3 -141 952"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1441 1 -140 951"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1449 0 -130 962"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1461 1 -145 954"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.796,
+      "text": "SAMPLE 1469 -4 -133 960"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.812,
+      "text": "SAMPLE 1480 2 -120 961"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.812,
+      "text": "SAMPLE 1488 2 -136 959"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.812,
+      "text": "TRACE_END"
+    },
+    {
+      "kind": "PASS bounded_observation",
+      "time": 7727.812,
+      "rows": 148,
+      "limits": "Explicit awake acquisition, not physical motion ISR/wake evidence"
+    },
+    {
+      "kind": "TX",
+      "time": 7727.812,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7727.812,
+      "text": "OK off"
+    },
+    {
+      "kind": "PASS auto",
+      "time": 7728.062,
+      "limits": "LED optics not observed; no peak stack/power claims"
+    },
+    {
+      "kind": "TX",
+      "time": 7728.062,
+      "command": "'off'"
+    },
+    {
+      "kind": "RX",
+      "time": 7728.078,
+      "text": "OK off"
+    },
+    {
+      "kind": "TX",
+      "time": 7728.312,
+      "command": "'status'"
+    },
+    {
+      "kind": "RX",
+      "time": 7728.328,
+      "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=1 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+    },
+    {
+      "kind": "RX",
+      "time": 7728.343,
+      "text": "APP version=NativeShakeProgressTest-v1 progress=7 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=148"
+    }
+  ]
+}

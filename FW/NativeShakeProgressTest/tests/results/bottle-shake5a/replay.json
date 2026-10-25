@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "samples": 89,
+  "expected": "confirmed",
+  "trace": "FW\\NativeShakeProgressTest\\tests\\results\\bottle-shake5a\\trace.json",
+  "compiler_output": "",
+  "method": "Actual detector constexpr on measured XYZ/timestamps, not synthetic data"
+}

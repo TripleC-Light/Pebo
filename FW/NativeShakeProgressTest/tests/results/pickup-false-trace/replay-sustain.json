@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "samples": 45,
+  "expected": "rejected",
+  "trace": "FW\\NativeShakeProgressTest\\tests\\results\\pickup-false-trace\\trace.json",
+  "compiler_output": "",
+  "method": "Actual detector constexpr on measured XYZ/timestamps, not synthetic data"
+}

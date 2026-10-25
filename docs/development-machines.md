@@ -1,5 +1,67 @@
 # Development machine registry
 
+## 2026-10-25: Stage5 publication checkpoint
+
+User authorizes commit/push. PC-02 TripleC, branch main; fetched origin and
+confirmed remote main is an ancestor (no force push needed). Scoped publication
+contains NativeShakeProgressTest source, ST timer sources/licenses, reproducible
+build settings, host/HIL scripts and actual evidence, plus related handoff/HIL
+records. Existing FeedbackTest/TimeManagementTest untracked work and conflicted
+HIL copy are excluded and preserved. Earlier local baseline/history will also
+be published by the normal main push. Final push result is verified against
+remote HEAD and reported in chat; this entry records publication scope.
+No firmware edits or new physical tests during publication; prior validated
+image2ae93c94... and off/debug/UART-closed state are last observed, not freshly
+measured. No instruments operated. Next steps remain prototype robustness,
+stack/fault/race/power validation, not additional functionality.
+
+## 2026-10-25: Stage5 final validation complete (PC-02 TripleC)
+
+Final image2ae93c94b3038495a94f9af0101a858ac326cdcc8427ec7c3f88d162f5828ed2.
+See [stage5 final report](../FW/NativeShakeProgressTest/VALIDATION.md) for exact
+evidence, resource analysis, historical failures and remaining limits. This
+completed entry supersedes the in-progress status below, preserved as history.
+Bottle cohort: intentional shakes10/10, normal pickup false displays0/10,
+slow tilt false displays0/3; continuous shaking one non-extended display.
+User confirms final0..8 LED ordering/brightness/zero double flash correct.
+Flash/verify/readback/UART/parser, RTC valid ordinary-reset retention,
+run10/60, RF awake/STOP, sequential motion+RF, off/restart and cleanup PASS.
+Flash23996/staticRAM3256; minstack1024/heap0, peak stack NOT_MEASURED.
+Final board off/debug, sources/display/PWM/sampling off, RTC valid, progress7;
+UART closed. User2.8V supply unchanged; no instruments or power measurement.
+Branch main, baseline820ecb3f2b9fb199ddf5cf95246698d4648b73b1/tag
+baseline/native-hal-eventloop-v1 retained. Stage5 only saved locally, no new
+commit/push; unrelated dirty files and conflicted HIL file preserved.
+Next: review prototype across bottle/fill/mount variants, clipping and stack;
+fault/race stress, exact overlapping events and power remain unverified.
+Earlier power loss invalidated RTC markers; final explicit PC UTC/reset PASS
+does not establish power-off retention. Historical RF root cause remains OPEN.
+
+2026-10-25 PC-02 supply-restored follow-up: user2.8V/STLINK2.73V, same serial/
+COM5;2ae93c94... flash/verify/readback and controls-sustain02 PASS. Now mounted
+to bottle in intended product orientation (user confirmed), axes not measured.
+RTC markers/timeValid actually0 after supply interruption, not a valid default;
+final UTC/reset retest pending. Bottle pickup90s debug test ongoing, UART held
+only by bounded helper/finally off-close. No instruments or new commit/push.
+
+2026-10-25 PC-02 latest stage5: native3256staticRAM/23996Flash2ae93c94... compiled,
+not flashed: STLINK0.00V/no target on controls-sustain attempt; awaiting user
+supply/VTref confirmation, no instruments operated. Last verified16272d9c...
+off/debug/UARTclosed; live MCU state unverified. auto05 RTC/LED/run10/60 PASS,
+normal pickup first4 falsely light (user confirmed), recognition FAIL. New20ms
+direction dwell/600ms span rejects old truncated prefix only, fresh physical
+positives/negatives/RF/mixed pending. All stage5 local/uncommitted; baseline
+820ecb3/tag preserved/no push. Canonical handoff and operator notes have evidence.
+
+2026-10-25 PC-02/TripleC stage5 resumed after usage limit: main820ecb3 and
+annotated native HAL baseline saved/no push. Independent NativeShakeProgressTest
+uncommitted; GCC14.2.1/HAL1.10.7 build repeated b2ad066f...23888Flash/3240staticRAM.
+Peakstack unmeasured, min1024/heap0. Fixed RTC elapsed backward snapshot bug;
+auto04 in progress after user re-confirms2.8V/COM5/STLINK/reset authorization.
+Current measured STLINK2.73V, same serial56FF6C066688555210351387, ID425/RevX.
+No instruments/power changes. Bottle-relative sensor axes user says unconfirmed.
+COM5 temporarily owned by bounded bench; finally off/debug/closed. See handoff.
+
 2026-10-25 PC-02/TripleC native B recovery capture: user authorizes scoped commit
 and annotated baseline/native-hal-eventloop-v1 only, no push. Preserve unrelated
 FeedbackTest/stage3 work; vendor byte hashes protected against line conversion.
@@ -45,6 +107,31 @@ and FW/EventLoopStopTest/tests/results. User supply2.8V unchanged; no PPK2 or
 other instruments opened, final off/debug, UART closed, no helper running.
 RTC timeValid0 correctly reported; no calendar/backup reset or calibration.
 Next resolve RF physical wake path and Flash headroom, then RF/mixed retest.
+
+2026-10-25 PC-02 / TripleC TimeManagementTest: main fdacaf6, no commit/push;
+prior FeedbackTest preserved. Existing STM32duino3.0.0/GCC14.2.1/LTO build PASS:
+ArduinoFlash21220B/actualimage21440B, staticRAM2880B, minheap/stack1536B, peak
+unmeasured. Host datetime2400 vectors/7200 constexpr assertions+boundary PASS.
+Fresh STLINK56FF6C066688555210351387/ID0x425/32KB, Cube2.11.0/SWD4MHz flash/
+verify/ordinaryreset PASS; COM5Prolific115200 RX66/71 lines, LSE/RTC/ticking/
+sim/real-date/context/reset/STOP10+60/UARTrecovery PASS. Full end-register
+probe PASS; backup domain never reset, BKP2/3 used without core index1 conflict.
+User supplies2.8V and authorizes MCUreset; no PPK2/instruments/COM6/7 opened.
+Supply unchanged, UART closed, no helper left running. RTC restored to PC
+Windows UTC2026-10-24T18:47:07Z/+08 local; W32Time not running, NTP accuracy
+unverified. Power-loss retention/drift/fault injection/current not tested.
+New folder and HIL/handoff/profile saved locally; see canonical handoff/README.
+
+2026-10-25 PC-02 / TripleC FeedbackTest: main fdacaf6, no commit/push. Same
+STM32duino3.0.0/GCC14.2.1/LTO build PASS; Arduino Flash17012B, actual image17232B,
+staticRAM2184B, minimum heap/stack reserve1536B (not peak). constexpr checks PASS.
+Fresh STLINK56FF6C066688555210351387/0x425/32KB, Cube2.11.0 SWD4MHz flash/verify
+PASS. ProlificCOM5/115200 bench01 553 and bench02 539 actual UART replies PASS;
+visual01 accepted by user (red, sound counts/sync/tone/volume). New FeedbackTest
+and relevant handoff/HIL files saved locally. User authorized PPK2 supply-only
+COM7/HW1518/2800mV and confirmed sole source/battery removal/common GND; every
+run sent OFF, ports closed, no helper remains. No current capture or independent
+OFF voltage measurement. Future blue/Piezo TIM2_CH1 arbitration remains required.
 
 2026-10-25 PC-02 / TripleC publication: local work committed in `b3adc7b`;
 remote updates through `c8dd924` integrated by `d6d9f2b`. Push is blocked by

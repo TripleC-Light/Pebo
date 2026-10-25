@@ -1,5 +1,15 @@
 # Development machine registry
 
+## 2026-10-25: GitHub authentication resolved; main published
+
+User completed device login. Normal git push origin main succeeded:
+remote main advanced c8dd924..3283604, including stage5 commit128d941 and
+native baseline history. Earlier authentication blocker below is resolved.
+This follow-up records successful publication; remote HEAD checked after its
+own push. Baseline annotated tag remains local, not explicitly pushed.
+Unrelated FeedbackTest/TimeManagementTest files and conflicted HIL copy remain
+untracked and preserved. No firmware, UART, target power or instrument action.
+
 ## 2026-10-25: Commit saved; push blocked by GitHub authentication
 
 Stage5 commit128d941f0c81c40e1cb0ad388f8817f40f65c13d saved on main.

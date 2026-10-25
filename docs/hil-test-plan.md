@@ -1,5 +1,14 @@
 # Bench automation plan
 
+## 2026-10-26: Supplemental evidence publication
+
+Supplement dbe4fe482976bb4e499bd01cee99a940acbcfc69 pushed to origin/main
+and independently verified after user authorization. No new physical validation
+or firmware change during publication. Empty10single/10pickup and cancellation
+evidence/limitations remain as recorded below; water tests deferred, deadline
+gesture confirmation pending.60new evidence files published;59JSON parse,
+Python syntax and diff checks PASS. No instrument operation or new tag.
+
 ## 2026-10-26: Stage6 supplemental cohort; session ended
 
 SESSION END: user declines water. Final supplement10independent empty singles

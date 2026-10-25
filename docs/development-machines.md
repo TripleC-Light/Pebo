@@ -1,5 +1,17 @@
 # Development machine registry
 
+## 2026-10-26: PC-02 TripleC supplemental publication
+
+main supplemental commit dbe4fe482976bb4e499bd01cee99a940acbcfc69 pushed
+to origin/main and verified by ls-remote after explicit user authorization.
+Host tools/evidence/docs only; no firmware or new physical checks.59JSON files
+parse, Python syntax and staged diff checks PASS. Existing maintenance
+packed-refs.lock warning untouched; commit/push succeeded. Unrelated untracked
+tests/conflicted HIL copy preserved. No tags/force push/instrument operations.
+Board last09cdb9cc...3293 off/debug COM13closed, water tests deferred,
+deadline operator confirmation pending. Earlier local-only notes historical;
+this documentation follow-up records publication. Canonical handoff updated.
+
 ## 2026-10-26: PC-02 TripleC supplement ended; water deferred
 
 SESSION END: water tests explicitly deferred by user; empty cohorts complete,

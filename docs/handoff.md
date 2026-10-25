@@ -1,5 +1,21 @@
 # Pebo handoff log
 
+## 2026-10-26: Stage6 supplemental evidence committed and pushed
+
+PC-02 TripleC/main. User explicitly authorized commit/push after session closure.
+Supplement commit dbe4fe482976bb4e499bd01cee99a940acbcfc69 pushed to existing
+origin/main and directly verified with git ls-remote. This publication note is
+a documentation-only follow-up. Earlier local-only notes are historical.
+Scope: host bench/replay tools,60 evidence files, README/VALIDATION/supplement
+and handoff/machine/HIL records.59JSON parse checks, Python syntax and staged
+diff checks PASS; common secret-pattern scan no matches. No firmware/binaries,
+unrelated FeedbackTest/TimeManagementTest or conflicted HIL copy included.
+No tags/force push; existing packed-refs.lock maintenance warning untouched,
+commit/push succeeded. Board last09cdb9cc...3293 off/debug, UARTclosed; no new
+physical/instrument operation. Water testing deferred, deadline operator
+confirmation pending, peak stack NOT_MEASURED. Next work remains as below,
+no automatic stage7. Publication outcome checked via Git, not cloud folder.
+
 ## 2026-10-26: Stage6 supplement ended; water deferred (PC-02)
 
 SESSION END: user explicitly says no water this session. Actual drinking and

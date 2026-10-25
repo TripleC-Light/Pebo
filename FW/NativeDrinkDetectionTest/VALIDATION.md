@@ -1,5 +1,9 @@
 # Stage6 validation log (2026-10-25/26)
 
+Supplemental publication: dbe4fe482976bb4e499bd01cee99a940acbcfc69 pushed
+and verified on origin/main after explicit user authorization. Earlier local-only
+notes remain historical. No new firmware or physical validation during push.
+
 Supplemental session ended; see [separate cohort and remaining work](SUPPLEMENTAL_VALIDATION.md).
 Session ended with empty-bottle cohorts complete and real-water tests explicitly
 deferred by the user. Firmware unchanged. Cancellation automated checks pass;

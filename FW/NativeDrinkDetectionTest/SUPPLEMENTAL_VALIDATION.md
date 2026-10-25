@@ -1,5 +1,18 @@
 # Stage6 supplemental acceptance (2026-10-26)
 
+## Publication
+
+User subsequently explicitly authorized commit/push. Scoped supplemental
+commit dbe4fe482976bb4e499bd01cee99a940acbcfc69 was pushed to origin/main
+and verified with git ls-remote. Earlier local-only/no-commit notes below
+describe the acceptance session before this later authorization.
+Only tools,60 evidence files and related documentation were published;
+no firmware/binaries, unrelated tests or conflicted HIL copy were added.
+No tags or force push. JSON parsing59files, Python syntax and staged diff
+checks passed; common private-key/token pattern scan had no matches.
+No additional board/UART/instrument or recognition tests during publication.
+Existing packed-refs.lock maintenance warning preserved; commit/push succeeded.
+
 Session closed: user explicitly declines adding water this session. No water
 was added and no actual drinking was tested. Empty-bottle supplemental cohorts
 are complete; this is not closure of real-drinking or production accuracy.

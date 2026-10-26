@@ -1,0 +1,7 @@
+{
+  "result": "FAIL",
+  "test": "shake",
+  "config": "compact",
+  "operator_confirmation": "PENDING",
+  "scope": "EMPTY or stationary; actual intake unvalidated"
+}

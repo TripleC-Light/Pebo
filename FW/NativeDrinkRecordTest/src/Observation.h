@@ -1,4 +1,5 @@
 #pragma once
+#include "BuildConfig.h"
 #include "WakeSources.h"
 #include "DrinkLogic.h"
 #include "DrinkRecords.h"
@@ -8,12 +9,36 @@ constexpr uint8_t kObserveCtrl1=0x50,kDiscardSamples=2;
 constexpr uint32_t kPollMs=2,kFreshTimeoutMs=100,kCalibrationMs=2200,kTracePeriodMs=50;
 constexpr uint16_t kTraceCapacity=320;
 struct Row {uint16_t ms;Shake::Sample value;};
-// Mutually exclusive diagnostic owners; placement construction, no heap.
-union Diagnostics {Row trace[kTraceCapacity];Records::Store synthetic;constexpr Diagnostics():trace{}{} };
+#if PEBO_TRACE || PEBO_SYNTHETIC
+union Diagnostics {
+#if PEBO_TRACE
+  Row trace[kTraceCapacity];
+#endif
+#if PEBO_SYNTHETIC
+  Records::Store synthetic;
+#endif
+#if PEBO_TRACE
+  constexpr Diagnostics():trace{}{}
+#else
+  constexpr Diagnostics():synthetic{}{}
+#endif
+};
 static Diagnostics diagnostic;
+#if PEBO_TRACE
 static auto &trace=diagnostic.trace;
 static Row fresh{};
 static uint16_t rows=0,dumpAt=0;
+#else
+static constexpr uint16_t rows=0;
+#endif
+#else
+static constexpr uint16_t rows=0;
+#endif
+inline void clearTrace(){
+#if PEBO_TRACE
+  rows=0;
+#endif
+}
 static bool active=false,dumping=false,calibrating=false,capturing=false,freshReady=false;
 static bool shakeArmed=true;
 static bool accepted=false;
@@ -39,7 +64,11 @@ inline bool cancel(){
   cancelledWindows=bump(cancelledWindows);drink.abort();active=false;return restore();
 }
 inline bool begin(uint32_t now,bool cal=false,uint32_t duration=Drink::kObserveMs,bool capture=false){
-  Board::motionInterrupt(false);rows=0;dumping=false;discarded=failures=0;
+  Board::motionInterrupt(false);
+#if PEBO_TRACE
+  rows=0;
+#endif
+  dumping=false;discarded=failures=0;
   uint8_t stale[6];
   bool ok=WakeSources::write(0x19,0x23,false,0)&&WakeSources::write(0x19,0x20,false,kObserveCtrl1)&&
     Board::readBlock(0x19,0x28,stale,6);
@@ -75,9 +104,11 @@ inline uint8_t update(uint32_t now){
     int16_t(int16_t(uint16_t(raw[2])|(uint16_t(raw[3])<<8))/16),
     int16_t(int16_t(uint16_t(raw[4])|(uint16_t(raw[5])<<8))/16)};
   if(discarded<kDiscardSamples){++discarded;return 0;}
+#if PEBO_TRACE
   if(freshReady)traceDropped=bump(traceDropped);
   fresh={uint16_t(now-started),a};freshReady=capturing;
   if(int32_t(now-nextTrace)>=0&&rows<kTraceCapacity){trace[rows++]={uint16_t(now-started),a};nextTrace=now+kTracePeriodMs;}
+#endif
   if(calibrating){calibration.feed(a);return 0;}
   uint8_t outcome=Drink::coordinate(detector,drink,gate,shakeArmed,a,now);
   if(outcome==2){successes=bump(successes);accepted=true;}

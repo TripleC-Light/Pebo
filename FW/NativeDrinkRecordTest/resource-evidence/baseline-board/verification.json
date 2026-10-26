@@ -1,0 +1,10 @@
+{
+  "image_bytes": 32712,
+  "prefix_equal": true,
+  "full32k_sha256": "1e911996c6a277b394a72e20e36189e1d7532ef0abfbedf4f973caa088c1348b",
+  "tail_bytes": 56,
+  "tail_values": {
+    "0": 56
+  },
+  "image_sha256": "c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958"
+}

@@ -1,0 +1,145 @@
+{
+  "config": "compact",
+  "result": "PASS",
+  "samples": 3015,
+  "reference": [
+    43,
+    -1012,
+    -95
+  ],
+  "expected_candidates": 1,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\evidence\\20261026-supplement-single01\\raw.json",
+  "compiler_output": "",
+  "method": "Actual shared C++ constexpr coordinate/detectors; extracted compiled state transitions, not intake proof",
+  "source_sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+  "raw_sha256": "08eb5d82a164c7d23b56dfabe446d4c9053ef282956249792e0b4c9495b9cfb9",
+  "transitions": [
+    {
+      "ms": 3297,
+      "phase": "Tilt",
+      "event": 0
+    },
+    {
+      "ms": 4500,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7332,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7344,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7402,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7433,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7484,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7660,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7683,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7691,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7703,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7820,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7832,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7871,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7890,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 7949,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 7980,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 8117,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 8230,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 8238,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 8250,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 8258,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 8297,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 8797,
+      "phase": "Idle",
+      "event": 4
+    }
+  ],
+  "quality": {
+    "first_ms": 23,
+    "last_ms": 29992,
+    "max_gap_ms": 12,
+    "range_endpoint_axes": 0
+  }
+}

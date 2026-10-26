@@ -1,0 +1,479 @@
+{
+  "HAL_InitTick": [
+    "__udivsi3"
+  ],
+  "HAL_GPIO_Init": [],
+  "HAL_RCC_GetSysClockFreq": [
+    "__udivsi3"
+  ],
+  "HAL_RCC_GetPCLK1Freq": [],
+  "RTC_ByteToBcd2": [],
+  "UART_TxISR_16BIT.part.0": [],
+  "UART_TxISR_8BIT": [
+    "UART_TxISR_16BIT.part.0"
+  ],
+  "UART_TxISR_16BIT": [
+    "UART_TxISR_16BIT.part.0"
+  ],
+  "lock()": [],
+  "(anonymous namespace)::startTx()": [],
+  "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)": [
+    "HAL_GPIO_Init"
+  ],
+  "Board::motionHigh()": [],
+  "Board::gpoHigh()": [],
+  "SystemClock_Config": [
+    "HAL_InitTick",
+    "HAL_RCC_GetSysClockFreq"
+  ],
+  "TimeTest::leap(int)": [
+    "__aeabi_idivmod"
+  ],
+  "TimeTest::monthDays(int, int)": [
+    "TimeTest::leap(int)"
+  ],
+  "TimeTest::epoch(TimeTest::Date const&)": [
+    "TimeTest::leap(int)",
+    "TimeTest::monthDays(int, int)"
+  ],
+  "TimeTest::date(unsigned long)": [
+    "TimeTest::leap(int)",
+    "TimeTest::monthDays(int, int)",
+    "__aeabi_uidivmod",
+    "__udivsi3"
+  ],
+  "DeadlineRtc::configuration()": [],
+  "DeadlineRtc::decimal(unsigned long)": [],
+  "DeadlineRtc::bcd(unsigned long)": [],
+  "DeadlineRtc::stop()": [],
+  "AppTime::update(bool)": [
+    "DeadlineRtc::bcd(unsigned long)",
+    "DeadlineRtc::configuration()",
+    "DeadlineRtc::decimal(unsigned long)",
+    "__aeabi_uidivmod"
+  ],
+  "Progress::release()": [
+    "HAL_GPIO_Init",
+    "memset"
+  ],
+  "Progress::apply()": [
+    "HAL_GPIO_Init",
+    "Progress::release()",
+    "memset"
+  ],
+  "Progress::showProgress()": [
+    "Progress::apply()"
+  ],
+  "Drink::upright(Shake::Sample, Shake::Sample)": [
+    "__aeabi_lmul"
+  ],
+  "record(EventLoop::Source)": [
+    "lock()"
+  ],
+  "freeTx()": [],
+  "queue(char const*)": [
+    "freeTx()"
+  ],
+  "drain() [clone .part.0]": [
+    "(anonymous namespace)::startTx()",
+    "lock()"
+  ],
+  "Text::Buffer::put(char)": [],
+  "Text::number(Text::Buffer&, unsigned long, unsigned int, unsigned int, bool, bool)": [
+    "Text::Buffer::put(char)",
+    "__aeabi_uidivmod",
+    "memset"
+  ],
+  "Records::Store::ensure() [clone .constprop.0]": [],
+  "Records::Store::clear() [clone .constprop.0]": [
+    "Records::Store::ensure() [clone .constprop.0]",
+    "memset"
+  ],
+  "Records::Store::initialize() [clone .constprop.0]": [
+    "memset"
+  ],
+  "Drink::Detector::abort() [clone .constprop.0]": [],
+  "Shake::Detector::begin(unsigned long) [clone .constprop.0]": [
+    "memset"
+  ],
+  "DeadlineRtc::clock(unsigned long&) [clone .constprop.0]": [
+    "DeadlineRtc::bcd(unsigned long)",
+    "DeadlineRtc::configuration()",
+    "DeadlineRtc::decimal(unsigned long)"
+  ],
+  "TimeTest::prefix(char const*, char const*) [clone .constprop.0]": [],
+  "TimeTest::valid(TimeTest::Date const&, int, int) [clone .constprop.0]": [
+    "TimeTest::monthDays(int, int)"
+  ],
+  "DeadlineRtc::timeValid()": [
+    "DeadlineRtc::bcd(unsigned long)",
+    "DeadlineRtc::configuration()",
+    "DeadlineRtc::decimal(unsigned long)",
+    "TimeTest::epoch(TimeTest::Date const&)",
+    "TimeTest::valid(TimeTest::Date const&, int, int) [clone .constprop.0]",
+    "__aeabi_uidivmod",
+    "__udivsi3"
+  ],
+  "AppTime::epoch(unsigned long&) [clone .constprop.0]": [
+    "DeadlineRtc::decimal(unsigned long)",
+    "DeadlineRtc::timeValid()",
+    "TimeTest::epoch(TimeTest::Date const&)"
+  ],
+  "wallStamp()": [
+    "AppTime::epoch(unsigned long&) [clone .constprop.0]"
+  ],
+  "EventLoop::equal(char const*, char const*) [clone .constprop.0]": [],
+  "HAL_UART_Receive_IT.constprop.0": [],
+  "HAL_UART_ErrorCallback": [
+    "HAL_UART_Receive_IT.constprop.0"
+  ],
+  "UART_DMAAbortOnError": [
+    "HAL_UART_ErrorCallback"
+  ],
+  "HAL_UART_RxCpltCallback.part.0": [
+    "HAL_UART_Receive_IT.constprop.0"
+  ],
+  "UART_RxISR_8BIT": [
+    "HAL_UART_RxCpltCallback.part.0"
+  ],
+  "UART_RxISR_16BIT": [
+    "HAL_UART_RxCpltCallback.part.0"
+  ],
+  "UART_EndRxTransfer.constprop.0": [],
+  "UART_WaitOnFlagUntilTimeout.constprop.0": [
+    "UART_EndRxTransfer.constprop.0"
+  ],
+  "Board::Console::begin(unsigned long) [clone .constprop.0]": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "HAL_RCC_GetPCLK1Freq",
+    "HAL_RCC_GetSysClockFreq",
+    "HAL_UART_Receive_IT.constprop.0",
+    "UART_WaitOnFlagUntilTimeout.constprop.0",
+    "__aeabi_uldivmod",
+    "__udivsi3",
+    "lock()"
+  ],
+  "RTC_EnterInitMode.constprop.0": [],
+  "HAL_RTC_WaitForSynchro.constprop.0": [],
+  "RTC_ExitInitMode.constprop.0": [
+    "HAL_RTC_WaitForSynchro.constprop.0"
+  ],
+  "I2C_IsErrorOccurred.constprop.0": [],
+  "I2C_WaitOnSTOPFlagUntilTimeout.constprop.0": [
+    "I2C_IsErrorOccurred.constprop.0"
+  ],
+  "I2C_WaitOnFlagUntilTimeout.constprop.0": [
+    "I2C_IsErrorOccurred.constprop.0"
+  ],
+  "I2C_WaitOnTXISFlagUntilTimeout.constprop.0": [
+    "I2C_IsErrorOccurred.constprop.0"
+  ],
+  "I2C_TransferConfig.constprop.0": [],
+  "HAL_I2C_Mem_Read.part.0.constprop.0": [
+    "I2C_TransferConfig.constprop.0",
+    "I2C_WaitOnFlagUntilTimeout.constprop.0",
+    "I2C_WaitOnSTOPFlagUntilTimeout.constprop.0",
+    "I2C_WaitOnTXISFlagUntilTimeout.constprop.0"
+  ],
+  "HAL_I2C_DeInit.constprop.0.isra.0": [],
+  "Board::beginBus()": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "HAL_I2C_DeInit.constprop.0.isra.0"
+  ],
+  "Board::read(unsigned char, unsigned short, bool, unsigned char&)": [
+    "Board::beginBus()",
+    "HAL_I2C_Mem_Read.part.0.constprop.0"
+  ],
+  "Board::write(unsigned char, unsigned short, bool, unsigned char)": [
+    "Board::beginBus()",
+    "I2C_TransferConfig.constprop.0",
+    "I2C_WaitOnFlagUntilTimeout.constprop.0",
+    "I2C_WaitOnSTOPFlagUntilTimeout.constprop.0",
+    "I2C_WaitOnTXISFlagUntilTimeout.constprop.0"
+  ],
+  "WakeSources::configureMotion()": [
+    "Board::read(unsigned char, unsigned short, bool, unsigned char&)",
+    "Board::write(unsigned char, unsigned short, bool, unsigned char)",
+    "memcpy"
+  ],
+  "WakeSources::stopMotion()": [
+    "Board::write(unsigned char, unsigned short, bool, unsigned char)"
+  ],
+  "Board::readBlock(unsigned char, unsigned char, unsigned char*, unsigned char) [clone .constprop.0]": [
+    "Board::beginBus()",
+    "HAL_I2C_Mem_Read.part.0.constprop.0"
+  ],
+  "Board::endBus()": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "HAL_I2C_DeInit.constprop.0.isra.0"
+  ],
+  "Records::Store::change(Records::Stamp, short) [clone .constprop.0] [clone .isra.0]": [
+    "Records::Store::ensure() [clone .constprop.0]",
+    "__udivsi3"
+  ],
+  "Records::Store::observe(Records::Stamp) [clone .constprop.0] [clone .isra.0]": [
+    "Records::Store::change(Records::Stamp, short) [clone .constprop.0] [clone .isra.0]",
+    "Records::Store::ensure() [clone .constprop.0]",
+    "__udivsi3"
+  ],
+  "recordClock(bool)": [
+    "Records::Store::change(Records::Stamp, short) [clone .constprop.0] [clone .isra.0]",
+    "Records::Store::observe(Records::Stamp) [clone .constprop.0] [clone .isra.0]",
+    "queue(char const*)",
+    "wallStamp()"
+  ],
+  "Records::Pending::candidate(Records::Stamp, Records::Store&) [clone .constprop.0] [clone .isra.0]": [],
+  "Records::Pending::confirm(Records::Store&, Records::Stamp, bool) [clone .constprop.0] [clone .isra.0]": [
+    "__udivsi3"
+  ],
+  "WakeSources::StAccess::StAccess() [clone .isra.0]": [],
+  "WakeSources::stopGpo()": [
+    "Board::write(unsigned char, unsigned short, bool, unsigned char)",
+    "WakeSources::StAccess::StAccess() [clone .isra.0]"
+  ],
+  "Board::motionInterrupt(bool) [clone .part.0]": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)"
+  ],
+  "Board::motionInterrupt(bool)": [
+    "Board::motionInterrupt(bool) [clone .part.0]"
+  ],
+  "Observation::restore()": [
+    "Board::motionInterrupt(bool)",
+    "WakeSources::configureMotion()"
+  ],
+  "Observation::begin(unsigned long, bool, unsigned long, bool) [clone .constprop.0]": [
+    "Board::motionInterrupt(bool)",
+    "Board::readBlock(unsigned char, unsigned char, unsigned char*, unsigned char) [clone .constprop.0]",
+    "Board::write(unsigned char, unsigned short, bool, unsigned char)",
+    "Shake::Detector::begin(unsigned long) [clone .constprop.0]",
+    "memcpy",
+    "memset"
+  ],
+  "detachSource(EventLoop::Source)": [
+    "Board::motionInterrupt(bool)"
+  ],
+  "quarantine(EventLoop::Source, char const*)": [
+    "DeadlineRtc::stop()",
+    "WakeSources::stopGpo()",
+    "WakeSources::stopMotion()",
+    "detachSource(EventLoop::Source)"
+  ],
+  "cancelApplication(char const*)": [
+    "Drink::Detector::abort() [clone .constprop.0]",
+    "Observation::restore()",
+    "Progress::apply()",
+    "quarantine(EventLoop::Source, char const*)",
+    "queue(char const*)"
+  ],
+  "stopEventSources()": [
+    "Board::endBus()",
+    "DeadlineRtc::stop()",
+    "WakeSources::stopGpo()",
+    "WakeSources::stopMotion()",
+    "cancelApplication(char const*)",
+    "detachSource(EventLoop::Source)",
+    "lock()"
+  ],
+  "initializeEventSources()": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "Board::motionInterrupt(bool) [clone .part.0]",
+    "Board::read(unsigned char, unsigned short, bool, unsigned char&)",
+    "Board::write(unsigned char, unsigned short, bool, unsigned char)",
+    "DeadlineRtc::configuration()",
+    "DeadlineRtc::stop()",
+    "WakeSources::StAccess::StAccess() [clone .isra.0]",
+    "WakeSources::configureMotion()",
+    "WakeSources::stopGpo()",
+    "WakeSources::stopMotion()",
+    "__udivsi3",
+    "stopEventSources()"
+  ],
+  "Text::format(char*, unsigned int, char const*, ...)": [
+    "Text::Buffer::put(char)",
+    "Text::number(Text::Buffer&, unsigned long, unsigned int, unsigned int, bool, bool)"
+  ],
+  "counters()": [
+    "Text::format(char*, unsigned int, char const*, ...)",
+    "lock()",
+    "queue(char const*)"
+  ],
+  "drinkReport()": [
+    "Text::format(char*, unsigned int, char const*, ...)",
+    "queue(char const*)"
+  ],
+  "finishRun(char const*)": [
+    "Board::Console::begin(unsigned long) [clone .constprop.0]",
+    "Board::endBus()",
+    "DeadlineRtc::stop()",
+    "Text::format(char*, unsigned int, char const*, ...)",
+    "cancelApplication(char const*)",
+    "queue(char const*)"
+  ],
+  "clockReport()": [
+    "AppTime::epoch(unsigned long&) [clone .constprop.0]",
+    "DeadlineRtc::configuration()",
+    "Text::format(char*, unsigned int, char const*, ...)",
+    "queue(char const*)"
+  ],
+  "service()": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "AppTime::update(bool)",
+    "Board::Console::begin(unsigned long) [clone .constprop.0]",
+    "Board::endBus()",
+    "Board::gpoHigh()",
+    "Board::motionHigh()",
+    "Board::read(unsigned char, unsigned short, bool, unsigned char&)",
+    "Board::readBlock(unsigned char, unsigned char, unsigned char*, unsigned char) [clone .constprop.0]",
+    "DeadlineRtc::clock(unsigned long&) [clone .constprop.0]",
+    "DeadlineRtc::stop()",
+    "DeadlineRtc::timeValid()",
+    "Drink::Detector::abort() [clone .constprop.0]",
+    "Drink::upright(Shake::Sample, Shake::Sample)",
+    "EventLoop::equal(char const*, char const*) [clone .constprop.0]",
+    "Observation::begin(unsigned long, bool, unsigned long, bool) [clone .constprop.0]",
+    "Observation::restore()",
+    "Progress::apply()",
+    "Progress::showProgress()",
+    "RTC_ByteToBcd2",
+    "RTC_EnterInitMode.constprop.0",
+    "RTC_ExitInitMode.constprop.0",
+    "Records::Pending::candidate(Records::Stamp, Records::Store&) [clone .constprop.0] [clone .isra.0]",
+    "Records::Pending::confirm(Records::Store&, Records::Stamp, bool) [clone .constprop.0] [clone .isra.0]",
+    "Records::Store::clear() [clone .constprop.0]",
+    "Shake::Detector::begin(unsigned long) [clone .constprop.0]",
+    "SystemClock_Config",
+    "Text::format(char*, unsigned int, char const*, ...)",
+    "TimeTest::date(unsigned long)",
+    "TimeTest::epoch(TimeTest::Date const&)",
+    "TimeTest::prefix(char const*, char const*) [clone .constprop.0]",
+    "TimeTest::valid(TimeTest::Date const&, int, int) [clone .constprop.0]",
+    "WakeSources::StAccess::StAccess() [clone .isra.0]",
+    "__aeabi_idivmod",
+    "__aeabi_lmul",
+    "__aeabi_uidivmod",
+    "__divsi3",
+    "__gnu_thumb1_case_uhi",
+    "__gnu_thumb1_case_uqi",
+    "__udivsi3",
+    "cancelApplication(char const*)",
+    "clockReport()",
+    "counters()",
+    "drain() [clone .part.0]",
+    "drinkReport()",
+    "finishRun(char const*)",
+    "freeTx()",
+    "initializeEventSources()",
+    "lock()",
+    "memcpy",
+    "memset",
+    "quarantine(EventLoop::Source, char const*)",
+    "queue(char const*)",
+    "recordClock(bool)",
+    "service()+0x10aa",
+    "service()+0x1b68",
+    "service()+0x1b74",
+    "service()+0x1b78",
+    "service()+0x1b82",
+    "service()+0x1b8e",
+    "service()+0x1bba",
+    "service()+0x1f1e",
+    "service()+0x1f26",
+    "service()+0x1f5e",
+    "service()+0x1f6a",
+    "service()+0x1f76",
+    "service()+0x1f98",
+    "service()+0x1fa0",
+    "service()+0x2b2",
+    "service()+0x476",
+    "service()+0x490",
+    "service()+0x496",
+    "service()+0x4a8",
+    "service()+0x70",
+    "service()+0xd4e",
+    "service()+0xe72",
+    "service()+0xe78",
+    "service()+0xec",
+    "service()+0xf2",
+    "service()+0xf28",
+    "service()+0xfbe",
+    "stopEventSources()",
+    "strlen",
+    "wallStamp()"
+  ],
+  "SystemInit": [],
+  "USART2_IRQHandler": [
+    "(anonymous namespace)::startTx()",
+    "HAL_UART_ErrorCallback",
+    "UART_DMAAbortOnError",
+    "UART_EndRxTransfer.constprop.0"
+  ],
+  "SysTick_Handler": [],
+  "_init": [],
+  "RTC_IRQHandler": [
+    "record(EventLoop::Source)"
+  ],
+  "EXTI0_1_IRQHandler": [
+    "record(EventLoop::Source)"
+  ],
+  "EXTI2_3_IRQHandler": [
+    "record(EventLoop::Source)"
+  ],
+  "main": [
+    "(anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)",
+    "AppTime::update(bool)",
+    "Board::Console::begin(unsigned long) [clone .constprop.0]",
+    "DeadlineRtc::configuration()",
+    "DeadlineRtc::stop()",
+    "HAL_InitTick",
+    "HAL_RTC_WaitForSynchro.constprop.0",
+    "Progress::apply()",
+    "RTC_EnterInitMode.constprop.0",
+    "RTC_ExitInitMode.constprop.0",
+    "Records::Store::initialize() [clone .constprop.0]",
+    "SystemClock_Config",
+    "initializeEventSources()",
+    "queue(char const*)",
+    "recordClock(bool)",
+    "service()"
+  ],
+  "Reset_Handler": [
+    "SystemInit"
+  ],
+  "CopyDataInit": [],
+  "LoopCopyDataInit": [],
+  "FillZerobss": [],
+  "LoopFillZerobss": [
+    "__libc_init_array",
+    "main"
+  ],
+  "LoopForever": [],
+  "ADC1_COMP_IRQHandler": [],
+  "__libc_init_array": [
+    "_init"
+  ],
+  "memset": [],
+  "memcpy": [],
+  "strlen": [],
+  "__gnu_thumb1_case_uqi": [],
+  "__gnu_thumb1_case_uhi": [],
+  "__udivsi3": [
+    "__aeabi_idiv0"
+  ],
+  "__aeabi_uidivmod": [],
+  "__divsi3": [
+    "__aeabi_idiv0"
+  ],
+  "__aeabi_idivmod": [],
+  "__aeabi_idiv0": [],
+  "__aeabi_uldivmod": [
+    "__udivmoddi4"
+  ],
+  "__aeabi_lmul": [],
+  "__udivmoddi4": [
+    "__clzdi2"
+  ],
+  "__clzdi2": [
+    "__clzsi2"
+  ],
+  "__clzsi2": []
+}

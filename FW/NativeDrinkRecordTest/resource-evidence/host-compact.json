@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "config": "compact",
+  "method": "actual ARM executable on host Unicorn, compared against linked newlib-nano snprintf; no physical hardware/stack peak",
+  "unicorn": "2.1.3",
+  "formats": 23,
+  "golden_cases": 621,
+  "invalid_formats": 5,
+  "core": "same RecordChecks/LogicChecks/ConfigChecks, plus runtime pure-policy entry",
+  "format_source_sha256": "c801a09dd66380c4cdd8305f2235b345a23e44539330ce39fa07dbf65835e801"
+}

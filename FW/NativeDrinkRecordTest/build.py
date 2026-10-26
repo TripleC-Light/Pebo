@@ -58,16 +58,22 @@ def analyze(elf, tool):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--toolchain-bin", type=Path)
-    ap.add_argument("--build-dir", type=Path, default=ROOT/"build")
+    ap.add_argument("--config",required=True,choices=["diagnostic","compact"])
+    ap.add_argument("--measure-without",action="append",choices=["trace","synthetic","dumps","verbose"],default=[],help="diagnostic resource experiment only; not a full diagnostic image")
+    ap.add_argument("--build-dir", type=Path)
     ap.add_argument("--baseline-elf", type=Path)
     args = ap.parse_args()
+    if args.config=="compact" and args.measure_without:ap.error("measurement exclusions require diagnostic")
+    variant=args.config+("-no-"+"-".join(sorted(args.measure_without)) if args.measure_without else "")
+    defines=["-DPEBO_DIAGNOSTIC="+str(int(args.config=="diagnostic")), '-DPEBO_BUILD_NAME="'+variant+'"']
+    defines += ["-DPEBO_"+f.upper()+"=0" for f in args.measure_without]
     directory = args.toolchain_bin or (Path(os.environ["ARM_GCC_BIN"]) if "ARM_GCC_BIN" in os.environ else None)
     def tool(name):
         candidate = (directory/("arm-none-eabi-"+name+(".exe" if os.name=="nt" else ""))) if directory else shutil.which("arm-none-eabi-"+name)
         if not candidate or not Path(candidate).is_file():
             raise RuntimeError("GCC tools required: put them on PATH or pass --toolchain-bin")
         return str(candidate)
-    out = args.build_dir.resolve()
+    out = (args.build_dir or ROOT/"build"/variant).resolve()
     out.mkdir(parents=True, exist_ok=True)
     manifest = json.loads((BASE/"vendor/manifest.json").read_text(encoding="utf-8-sig"))
     for item in manifest:
@@ -77,7 +83,7 @@ def main():
     flags = ["-mcpu=cortex-m0plus","-mthumb","-mfloat-abi=soft","-Os","-flto",
              "-ffunction-sections","-fdata-sections","-fstack-usage","-g3",
              "-DSTM32L031xx","-DUSE_HAL_DRIVER","-DUSER_VECT_TAB_ADDRESS",
-             "-Wall","-Wextra"]
+             "-Wall","-Wextra",*defines]
     for item in json.loads((ROOT/"vendor/manifest.json").read_text()):
         if hashlib.sha256((ROOT/"vendor"/item["path"]).read_bytes()).hexdigest() != item["sha256"]:
             raise RuntimeError("TIM vendor hash mismatch")
@@ -98,7 +104,7 @@ def main():
         commands.append([str(x) for x in cmd])
         run(cmd)
         objects.append(obj)
-    elf = out/"NativeDrinkRecordTest.elf"
+    elf = out/("NativeDrinkRecordTest-"+variant+".elf")
     cmd = [tool("g++"),*flags,"--specs=nano.specs","--specs=nosys.specs","-nostartfiles",
            "-T",ROOT/"stm32l031.ld",*objects,"-Wl,--gc-sections,--cref",
            "-Wl,-Map="+str(elf.with_suffix(".map")),"-Wl,--print-memory-usage",
@@ -119,19 +125,20 @@ def main():
         assert int.from_bytes(image[index*4:index*4+4],'little')==(address|1),(index,name)
         if index!=1:assert kind in 'Tt',name
     # Actual reused pure policies are evaluated by compiler on the host.
-    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",
+    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",*defines,
          ROOT.parent/"EventLoopStopTest/tests/LogicChecks.cpp"])
-    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",ROOT/"tests/LogicChecks.cpp"])
-    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",ROOT/"tests/RecordChecks.cpp"])
+    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",*defines,ROOT/"tests/LogicChecks.cpp"])
+    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",*defines,ROOT/"tests/RecordChecks.cpp"])
+    run([tool("g++"),"-std=gnu++17","-Wall","-Wextra","-Werror","-fsyntax-only",*defines,ROOT/"tests/ConfigChecks.cpp"])
     for p in ROOT.glob("*.py"):
-        ast.parse(p.read_text())
-    own = "\n".join(p.read_text() for p in (ROOT/"src").glob("*")) + (ROOT/"include/Board.h").read_text()
+        ast.parse(p.read_text(encoding="utf8"))
+    own = "\n".join(p.read_text(encoding="utf8") for p in (ROOT/"src").glob("*")) + (ROOT/"include/Board.h").read_text()
     if re.search(r"#include\s*[<\"](?:Arduino|Wire)|\b(?:setup|loop|millis|analogWrite|digitalWrite|pinMode)\s*\(", own):
         raise RuntimeError("Arduino dependency in native sources")
-    report = dict(compiler=run([tool("gcc"),"--version"]).splitlines()[0], commands=commands,
+    report = dict(config=args.config,variant=variant,features_excluded=args.measure_without,compiler=run([tool("gcc"),"--version"]).splitlines()[0], commands=commands,
                   native=analyze(elf,tool), host_checks="PASS; actual EventLogic, LED, Shake, Drink, calibration, merge, AppParser, elapsed and RecordChecks (compile-time execution) boundaries; synthetic logic only, not physical recognition/races",
                   vector_checks='PASS: stack/reset/SysTick/RTC/EXTI0/EXTI3/USART2, no weak IRQ fallback',
-                  c_library='newlib-nano4.4.0, integer snprintf; no forced printf_float; nosys; _sbrk rejects allocation',
+                  c_library='bounded Text::format integer subset; no stdio formatting; nosys _sbrk rejects allocation; actual symbols checked in report',
                   image_sha256=hashlib.sha256(elf.with_suffix(".bin").read_bytes()).hexdigest(),
                   heap_bytes=0, minimum_stack_bytes=1024, peak_stack="NOT_MEASURED",
                   vendor_files=len(manifest)+2, baseline_vendor_files=len(manifest), added_tim_vendor_files=2)

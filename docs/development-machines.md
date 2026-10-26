@@ -1,5 +1,67 @@
 # Development machine registry
 
+## 2026-10-26: Resource profile publication authorized
+
+PC-02 TripleC/main. User explicitly authorized commit/push after resource-work closure.
+Pre-publication HEAD aac139c matches freshly fetched origin/main (0 ahead/behind).
+Source manifest, Python syntax/evidence JSON and final image hashes rechecked; diff check PASS.
+Only NativeDrinkRecordTest resource implementation/tests/evidence/docs plus canonical
+handoff/current-machine/HIL are in publication scope. No source changes or new hardware,
+UART, flash/reset or instrument operation during publication. Last verified board remains
+compact1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1,
+off/debug/UART closed (prior validated closure; not reconnected here). Unrelated
+FeedbackTest/TimeManagementTest/conflicted HIL copy preserved. Earlier local-only notes
+below describe validation-time history. Publication outcome will be recorded after push.
+
+## 2026-10-26: Post-stage7 diagnostic / compact resource work (local only)
+
+PC-02 TripleC, Windows/Git2.46.2.windows.1/Python3.12.10/xPack ARM GCC14.2.1.
+HEAD/main aac139c32a1fa5df927ae05d053e1cad55bbb59b; remote main directly verified equal.
+Baseline1001ea0 rebuilt32712B/c648aef… and actual full32KB1e911996… matched.
+Authorized annotated checkpoint/native-drink-record-v1 pushed normally: tag05f3aa1a… ->1001ea0.
+Annotation correction: it says FF tail, but verified baseline has56 ZERO bytes (00).
+Initial FF assertion failed; shell continued to authorized tag push. Hash/source were correct;
+tag not overwritten. Exact corrective evidence is resource-evidence/baseline-board/verification.json.
+Stage7 prior empty-motion evidence partly predates final output fix; original scope preserved.
+
+Same core/thresholds/32 records/four summaries/Board/startup/linker; new BuildConfig + bounded
+TextFormat, conditional diagnostic parser/trace/test/dump paths, deferred bounded counters.
+Explicit build --config diagnostic|compact, no silent default. Final diagnostic31096 Flash,
+.data24/.bss5820/static5844; compact27684 Flash,.data24/.bss3232/static3256 (5084 Flash spare,
+below~6KiB target). Heap0/minstack1024; peak NOT_MEASURED. Partial diagnostic stack chain1064B
+exceeds minimum reservation; no safety proof or arbitrary free-RAM feature budget.
+Independent builds reproducible, both policy/parser/records tests and621 formatter cases pass;
+same15 saved empty RAW clips replay identically. Rejected compiler/parser experiments retained.
+
+Real HIL selected STLINK56FF6C066688555210351387 and Prolific COM13 verified (067b/2303).
+Diagnostic: flash/verify/readback/identity,40 isolated synthetic records/32 retained/8 overwritten,
+leap-day summaries/query/parser/clear/isolation; capture5 RAW501/trace92/dropped0. Compact:
+flash/verify/readback, disabled commands,run10/60 (70 STOP,unknownWake0/errors0),24 awake
+queries across run deadline complete; one user-confirmed empty event ->1 record, shake
+progress5~3s/no added record, off cancels candidate/no later stale event, off/debug/run retain,
+ordinary MCU reset clears nonempty RAM/seq but valid RTC/BKP stays. RF awake3 confirms,
+STOP3 new wakes/confirms/errors0/unknown0; user confirmed both phone windows/bottle still.
+Shake harness trailing-space assertion fixed, original failure/raw log retained, reanalysis PASS;
+no firmware change or repeated motion. Diagnostic/compact physical coverage differs; no blanket
+physical equivalence, water acceptance, power, NFC application or runtime stack claims.
+
+Final board COMPACT27684B SHA256:
+1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1
+Full32KB read SHA256:
+195f2b7ac873fb15db2349d5d038302e0d95815e90b6f322ba2b79a5ada616e8
+New prefix/last-page00 and untouched older trailing pages verified (no full-chip erase).
+Last off/debug, rtc/motion/GPO sources0/0, PA4 lpd1, PWM/display/sampling0, valid RTC,
+records/seq0 and calibration invalid after normal reset. UART closed; finite helpers exited.
+User supply/hardware/option bytes/backup domain unchanged; PPK2/other instruments not opened,
+no power measurement. MCP Bridge untouched. No owned persistent process or pending operator action.
+
+Changed FW/NativeDrinkRecordTest build.py/main/parser/Observation/LogicChecks plus BuildConfig,
+TextFormat, resource host/replay/HIL helpers/evidence, README/VALIDATION and RESOURCE_REPORT /
+RESOURCE_VALIDATION; canonical handoff/current-machine/HIL updated. All resource changes saved
+locally only, NO resource commit/push. Existing unrelated FeedbackTest/TimeManagementTest and
+conflicted HIL copy preserved. Next: review resource report; scoped stage8 design may begin only
+on request, budget Flash/stack carefully and separately validate actual water later. No stage8 added.
+
 ## 2026-10-26: Stage7 publication confirmed
 
 PC-02 TripleC/main. User explicitly authorized commit/push after stage7 closure.

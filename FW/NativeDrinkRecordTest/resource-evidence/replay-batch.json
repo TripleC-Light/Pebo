@@ -1,0 +1,167 @@
+[
+  {
+    "name": "20261026-supplement-single01",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single01/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single02",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single02/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single03",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single03/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single04-retry",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single04-retry/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single05",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single05/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single06",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single06/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single07",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single07/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single08",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single08/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single09",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single09/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-single10",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-single10/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 1,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-pickup5a",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-pickup5a/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 0,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-supplement-pickup5b",
+    "raw": "FW/NativeDrinkDetectionTest/evidence/20261026-supplement-pickup5b/raw.json",
+    "reference": [
+      43,
+      -1012,
+      -95
+    ],
+    "candidates": 0,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-three1-retry",
+    "raw": "FW/NativeDrinkDetectionTest/tests/results/20261026-three1-retry/raw.json",
+    "reference": [
+      21,
+      -1013,
+      -109
+    ],
+    "candidates": 3,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-three2",
+    "raw": "FW/NativeDrinkDetectionTest/tests/results/20261026-three2/raw.json",
+    "reference": [
+      21,
+      -1013,
+      -109
+    ],
+    "candidates": 3,
+    "shakes": 0
+  },
+  {
+    "name": "20261026-three3",
+    "raw": "FW/NativeDrinkDetectionTest/tests/results/20261026-three3/raw.json",
+    "reference": [
+      21,
+      -1013,
+      -109
+    ],
+    "candidates": 3,
+    "shakes": 0
+  }
+]

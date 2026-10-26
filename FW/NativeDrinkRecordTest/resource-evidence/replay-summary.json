@@ -1,0 +1,217 @@
+{
+  "result": "PASS",
+  "clips_per_profile": 15,
+  "runs": [
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single01",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "08eb5d82a164c7d23b56dfabe446d4c9053ef282956249792e0b4c9495b9cfb9"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single02",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "16ae80bbf5d7480bb13cb7efe04c7b951da12ec7f1010f773f45d7a6d503aadb"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single03",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "942fde31192071a49d1b0d39c5ef5ade02d92dd698443d91e3029d31ce8a7caa"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single04-retry",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "6ecfec9fceec644192ca3b3a1ab0495e1c7c227c89293c87625aeb39eb78245e"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single05",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "bffb15ed20d45d820edcea82774ffaefcfa4d8e1941d04703d2b329b12f0b5f0"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single06",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "634be790ed2597ac36cf134d61591b39eb75c77ea2fbd12b825256252d65042d"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single07",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "081c398699497bec3dc1f59eafe29cffd56f70799cb84570ed6934b326426ca8"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single08",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "c730c83233e19fd01550f8c68989efc2d5f6540ce0b882933328abe4bfbe3274"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single09",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "9aeedc2957cc30baf3e6c736344614277986fa5108b3dd3cb72a4ab0ae42050a"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-single10",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "7d39bd4bfcd93a897e61e63a0170e293d8d5faf7327be2271c6cbb9a0b1ccceb"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-pickup5a",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "37694ad7e44a7d3986eaa8835aee06c7a3d18f116502643e117a997d19f01ee3"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-supplement-pickup5b",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "4acf0c25ab32726820f118d11ea4bb1a4a108931992fda1c36616cacc01244d6"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-three1-retry",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "64d33a559f08ec5330bb1d46b39ed4691eeff205a0e1768bc0bdace098c1c975"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-three2",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "2a214291967c62ddc0b2b172d8c6f68e2743e101416270332eb81f78d136be0a"
+    },
+    {
+      "config": "diagnostic",
+      "name": "20261026-three3",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "8f667d70abf92f2d1b9a4e1dec13685a4542e7c065ee0b1b2a535da6d1620d19"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single01",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "08eb5d82a164c7d23b56dfabe446d4c9053ef282956249792e0b4c9495b9cfb9"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single02",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "16ae80bbf5d7480bb13cb7efe04c7b951da12ec7f1010f773f45d7a6d503aadb"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single03",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "942fde31192071a49d1b0d39c5ef5ade02d92dd698443d91e3029d31ce8a7caa"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single04-retry",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "6ecfec9fceec644192ca3b3a1ab0495e1c7c227c89293c87625aeb39eb78245e"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single05",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "bffb15ed20d45d820edcea82774ffaefcfa4d8e1941d04703d2b329b12f0b5f0"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single06",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "634be790ed2597ac36cf134d61591b39eb75c77ea2fbd12b825256252d65042d"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single07",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "081c398699497bec3dc1f59eafe29cffd56f70799cb84570ed6934b326426ca8"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single08",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "c730c83233e19fd01550f8c68989efc2d5f6540ce0b882933328abe4bfbe3274"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single09",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "9aeedc2957cc30baf3e6c736344614277986fa5108b3dd3cb72a4ab0ae42050a"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-single10",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "7d39bd4bfcd93a897e61e63a0170e293d8d5faf7327be2271c6cbb9a0b1ccceb"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-pickup5a",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "37694ad7e44a7d3986eaa8835aee06c7a3d18f116502643e117a997d19f01ee3"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-supplement-pickup5b",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "4acf0c25ab32726820f118d11ea4bb1a4a108931992fda1c36616cacc01244d6"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-three1-retry",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "64d33a559f08ec5330bb1d46b39ed4691eeff205a0e1768bc0bdace098c1c975"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-three2",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "2a214291967c62ddc0b2b172d8c6f68e2743e101416270332eb81f78d136be0a"
+    },
+    {
+      "config": "compact",
+      "name": "20261026-three3",
+      "result": "PASS",
+      "samples": 3015,
+      "raw_sha256": "8f667d70abf92f2d1b9a4e1dec13685a4542e7c065ee0b1b2a535da6d1620d19"
+    }
+  ],
+  "scope": "saved EMPTY motion, not real intake"
+}

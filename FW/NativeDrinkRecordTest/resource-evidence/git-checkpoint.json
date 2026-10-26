@@ -1,0 +1,7 @@
+{
+  "head": "aac139c32a1fa5df927ae05d053e1cad55bbb59b",
+  "remote": "aac139c32a1fa5df927ae05d053e1cad55bbb59b\trefs/heads/main\n05f3aa1a61dcb2b6e05f300befa7c3bc0b51eeec\trefs/tags/checkpoint/native-drink-record-v1\n1001ea0e34e51ccb73634a40e177a938b0ddcde0\trefs/tags/checkpoint/native-drink-record-v1^{}\n",
+  "annotation": "object 1001ea0e34e51ccb73634a40e177a938b0ddcde0\ntype commit\ntag checkpoint/native-drink-record-v1\ntagger TripleC-Light <noreply@github.com> 1793006057 +0800\n\nVerified stage7 RAM record baseline; GCC14.2.1 rebuild32712 bytes SHA256 c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958; full32KB readback1e911996c6a277b394a72e20e36189e1d7532ef0abfbedf4f973caa088c1348b with FF tail. StaticRAM5940,minstack1024,heap0,peak not measured. Some manual empty-bottle evidence belongs to pre-output-fix image9f5a869f, not final-image retests; water deferred.\n",
+  "annotation_correction": "baseline tail is 56 bytes00, not FF; hashes/source correct; tag not overwritten",
+  "resource_changes_committed": false
+}

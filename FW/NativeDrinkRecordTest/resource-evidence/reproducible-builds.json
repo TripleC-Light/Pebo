@@ -1,0 +1,12 @@
+[
+  {
+    "config": "diagnostic",
+    "identical": true,
+    "sha256": "8f22b3cb624c3009138dbab8d709f87ae1726c3c87c8907185ffdee242da3190"
+  },
+  {
+    "config": "compact",
+    "identical": true,
+    "sha256": "1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "test": "cancel-off",
+  "config": "compact",
+  "operator_confirmation": "CONFIRMED_BY_USER",
+  "scope": "EMPTY or stationary; actual intake unvalidated",
+  "operator_detail": "correctly completed one empty-bottle gesture"
+}

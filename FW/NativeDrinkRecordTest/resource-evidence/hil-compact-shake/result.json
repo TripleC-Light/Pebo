@@ -1,0 +1,9 @@
+{
+  "result": "PASS_REANALYZED",
+  "test": "shake",
+  "config": "compact",
+  "operator_confirmation": "CONFIRMED_BY_USER",
+  "scope": "EMPTY or stationary; actual intake unvalidated",
+  "harness_correction": "exact SHAKE_CONFIRMED token, no trailing space; original raw log retained",
+  "operator_detail": "one shake; progress5 displayed then extinguished normally"
+}

@@ -1,0 +1,10 @@
+{
+  "result": "REJECTED",
+  "change": "-fno-inline-functions-called-once only",
+  "baseline_flash": 32712,
+  "flash": 33768,
+  "flash_saved": -1056,
+  "ram_link_region": 6960,
+  "minimum_stack": 1024,
+  "reason": "Flash limit exceeded by1000B; no features removed, flag reverted"
+}

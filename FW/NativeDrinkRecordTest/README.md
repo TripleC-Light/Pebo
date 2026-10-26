@@ -6,7 +6,18 @@ candidate counts are neither sip counts nor millilitres. No water acceptance,
 scheduling, scores, reminders, audio driver, automatic progress, NVM, or NFC/App
 protocol is added. PC audio in the host test helper is only an operator cue.
 
-## Baseline and build
+## Current resource profiles
+
+Post-stage7 local resource work provides **diagnostic** (complete diagnostics) and
+**compact** (development configuration, not production). Explicit `--config` required;
+outputs `build/<config>/NativeDrinkRecordTest-<config>.{elf,bin,hex,map}`.
+Startup/status identify config and feature mask. Full commands, differences and resources:
+[RESOURCE_REPORT.md](RESOURCE_REPORT.md); exact tests/final image and reproduction:
+[RESOURCE_VALIDATION.md](RESOURCE_VALIDATION.md). Diagnostic31096B/static5844B;
+compact27684B/static3256B,32 events/four summaries unchanged. Heap0/min-stack1024,
+runtime stack peak NOT_MEASURED. Compact Flash spare5084B, below~6KiB aspiration.
+
+## Historical stage7 baseline and build
 
 Annotated `checkpoint/native-drink-detection-v1` points to
 `3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf`; explicitly pushed without force.
@@ -20,17 +31,18 @@ Stage7 published after explicit user authorization as commit
 1001ea0e34e51ccb73634a40e177a938b0ddcde0 on origin/main; remote SHA verified.
 
 ```powershell
-python FW/NativeDrinkRecordTest/build.py --toolchain-bin C:/Users/Edward/AppData/Local/Arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/14.2.1-1.1/bin
+python FW/NativeDrinkRecordTest/build.py --config diagnostic --toolchain-bin C:/Users/Edward/AppData/Local/Arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/14.2.1-1.1/bin
 ```
 
 Same pinned HAL/CMSIS/TIM manifests, 32KB/8KB linker, GCC14.2.1, Os/LTO,
-integer newlib-nano, strong vectors, heap0, minimum stack1024. Build executes
+bounded integer formatter (current profiles), strong vectors, heap0, minimum stack1024. Build executes
 actual pure C++ constexpr checks in the compiler, including RecordChecks.cpp.
 The HAL-free tests can also run directly with a host C++17 compiler:
 `g++ -std=c++17 tests/RecordChecks.cpp -o record-checks && ./record-checks`.
 This PC has no verified native host compiler: compiler-evaluated assertions
 are reported separately from runtime HIL; no native executable run is claimed.
-No diagnostic feature was removed and no slim/diagnostic equivalence is claimed.
+Stage7 historical implementation retained all diagnostics. Current profiles and
+different physical coverage are described in the resource reports above.
 
 ## Event and time contract
 

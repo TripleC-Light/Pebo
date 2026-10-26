@@ -1,0 +1,24 @@
+{
+  "config": "diagnostic",
+  "result": "PASS",
+  "samples": 3015,
+  "reference": [
+    43,
+    -1012,
+    -95
+  ],
+  "expected_candidates": 0,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\evidence\\20261026-supplement-pickup5b\\raw.json",
+  "compiler_output": "",
+  "method": "Actual shared C++ constexpr coordinate/detectors; extracted compiled state transitions, not intake proof",
+  "source_sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+  "raw_sha256": "4acf0c25ab32726820f118d11ea4bb1a4a108931992fda1c36616cacc01244d6",
+  "transitions": [],
+  "quality": {
+    "first_ms": 23,
+    "last_ms": 29992,
+    "max_gap_ms": 12,
+    "range_endpoint_axes": 0
+  }
+}

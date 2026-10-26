@@ -1,4 +1,5 @@
 #pragma once
+#include "BuildConfig.h"
 #include "../../EventLoopStopTest/EventLogic.h"
 #include "../../TimeManagementTest/TimeLogic.h"
 enum class Extra : uint8_t {None,Progress,Show,Trace,Clock,SetUtc,LedRegs,Observe,LisRegs,CalibrationStart,CalibrationStatus,DrinkStatus,DrinkCounters,Capture,RecordsStatus,RecordsList,RecordsToday,RecordsClear,TestEnter,TestExit,TestAdd,TestDay};
@@ -20,10 +21,12 @@ struct AppParser {
     if(TimeTest::equal(s,"records status"))out.extra=Extra::RecordsStatus;
     else if(TimeTest::equal(s,"records today"))out.extra=Extra::RecordsToday;
     else if(TimeTest::equal(s,"records clear confirm"))out.extra=Extra::RecordsClear;
+#if PEBO_SYNTHETIC
     else if(TimeTest::equal(s,"records test enter"))out.extra=Extra::TestEnter;
     else if(TimeTest::equal(s,"records test exit"))out.extra=Extra::TestExit;
     else if(TimeTest::equal(s,"records test add"))out.extra=Extra::TestAdd;
     else if(TimeTest::equal(s,"records test day"))out.extra=Extra::TestDay;
+#endif
     else if(TimeTest::equal(s,"records list"))out.extra=Extra::RecordsList;
     else if(TimeTest::prefix(s,"records list ")){uint32_t n=0;if(TimeTest::number(s+13,n)&&n<32){out.extra=Extra::RecordsList;out.value=n;}}
     else if(TimeTest::equal(s,"show"))out.extra=Extra::Show;
@@ -31,19 +34,29 @@ struct AppParser {
     else if(TimeTest::equal(s,"calibration status"))out.extra=Extra::CalibrationStatus;
     else if(TimeTest::equal(s,"drink status"))out.extra=Extra::DrinkStatus;
     else if(TimeTest::equal(s,"drink counters"))out.extra=Extra::DrinkCounters;
+#if PEBO_TRACE
     else if(TimeTest::prefix(s,"capture ")){
       uint32_t seconds=0;uint8_t i=8;
       for(;s[i]>='0'&&s[i]<='9'&&i<11;++i)seconds=seconds*10+unsigned(s[i]-'0');
       if(!s[i]&&i>8&&seconds>=5&&seconds<=30){out.extra=Extra::Capture;out.value=seconds;}
     }
     else if(TimeTest::equal(s,"trace"))out.extra=Extra::Trace;
+#endif
     else if(TimeTest::equal(s,"clock"))out.extra=Extra::Clock;
+#if PEBO_DUMPS
     else if(TimeTest::equal(s,"ledregs"))out.extra=Extra::LedRegs;
     else if(TimeTest::equal(s,"observe"))out.extra=Extra::Observe;
     else if(TimeTest::equal(s,"lisregs"))out.extra=Extra::LisRegs;
+#endif
     else if(TimeTest::prefix(s,"progress ") && s[9]>='0'&&s[9]<='8'&&!s[10]){
       out.extra=Extra::Progress;out.value=s[9]-'0';
     }else if(TimeTest::prefix(s,"setutc ")&&TimeTest::parseDate(s+7,out.value))out.extra=Extra::SetUtc;
+#if !PEBO_DUMPS
+    if(out.kind==EventLoop::Kind::Probe)out.kind=EventLoop::Kind::Invalid;
+#endif
+#if !PEBO_VERBOSE
+    if(out.kind==EventLoop::Kind::Clear)out.kind=EventLoop::Kind::Invalid;
+#endif
     return out;
   }
 };

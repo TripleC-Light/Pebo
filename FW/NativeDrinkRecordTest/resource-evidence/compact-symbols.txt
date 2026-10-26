@@ -1,0 +1,231 @@
+200000f4 00000001 b pageActive
+20000002 00000001 d serialOpen
+200000ec 00000001 b pageSynthetic
+20000167 00000001 b countersPending
+200000fc 00000001 b probeRtcConfirmed
+20000168 00000001 b lastSt
+200000ed 00000001 b pageAt
+20000020 00000001 b lastAll
+20000169 00000001 b lastLis
+20000ac4 00000001 b pending
+20000001 00000001 d lastField
+200000ee 00000001 b pageCount
+20000180 00000001 b staticGpo
+20000b4c 00000001 b DeadlineRtc::ready
+20000000 00000001 d Observation::shakeArmed
+200000a9 00000001 b Observation::calibrating
+20000164 00000001 b Observation::active
+20000166 00000001 b Observation::dumping
+200000a8 00000001 b Observation::accepted
+20000098 00000001 b Observation::failures
+20000165 00000001 b Observation::capturing
+20000090 00000001 b Observation::discarded
+20000c2f 00000001 b (anonymous namespace)::transmitting
+20000bec 00000001 b (anonymous namespace)::bus
+20000b8f 00000001 b (anonymous namespace)::rxByte
+20000b8d 00000001 b (anonymous namespace)::rxRead
+20000b90 00000001 b (anonymous namespace)::serial
+20000c2e 00000001 b (anonymous namespace)::txRead
+20000b8e 00000001 b (anonymous namespace)::rxWrite
+20000c2d 00000001 b (anonymous namespace)::txWrite
+20000009 00000001 d Progress::applied
+20000008 00000001 d Progress::healthy
+20000b14 00000001 b Progress::running
+08005d2c 00000002 W __aeabi_idiv0
+08005d2c 00000002 W __aeabi_ldiv0
+08005630 00000002 T _init
+20000ab6 00000002 b txRead
+20000ab4 00000002 b txWrite
+080059a0 00000002 W ADC1_COMP_IRQHandler
+080059a0 00000002 T Default_Handler
+080059a0 00000002 W DMA1_Channel1_IRQHandler
+080059a0 00000002 W DMA1_Channel2_3_IRQHandler
+080059a0 00000002 W DMA1_Channel4_5_6_7_IRQHandler
+080059a0 00000002 W EXTI4_15_IRQHandler
+080059a0 00000002 W FLASH_IRQHandler
+080059a0 00000002 W HardFault_Handler
+080059a0 00000002 W I2C1_IRQHandler
+080059a0 00000002 W LPTIM1_IRQHandler
+080059a0 00000002 W LPUART1_IRQHandler
+080059a0 00000002 W NMI_Handler
+080059a0 00000002 W PendSV_Handler
+080059a0 00000002 W PVD_IRQHandler
+080059a0 00000002 W RCC_IRQHandler
+080059a0 00000002 W SPI1_IRQHandler
+080059a0 00000002 W SVC_Handler
+080059a0 00000002 W TIM2_IRQHandler
+080059a0 00000002 W TIM21_IRQHandler
+080059a0 00000002 W TIM22_IRQHandler
+080059a0 00000002 W WWDG_IRQHandler
+20000174 00000004 b runElapsed
+200000f8 00000004 b probeMillis
+2000016c 00000004 b unknownWake
+20000170 00000004 b stops
+200000f0 00000004 b aborted
+200000c8 00000004 b fieldOn
+200000c4 00000004 b fieldOff
+20000004 00000004 d lastError
+20000630 00000004 b Observation::candidates
+200000a4 00000004 b Observation::calFailures
+200000b4 00000004 b Observation::awakeStarted
+20000160 00000004 b Observation::cancelledWindows
+200000b0 00000004 b Observation::limit
+20000628 00000004 b Observation::errors
+2000062c 00000004 b Observation::events
+2000001c 00000004 b Observation::entries
+200000ac 00000004 b Observation::started
+20000018 00000004 b Observation::windows
+2000009c 00000004 b Observation::nextPoll
+200000a0 00000004 b Observation::rejected
+20000094 00000004 b Observation::lastFresh
+20000024 00000004 b Observation::successes
+2000000c 00000004 d AppTime::lastPoll
+20000b10 00000004 b Progress::channel
+20000014 00000004 d SystemCoreClock
+20000b94 00000004 b uwTick
+20000010 00000004 d uwTickPrio
+08005d24 00000008 T __aeabi_idivmod
+08005b50 00000008 T __aeabi_uidivmod
+20000178 00000008 b runState
+2000064c 00000008 b Observation::reference
+08006bbe 00000008 r Progress::pins
+20000ac8 00000008 b Progress::display
+08006bd6 00000008 r APBPrescTable
+08006bde 00000009 r PLLMulTable
+200006a8 0000000c b wakeWindow
+080003bc 0000000c t lock()
+20000ab8 0000000c b observed
+200000b8 0000000c b Observation::gate
+080003bc 0000000c t (anonymous namespace)::critical()
+080004a4 0000000c t Board::gpoHigh()
+08005a0e 0000000e T strlen
+08000494 00000010 t Board::motionHigh()
+20000b18 00000010 b AppTime::clock
+08006bc6 00000010 r AHBPrescTable
+080059ec 00000010 T memset
+080052c8 00000010 T SystemInit
+08005620 00000010 T SysTick_Handler
+08005a1c 00000012 T __gnu_thumb1_case_uqi
+08000848 00000012 t DeadlineRtc::decimal(unsigned long)
+080059fc 00000012 T memcpy
+080015c0 00000012 t UART_DMAAbortOnError
+08005a30 00000014 T __gnu_thumb1_case_uhi
+08000314 00000016 t RTC_ByteToBcd2
+0800085a 00000018 t DeadlineRtc::bcd(unsigned long)
+20000634 00000018 b Observation::merge
+08000f78 0000001a t Text::Buffer::put(char)
+20000074 0000001c b Observation::calibration
+0800292c 0000001c t WakeSources::StAccess::StAccess() [clone .isra.0]
+080011b0 0000001c t Shake::Detector::begin(unsigned long) [clone .constprop.0]
+08002948 0000001e t WakeSources::stopGpo()
+08000474 0000001e t (anonymous namespace)::pin(GPIO_TypeDef*, unsigned long, unsigned long, unsigned long, unsigned long)
+200000cc 00000020 b recordPage
+20000184 00000020 b recordPending
+08001254 00000020 t TimeTest::prefix(char const*, char const*) [clone .constprop.0]
+080002f4 00000020 t HAL_RCC_GetPCLK1Freq
+08002550 00000022 t WakeSources::stopMotion()
+200000fd 00000023 b parser
+0800141c 00000024 t wallStamp()
+20000b28 00000024 b DeadlineRtc::handle
+0800118c 00000024 t Drink::Detector::abort() [clone .constprop.0]
+08001440 00000024 t EventLoop::equal(char const*, char const*) [clone .constprop.0]
+08005674 00000024 T EXTI0_1_IRQHandler
+080029d0 00000026 t Observation::restore()
+080006c6 00000028 t TimeTest::monthDays(int, int)
+08005698 00000028 T EXTI2_3_IRQHandler
+08001598 00000028 t HAL_UART_ErrorCallback
+0800069c 0000002a t TimeTest::leap(int)
+08001fbc 0000002c t I2C_TransferConfig.constprop.0
+0800035c 0000002e t UART_TxISR_8BIT
+08000ed0 00000030 t queue(char const*)
+080029a0 00000030 t Board::motionInterrupt(bool)
+08001d58 00000030 t RTC_ExitInitMode.constprop.0
+0800038a 00000032 t UART_TxISR_16BIT
+0800032a 00000032 t UART_TxISR_16BIT.part.0
+0800032a 00000032 t UART_TxISR_8BIT.part.0
+08000e9c 00000034 t freeTx()
+08000e64 00000038 t record(EventLoop::Source)
+08002968 00000038 t Board::motionInterrupt(bool) [clone .part.0]
+08002574 00000038 t Board::readBlock(unsigned char, unsigned char, unsigned char*, unsigned char) [clone .constprop.0]
+08001154 00000038 t Records::Store::initialize() [clone .constprop.0]
+08001d20 00000038 t HAL_RTC_WaitForSynchro.constprop.0
+08005950 00000038 W Reset_Handler
+08005f7c 0000003c T __clzsi2
+08002308 0000003c t Board::read(unsigned char, unsigned short, bool, unsigned char&)
+080025ac 0000003c t Board::endBus()
+080015d4 0000003c t HAL_UART_RxCpltCallback.part.0
+08005d30 0000003e T __aeabi_uldivmod
+20000120 00000040 b Observation::drink
+20000b4d 00000040 b (anonymous namespace)::rx
+20000bed 00000040 b (anonymous namespace)::tx
+20000ad0 00000040 b Progress::pwm
+08005634 00000040 T RTC_IRQHandler
+08001274 00000044 t TimeTest::valid(TimeTest::Date const&, int, int) [clone .constprop.0]
+080059a4 00000048 T __libc_init_array
+08002b70 00000048 t quarantine(EventLoop::Source, char const*)
+08002b28 00000048 t detachSource(EventLoop::Source)
+08001cd8 00000048 t RTC_EnterInitMode.constprop.0
+080007fc 0000004c t DeadlineRtc::configuration()
+20000028 0000004c b Observation::detector
+08002170 00000050 t HAL_I2C_DeInit.constprop.0.isra.0
+20000654 00000054 b sources
+20000b98 00000054 b (anonymous namespace)::i2c
+08005d70 0000005a T __aeabi_lmul
+08005d70 0000005a T __muldi3
+08001e98 0000005c t I2C_WaitOnSTOPFlagUntilTimeout.constprop.0
+08001f60 0000005c t I2C_WaitOnTXISFlagUntilTimeout.constprop.0
+0800327c 00000060 t clockReport()
+080000c0 00000060 t HAL_InitTick
+08003180 00000064 t drinkReport()
+080017cc 00000064 t UART_EndRxTransfer.constprop.0
+080006f0 00000068 t TimeTest::epoch(TimeTest::Date const&)
+080010e8 0000006c t Records::Store::clear() [clone .constprop.0]
+08002740 0000006c t Records::Pending::candidate(Records::Stamp, Records::Store&) [clone .constprop.0] [clone .isra.0]
+08001ef4 0000006c t I2C_WaitOnFlagUntilTimeout.constprop.0
+080013ac 00000070 t AppTime::epoch(unsigned long&) [clone .constprop.0]
+080025e8 00000070 t Records::Store::change(Records::Stamp, short) [clone .constprop.0] [clone .isra.0]
+08002658 00000070 t Records::Store::observe(Records::Stamp) [clone .constprop.0] [clone .isra.0]
+08000d64 00000070 t Progress::showProgress()
+08001830 00000074 t UART_WaitOnFlagUntilTimeout.constprop.0
+080026c8 00000078 t recordClock(bool)
+08000f00 00000078 t drain() [clone .part.0]
+080024d8 00000078 t WakeSources::configureMotion()
+08000270 00000084 t HAL_RCC_GetSysClockFreq
+080011cc 00000088 t DeadlineRtc::clock(unsigned long&) [clone .constprop.0]
+20000c30 00000088 b (anonymous namespace)::uart
+08002c68 00000090 t stopEventSources()
+080030f0 00000090 t counters()
+08000dd4 00000090 t Drink::upright(Shake::Sample, Shake::Sample)
+080031e4 00000098 t finishRun(char const*)
+08001044 000000a4 t Records::Store::ensure() [clone .constprop.0]
+08000758 000000a4 t TimeTest::date(unsigned long)
+080003c8 000000ac t (anonymous namespace)::startTx()
+08002bb8 000000b0 t cancelApplication(char const*)
+08000f94 000000b0 t Text::number(Text::Buffer&, unsigned long, unsigned int, unsigned int, bool, bool)
+08000874 000000bc t DeadlineRtc::stop()
+080016f0 000000dc t UART_RxISR_16BIT
+08001610 000000e0 t UART_RxISR_8BIT
+08000a44 000000ec t Progress::release()
+080012b8 000000f4 t DeadlineRtc::timeValid()
+08005a44 0000010a T __udivsi3
+08001d88 00000110 t I2C_IsErrorOccurred.constprop.0
+08000930 00000114 t AppTime::update(bool)
+080029f8 00000130 t Observation::begin(unsigned long, bool, unsigned long, bool) [clone .constprop.0]
+08001464 00000134 t HAL_UART_Receive_IT.constprop.0
+080021c0 00000148 t Board::beginBus()
+08000120 00000150 t HAL_GPIO_Init
+08002f98 00000158 t Text::format(char*, unsigned int, char const*, ...)
+080027ac 00000180 t Records::Pending::confirm(Records::Store&, Records::Stamp, bool) [clone .constprop.0] [clone .isra.0]
+08001fe8 00000188 t HAL_I2C_Mem_Read.part.0.constprop.0
+08002344 00000194 t Board::write(unsigned char, unsigned short, bool, unsigned char)
+08005dcc 00000198 T __udivmoddi4
+08005b58 000001cc T __divsi3
+080004b0 000001ec t SystemClock_Config
+08000b30 00000234 t Progress::apply()
+080056c0 00000290 T main
+08002cf8 000002a0 t initializeEventSources()
+080052d8 00000348 T USART2_IRQHandler
+200006b4 00000400 b tx
+080018a4 00000434 t Board::Console::begin(unsigned long) [clone .constprop.0]
+200001a4 00000484 b realRecords
+080032dc 00001fec t service()

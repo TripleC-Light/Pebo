@@ -1,0 +1,105 @@
+{
+  "config": "diagnostic",
+  "result": "PASS",
+  "samples": 3015,
+  "reference": [
+    21,
+    -1013,
+    -109
+  ],
+  "expected_candidates": 3,
+  "expected_shakes": 0,
+  "source": "FW\\NativeDrinkDetectionTest\\tests\\results\\20261026-three2\\raw.json",
+  "compiler_output": "",
+  "method": "Actual shared C++ constexpr coordinate/detectors; extracted compiled state transitions, not intake proof",
+  "source_sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+  "raw_sha256": "2a214291967c62ddc0b2b172d8c6f68e2743e101416270332eb81f78d136be0a",
+  "transitions": [
+    {
+      "ms": 12094,
+      "phase": "Tilt",
+      "event": 0
+    },
+    {
+      "ms": 13297,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 14688,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 14700,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 14731,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 14809,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 14836,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 15336,
+      "phase": "Idle",
+      "event": 4
+    },
+    {
+      "ms": 17125,
+      "phase": "Tilt",
+      "event": 0
+    },
+    {
+      "ms": 18329,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 20516,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 21024,
+      "phase": "Idle",
+      "event": 4
+    },
+    {
+      "ms": 23121,
+      "phase": "Tilt",
+      "event": 0
+    },
+    {
+      "ms": 24325,
+      "phase": "Held",
+      "event": 0
+    },
+    {
+      "ms": 26024,
+      "phase": "Return",
+      "event": 0
+    },
+    {
+      "ms": 26532,
+      "phase": "Idle",
+      "event": 4
+    }
+  ],
+  "quality": {
+    "first_ms": 24,
+    "last_ms": 29989,
+    "max_gap_ms": 12,
+    "range_endpoint_axes": 0
+  }
+}

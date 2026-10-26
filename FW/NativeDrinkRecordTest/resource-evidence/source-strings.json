@@ -1,0 +1,326 @@
+[
+  {
+    "file": "main.cpp",
+    "line": 111,
+    "bytes": 197,
+    "text": "DRINK calibration=%u ref=%d,%d,%d phase=%u merge=%u candidates=%lu events=%lu rejected=%lu timeout=%lu errors=%lu cancelled=%lu dropped=%lu first=%lu last=%lu output=%lu limits=motion_not_intake\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 290,
+    "bytes": 181,
+    "text": "RECORDS %s ctx=%lu day=%lu tz=%d valid=%u kept=%u first=%lu last=%lu overwrite=%lu undated=%lu summaryLost=%lu rejected=%lu exhausted=%u bytes=%u store=%u RAM_ONLY reset_clears=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 411,
+    "bytes": 167,
+    "text": "HELP status,counters,mode debug,run 1..60,off,progress 0..8,show,clock,setutc,calibration start/status,drink status/counters,records status/today/list/clear confirm\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 103,
+    "bytes": 148,
+    "text": "APP version=NativeDrinkRecordTest-v1 config=%s features=%u progress=%u display=%u pattern=%02X pwm=%u healthy=%u sampling=%u cooldown=%u trace=%u\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 97,
+    "bytes": 138,
+    "text": "OK mode=%s rtc=%u/%u lis=%u/%u st=%u/%u pins=%u,%u lpd=%u timeValid=%u stops=%lu aborted=%lu field=%d fieldOn=%lu fieldOff=%lu error=%s\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 120,
+    "bytes": 121,
+    "text": "DRINK calibration=%u ref=%d,%d,%d merge=%u candidates=%lu events=%lu errors=%lu cancelled=%lu limits=motion_not_intake\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 297,
+    "bytes": 119,
+    "text": "TODAY %s date=%04d-%02u-%02u ctx=%lu day=%lu tz=%d valid=%u undated=%lu summaries=4_FIFO sat32 candidates_not_intake\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 318,
+    "bytes": 111,
+    "text": "RECORD %s seq=%lu ctx=%lu first=%lu last=%lu confirmed=%lu candidates=%lu day=%lu tz=%d utcValid=%u units=%s\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 89,
+    "bytes": 105,
+    "text": "SHAKE entries=%lu windows=%lu confirmed=%lu rejected=%lu errors=%lu samples=%lu reversals=%u peak2=%lu\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 142,
+    "bytes": 103,
+    "text": "DRINK_CONFIRMED first=%lu last=%lu count=%lu output=%lu stops=%lu clock=elapsed_ms intake_unproven=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 281,
+    "bytes": 103,
+    "text": "CLOCK valid=%u utc=%lu lse=%u bkp2=%08lX bkp3=%08lX monotonicMs=%lu bkp0=%08lX bkp1=%08lX bkp4=%08lX\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 154,
+    "bytes": 100,
+    "text": "PROBE ok=%u static=%02X gate=%02X rf=%02X eh=%02X field=%d pa3=%u pull=%lu imr=%08lX rising=%08lX\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 238,
+    "bytes": 96,
+    "text": "RUN_END reason=%s requested=%u elapsed=%lu stops=%lu unknownWake=%lu lastLis=%02X lastSt=%02X\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 300,
+    "bytes": 85,
+    "text": "DAY %s ctx=%lu day=%lu tz=%d events=%lu candidates=%lu lastFirstUtc=%lu current=%u\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 82,
+    "bytes": 84,
+    "text": "COUNT source=%s isr=%lu wake=%lu confirmed=%lu handled=%lu errors=%lu unknown=%lu\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 310,
+    "bytes": 81,
+    "text": "LIST_BEGIN %s page=%u count=%u first=%lu last=%lu overwrite=%lu snapshot=page1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 375,
+    "bytes": 81,
+    "text": "LISREG ok=%u ctrl1=%02X ctrl2=%02X ctrl3=%02X ctrl4=%02X ctrl5=%02X ctrl6=%02X\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 367,
+    "bytes": 56,
+    "text": "CAPTURE_BEGIN units=LP1_counts odr=100 max_seconds=30\r\n"
+  },
+  {
+    "file": "BuildConfig.h",
+    "line": 3,
+    "bytes": 55,
+    "text": "Select diagnostic or compact through build.py --config"
+  },
+  {
+    "file": "main.cpp",
+    "line": 493,
+    "bytes": 55,
+    "text": "DRINK_CANDIDATE time=%lu stops=%lu intake_unproven=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 345,
+    "bytes": 54,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 332,
+    "bytes": 53,
+    "text": "CLEARED REAL events_stats_seq RTC_calibration_kept\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 505,
+    "bytes": 53,
+    "text": "CALIBRATION_REJECTED previous_reference_retained=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 388,
+    "bytes": 52,
+    "text": "LEDREG apb1=%08lX apb2=%08lX mode=%08lX odr=%08lX\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 401,
+    "bytes": 51,
+    "text": "TRACE_BEGIN units=LP1_counts time=observation_ms\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 453,
+    "bytes": 49,
+    "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500\r\n"
+  },
+  {
+    "file": "BuildConfig.h",
+    "line": 21,
+    "bytes": 47,
+    "text": "compact cannot enable diagnostic-only features"
+  },
+  {
+    "file": "main.cpp",
+    "line": 332,
+    "bytes": 46,
+    "text": "CLEARED SYNTHETIC events_stats_seq RTC_kept\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 463,
+    "bytes": 46,
+    "text": "RECORD_BOOT RAM_seq_reset RTC_kept_if_valid\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 134,
+    "bytes": 45,
+    "text": "DRINK_CANCELLED reason=time_context_change\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 416,
+    "bytes": 44,
+    "text": "TEST_HELP records test enter/add/day/exit\r\n"
+  },
+  {
+    "file": "ProgressDisplay.h",
+    "line": 3,
+    "bytes": 42,
+    "text": "../../BlueLedProgressTest/ProgressLogic.h"
+  },
+  {
+    "file": "main.cpp",
+    "line": 413,
+    "bytes": 41,
+    "text": "TRACE_HELP observe,trace,capture 5..30\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 383,
+    "bytes": 40,
+    "text": "OK observe diagnostic_not_motion_wake\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 367,
+    "bytes": 39,
+    "text": "CALIBRATION_BEGIN keep_upright_still\r\n"
+  },
+  {
+    "file": "AppParser.h",
+    "line": 3,
+    "bytes": 37,
+    "text": "../../EventLoopStopTest/EventLogic.h"
+  },
+  {
+    "file": "AppParser.h",
+    "line": 4,
+    "bytes": 37,
+    "text": "../../TimeManagementTest/TimeLogic.h"
+  },
+  {
+    "file": "DeadlineRtc.h",
+    "line": 3,
+    "bytes": 37,
+    "text": "../../TimeManagementTest/TimeLogic.h"
+  },
+  {
+    "file": "DrinkRecords.h",
+    "line": 3,
+    "bytes": 37,
+    "text": "../../TimeManagementTest/TimeLogic.h"
+  },
+  {
+    "file": "main.cpp",
+    "line": 3,
+    "bytes": 37,
+    "text": "../../EventLoopStopTest/EventLogic.h"
+  },
+  {
+    "file": "main.cpp",
+    "line": 338,
+    "bytes": 37,
+    "text": "TEST_BEGIN SYNTHETIC RTC_unchanged\r\n"
+  },
+  {
+    "file": "DrinkRecords.h",
+    "line": 88,
+    "bytes": 36,
+    "text": "aligned 32-byte records, no packing"
+  },
+  {
+    "file": "main.cpp",
+    "line": 341,
+    "bytes": 35,
+    "text": "TEST_END SYNTHETIC REAL_retained\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 363,
+    "bytes": 35,
+    "text": "ERR acquisition_busy_or_disabled\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 419,
+    "bytes": 34,
+    "text": "DUMP_HELP probe,lisregs,ledregs\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 345,
+    "bytes": 32,
+    "text": "ERR SYNTHETIC record_rejected\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 381,
+    "bytes": 31,
+    "text": "ERR observe_busy_or_disabled\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 451,
+    "bytes": 31,
+    "text": "ERR rtc_deadline_unavailable\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 422,
+    "bytes": 30,
+    "text": "COUNTER_HELP counters clear\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 336,
+    "bytes": 29,
+    "text": "ERR test_requires_off_idle\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 193,
+    "bytes": 28,
+    "text": "st_init_field_config_or_i2c"
+  },
+  {
+    "file": "main.cpp",
+    "line": 404,
+    "bytes": 28,
+    "text": "ERR setutc_requires_debug\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 504,
+    "bytes": 28,
+    "text": "CALIBRATION_OK ram_only=1\r\n"
+  },
+  {
+    "file": "main.cpp",
+    "line": 148,
+    "bytes": 27,
+    "text": "ERR probe_requires_debug\r\n"
+  }
+]

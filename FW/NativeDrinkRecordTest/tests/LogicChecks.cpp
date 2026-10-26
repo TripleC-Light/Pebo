@@ -65,7 +65,11 @@ constexpr bool incompleteChecks(){
   Drink::Merge m;m.add(100,1000);m.cancel();if(m.confirm(11000))return false;
   AppParser p;AppCommand c{EventLoop::Kind::None,0};
   for(char v:"capture 15\n")if(v)c=p.push(v);
+#if PEBO_TRACE
   if(c.extra!=Extra::Capture||c.value!=15)return false;
+#else
+  if(c.extra!=Extra::None||c.kind!=EventLoop::Kind::Invalid)return false;
+#endif
   for(char v:"capture 31\n")if(v)c=p.push(v);
   if(c.extra!=Extra::None)return false;
   for(char v:"calibration start\n")if(v)c=p.push(v);

@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "python_syntax": true,
+  "json_parse": true,
+  "source_files": 33,
+  "historical_manifest_preserved": true,
+  "resource_commit_push": false,
+  "head": "aac139c32a1fa5df927ae05d053e1cad55bbb59b",
+  "git_diff_check": "PASS",
+  "linker_and_hal_configuration_equal": true,
+  "remote_tag_and_main_verified": true,
+  "board_final_config": "compact",
+  "board_final_image_sha256": "1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1",
+  "board_final_full32k_sha256": "195f2b7ac873fb15db2349d5d038302e0d95815e90b6f322ba2b79a5ada616e8",
+  "uart_closed": true,
+  "handoff_saved": true,
+  "operator_confirmations_complete": true
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "arguments": [],
+    "code": 2,
+    "error": "usage: build.py [-h] [--toolchain-bin TOOLCHAIN_BIN] --config\n                {diagnostic,compact}\n                [--measure-without {trace,synthetic,dumps,verbose}]\n                [--build-dir BUILD_DIR] [--baseline-elf BASELINE_ELF]\nbuild.py: error: the following arguments are required: --config\n"
+  },
+  {
+    "arguments": [
+      "--config",
+      "bad"
+    ],
+    "code": 2,
+    "error": "usage: build.py [-h] [--toolchain-bin TOOLCHAIN_BIN] --config\n                {diagnostic,compact}\n                [--measure-without {trace,synthetic,dumps,verbose}]\n                [--build-dir BUILD_DIR] [--baseline-elf BASELINE_ELF]\nbuild.py: error: argument --config: invalid choice: 'bad' (choose from diagnostic, compact)\n"
+  },
+  {
+    "arguments": [
+      "--config",
+      "compact",
+      "--measure-without",
+      "trace"
+    ],
+    "code": 2,
+    "error": "usage: build.py [-h] [--toolchain-bin TOOLCHAIN_BIN] --config\n                {diagnostic,compact}\n                [--measure-without {trace,synthetic,dumps,verbose}]\n                [--build-dir BUILD_DIR] [--baseline-elf BASELINE_ELF]\nbuild.py: error: measurement exclusions require diagnostic\n"
+  }
+]

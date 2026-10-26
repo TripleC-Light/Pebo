@@ -1,0 +1,24 @@
+{
+  "diagnostic": {
+    "flash": 31096,
+    "data": 24,
+    "bss": 5820,
+    "static": 5844,
+    "spare_flash": 1672,
+    "sha256": "8f22b3cb624c3009138dbab8d709f87ae1726c3c87c8907185ffdee242da3190",
+    "stack_peak": "NOT_MEASURED",
+    "heap": 0,
+    "minimum_stack": 1024
+  },
+  "compact": {
+    "flash": 27684,
+    "data": 24,
+    "bss": 3232,
+    "static": 3256,
+    "spare_flash": 5084,
+    "sha256": "1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1",
+    "stack_peak": "NOT_MEASURED",
+    "heap": 0,
+    "minimum_stack": 1024
+  }
+}

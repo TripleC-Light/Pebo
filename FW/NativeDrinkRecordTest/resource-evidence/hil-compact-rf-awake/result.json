@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "test": "awake",
+  "config": "compact",
+  "operator_confirmation": "CONFIRMED_BY_USER",
+  "scope": "EMPTY or stationary; actual intake unvalidated",
+  "operator_detail": "phone near/remove in both windows, bottle stationary"
+}

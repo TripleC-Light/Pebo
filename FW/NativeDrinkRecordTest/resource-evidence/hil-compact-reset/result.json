@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "test": "reset",
+  "config": "compact",
+  "operator_confirmation": "NOT_REQUIRED",
+  "scope": "EMPTY or stationary; actual intake unvalidated"
+}

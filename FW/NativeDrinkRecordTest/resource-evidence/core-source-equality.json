@@ -1,0 +1,44 @@
+[
+  {
+    "path": "FW/NativeDrinkRecordTest/src/DrinkLogic.h",
+    "working_sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  },
+  {
+    "path": "FW/NativeDrinkRecordTest/src/ShakeLogic.h",
+    "working_sha256": "2c38d63e7290884359813a0d2b0ddb64cb15be7366b1fe89909efa1b756b96b3",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  },
+  {
+    "path": "FW/NativeDrinkRecordTest/src/DrinkRecords.h",
+    "working_sha256": "951943e24a88dfe9bf4a2e62e8f83c71dcc8da29f5aa368f463a1f0b66bcb6b3",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  },
+  {
+    "path": "FW/NativeDrinkRecordTest/src/TimeSupport.h",
+    "working_sha256": "d6b8b14641663827c8770defcb3a06ebfeb490e30ce4523de40d8fd971abe52e",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  },
+  {
+    "path": "FW/NativeDrinkRecordTest/src/ElapsedLogic.h",
+    "working_sha256": "db3a9c0bd881ebf375150e8a7684e646d68fbba1933d1d13d096fe8f21637748",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  },
+  {
+    "path": "FW/NativeDrinkRecordTest/src/Board.cpp",
+    "working_sha256": "fa0a6b8b63ffc85f7aa3a447be26a0bdabd3be15b5acdf3024d7e785a60378cf",
+    "normalized_equal": true,
+    "normalization": "CRLF->LF only",
+    "unchanged_from": "1001ea0"
+  }
+]

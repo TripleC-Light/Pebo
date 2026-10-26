@@ -1,5 +1,21 @@
 # Development machine registry
 
+## 2026-10-26: Resource profile publication confirmed
+
+PC-02 TripleC/main. User authorized publication after resource-work closure.
+Commit b7b9171b1987041acd2dd29430742c8b2ef071c6 contains121 scoped files: diagnostic/compact
+implementation, tests, reports/evidence and related docs. Normal push to origin/main succeeded;
+independent git ls-remote matched the full commit. Source manifest, firmware hashes, Python/JSON,
+staged scope/common secret-marker scan PASS. Source/docs whitespace check PASS; raw tool
+strings retain meaningful trailing whitespace and were excluded from that formatting check.
+Existing packed-refs.lock maintenance warning occurred during commit; commit and push succeeded,
+lock left untouched. No source edits, new build/HIL/UART/board/reset/instrument actions during
+publication. Last validated compact/off/debug/UART-closed state and image remain unchanged.
+Unrelated FeedbackTest/TimeManagementTest/conflicted HIL copy preserved, uncommitted.
+Earlier local-only notes below are historical and superseded by publication. This follow-up
+saves publication confirmation; no stage8 work. Next: review resource/stack risks, then separately
+request stage8 scope. Canonical handoff/current-machine/HIL saved.
+
 ## 2026-10-26: Resource profile publication authorized
 
 PC-02 TripleC/main. User explicitly authorized commit/push after resource-work closure.

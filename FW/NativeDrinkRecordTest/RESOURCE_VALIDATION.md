@@ -1,5 +1,9 @@
 # Resource profiles validation — 2026-10-26, PC-02 TripleC
 
+Publication: resource implementation/tests/evidence committed as `b7b9171b1987041acd2dd29430742c8b2ef071c6`,
+pushed to origin/main and independently verified after explicit user authorization.
+Local-only statements below describe validation-time history; no new hardware tests during publication.
+
 Resource work saved locally only. HEAD/main aac139c32a1fa5df927ae05d053e1cad55bbb59b,
 remote main independently matched at start and closure. Only authorized checkpoint tag pushed.
 See RESOURCE_REPORT.md for the corrected00 baseline tail/tag-annotation caveat and detailed costs.

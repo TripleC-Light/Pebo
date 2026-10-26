@@ -1,5 +1,9 @@
 # Post-stage7 resource comparison (2026-10-26)
 
+Publication: resource implementation/tests/evidence committed as `b7b9171b1987041acd2dd29430742c8b2ef071c6`,
+pushed to origin/main and independently verified after explicit user authorization.
+Local-only statements below describe validation-time history; no new hardware tests during publication.
+
 Local resource work, not committed/pushed. PC-02 TripleC, main HEAD aac139c.
 STM32L031G6U6TR Flash32768/RAM8192; original linker/startup/Board unchanged.
 No schedule, reminder, NFC app protocol, water intake acceptance or parameter tuning.

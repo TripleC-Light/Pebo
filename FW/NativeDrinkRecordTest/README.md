@@ -1,5 +1,9 @@
 # NativeDrinkRecordTest — stage7 RAM observation records
 
+Publication: resource implementation/tests/evidence committed as `b7b9171b1987041acd2dd29430742c8b2ef071c6`,
+pushed to origin/main and independently verified after explicit user authorization.
+Local-only statements below describe validation-time history; no new hardware tests during publication.
+
 Independent STM32L031 native HAL project derived from the frozen stage6 source.
 No classifier thresholds changed. Drinking-like motion is not verified intake;
 candidate counts are neither sip counts nor millilitres. No water acceptance,

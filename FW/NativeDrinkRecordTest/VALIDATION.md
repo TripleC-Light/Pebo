@@ -1,5 +1,9 @@
 # Stage7 validation — 2026-10-26, PC-02 TripleC
 
+Publication: resource implementation/tests/evidence committed as `b7b9171b1987041acd2dd29430742c8b2ef071c6`,
+pushed to origin/main and independently verified after explicit user authorization.
+Local-only statements below describe validation-time history; no new hardware tests during publication.
+
 Current post-stage7 resource profile validation: [RESOURCE_VALIDATION.md](RESOURCE_VALIDATION.md),
 with [resource costs and limitations](RESOURCE_REPORT.md). The stage7 image/evidence below
 is historical and remains unchanged in scope. Resource changes are local, uncommitted.

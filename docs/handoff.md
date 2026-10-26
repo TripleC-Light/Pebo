@@ -1,5 +1,17 @@
 # Pebo handoff log
 
+## 2026-10-26: Interrupted publication independently rechecked
+
+PC-02 TripleC/main: local HEAD and actual origin/main both verified as
+8421a48a2183ddac9b3f1aec6ba833b76c6032dc after interruption. Supplemental
+dbe4fe482976bb4e499bd01cee99a940acbcfc69 and publication note are already
+remote; no missing push. Only pre-existing unrelated untracked FeedbackTest,
+TimeManagementTest files and conflicted HIL copy remain, preserved. This
+follow-up records recovery verification only; no firmware/board/UART/reset or
+instrument operation. Last observed board off/debug, COM13 closed, not freshly
+reconnected. Water remains deferred, deadline gesture confirmation pending.
+No stage7. Next: optional water-labelled acquisition when user requests it.
+
 ## 2026-10-26: Stage6 supplemental evidence committed and pushed
 
 PC-02 TripleC/main. User explicitly authorized commit/push after session closure.

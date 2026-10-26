@@ -1,5 +1,14 @@
 # Development machine registry
 
+## 2026-10-26: PC-02 interruption recovery verification
+
+main local HEAD and origin/main directly rechecked equal
+8421a48a2183ddac9b3f1aec6ba833b76c6032dc. Both supplemental and publication
+commits already remote; no unfinished push. No tracked changes before this
+recovery note; unrelated untracked tests/conflicted HIL preserved. No new
+hardware/UART/instrument operation. Last board off/debug COM13 closed, no fresh
+connection. Canonical handoff updated; water deferred, no automatic stage7.
+
 ## 2026-10-26: PC-02 TripleC supplemental publication
 
 main supplemental commit dbe4fe482976bb4e499bd01cee99a940acbcfc69 pushed

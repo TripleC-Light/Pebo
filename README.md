@@ -67,6 +67,6 @@ NFC data exchange and multi-source wake integration remain follow-up work.
 independent daily/context summaries and bounded UART queries. Its
 [validation](FW/NativeDrinkRecordTest/VALIDATION.md) distinguishes exact-image
 empty/synthetic/RF evidence and limitations. Water intake remains deferred;
-no schedules,reminders,persistence or automatic progress. Stage7 saved locally,
-uncommitted; only authorized stage6 checkpoint tag pushed. Flash spare56B,
+no schedules,reminders,persistence or automatic progress. Stage7 published as1001ea0 after explicit user authorization; remote main verified.
+The stage6 checkpoint tag was also explicitly pushed. Flash spare56B,
 peak stack unmeasured.

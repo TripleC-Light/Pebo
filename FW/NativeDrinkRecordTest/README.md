@@ -16,7 +16,8 @@ Rebuild and actual board image both match
 `09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293`.
 Supplemental host evidence is dbe4fe4; later commits are documentation. See
 `evidence/baseline-verification.json` and `baseline-rebuild.json`.
-Stage7 changes are saved locally, not committed or pushed.
+Stage7 published after explicit user authorization as commit
+1001ea0e34e51ccb73634a40e177a938b0ddcde0 on origin/main; remote SHA verified.
 
 ```powershell
 python FW/NativeDrinkRecordTest/build.py --toolchain-bin C:/Users/Edward/AppData/Local/Arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/14.2.1-1.1/bin
@@ -126,7 +127,7 @@ See VALIDATION.md for exact current-image results and limits. Host helpers
 verify specific STLINK/MCU and Prolific COM13 (enumerate again next session),
 read all32KB Flash, and close with off/debug and UART closed. They never operate
 PPK2 or other instruments, power, option bytes or backup-domain reset.
-No stage7 commit/push. Use `records_bench.py --flash --results NEW_DIRECTORY`
+Publication status above supersedes validation-time local-only notes. Use `records_bench.py --flash --results NEW_DIRECTORY`
 for finite synthetic/transport checks; `motion_bench.py --test ... --audio`
 uses Windows PC audio plus manual LED cue for a small EMPTY-bottle window.
 `--clear-before` is explicit and clears only application RAM records/statistics.

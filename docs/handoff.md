@@ -1,5 +1,23 @@
 # Pebo handoff log
 
+## 2026-10-26: Stage7 publication confirmed
+
+PC-02 TripleC/main. User explicitly authorized commit/push after stage7 closure.
+Stage7 commit 1001ea0e34e51ccb73634a40e177a938b0ddcde0 pushed normally to origin/main and
+independently verified by git ls-remote.82 files: native project, source/tests,
+evidence and related docs. Source manifest, JSON/Python syntax, staged scope,
+common secret-pattern scan and diff checks PASS. No new firmware build/HIL,
+UART/board/reset/instrument operation during publication. Last board remains
+c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958,
+off/debug/UART closed (historical closure, not freshly reconnected).
+Existing packed-refs.lock maintenance warning left untouched; commit/push
+succeeded. Unrelated untracked tests/conflicted HIL copy preserved. Earlier
+local-only/no-stage7-commit notes below describe validation-time history and
+are superseded by this publication. This follow-up records the outcome; no
+stage8 work. Canonical handoff/current-machine profile saved. Next: stage7
+review; define schedule/resource plan before separately requested stage8.
+
+
 ## 2026-10-26: Stage7 RAM drink records completed; stopped at stage7
 
 PC-02 TripleC/main HEAD274e08467371a4b357b156d5f87f519a30ed3561; directly queried

@@ -1,5 +1,7 @@
 # Stage7 validation — 2026-10-26, PC-02 TripleC
 
+Publication: commit `1001ea0e34e51ccb73634a40e177a938b0ddcde0` pushed to origin/main and directly verified after user authorization. Local-only notes below are validation-time history. No new physical validation during publication.
+
 Stage7 implementation and bounded engineering validation completed. All water /
 actual drinking acceptance remains DEFERRED_BY_USER. No classifier tuning,
 scheduling, reminders or automatic progress. No commit/push of stage7.

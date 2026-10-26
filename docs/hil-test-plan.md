@@ -564,3 +564,5 @@ peakNOT_MEASURED. off/debug/PA4High/PWM+sources off,COM13closed,RTCvalid;RAM0/
 calibration invalid after intentional reset. No instruments,power changes,
 option bytes,backup-domain reset. Stop stage7; stage8 requires schedule and
 resource planning (Flash spare56B), new motion session requires recalibration.
+
+2026-10-26 publication follow-up: stage7 commit1001ea0e34e51ccb73634a40e177a938b0ddcde0 pushed and directly verified on origin/main after user authorization; no new physical checks during publication. Earlier local-only wording is historical.

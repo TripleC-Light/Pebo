@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 8877,
-    "sha256": "2ced480393453876afde7d998b915a7803c405e28cd77420bfc4496ef7436883"
+    "bytes": 9005,
+    "sha256": "cb3924ff2518f10e10646d9c9f19815fafb207c0c3c8fd713a3e5616be1badf2"
   },
   {
     "path": "src/AppParser.h",
@@ -126,8 +126,8 @@
   },
   {
     "path": "VALIDATION.md",
-    "bytes": 12617,
-    "sha256": "89fe6ef52701b0670181d5d4e43ac590450de48330896a9124727cb00bd8eaf0"
+    "bytes": 12852,
+    "sha256": "238ed9d7fcd080ac31f285376c7e18f515c7f668ad5df428fecbf1e96bf9d163"
   },
   {
     "path": "vendor/HAL/LICENSE.md",

@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "test": "single",
+  "bottle": "EMPTY",
+  "operator_confirmation": "CONFIRMED_CORRECT_ONE_EMPTY_GESTURE",
+  "image_scope": "exact current image readback; no water/no intake acceptance",
+  "pc_audio": "SystemSounds not audible; subsequent winsound two-tone cue separately confirmed audible"
+}

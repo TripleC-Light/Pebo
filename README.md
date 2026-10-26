@@ -60,3 +60,13 @@ using another computer. Git publication status is recorded in `docs/handoff.md`.
 
 Piezo bring-up and blue LED progress results are recorded in `docs/handoff.md`;
 NFC data exchange and multi-source wake integration remain follow-up work.
+
+## Stage7 RAM drinking-event observation records
+
+[NativeDrinkRecordTest](FW/NativeDrinkRecordTest/README.md) adds32 RAM events,
+independent daily/context summaries and bounded UART queries. Its
+[validation](FW/NativeDrinkRecordTest/VALIDATION.md) distinguishes exact-image
+empty/synthetic/RF evidence and limitations. Water intake remains deferred;
+no schedules,reminders,persistence or automatic progress. Stage7 saved locally,
+uncommitted; only authorized stage6 checkpoint tag pushed. Flash spare56B,
+peak stack unmeasured.

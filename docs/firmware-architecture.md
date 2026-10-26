@@ -52,3 +52,18 @@ In current functional tests the whole board returns to roughly **4.43 µA averag
 - Watchdog behavior, brownout response, and production battery ADC policy.
 - Reminder schedule, quiet hours, event separation, and user-adjustable target semantics.
 - Final ST25DV NFC payload/update method and phone transaction flow.
+
+## Stage7 engineering RAM records (2026-10-26)
+
+Independent FW/NativeDrinkRecordTest consumes only completed10s DRINK_CONFIRMED.
+First/last candidate completion and delayed confirmation are separately captured;
+first completion determines saved local date/timezone, including midnight merges.
+32x32B ring and4x24B independent FIFO(context,date) summaries retain totals across
+ring replacement. Invalid events remain undated; no backfill or reinterpretation
+on clock/context/zone edits. Edits cancel pending state; off/debug/run retain
+confirmed RAM; explicit clear/reset and saturated/exhausted bounds disclosed.
+One-event UART snapshots continue foreground service. Synthetic Store shares
+only inactive diagnostic trace memory; REAL and RTC remain isolated. No schedules,
+auto progress,audio,NVM,NFC app data. Final Flash32712/staticRAM5940,minstack1024/
+heap0/peak unmeasured. Plan56B Flash headroom before features. Exact image scopes
+and validation limits are in project VALIDATION; empty tests are not intake proof.

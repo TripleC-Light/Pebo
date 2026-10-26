@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "test": "three",
+  "bottle": "EMPTY",
+  "operator_confirmation": "CONFIRMED_THREE_CORRECT_EMPTY_GESTURES_AND_AUDIBLE_CUE",
+  "image_scope": "exact current image readback; no water/no intake acceptance"
+}

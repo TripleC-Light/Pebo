@@ -1,5 +1,60 @@
 # Pebo handoff log
 
+## 2026-10-26: Stage7 RAM drink records completed; stopped at stage7
+
+PC-02 TripleC/main HEAD274e08467371a4b357b156d5f87f519a30ed3561; directly queried
+remote main matched at start. Git2.46.2.windows.1/Python3.12.10/GCC14.2.1 verified.
+Stage6 source unchanged from3d6d70a, rebuild AND actual board readback match
+09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293.
+Authorized annotated checkpoint/native-drink-detection-v1 created/pushed without
+force: tag7b27cb1aaa7cd543329f6c57f03e59f24dcfdc03 ->
+3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf. No other refs pushed, no stage7
+commit/push. Existing unrelated FeedbackTest/TimeManagementTest and conflicted
+HIL copy preserved. MCP Bridge not touched.
+
+New FW/NativeDrinkRecordTest:32 RAM events x32B,Store1156B,four24B FIFO(context,
+localday) summaries; totals survive ring overwrite. First candidate COMPLETION
+captures date; only10s merged confirmation adds once. Unknown events stay
+undated; time changes cancel pending/context separation, off/debug/run retain
+records. Clear/reset disclosed. Bounded one-row UART snapshot; SYNTHETIC Store
+shares inactive diagnostic trace only and requires off/idle. No water, thresholds,
+tasks, scores, reminders, board buzzer, NVM, NFC app protocol or auto progress.
+See project README/VALIDATION and evidence/ for exact per-image scope.
+
+Integration image9f5a869fbe3850107cb1a60564dd8f58a33c3212aede2d85d1ccc66cabfd88d1:
+user confirms empty single1/1,three3/1,shake1/no drink,off cancellation0records
++11s quiet/restart14s quiet. Nonempty synthetic isolation,off/debug/run retention,
+undated->normal UTC sync/no backfill and nonempty ordinary-reset RTC retention
+PASS. Single01/shake01 invalid operator trials preserved/excluded. SystemSounds
+inaudible; user-confirmed two-tone winsound PC cue used. No board audio driver.
+Initial RTC was INVALID/BKP0..4zero, not assumed historical valid; normal sync to
+current Windows UTC2026-10-26 08:33:25 (NTP unverified), no backup-domain reset.
+
+FINAL c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958:
+only recordsReport local buffer240->256 fixes245B worst status. Manual gestures
+NOT repeated/relabelled final. Two identical final builds, all pure compiler-
+evaluated checks and final40-event synthetic/parser/full readback/RTC/STOP PASS.
+Final RF awake3 confirmed; STOPdeltaISR5/wake4/confirmed4/errors0/unknown1;
+phone actions/stationary bottle operator-confirmed, no record changes. RTCrun25,
+stops32,unknownWake0. All32KB SHA
+1e911996c6a277b394a72e20e36189e1d7532ef0abfbedf4f973caa088c1348b.
+Flash32712 (56spare),data104/bss5836/static5940;minstack1024/heap0,peakNOT_MEASURED.
+Compiler maxframe496 is not a peak proof; Event32B/Summary24B/Store1156B.
+
+Final board off/debug,all sources/LED/PWM/sampling off,PA4High,TIM2/TIM22off;
+RTCvalid,RAM records0/calibration invalid after intentional reset. Prolific
+COM13(067B:2303) verified/closed,NordicCOM6/7 never opened. STLINK56FF6C066688555210351387,
+MCU425RevX,programmerVTref2.72..2.73V. User power unchanged; no instruments,
+hardware/option bytes/backup reset; instrument processes not inspected/controlled.
+No session helper active. Shell sandbox startup failed; approved fallback used.
+
+Saved locally only: new project/evidence,root README,architecture/motion/HIL/
+handoff/current-machine docs. No cloud replication claim. Other machines'
+dated history preserved. Canonical handoff saved. Next: review stage7, keep
+water acceptance deferred; define schedule and Flash resource plan BEFORE any
+separate stage8 work. No automatic stage8/reminders. Recalibrate next motion run.
+
+
 ## 2026-10-26: Interrupted publication independently rechecked
 
 PC-02 TripleC/main: local HEAD and actual origin/main both verified as

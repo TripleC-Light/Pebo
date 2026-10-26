@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "test": "cancel-off",
+  "bottle": "EMPTY",
+  "operator_confirmation": "CONFIRMED_ONE_CORRECT_EMPTY_GESTURE",
+  "image_scope": "exact current image readback; no water/no intake acceptance"
+}

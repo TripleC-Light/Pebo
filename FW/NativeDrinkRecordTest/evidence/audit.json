@@ -1,0 +1,189 @@
+{
+  "result": "PASS",
+  "json_files_parsed": 42,
+  "source_files": 30,
+  "results": {
+    "synthetic01": {
+      "result": "PASS",
+      "kind": "SYNTHETIC_RECORD_PIPELINE_NOT_DRINK_RECOGNITION"
+    },
+    "calibration01": {
+      "result": "PASS",
+      "test": "calibrate",
+      "bottle": "EMPTY",
+      "operator_confirmation": "NOT_CONFIRMED",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "empty-single01": {
+      "result": "PASS",
+      "test": "single",
+      "bottle": "EMPTY",
+      "operator_confirmation": "INVALID_OPERATOR_MOTION",
+      "image_scope": "exact current image readback; no water/no intake acceptance",
+      "acceptance": "EXCLUDED, user requests retry"
+    },
+    "empty-single02": {
+      "result": "PASS",
+      "test": "single",
+      "bottle": "EMPTY",
+      "operator_confirmation": "CONFIRMED_CORRECT_ONE_EMPTY_GESTURE",
+      "image_scope": "exact current image readback; no water/no intake acceptance",
+      "pc_audio": "SystemSounds not audible; subsequent winsound two-tone cue separately confirmed audible"
+    },
+    "rtc-sync01": {
+      "result": "PASS",
+      "test": "rtc-sync",
+      "bottle": "EMPTY",
+      "operator_confirmation": "NOT_CONFIRMED",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "retention01": {
+      "result": "PASS",
+      "test": "retention",
+      "bottle": "EMPTY",
+      "operator_confirmation": "NOT_CONFIRMED",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "empty-three01": {
+      "result": "PASS",
+      "test": "three",
+      "bottle": "EMPTY",
+      "operator_confirmation": "CONFIRMED_THREE_CORRECT_EMPTY_GESTURES_AND_AUDIBLE_CUE",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "empty-shake01": {
+      "result": "FAIL",
+      "test": "shake",
+      "bottle": "EMPTY",
+      "operator_confirmation": "INVALID_OPERATOR_TIMING",
+      "image_scope": "exact current image readback; no water/no intake acceptance",
+      "acceptance": "EXCLUDED, user requests retry"
+    },
+    "empty-shake02": {
+      "result": "PASS",
+      "test": "shake",
+      "bottle": "EMPTY",
+      "operator_confirmation": "CONFIRMED_ONE_SHAKE_LEVEL5_DISPLAY_ABOUT3S_OFF",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "cancel-off01": {
+      "result": "PASS",
+      "test": "cancel-off",
+      "bottle": "EMPTY",
+      "operator_confirmation": "CONFIRMED_ONE_CORRECT_EMPTY_GESTURE",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "synthetic-real-retained01": {
+      "result": "PASS",
+      "kind": "SYNTHETIC_RECORD_PIPELINE_NOT_DRINK_RECOGNITION"
+    },
+    "reset-real-records01": {
+      "result": "PASS",
+      "test": "reset",
+      "bottle": "EMPTY",
+      "operator_confirmation": "NOT_CONFIRMED",
+      "image_scope": "exact current image readback; no water/no intake acceptance"
+    },
+    "final-synthetic01": {
+      "result": "PASS",
+      "kind": "SYNTHETIC_RECORD_PIPELINE_NOT_DRINK_RECOGNITION"
+    },
+    "final-rf-awake01": {
+      "result": "PASS",
+      "test": "awake",
+      "operator_confirmation": "CONFIRMED_PHONE_NEAR_REMOVE_BOTTLE_STATIONARY",
+      "scope": "RF field wake only, no NFC application protocol"
+    },
+    "final-rf-stop01": {
+      "result": "PASS",
+      "test": "stop",
+      "operator_confirmation": "CONFIRMED_PHONE_NEAR_REMOVE_BOTTLE_STATIONARY",
+      "scope": "RF field wake only, no NFC application protocol"
+    }
+  },
+  "final_state": {
+    "result": "PASS",
+    "image_bytes": 32712,
+    "image_sha256": "c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958",
+    "flash32k_sha256": "1e911996c6a277b394a72e20e36189e1d7532ef0abfbedf4f973caa088c1348b",
+    "status": {
+      "mode": "debug",
+      "rtc": "0/0",
+      "lis": "0/0",
+      "st": "0/0",
+      "pins": "0,0",
+      "lpd": "1",
+      "timeValid": "1",
+      "stops": "32",
+      "aborted": "1",
+      "field": "1",
+      "fieldOn": "8",
+      "fieldOff": "0",
+      "error": "none"
+    },
+    "app": {
+      "version": "NativeDrinkRecordTest-v1",
+      "progress": "0",
+      "display": "0",
+      "pattern": "00",
+      "pwm": "0",
+      "healthy": "1",
+      "sampling": "0",
+      "cooldown": "0",
+      "trace": "0"
+    },
+    "clock": {
+      "valid": "1",
+      "utc": "1793004809",
+      "lse": "1",
+      "bkp2": "544D0101",
+      "bkp3": "6ADF1055",
+      "monotonicMs": "368063",
+      "bkp0": "00000000",
+      "bkp1": "00000000",
+      "bkp4": "00000000"
+    },
+    "led": {
+      "apb1": "10020000",
+      "apb2": "00000001",
+      "mode": "EBE9553F",
+      "odr": "00000010"
+    },
+    "lis": {
+      "ok": "1",
+      "ctrl1": "00",
+      "ctrl2": "0C",
+      "ctrl3": "10",
+      "ctrl4": "00",
+      "ctrl5": "00",
+      "ctrl6": "00"
+    },
+    "records": {
+      "ctx": "2",
+      "day": "20752",
+      "tz": "480",
+      "valid": "1",
+      "kept": "0",
+      "first": "0",
+      "last": "0",
+      "overwrite": "0",
+      "undated": "0",
+      "summaryLost": "0",
+      "rejected": "0",
+      "exhausted": "0",
+      "bytes": "32",
+      "store": "1156",
+      "reset_clears": "1"
+    },
+    "uart": "closed by finally",
+    "instruments": "not inspected/controlled",
+    "power": "user supplied; no changes"
+  },
+  "build_reproducible": true,
+  "stage7_commit_push": false,
+  "baseline_tag_only_pushed": true,
+  "host_executable_runtime": "NOT_RUN; compiler constexpr checks PASS",
+  "power_instruments": "NOT_OPERATED",
+  "physical_water": "DEFERRED_BY_USER",
+  "peak_stack": "NOT_MEASURED"
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 16,
+    "sha256": "4697bdcc5a0e92bf201efc735aa6559f271aa4410cecaf2dde34eaccc98716ff"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 44,
+    "sha256": "d09f2e9ec3014298635bbd8b82dff2a6af006aaea557faa2895277b60649619c"
+  },
+  {
+    "path": "build.py",
+    "bytes": 9229,
+    "sha256": "938238092f1457711b0c1614858f4a00837bcbda702aa9c50fbcd76d6b3f46a9"
+  },
+  {
+    "path": "include/Board.h",
+    "bytes": 731,
+    "sha256": "defb217137de4146954cc055a5cc7ae6b8dbe39d3426834ea3cd64d0e5b9a4d4"
+  },
+  {
+    "path": "include/stm32l0xx_hal_conf.h",
+    "bytes": 1122,
+    "sha256": "bf1194c7482243e86e69d717f5e22cac5b54f2d2038ff1416d503fd9b25b62a6"
+  },
+  {
+    "path": "README.md",
+    "bytes": 8877,
+    "sha256": "2ced480393453876afde7d998b915a7803c405e28cd77420bfc4496ef7436883"
+  },
+  {
+    "path": "src/AppParser.h",
+    "bytes": 2924,
+    "sha256": "2fe451bd0c3ea3dc7743f856c277e4971df5397816365304173b75abfb5b8d8f"
+  },
+  {
+    "path": "src/Board.cpp",
+    "bytes": 7549,
+    "sha256": "fa0a6b8b63ffc85f7aa3a447be26a0bdabd3be15b5acdf3024d7e785a60378cf"
+  },
+  {
+    "path": "src/DeadlineRtc.h",
+    "bytes": 2949,
+    "sha256": "a135d965772e98d762acbf12f9921f70534872d309c66523894cc493760c39c9"
+  },
+  {
+    "path": "src/DrinkLogic.h",
+    "bytes": 5720,
+    "sha256": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5"
+  },
+  {
+    "path": "src/DrinkRecords.h",
+    "bytes": 4479,
+    "sha256": "951943e24a88dfe9bf4a2e62e8f83c71dcc8da29f5aa368f463a1f0b66bcb6b3"
+  },
+  {
+    "path": "src/ElapsedLogic.h",
+    "bytes": 552,
+    "sha256": "db3a9c0bd881ebf375150e8a7684e646d68fbba1933d1d13d096fe8f21637748"
+  },
+  {
+    "path": "src/main.cpp",
+    "bytes": 28946,
+    "sha256": "8e3acbe2a8fef382e315f7c1a6004c1f6220dbee01ecc357bdb146a4c1543d3b"
+  },
+  {
+    "path": "src/Observation.h",
+    "bytes": 4378,
+    "sha256": "1d13ac99b570854adc079f8b1afb011ed2fe55d5927dd3344bb9847e9aa44729"
+  },
+  {
+    "path": "src/ProgressDisplay.h",
+    "bytes": 2427,
+    "sha256": "0664ca898269f4879096f8adbfe2cc884fc6a65a072fa053a68ef9445c76f3d8"
+  },
+  {
+    "path": "src/RecordChecks.h",
+    "bytes": 4575,
+    "sha256": "f5de8f112a44caec7c0f3460541b09573ee216dbc9215d5397bc809a2996e480"
+  },
+  {
+    "path": "src/ShakeLogic.h",
+    "bytes": 2663,
+    "sha256": "2c38d63e7290884359813a0d2b0ddb64cb15be7366b1fe89909efa1b756b96b3"
+  },
+  {
+    "path": "src/TimeSupport.h",
+    "bytes": 2378,
+    "sha256": "d6b8b14641663827c8770defcb3a06ebfeb490e30ce4523de40d8fd971abe52e"
+  },
+  {
+    "path": "src/WakeSources.h",
+    "bytes": 1878,
+    "sha256": "2716435a74ecaee46990f7c89c668dbf0bf76c7e3ef1b743f75b366dd1bef9d5"
+  },
+  {
+    "path": "stm32l031.ld",
+    "bytes": 1497,
+    "sha256": "c522cfdcf8355e7949b0d7fcbc0a03e67379227087b5b1f970372d5765ed2aa0"
+  },
+  {
+    "path": "tests/LogicChecks.cpp",
+    "bytes": 7503,
+    "sha256": "8e3d8808f0484a9245c6ab35d01ca252e7f2f69250031d8183d548353ff230ba"
+  },
+  {
+    "path": "tests/motion_bench.py",
+    "bytes": 5218,
+    "sha256": "024de47a8e904ca4a2749f0c34fc17325f08f698ba98f227e5955990ebaca82d"
+  },
+  {
+    "path": "tests/RecordChecks.cpp",
+    "bytes": 1397,
+    "sha256": "9adae73f0d4aa1ba452834e59cdc1934a56454165f46d129ce8078248346009e"
+  },
+  {
+    "path": "tests/records_bench.py",
+    "bytes": 5798,
+    "sha256": "6c2710dfce2012e4c49cee2ba9c4916b2660faf70947da172eb1a7c0d121da28"
+  },
+  {
+    "path": "tests/rf_bench.py",
+    "bytes": 2211,
+    "sha256": "148e1ca1b19ddbd0380ad5f82ea5689a6e64bcf9f10eee283f63fe8a18d07ecb"
+  },
+  {
+    "path": "VALIDATION.md",
+    "bytes": 12617,
+    "sha256": "89fe6ef52701b0670181d5d4e43ac590450de48330896a9124727cb00bd8eaf0"
+  },
+  {
+    "path": "vendor/HAL/LICENSE.md",
+    "bytes": 1485,
+    "sha256": "376c82bcef0be563bf59b93d05cfdd4b6295e4660b55b31dd8a883bf1d6637f7"
+  },
+  {
+    "path": "vendor/HAL/Src/stm32l0xx_hal_tim.c",
+    "bytes": 225838,
+    "sha256": "6f709825448dd150c54df50f6074ec407ad8783f069b4adfa56dc28dce9eb096"
+  },
+  {
+    "path": "vendor/HAL/Src/stm32l0xx_hal_tim_ex.c",
+    "bytes": 19508,
+    "sha256": "ef1a2abc7e2924647382afc9bb01ef32f540281bbce68607787e5f5089029bbe"
+  },
+  {
+    "path": "vendor/manifest.json",
+    "bytes": 240,
+    "sha256": "c0ffd759fb9fe76418a0d57907440a3ab1a98b059d9367a8814190c3a7f94bdb"
+  }
+]

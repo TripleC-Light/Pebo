@@ -29,3 +29,14 @@ volume, pour rejection or upright straw detection. Single-event10-trial cohort,
 real-water/population/fill/mount robustness and power remain pending.
 
 Sampling rate, interrupt configuration, classifier thresholds, reminder suppression, confidence representation, and how straw use affects product claims all require prototype data.
+
+### Stage7 record integration (2026-10-26)
+
+Classifier/thresholds remain frozen from NativeDrinkDetectionTest. Independent
+NativeDrinkRecordTest stores only confirmed10s groups, using FIRST VALID CANDIDATE
+COMPLETION (not tilt start) for event occurrence/local day; last completion and
+delayed output remain distinct. Candidate count is not sips/ml. User-confirmed
+empty single1/1,three candidates/one record,shake/no record,cancelled/no record
+are integration-image evidence; invalid trials excluded. A final UART-buffer-only
+fix and final automatic/RF checks have separate SHA scopes in VALIDATION.md.
+No water/intake acceptance, retuning or task/progress interpretation is implied.

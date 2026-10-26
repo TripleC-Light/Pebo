@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "test": "single",
+  "bottle": "EMPTY",
+  "operator_confirmation": "INVALID_OPERATOR_MOTION",
+  "image_scope": "exact current image readback; no water/no intake acceptance",
+  "acceptance": "EXCLUDED, user requests retry"
+}

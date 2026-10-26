@@ -1,0 +1,9 @@
+{
+  "result": "PASS after fix",
+  "status_worst_bytes": 245,
+  "status_buffer": 256,
+  "today_max_queue_bytes": 651,
+  "admission": 900,
+  "tx_ring": 1024,
+  "list_snapshot": 1
+}

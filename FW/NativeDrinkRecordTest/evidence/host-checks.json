@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "method": "GCC14.2.1 host compiler constexpr evaluation with -fsyntax-only; no native host executable run",
+  "groups": [
+    "existing EventLogic LED Shake Drink calibration merge elapsed",
+    "fixed parser partial overlong NUL invalid bounds",
+    "one-shot Pending, duplicate seq rejection, multiple candidates",
+    "32 ring capacity, 40-event day totals independent of ring",
+    "midnight first attribution; previous-day delayed output",
+    "year/month/leap/UTC timezone-edge calendar",
+    "invalid to valid no backfill; timezone/date/context changes",
+    "context mismatch rejects pending; four-summary eviction/lost report",
+    "UINT32 saturation, final sequence and context exhaustion",
+    "independent synthetic flag/Store isolation"
+  ],
+  "reproducible_image_sha256": "9f5a869fbe3850107cb1a60564dd8f58a33c3212aede2d85d1ccc66cabfd88d1",
+  "final_reproducible_image_sha256": "c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958",
+  "final_checks": "PASS in both final builds"
+}

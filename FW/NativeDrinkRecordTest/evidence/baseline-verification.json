@@ -1,0 +1,15 @@
+{
+  "head": "274e08467371a4b357b156d5f87f519a30ed3561",
+  "remote_main": "274e08467371a4b357b156d5f87f519a30ed3561",
+  "source_commit": "3d6d70a9a60e5c0ea0ed8dd95b6a00ca1f72c1cf",
+  "source_diff_to_head": "empty for src/include/vendor/build.py/linker",
+  "tag": "checkpoint/native-drink-detection-v1",
+  "tag_object": "7b27cb1aaa7cd543329f6c57f03e59f24dcfdc03",
+  "tag_pushed": true,
+  "image_bytes": 28228,
+  "image_sha256": "09cdb9cc0d952a759e24917fd94fcdd09b01b44ad0b790af84c78a20238c3293",
+  "flash32k_sha256": "fbac7eed1230bcd870408f1355bced431f94c4aeb3abe5771cd9f3f50ec7ad3b",
+  "stlink": "56FF6C066688555210351387",
+  "device": "0x425 Rev X",
+  "vtref": 2.72
+}

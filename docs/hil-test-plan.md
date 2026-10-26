@@ -540,3 +540,27 @@ Sample banners, Info, Status3events/1completed, Config edit/readback, History
 explicit unavailable error, no packet traffic. Return engineering screen for
 separate discovery/Block0 regression. True MCU protocol writes require agreed
 firmware and atomic transport binding. See PROTOCOL-v0.1.md and handoff.
+
+## 2026-10-26: Stage7 RAM record validation
+
+FW/NativeDrinkRecordTest README/VALIDATION and evidence/ define exact per-image
+scope. Authorized baseline annotated tag pushed to3d6d70a; stage7 uncommitted.
+Pure compiler-evaluated C++ tests cover capacity, independent day summaries,
+midnight/calendar/context/invalid-time/saturation/isolation/parser; no native
+host executable run claimed. Integration image: user-confirmed empty single1/1,
+three3/1,shake/no record,pending off/no record +11s/restart14s quiet. Invalid
+single01/shake01 excluded/preserved. Normal UTC recovery keeps undated event;
+nonempty isolation,off/debug/run retention,ordinary reset/valid RTC retention
+PASS. No water or threshold tuning. PC pure-tone cue is host-only.
+
+Final UART-buffer-only fix240->256 (worst status245B), no manual gesture rerun
+or relabelling. Final40SYNTHETIC/retained32/seq9..40/overwrite8;previous-day
+first/today39 totals,32pages,clear/parser/RTC/STOP PASS. Final RF awake3confirmed;
+STOPdeltaISR5/wake4/confirmed4/errors0/unknown1; phone/stationary bottle confirmed,
+no records. Final loaded SHA c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958;
+all32KB SHA1e911996c6a277b394a72e20e36189e1d7532ef0abfbedf4f973caa088c1348b.
+Flash32712/static5940(data104/bss5836),Event32B/Store1156B,minstack1024/heap0/
+peakNOT_MEASURED. off/debug/PA4High/PWM+sources off,COM13closed,RTCvalid;RAM0/
+calibration invalid after intentional reset. No instruments,power changes,
+option bytes,backup-domain reset. Stop stage7; stage8 requires schedule and
+resource planning (Flash spare56B), new motion session requires recalibration.

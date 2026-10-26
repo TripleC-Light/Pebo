@@ -1,0 +1,557 @@
+[
+  {
+    "kind": "cube",
+    "monotonic": 19497.718,
+    "args": [
+      "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+      "-c",
+      "port=SWD",
+      "sn=56FF6C066688555210351387",
+      "mode=HOTPLUG",
+      "freq=4000",
+      "-u",
+      "0x08000000",
+      "32768",
+      "FW\\NativeDrinkRecordTest\\evidence\\final-rf-awake01\\flash32k.bin",
+      "-score",
+      "-run"
+    ],
+    "code": 0,
+    "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.72V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : FW\\NativeDrinkRecordTest\\evidence\\final-rf-awake01\\flash32k.bin\n  Size          : 32768 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.232\nCore is running\nCore run\n"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19497.718,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19497.75,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19497.906,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19497.937,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=0 first=0 last=0 overwrite=0 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19498.093,
+    "command": "drink status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19498.125,
+    "text": "DRINK calibration=0 ref=0,0,0 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19498.281,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19498.312,
+    "text": "CLOCK valid=1 utc=1793004540 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=99274 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19498.468,
+    "command": "run 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19498.5,
+    "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19499.453,
+    "text": "RUN_READY rtc_probe=1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.453,
+    "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=2 unknownWake=0 lastLis=00 lastSt=00"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.453,
+    "text": "COUNT source=rtc isr=5 wake=2 confirmed=5 handled=5 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.453,
+    "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.484,
+    "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.484,
+    "text": "END counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19500.484,
+    "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19501.671,
+    "command": "counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19501.703,
+    "text": "COUNT source=rtc isr=5 wake=2 confirmed=5 handled=5 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19501.703,
+    "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19501.703,
+    "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19501.703,
+    "text": "END counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19501.734,
+    "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+  },
+  {
+    "kind": "WINDOW_READY",
+    "monotonic": 19501.859,
+    "test": "awake",
+    "seconds": 18,
+    "cue": "PC two-tone, phone near/remove; bottle stationary"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19503.437,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19503.468,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19503.468,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19503.625,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19503.656,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19503.656,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19505.843,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19505.859,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19505.859,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19506.015,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19506.046,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19506.046,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19508.265,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19508.296,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19508.296,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19508.453,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19508.484,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19508.484,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19510.703,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19510.734,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19510.734,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19510.875,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19510.906,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19510.906,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19513.125,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19513.156,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19513.156,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19513.312,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19513.343,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19513.343,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19515.593,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19515.625,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19515.625,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19515.781,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19515.812,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19515.812,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19518.031,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19518.062,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19518.062,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19518.218,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19518.25,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19518.25,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19520.468,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19520.5,
+    "text": "LIST_BEGIN REAL page=1 count=0 first=0 last=0 overwrite=0 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19520.5,
+    "text": "LIST_END REAL"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19520.656,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19520.687,
+    "text": "TODAY REAL date=2026-10-26 ctx=2 day=20752 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19520.687,
+    "text": "DAY REAL ctx=2 day=20752 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19521.328,
+    "command": "counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.359,
+    "text": "COUNT source=rtc isr=5 wake=2 confirmed=5 handled=5 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.359,
+    "text": "COUNT source=motion isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.359,
+    "text": "COUNT source=gpo isr=3 wake=0 confirmed=3 handled=3 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.359,
+    "text": "END counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.39,
+    "text": "SHAKE entries=0 windows=0 confirmed=0 rejected=0 errors=0 samples=0 reversals=0 peak2=0"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19521.515,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.546,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19521.703,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.734,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=0 first=0 last=0 overwrite=0 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19521.89,
+    "command": "drink status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19521.921,
+    "text": "DRINK calibration=0 ref=0,0,0 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19522.078,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19522.109,
+    "text": "CLOCK valid=1 utc=1793004564 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=123071 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "RF_PASS",
+    "monotonic": 19522.25,
+    "before": {
+      "source": "gpo",
+      "isr": "0",
+      "wake": "0",
+      "confirmed": "0",
+      "handled": "0",
+      "errors": "0",
+      "unknown": "0"
+    },
+    "after": {
+      "source": "gpo",
+      "isr": "3",
+      "wake": "0",
+      "confirmed": "3",
+      "handled": "3",
+      "errors": "0",
+      "unknown": "0"
+    },
+    "record_change": 0
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19522.25,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19522.281,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19522.437,
+    "command": "mode debug"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19522.468,
+    "text": "OK debug"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19522.625,
+    "command": "records test exit"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19522.656,
+    "text": "ERR not_record_test"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19522.812,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19522.843,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19523.0,
+    "command": "status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19523.031,
+    "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=2 aborted=0 field=1 fieldOn=3 fieldOff=0 error=none"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19523.031,
+    "text": "APP version=NativeDrinkRecordTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19523.062,
+    "text": "DRINK calibration=0 ref=0,0,0 phase=0 merge=0 candidates=0 events=0 rejected=0 timeout=0 errors=0 cancelled=0 dropped=0 first=0 last=0 output=0 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19523.187,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19523.218,
+    "text": "CLOCK valid=1 utc=1793004565 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=124180 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19523.375,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19523.406,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=0 first=0 last=0 overwrite=0 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  }
+]

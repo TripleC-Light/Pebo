@@ -1,0 +1,16 @@
+{
+  "before_image": "9f5a869fbe3850107cb1a60564dd8f58a33c3212aede2d85d1ccc66cabfd88d1",
+  "after_image": "c648aef249ce4e2f1c3bc419291a5c546f3c979febcd40c35983879e5703e958",
+  "change": "Only recordsReport local snprintf buffer 240 -> 256 bytes; fixes 245-byte worst-case status truncation. No change to classifier, record module, hooks, time or parser.",
+  "manual_gestures": "performed on before image; not repeated for output-only buffer-size change",
+  "before_main_sha256": "03d8ab2bb28531ef95a0131e9ed4cf4c9f146a594d94179161deb3d59eee43fa",
+  "final_main_sha256": "425cd6fbd2bdc793c8c3d94e7c458f0d0aa6d5feb6b7f7f1efa98febf7bae235",
+  "unchanged_modules": {
+    "DrinkRecords.h": "951943e24a88dfe9bf4a2e62e8f83c71dcc8da29f5aa368f463a1f0b66bcb6b3",
+    "DrinkLogic.h": "0e181fe69ba603ba360434cfc2d1bbce1ebafa839c11c928b3e7e8022b8122b5",
+    "AppParser.h": "2fe451bd0c3ea3dc7743f856c277e4971df5397816365304173b75abfb5b8d8f",
+    "TimeSupport.h": "d6b8b14641663827c8770defcb3a06ebfeb490e30ce4523de40d8fd971abe52e",
+    "Observation.h": "1d13ac99b570854adc079f8b1afb011ed2fe55d5927dd3344bb9847e9aa44729"
+  },
+  "main_hash_encoding": "UTF-8 normalized LF text"
+}

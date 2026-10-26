@@ -1,0 +1,1569 @@
+[
+  {
+    "kind": "TX",
+    "monotonic": 19263.593,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19263.625,
+    "text": "CLOCK valid=1 utc=1793004306 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=1136839 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19263.781,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19263.812,
+    "text": "OK off"
+  },
+  {
+    "kind": "cube",
+    "monotonic": 19264.515,
+    "args": [
+      "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe",
+      "-c",
+      "port=SWD",
+      "sn=56FF6C066688555210351387",
+      "mode=HOTPLUG",
+      "freq=4000",
+      "-u",
+      "0x08000000",
+      "32768",
+      "FW\\NativeDrinkRecordTest\\evidence\\synthetic-real-retained01\\flash32k.bin",
+      "-score",
+      "-run"
+    ],
+    "code": 0,
+    "output": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.11.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : 56FF6C066688555210351387\nST-LINK FW  : V2J39S7\nBoard       : --\nVoltage     : 2.73V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x425\nRevision ID : Rev X\nDevice name : STM32L03x/L04x/L010\nFlash size  : 32 KBytes\nDevice type : MCU\nDevice CPU  : Cortex-M0+\nBL Version  : 0xc0\n\n\nUPLOADING ...\n  File          : FW\\NativeDrinkRecordTest\\evidence\\synthetic-real-retained01\\flash32k.bin\n  Size          : 32768 Bytes\n  Address:      : 0x8000000\nRead progress:\n\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7\u63a7 0%\n\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57\u8a57 100%\nData read successfully\nTime elapsed during read operation is: 00:00:00.247\nCore is running\nCore run\n"
+  },
+  {
+    "kind": "image",
+    "monotonic": 19264.515,
+    "bytes": 32704,
+    "sha256": "9f5a869fbe3850107cb1a60564dd8f58a33c3212aede2d85d1ccc66cabfd88d1",
+    "flash32k_sha256": "592efd516282cc7172cbde56cc4983c60a20be2ab6135574727316dbfb874924"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19264.812,
+    "command": "run 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19264.843,
+    "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19265.453,
+    "text": "RUN_READY rtc_probe=1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.468,
+    "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=104 unknownWake=0 lastLis=0A lastSt=00"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.468,
+    "text": "COUNT source=rtc isr=198 wake=95 confirmed=198 handled=198 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.468,
+    "text": "COUNT source=motion isr=10 wake=9 confirmed=11 handled=11 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.468,
+    "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.468,
+    "text": "END counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19266.5,
+    "text": "SHAKE entries=11 windows=12 confirmed=1 rejected=3 errors=0 samples=144 reversals=0 peak2=926"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.015,
+    "command": "status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.046,
+    "text": "OK mode=debug rtc=0/0 lis=1/0 st=1/0 pins=0,0 lpd=1 timeValid=1 stops=104 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.046,
+    "text": "APP version=NativeDrinkRecordTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=27"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.078,
+    "text": "DRINK calibration=1 ref=55,-1011,-105 phase=0 merge=0 candidates=6 events=3 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=963827 last=963827 output=568237 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.203,
+    "command": "records test enter"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.234,
+    "text": "ERR test_requires_off_idle"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.39,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.421,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.562,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.593,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=2 first=1 last=2 overwrite=0 undated=1 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.75,
+    "command": "drink status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.781,
+    "text": "DRINK calibration=1 ref=55,-1011,-105 phase=0 merge=0 candidates=6 events=3 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=963827 last=963827 output=568237 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19268.937,
+    "command": "records test enter"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19268.968,
+    "text": "TEST_BEGIN SYNTHETIC RTC_unchanged"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.125,
+    "command": "run 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.156,
+    "text": "ERR record_test_active"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.312,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.343,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.5,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.531,
+    "text": "TODAY SYNTHETIC date=2024-02-29 ctx=2 day=19782 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.531,
+    "text": "DAY SYNTHETIC ctx=2 day=19781 tz=480 events=1 candidates=2 lastFirstUtc=1709135995 current=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.562,
+    "text": "DAY SYNTHETIC ctx=2 day=19782 tz=480 events=0 candidates=0 lastFirstUtc=0 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.687,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.718,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.75,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.781,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.812,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.843,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.875,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.906,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19269.937,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19269.968,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.015,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.046,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.078,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.109,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.14,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.171,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.203,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.234,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.265,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.296,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.328,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.359,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.39,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.421,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.453,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.484,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.515,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.546,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.578,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.609,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.64,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.671,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.703,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.734,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.765,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.796,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.828,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.859,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.89,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.921,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19270.953,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19270.984,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.015,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.046,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.078,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.109,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.14,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.171,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.203,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.234,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.265,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.296,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.328,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.359,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.39,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.421,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.453,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.484,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.515,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.546,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.578,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.609,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.671,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.703,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.734,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.75,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.812,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.843,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.875,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.906,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19271.937,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19271.968,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.0,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.031,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.062,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.093,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.125,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.156,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.187,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.218,
+    "text": "RECORDS SYNTHETIC ctx=2 day=19782 tz=480 valid=1 kept=32 first=9 last=40 overwrite=8 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.359,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.39,
+    "text": "TODAY SYNTHETIC date=2024-02-29 ctx=2 day=19782 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.39,
+    "text": "DAY SYNTHETIC ctx=2 day=19781 tz=480 events=1 candidates=2 lastFirstUtc=1709135995 current=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.421,
+    "text": "DAY SYNTHETIC ctx=2 day=19782 tz=480 events=39 candidates=78 lastFirstUtc=1709136775 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.546,
+    "command": "records list 0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.578,
+    "text": "LIST_BEGIN SYNTHETIC page=0 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.578,
+    "text": "RECORD SYNTHETIC seq=9 ctx=2 first=1709136155 last=1709136157 confirmed=1709136167 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.578,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.734,
+    "command": "records list 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.765,
+    "text": "LIST_BEGIN SYNTHETIC page=1 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.765,
+    "text": "RECORD SYNTHETIC seq=10 ctx=2 first=1709136175 last=1709136177 confirmed=1709136187 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.765,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19272.921,
+    "command": "records list 2"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.953,
+    "text": "LIST_BEGIN SYNTHETIC page=2 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.953,
+    "text": "RECORD SYNTHETIC seq=11 ctx=2 first=1709136195 last=1709136197 confirmed=1709136207 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19272.953,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19273.109,
+    "command": "records list 3"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.14,
+    "text": "LIST_BEGIN SYNTHETIC page=3 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.14,
+    "text": "RECORD SYNTHETIC seq=12 ctx=2 first=1709136215 last=1709136217 confirmed=1709136227 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.14,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19273.296,
+    "command": "records list 4"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.328,
+    "text": "LIST_BEGIN SYNTHETIC page=4 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.328,
+    "text": "RECORD SYNTHETIC seq=13 ctx=2 first=1709136235 last=1709136237 confirmed=1709136247 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.328,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19273.468,
+    "command": "records list 5"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.5,
+    "text": "LIST_BEGIN SYNTHETIC page=5 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.5,
+    "text": "RECORD SYNTHETIC seq=14 ctx=2 first=1709136255 last=1709136257 confirmed=1709136267 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.5,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19273.656,
+    "command": "records list 6"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.687,
+    "text": "LIST_BEGIN SYNTHETIC page=6 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.687,
+    "text": "RECORD SYNTHETIC seq=15 ctx=2 first=1709136275 last=1709136277 confirmed=1709136287 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.687,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19273.843,
+    "command": "records list 7"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.875,
+    "text": "LIST_BEGIN SYNTHETIC page=7 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.875,
+    "text": "RECORD SYNTHETIC seq=16 ctx=2 first=1709136295 last=1709136297 confirmed=1709136307 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19273.875,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.031,
+    "command": "records list 8"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.062,
+    "text": "LIST_BEGIN SYNTHETIC page=8 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.062,
+    "text": "RECORD SYNTHETIC seq=17 ctx=2 first=1709136315 last=1709136317 confirmed=1709136327 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.062,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.218,
+    "command": "records list 9"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.25,
+    "text": "LIST_BEGIN SYNTHETIC page=9 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.25,
+    "text": "RECORD SYNTHETIC seq=18 ctx=2 first=1709136335 last=1709136337 confirmed=1709136347 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.25,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.406,
+    "command": "records list 10"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.421,
+    "text": "LIST_BEGIN SYNTHETIC page=10 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.421,
+    "text": "RECORD SYNTHETIC seq=19 ctx=2 first=1709136355 last=1709136357 confirmed=1709136367 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.421,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.578,
+    "command": "records list 11"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.609,
+    "text": "LIST_BEGIN SYNTHETIC page=11 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.609,
+    "text": "RECORD SYNTHETIC seq=20 ctx=2 first=1709136375 last=1709136377 confirmed=1709136387 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.609,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.765,
+    "command": "records list 12"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.796,
+    "text": "LIST_BEGIN SYNTHETIC page=12 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.796,
+    "text": "RECORD SYNTHETIC seq=21 ctx=2 first=1709136395 last=1709136397 confirmed=1709136407 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.796,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19274.953,
+    "command": "records list 13"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.984,
+    "text": "LIST_BEGIN SYNTHETIC page=13 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.984,
+    "text": "RECORD SYNTHETIC seq=22 ctx=2 first=1709136415 last=1709136417 confirmed=1709136427 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19274.984,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19275.14,
+    "command": "records list 14"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.171,
+    "text": "LIST_BEGIN SYNTHETIC page=14 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.171,
+    "text": "RECORD SYNTHETIC seq=23 ctx=2 first=1709136435 last=1709136437 confirmed=1709136447 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.171,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19275.328,
+    "command": "records list 15"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.359,
+    "text": "LIST_BEGIN SYNTHETIC page=15 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.359,
+    "text": "RECORD SYNTHETIC seq=24 ctx=2 first=1709136455 last=1709136457 confirmed=1709136467 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.359,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19275.515,
+    "command": "records list 16"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.546,
+    "text": "LIST_BEGIN SYNTHETIC page=16 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.546,
+    "text": "RECORD SYNTHETIC seq=25 ctx=2 first=1709136475 last=1709136477 confirmed=1709136487 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.546,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19275.703,
+    "command": "records list 17"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.734,
+    "text": "LIST_BEGIN SYNTHETIC page=17 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.734,
+    "text": "RECORD SYNTHETIC seq=26 ctx=2 first=1709136495 last=1709136497 confirmed=1709136507 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.734,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19275.89,
+    "command": "records list 18"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.921,
+    "text": "LIST_BEGIN SYNTHETIC page=18 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.921,
+    "text": "RECORD SYNTHETIC seq=27 ctx=2 first=1709136515 last=1709136517 confirmed=1709136527 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19275.921,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19276.078,
+    "command": "records list 19"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.109,
+    "text": "LIST_BEGIN SYNTHETIC page=19 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.109,
+    "text": "RECORD SYNTHETIC seq=28 ctx=2 first=1709136535 last=1709136537 confirmed=1709136547 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.109,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19276.265,
+    "command": "records list 20"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.296,
+    "text": "LIST_BEGIN SYNTHETIC page=20 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.296,
+    "text": "RECORD SYNTHETIC seq=29 ctx=2 first=1709136555 last=1709136557 confirmed=1709136567 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.296,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19276.437,
+    "command": "records list 21"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.468,
+    "text": "LIST_BEGIN SYNTHETIC page=21 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.468,
+    "text": "RECORD SYNTHETIC seq=30 ctx=2 first=1709136575 last=1709136577 confirmed=1709136587 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.468,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19276.625,
+    "command": "records list 22"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.656,
+    "text": "LIST_BEGIN SYNTHETIC page=22 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.656,
+    "text": "RECORD SYNTHETIC seq=31 ctx=2 first=1709136595 last=1709136597 confirmed=1709136607 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.656,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19276.812,
+    "command": "records list 23"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.843,
+    "text": "LIST_BEGIN SYNTHETIC page=23 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.843,
+    "text": "RECORD SYNTHETIC seq=32 ctx=2 first=1709136615 last=1709136617 confirmed=1709136627 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19276.843,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.0,
+    "command": "records list 24"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.031,
+    "text": "LIST_BEGIN SYNTHETIC page=24 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.031,
+    "text": "RECORD SYNTHETIC seq=33 ctx=2 first=1709136635 last=1709136637 confirmed=1709136647 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.031,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.187,
+    "command": "records list 25"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.218,
+    "text": "LIST_BEGIN SYNTHETIC page=25 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.218,
+    "text": "RECORD SYNTHETIC seq=34 ctx=2 first=1709136655 last=1709136657 confirmed=1709136667 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.218,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.375,
+    "command": "records list 26"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.406,
+    "text": "LIST_BEGIN SYNTHETIC page=26 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.406,
+    "text": "RECORD SYNTHETIC seq=35 ctx=2 first=1709136675 last=1709136677 confirmed=1709136687 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.406,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.562,
+    "command": "records list 27"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.593,
+    "text": "LIST_BEGIN SYNTHETIC page=27 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.593,
+    "text": "RECORD SYNTHETIC seq=36 ctx=2 first=1709136695 last=1709136697 confirmed=1709136707 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.593,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.75,
+    "command": "records list 28"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.765,
+    "text": "LIST_BEGIN SYNTHETIC page=28 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.765,
+    "text": "RECORD SYNTHETIC seq=37 ctx=2 first=1709136715 last=1709136717 confirmed=1709136727 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.765,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19277.921,
+    "command": "records list 29"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.953,
+    "text": "LIST_BEGIN SYNTHETIC page=29 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.953,
+    "text": "RECORD SYNTHETIC seq=38 ctx=2 first=1709136735 last=1709136737 confirmed=1709136747 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19277.953,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19278.109,
+    "command": "records list 30"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.14,
+    "text": "LIST_BEGIN SYNTHETIC page=30 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.14,
+    "text": "RECORD SYNTHETIC seq=39 ctx=2 first=1709136755 last=1709136757 confirmed=1709136767 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.14,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19278.296,
+    "command": "records list 31"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.328,
+    "text": "LIST_BEGIN SYNTHETIC page=31 count=1 first=9 last=40 overwrite=8 snapshot=page1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.328,
+    "text": "RECORD SYNTHETIC seq=40 ctx=2 first=1709136775 last=1709136777 confirmed=1709136787 candidates=2 day=19782 tz=480 utcValid=1 units=UTC_seconds"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.328,
+    "text": "LIST_END SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19278.468,
+    "command": "records list 32"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.5,
+    "text": "ERR invalid"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19278.656,
+    "command": "records clear"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.687,
+    "text": "ERR invalid"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19278.843,
+    "command": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19278.875,
+    "text": "ERR too_long"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19279.031,
+    "command": "b'records\\x00 status'"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.062,
+    "text": "ERR invalid"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.359,
+    "text": "RECORDS SYNTHETIC ctx=2 day=19782 tz=480 valid=1 kept=32 first=9 last=40 overwrite=8 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19279.546,
+    "command": "records test day"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.578,
+    "text": "TEST_DAY SYNTHETIC"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19279.734,
+    "command": "records test add"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.765,
+    "text": "TEST_ADDED SYNTHETIC candidates=2 intake_unproven=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19279.921,
+    "command": "records today"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.953,
+    "text": "TODAY SYNTHETIC date=2024-03-01 ctx=2 day=19783 tz=480 valid=1 undated=0 summaries=4_FIFO sat32 candidates_not_intake"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.953,
+    "text": "DAY SYNTHETIC ctx=2 day=19781 tz=480 events=1 candidates=2 lastFirstUtc=1709135995 current=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.984,
+    "text": "DAY SYNTHETIC ctx=2 day=19782 tz=480 events=39 candidates=78 lastFirstUtc=1709136775 current=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19279.984,
+    "text": "DAY SYNTHETIC ctx=2 day=19783 tz=480 events=1 candidates=2 lastFirstUtc=1709223195 current=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19280.109,
+    "command": "records clear confirm"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19280.14,
+    "text": "CLEARED SYNTHETIC events_stats_seq RTC_kept"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19280.296,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19280.328,
+    "text": "RECORDS SYNTHETIC ctx=2 day=19783 tz=480 valid=1 kept=0 first=0 last=0 overwrite=0 undated=0 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19280.484,
+    "command": "records test exit"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19280.515,
+    "text": "TEST_END SYNTHETIC REAL_retained"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19280.671,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19280.687,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=2 first=1 last=2 overwrite=0 undated=1 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19280.843,
+    "command": "drink status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19280.875,
+    "text": "DRINK calibration=1 ref=55,-1011,-105 phase=0 merge=0 candidates=6 events=3 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=963827 last=963827 output=568237 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19281.031,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19281.062,
+    "text": "CLOCK valid=1 utc=1793004323 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=1154280 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19281.218,
+    "command": "run 1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19281.25,
+    "text": "RUN_BEGIN uart_rx_wake=0 preflight_max_ms=1500"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19281.437,
+    "text": "RUN_READY rtc_probe=1"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.453,
+    "text": "RUN_END reason=deadline requested=1 elapsed=1 stops=105 unknownWake=0 lastLis=0A lastSt=00"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.453,
+    "text": "COUNT source=rtc isr=200 wake=96 confirmed=200 handled=200 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.484,
+    "text": "COUNT source=motion isr=10 wake=9 confirmed=11 handled=11 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.484,
+    "text": "COUNT source=gpo isr=0 wake=0 confirmed=0 handled=0 errors=0 unknown=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.484,
+    "text": "END counters"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19282.484,
+    "text": "SHAKE entries=11 windows=12 confirmed=1 rejected=3 errors=0 samples=144 reversals=0 peak2=926"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19285.421,
+    "command": "ledregs"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19285.453,
+    "text": "LEDREG apb1=10020000 apb2=00000001 mode=EBE9553F odr=00000010"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19285.609,
+    "command": "lisregs"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19285.64,
+    "text": "LISREG ok=1 ctrl1=20 ctrl2=0C ctrl3=10 ctrl4=20 ctrl5=00 ctrl6=00"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19285.796,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19285.828,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=2 first=1 last=2 overwrite=0 undated=1 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19285.984,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.015,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19286.156,
+    "command": "mode debug"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.187,
+    "text": "OK debug"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19286.343,
+    "command": "records test exit"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.375,
+    "text": "ERR not_record_test"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19286.531,
+    "command": "off"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.562,
+    "text": "OK off"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19286.718,
+    "command": "status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.75,
+    "text": "OK mode=debug rtc=0/0 lis=0/0 st=0/0 pins=0,0 lpd=1 timeValid=1 stops=105 aborted=0 field=-1 fieldOn=0 fieldOff=0 error=none"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.75,
+    "text": "APP version=NativeDrinkRecordTest-v1 progress=0 display=0 pattern=00 pwm=0 healthy=1 sampling=0 cooldown=0 trace=0"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.781,
+    "text": "DRINK calibration=1 ref=55,-1011,-105 phase=0 merge=0 candidates=6 events=3 rejected=0 timeout=0 errors=0 cancelled=1 dropped=0 first=963827 last=963827 output=568237 limits=motion_not_intake"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19286.906,
+    "command": "clock"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19286.937,
+    "text": "CLOCK valid=1 utc=1793004329 lse=1 bkp2=544D0101 bkp3=6ADF1055 monotonicMs=1160151 bkp0=00000000 bkp1=00000000 bkp4=00000000"
+  },
+  {
+    "kind": "TX",
+    "monotonic": 19287.093,
+    "command": "records status"
+  },
+  {
+    "kind": "RX",
+    "monotonic": 19287.125,
+    "text": "RECORDS REAL ctx=2 day=20752 tz=480 valid=1 kept=2 first=1 last=2 overwrite=0 undated=1 summaryLost=0 rejected=0 exhausted=0 bytes=32 store=1156 RAM_ONLY reset_clears=1"
+  }
+]

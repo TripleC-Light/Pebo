@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "test": "retention",
+  "bottle": "EMPTY",
+  "operator_confirmation": "NOT_CONFIRMED",
+  "image_scope": "exact current image readback; no water/no intake acceptance"
+}

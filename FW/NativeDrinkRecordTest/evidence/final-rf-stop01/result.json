@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "test": "stop",
+  "operator_confirmation": "CONFIRMED_PHONE_NEAR_REMOVE_BOTTLE_STATIONARY",
+  "scope": "RF field wake only, no NFC application protocol"
+}

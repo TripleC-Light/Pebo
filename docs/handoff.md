@@ -1,5 +1,26 @@
 # Pebo handoff log
 
+## 2026-10-27: Stage8 USER-INTERRUPTED WIP for shutdown - NOT ACCEPTED
+
+Stop requested by user; do not continue builds/HIL after this checkpoint.
+New FW/NativeDrinkTaskTest copied from compact baseline; TaskLogic/TaskParser/
+TaskApp and TaskChecks added. First compact33348B, selective noinline33488B
+(720 over32KB); task-only diagnostic35516B (2748 over). No stage8 image flashed.
+Standalone constexpr TaskChecks compile passed; integrated build/host runtime,
+parser/TX bounds,replay,real/synthetic/HIL all incomplete. Linker32KB/8KB intact.
+Baseline tag checkpoint/native-drink-record-compact-v1 pushed87b10e44 ->b7b9171.
+Actual stage8 acceptance tag NOT CREATED. New automatic Git policy permits
+explicit WIP checkpoint normal push; result will be in final reply, no extra
+publication-only commit. Current branch main/start8bf6343. Stage8-only staging;
+prior UART/PPK2 notes/evidence and unrelated tests/conflicted HIL stay local.
+UART shutdown off/debug attempt failed at port identification/open; closed,
+current board/supply state UNVERIFIED. No stage8 flash or PPK2/power operation.
+Last known image old compact1086703970e17547ef91f1c39521545be3f146a3aef886d489d9fb91799614c1.
+Resume only when user returns: inspect maps and fit compact without deleting
+required logic,review core/serial/gap semantics,expand runtime/parser/replay tests,
+then exact-image HIL. READ new project README/VALIDATION/REQUEST and Git policy.
+Canonical handoff saved; stop at stage8, no reminder/NVM/NFC.
+
 ## 2026-10-26: Resource profile publication confirmed
 
 PC-02 TripleC/main. User authorized publication after resource-work closure.

@@ -1,5 +1,15 @@
 # Bench automation plan
 
+## 2026-10-27: Stage8 interrupted WIP - hardware NOT TESTED
+
+User requests stop for shutdown. Stage8 compact33488/diagnostic35516 exceed32KB;
+no image flashed. Host constexpr TaskChecks only; integrated policies/runtime/
+parser/TX/replay,synthetic,empty-event task chain,RTC/RF/STOP/mixed/PWM pending.
+No acceptance tag. Baseline compact checkpoint pushed. UART cleanup could not
+identify/open expected port; UART closed,current board/supply UNVERIFIED.
+No PPK2/power operation. Resume from NativeDrinkTaskTest README/VALIDATION;
+keep old-image HIL distinct from stage8 acceptance. Scoped WIP Git allowed.
+
 ## 2026-10-26: Resource profile publication confirmed
 
 PC-02 TripleC/main. User authorized publication after resource-work closure.

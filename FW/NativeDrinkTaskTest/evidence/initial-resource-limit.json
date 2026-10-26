@@ -1,0 +1,8 @@
+{
+  "result": "FLASH_OVERFLOW_BEFORE_OPTIMIZATION",
+  "config": "compact",
+  "flash_bytes": 33348,
+  "over_limit_bytes": 580,
+  "link_ram_including_minimum_stack": 5072,
+  "strategy": "Measure selective noinline on shared task operations; no algorithm/safety/capacity removal, no linker expansion"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "USER_REQUESTED_STOP",
+  "firmware": "stage8 NOT_FLASHED",
+  "ppk": "NOT_OPENED",
+  "state": "UNVERIFIED",
+  "cleanup_error": "",
+  "uart_closed": true
+}

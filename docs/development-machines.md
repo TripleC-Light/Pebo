@@ -1,5 +1,17 @@
 # Development machine registry
 
+## 2026-10-27: PC-02 stage8 interrupted for shutdown
+
+TripleC/main start8bf6343; user stopped task. FW/NativeDrinkTaskTest WIP NOT
+ACCEPTED: compact33488/diagnostic35516 Flash exceed32768; no stage8 flash.
+Baseline compact rebuilt exact; tag87b10e44 ->b7b9171 pushed. Host constexpr
+task checks only; runtime/parser/replay/HIL incomplete. No acceptance tag.
+UART cleanup port assertion failed,UART closed,board/supply unverified; PPK2
+not opened. Prior hardware image compact1086703970... unchanged by this task.
+Stage8 README/VALIDATION and handoff saved. Automatic scoped WIP Git policy
+applies; result in final reply. Earlier UART/PPK2 changes kept out of stage8
+staging. Resume capacity/core/host validation first, then bounded HIL.
+
 ## 2026-10-26: Resource profile publication confirmed
 
 PC-02 TripleC/main. User authorized publication after resource-work closure.
